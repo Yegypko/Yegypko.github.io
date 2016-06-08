@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Master-glass</title>
+    <!-- SEO -->
+    <meta name="description" content="#"/>
+    <meta name="keywords" content="#"/>
+    <meta name="author" content="Polyakh Aleksandr"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link type="text/css" rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+
+<!--Всплывающие модальные окна при выходе-->
+<div class="pop-up"></div>
+<!-- /. Всплывающие модальные окна при выходе-->
+<div class="drawn-up">
+    <p class="text__drawn-up">
+            <span class="header-text__drawn-up">
+                Спасибо за заявку
+            </span>
+            <span class="call-waiting__drawn-up">
+                Спасибо за заявку Ожидайте, скоро наш консультант с Вами свяжется
+            </span>
+    </p>
+</div>
+<!-- /.drawn-up -->
+<!--HEADER                                HEADER                                  HEADER-->
+<div class="wrapCallBtn">
+    <div class="hPhone__handset hPhone__handset--fixed">
+        <a href="#callMy" class="icon-my-handset icon-phone"></a>
+    </div>
+</div>
+<!-- /.wrapCallBtn -->
+<header class="header" id="headerScroll">
+    <div class="learn-more-about-us modal" id="our-team-show__learn-more-about-us">
+        <div class="header___learn-more-about-us">
+            <h5 class="town-selection">
+                Выберете город
+            </h5>
+            <select name="allCity" class="dec-select__learn-more-about-us" id="MG-select-city">
+                <option value="Адрес: г. Днепропетровск, ул. Короленко 1, офис 303.">Днепропетровск</option>
+                <option value="Адрес: г. Харьков, ул. , офис .">Харьков</option>
+                <option value="Адрес: г. Львов, ул. , офис 303.">Львов</option>
+            </select>
+        </div>
+        <!-- /.header___learn-more-about-us -->
+        <div class="contact-social__learn-more-about-us clearfix">
+            <p class="all-address-company__learn-more-about-us" id="cordCity">
+                Адрес: г. Днепропетровск, ул. Короленко 1, офис 303.
+            </p>
+            <h5 class="email-address__learn-more-about-us">
+                Email: mgdnepr@gmail.com
+            </h5>
+            <h5 class="room-options__learn-more-about-us">
+                Телефон:
+            </h5>
+            <a href="#" class="cord-map__learn-more-about-us"></a>
+            <ul class="group-numbers__learn-more-about-us">
+                <li class="item-num__learn-more-about-us">
+                    <a href="#" class="go-number__learn-more-about-us">
+                        +380 96 117 49 11
+                    </a>
+                </li>
+                <li class="item-num__learn-more-about-us">
+                    <a href="#" class="go-number__learn-more-about-us">
+                        +380 95 600 19 11
+                    </a>
+                </li>
+                <li class="item-num__learn-more-about-us">
+                    <a href="#" class="go-number__learn-more-about-us">
+                        +380 96 117 49 11
+                    </a>
+                </li>
+            </ul>
+            <div class="social-links__learn-more-about-us">
+                <ul class="soc-group__learn-more-about-us">
+                    <li class="circle-small-soc-item">
+                        <a href="https://vk.com/mglass_ua" target="_blank"
+                           class="soc-items__learn-more-about-us vk__learn-more-about-us"></a>
+                    </li>
+                    <li class="circle-small-soc-item">
+                        <a href="https://www.facebook.com/Master-Glass-990937277621148/" target="_blank"
+                           class="soc-items__learn-more-about-us facebook__learn-more-about-us"></a>
+                    </li>
+                    <li class="youtube__learn-more-about-us circle-small-soc-item">
+                        <a href="https://www.youtube.com/channel/UCX4zPpcpNvSn7Vw1-iShj9g" target="_blank"
+                           class="soc-items__learn-more-about-us youtube__learn-more-about-us"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.social-links__learn-more-about-us -->
+            <button class="btn-header__learn-more-about-us" type="button" id="showBtnСooperation">
+                Сотрудничество
+            </button>
+        </div>
+        <!-- /.contact-social__learn-more-about-us -->
+        <div class="form__btn-header__learn-more-about-us">
+            <ul class="group-left-contact___learn-more-about-us">
+                <li class="item-left-con___learn-more-about-us">
+                    <input class="styles-inp__learn-more-about-us" type="text" placeholder="Имя"/>
+                </li>
+                <li class="item-left-con___learn-more-about-us">
+                    <input class="styles-inp__learn-more-about-us" type="text" placeholder="Город"/>
+                </li>
+                <li class="item-left-con___learn-more-about-us">
+                    <input class="styles-inp__learn-more-about-us" type="text" placeholder="Email"/>
+                </li>
+            </ul>
+            <!-- /.group-left-contact___learn-more-about-us-->
+            <ul class="group-right-contact__learn-more-about-us">
+                <li class="item-right-con___learn-more-about-us">
+                    <input class="styles-inp__learn-more-about-us" type="text" placeholder="Название компании"/>
+                </li>
+                <li class="item-right-con___learn-more-about-us">
+                    <input class="styles-inp__learn-more-about-us" type="text" placeholder="Адрес"/>
+                </li>
+                <li class="item-right-con___learn-more-about-us">
+                    <input class="styles-inp__learn-more-about-us" type="text" placeholder="Телефон"/>
+                </li>
+            </ul>
+            <button class="btn-header-two__learn-more-about-us" type="button">
+                Сотрудничать
+            </button>
+        </div>
+        <!-- /.form__btn-header__learn-more-about-us -->
+    </div>
+    <!-- /.learn-more-about-us -->
+    <div class="prices-master-glass modal" id="div-show-hide__prices-master-glass">
+        <table class="table all-table">
+            <tr class="tr-header__prices-master-glass">
+                <th class="head-style">Модель</th>
+                <th class="head-style">Замена дисплея с <br/>
+                    Touch original (LCD - <br/>
+                    єкран в сборе)
+                </th>
+                <th class="head-style">Замена сенсорного <br/>
+                    стекла (Touch-screen)
+                </th>
+                <th class="head-style">Замена аккумулятора <br/>
+                    (оригинал)
+                </th>
+                <th class="head-style">Замена кнопки “Home”</th>
+            </tr>
+            <tr class="tr__prices-master-glass">
+                <td class="td__prices-master-glass">iPhone 4</td>
+                <td class="td__prices-master-glass">750 грн</td>
+                <td class="td__prices-master-glass">750 грн</td>
+                <td class="td__prices-master-glass">300 грн</td>
+                <td class="td__prices-master-glass">200 грн</td>
+            </tr>
+            <tr class="tr__prices-master-glass">
+                <td class="td__prices-master-glass">iPhone 4s</td>
+                <td class="td__prices-master-glass">750 грн</td>
+                <td class="td__prices-master-glass">___</td>
+                <td class="td__prices-master-glass">300 грн</td>
+                <td class="td__prices-master-glass">200 грн</td>
+            </tr>
+            <tr class="tr__prices-master-glass">
+                <td class="td__prices-master-glass">iPhone 5</td>
+                <td class="td__prices-master-glass">1750 грн</td>
+                <td class="td__prices-master-glass">1000 грн</td>
+                <td class="td__prices-master-glass">350 грн</td>
+                <td class="td__prices-master-glass">200 грн</td>
+            </tr>
+            <tr class="tr__prices-master-glass">
+                <td class="td__prices-master-glass">iPhone 5s</td>
+                <td class="td__prices-master-glass">1750 грн</td>
+                <td class="td__prices-master-glass">1000 грн</td>
+                <td class="td__prices-master-glass">400 грн</td>
+                <td class="td__prices-master-glass">400 грн</td>
+            </tr>
+            <tr class="tr__prices-master-glass">
+                <td class="td__prices-master-glass">iPhone 5c</td>
+                <td class="td__prices-master-glass">1750 грн</td>
+                <td class="td__prices-master-glass">1000 грн</td>
+                <td class="td__prices-master-glass">350 грн</td>
+                <td class="td__prices-master-glass">200 грн</td>
+            </tr>
+            <tr class="tr__prices-master-glass">
+                <td class="td__prices-master-glass">iPhone 6</td>
+                <td class="td__prices-master-glass">2900 грн</td>
+                <td class="td__prices-master-glass">2000 грн</td>
+                <td class="td__prices-master-glass">650 грн</td>
+                <td class="td__prices-master-glass">500 грн</td>
+            </tr>
+            <tr class="tr__prices-master-glass">
+                <td class="td__prices-master-glass">iPhone 6s</td>
+                <td class="td__prices-master-glass">9500 грн</td>
+                <td class="td__prices-master-glass">3900 грн</td>
+                <td class="td__prices-master-glass">___</td>
+                <td class="td__prices-master-glass">___</td>
+            </tr>
+            <tr class="tr__prices-master-glass">
+                <td class="td__prices-master-glass">iPhone 6+</td>
+                <td class="td__prices-master-glass">4500 грн</td>
+                <td class="td__prices-master-glass">3000 грн</td>
+                <td class="td__prices-master-glass">850 грн</td>
+                <td class="td__prices-master-glass">700 грн</td>
+            </tr>
+        </table>
+        <a href="#goNextDiv" class="make-request__prices-master-glass">
+            Оформить заявку
+        </a>
+    </div>
+    <!-- /.prices-master-glass -->
+    <div class="application" id="applic__show">
+        <div class="selected-phone-model__application">
+            <img id="img-phone" src="img/iPhone5s.png" alt="Phone"> <br/>
+                <span class="text-modal-phone__application">
+                    iPhone 5s
+                </span>
+        </div>
+        <!-- /.selected-phone-model__application -->
+        <div class="information-field clearfix">
+            <a href="#" class="cross__learn-more-about-us" id="cross-close__learn-more-about-us"></a>
+            <h4 class="text__application">
+                Оформление заявки
+            </h4>
+            <h5 class="selection__application">
+                Выбирете услугу:
+            </h5>
+            <form action="#" method="post">
+                <p class="type-service__application">
+                    <input type="radio" name="radioButton" value="1" id="radio1"/>
+                    <label for="radio1" class="class-label">
+                        <strong class="dec-text-type-serv-application">
+                         <span class="broke-that__application">
+                        Ремонт экрана/модуля
+                    </span> <br/>
+                        </strong>
+                    </label>
+                    <input type="radio" name="radioButton" value="2" id="radio2"/>
+                    <label for="radio2" class="class-label">
+                        <strong class="dec-text-type-serv-application">
+                        <span class="broke-that__application">
+                        Замена  Touch-screen/стекла
+                    </span>
+                        </strong>
+                    </label>
+                </p>
+                <ul class="group-user-information__application">
+                    <li class="item-inf__application">
+                        <input placeholder="Введите имя" name="Name" type="text" class="field-information__field"/>
+                        <hr/>
+                    </li>
+                    <li class="item-inf__application">
+                        <input placeholder="Введите адрес электронной почты" name="Email" type="text"
+                               class="field-information__field"/>
+                        <hr/>
+                    </li>
+                    <li class="item-inf__application">
+                        <input placeholder="Введите номер телефона" type="text" name="numberPhone"
+                               class="field-information__field"/>
+                        <hr/>
+                    </li>
+                </ul>
+                <input type="text" name="modelPhone" class="ifn-modal-phone">
+                <button class="btn__application" type="submit">
+                    Отправить
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- /.application -->
+    <div class="page-header clearfix">
+        <div class="grpelem" id="u4083">
+            <iframe
+                    src="js/animation/Mg_2.html" class="animationContainer" id="U4086_animation">
+            </iframe>
+        </div>
+        <!-- /.animation-->
+        <div class="logotype">
+            <a href="/" class="style-logo-img">
+                <img src="img/logo_header.png" alt="Master-glass" class="global-logotype-img">
+                <span class="text-logo">РЕМОНТ/ЗАМЕНА СЕНСОРНЫХ ЭКРАНОВ</span>
+            </a>
+        </div>
+        <div class="top-header-contacts">
+            <ul class="contacts-header-items">
+                <li class="contact-header-item">
+                    <a href="#" class="dec-contact-item">
+                        +380 96 117 49 11
+                    </a>
+                </li>
+                <li class="contact-header-item">
+                    <a href="#" class="dec-contact-item">
+                        +380 95 600 19 11
+                    </a>
+                </li>
+                <li class="contact-header-item">
+                    <a href="#" class="dec-contact-item">
+                        +380 93 447 79 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /.page-header -->
+    <nav class="nav-global">
+        <ul class="global-nav-items">
+            <li class="global-nav-item">
+                <a href="#headerScroll" class="icon-decoration-global-nav"></a>
+                    <span class="home-text nav-item-glob-radio">
+                            Главная
+                    </span>
+            </li>
+            <li class="global-nav-item">
+                <a href="#modalPhon" class="icon-decoration-global-nav"></a>
+                     <span class="your-phone-text nav-item-glob-radio">
+                            Ваш телефон
+                     </span>
+            </li>
+            <li class="global-nav-item">
+                <a href="#advang" class="icon-decoration-global-nav"></a>
+                    <span class="advantages-text nav-item-glob-radio">
+                        Наши преимушества
+                    </span>
+            </li>
+            <li class="global-nav-item">
+                <a href="#Soc-bg" class="icon-decoration-global-nav"></a>
+                    <span class="work-process-text nav-item-glob-radio">
+                        Как всё происходит
+                    </span>
+            </li>
+            <li class="global-nav-item">
+                <a href="#servScroll" class="icon-decoration-global-nav"></a>
+                    <span class="articles-li-text nav-item-glob-radio">
+                        Статьи
+                    </span>
+            </li>
+            <li class="global-nav-item">
+                <a href="#contact-scroll" class="icon-decoration-global-nav"></a>
+                    <span class="contact-footer-text nav-item-glob-radio">
+                        Контакты
+                    </span>
+            </li>
+        </ul>
+    </nav>
+    <!-- /.nav-global -->
+    <nav class="right-header">
+        <ul class="nav-right-items">
+            <li class="nav-right-item clearfix">
+                <a href="#contact-scroll" class="go-our-team-img"></a>
+                <span class="dec-text-right-header hover-text-go-our-team">
+                    Связаться с нами
+                </span>
+            </li>
+            <li class="nav-right-item clearfix">
+                <a href="#" id="a-show-hide__prices-master-glass" class="prices-img"></a>
+                <span class="dec-text-right-header hover-text-prices">
+                    Цены
+                </span>
+            </li>
+            <li class="nav-right-item clearfix">
+                <a href="" class="contact-img" id="go-our-team"></a>
+                <span class="dec-text-right-header hover-contact-text">
+                    Контакты
+                </span>
+            </li>
+        </ul>
+    </nav>
+    <!-- /.right-header -->
+</header>
+<!--END HEADER                        END HEADER                          END HEADER-->
+<!--//////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--MAIN                                   MAIN                                    MAIN-->
+<div class="bg-main" id="goNextDiv">
+    <h3 class="title-main" id="modalPhon">
+        УКАЖИТЕ МОДЕЛЬ ПОСТРАДАВШЕГО
+    </h3>
+</div>
+<!-- /.bg-main -->
+<main class="main">
+    <div class="main-wrapper-phone-slider">
+        <div class="wrapper-items-slider-phone">
+            <div class="ph-items" id="showPhone">
+                <div class="ph-item">
+                    <a href="#" class="dec-it-phone">
+                        <img src="img/iPhone4.png" alt="Model iPhone 4" class="img-for-slider-model-phone">
+                    </a>
+                    <button type="button" class="inf-iPhone-model-phone">
+                        4
+                    </button>
+                </div>
+                <div class="ph-item">
+                    <a href="#" class="dec-it-phone">
+                        <img src="img/iPhone4s.png" alt="Model iPhone 4s" class="img-for-slider-model-phone">
+                    </a>
+                    <button type="button" class="inf-iPhone-model-phone">
+                        4s
+                    </button>
+                </div>
+                <div class="ph-item">
+                    <a href="#" class="dec-it-phone">
+                        <img src="img/iPhone5.png" alt="Model iPhone 5" class="img-for-slider-model-phone">
+                    </a>
+                    <button type="button" class="inf-iPhone-model-phone">
+                        5
+                    </button>
+                </div>
+                <div class="ph-item">
+                    <a href="#" class="dec-it-phone">
+                        <img src="img/iPhone5s.png" alt="Model iPhone 5s" class="img-for-slider-model-phone">
+                    </a>
+                    <button type="button" class="inf-iPhone-model-phone">
+                        5s
+                    </button>
+                </div>
+                <div class="ph-item">
+                    <a href="#" class="dec-it-phone">
+                        <img src="img/iPhone5c.png" alt="Model iPhone 5c" class="img-for-slider-model-phone">
+                    </a>
+                    <button type="button" class="inf-iPhone-model-phone">
+                        5c
+                    </button>
+                </div>
+                <div class="ph-item">
+                    <a href="#" class="dec-it-phone">
+                        <img src="img/iPhone6.png" alt="Model iPhone 6" class="img-for-slider-model-phone">
+                    </a>
+                    <button type="button" class="inf-iPhone-model-phone">
+                        6
+                    </button>
+                </div>
+                <div class="ph-item">
+                    <a href="#" class="dec-it-phone">
+                        <img src="img/iPhone6plus.png" alt="Model iPhone 6 plus" class="img-for-slider-model-phone">
+                    </a>
+                    <button type="button" class="inf-iPhone-model-phone">
+                        6 plus
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- /.wrapper-items-slider-phone -->
+    </div>
+    <!-- /.main-wrapper-phone-slider -->
+    <div class="our-advantages" id="advang">
+        <ul class="types-jobs">
+            <li class="our-pride">
+                <aside>
+                    <h4 class="text-pride one-img">
+                        Качество
+                    </h4>
+
+                    <p class="more-about-job">
+                        &nbsp;&nbsp;&nbsp;Формула качества MG <br/>
+                        проста и эффективна: богатый профессиональный опыт <br/>
+                        и высокоточное оборудование обеспечивают выполнение <br/>
+                        работ на наивысшем уровне.
+                    </p>
+                </aside>
+            </li>
+            <li class="our-pride">
+                <aside>
+                    <h4 class="text-pride two-img">
+                        Скорость
+                    </h4>
+
+                    <p class="more-about-job">
+                        &nbsp;&nbsp;&nbsp;Забудьте о сервисах <br/>
+                        с недельными сроками <br/>
+                        работы! В MG замена экрана <br/>
+                        или touch’а занимает не более 60 минут..
+                    </p>
+                </aside>
+            </li>
+            <li class="our-pride">
+                <aside>
+                    <h4 class="text-pride three-img">
+                        Стоимость
+                    </h4>
+
+                    <p class="more-about-job">
+                        &nbsp;&nbsp;&nbsp;Тщательное отслеживание <br/>
+                        современных тенденций <br/>
+                        рынка позволяет MG <br/>
+                        проводить демократичную ценовую политику.
+                    </p>
+                </aside>
+            </li>
+            <li class="our-pride">
+                <aside>
+                    <h4 class="text-pride four-img">
+                        Доступность
+                    </h4>
+
+                    <p class="more-about-job">
+                        &nbsp;&nbsp;&nbsp;Оформить заказ можно любым <br/>
+                        удобным для Вас способом: <br/>
+                        просто ост авьте заявку <br/>
+                        на сайте или позвоните нам. <br/>
+                        Дальше мы свяжемся с Вами сами!
+                    </p>
+                </aside>
+            </li>
+        </ul>
+    </div>
+    <!-- /.our-advantages -->
+</main>
+<!-- /.main -->
+<!--END MAIN                           END MAIN                                END MAIN-->
+<!--//////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--SOCIAL NETWORKS                        SOCIAL NETWORKS                         SOCIAL NETWORKS-->
+<div class="social-network-write-us">
+    <div class="left-social">
+        <div class="bg__left-social">
+            <h3 class="title-reviews">
+                Отзывы
+            </h3>
+            <ul class="items-socials">
+                <li class="item-social">
+                    <a href="#" class="all-social-item ms-class">
+                        Master Glass
+                    </a>
+                </li>
+                <li class="item-social">
+                    <a href="#" class="all-social-item vk-class">
+                        VKontakte
+                    </a>
+                </li>
+                <li class="item-social">
+                    <a href="#" class="all-social-item fb-class">
+                        Facebook
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /.left-social -->
+    <div class="right-write-us clearfix">
+        <div class="bg__list-group MG">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <p class="inform-user">
+                        <a href="#" class="text-info-users">
+                            Username
+                        </a>
+                         <span class="comment-user">
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam architecto,
+                        </span>
+                    </p>
+
+                </li>
+                <li class="list-group-item">
+                    <p class="inform-user">
+                        <a href="#" class="text-info-users">
+                            Username
+                        </a>
+                        <span class="comment-user">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab esse laudantium maiores tempore?
+                        </span>
+                    </p>
+
+                </li>
+                <li class="list-group-item">
+                    <p class="inform-user">
+                        <a href="#" class="text-info-users">
+                            Username
+                        </a>
+                        <span class="comment-user">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur, dolores eius, enim est ex
+                        </span>
+                    </p>
+
+                </li>
+            </ul>
+            <div class="wrapper-contact-details">
+                <ul class="contact-details">
+                    <li class="item-contact-det input-name-soc">
+                        <input type="text" class="inp-reviews" placeholder="Введите имя" name="name"/>
+                    </li>
+                    <li class="item-contact-det input-reviews-soc">
+                        <input type="text" class="inp-reviews" placeholder="Напишите отзыв" name="reviews"/>
+                    </li>
+                </ul>
+                <p class="wrapper-contact-btn-sub">
+                    <input type="submit" class="contact-btn-sub" value="Отправить"/>
+                </p>
+
+            </div>
+            <!-- /.wrapper-contact-details -->
+        </div>
+        <!-- /.bg__list-group-MG -->
+        <div class="bg__list-group VK">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <p class="inform-user">
+                        <a href="#" class="text-info-users">
+                            Username
+                        </a>
+                         <span class="comment-user">
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam architecto,
+                        </span>
+                    </p>
+
+                </li>
+                <li class="list-group-item">
+                    <p class="inform-user">
+                        <a href="#" class="text-info-users">
+                            Username
+                        </a>
+                        <span class="comment-user">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab esse laudantium maiores tempore?
+                        </span>
+                    </p>
+
+                </li>
+                <li class="list-group-item">
+                    <p class="inform-user">
+                        <a href="#" class="text-info-users">
+                            Username
+                        </a>
+                        <span class="comment-user">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur, dolores eius, enim est ex
+                        </span>
+                    </p>
+
+                </li>
+            </ul>
+            <div class="wrapper-contact-details">
+                <ul class="contact-details">
+                    <li class="item-contact-det input-name-soc">
+                        <input type="text" class="inp-reviews" placeholder="Введите имя" name="name"/>
+                    </li>
+                    <li class="item-contact-det input-reviews-soc">
+                        <input type="text" class="inp-reviews" placeholder="Напишите отзыв" name="reviews"/>
+                    </li>
+                </ul>
+                <p class="wrapper-contact-btn-sub">
+                    <input type="submit" class="contact-btn-sub" value="Отправить"/>
+                </p>
+
+            </div>
+            <!-- /.wrapper-contact-details -->
+        </div>
+        <!-- /.bg__list-group-MG -->
+        <div class="bg__list-group FB">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <p class="inform-user">
+                        <a href="#" class="text-info-users">
+                            Username
+                        </a>
+                         <span class="comment-user">
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam architecto,
+                        </span>
+                    </p>
+
+                </li>
+                <li class="list-group-item">
+                    <p class="inform-user">
+                        <a href="#" class="text-info-users">
+                            Username
+                        </a>
+                        <span class="comment-user">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab esse laudantium maiores tempore?
+                        </span>
+                    </p>
+
+                </li>
+                <li class="list-group-item">
+                    <p class="inform-user">
+                        <a href="#" class="text-info-users">
+                            Username
+                        </a>
+                        <span class="comment-user">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur, dolores eius, enim est ex
+                        </span>
+                    </p>
+
+                </li>
+            </ul>
+            <div class="wrapper-contact-details">
+                <ul class="contact-details">
+                    <li class="item-contact-det input-name-soc">
+                        <input type="text" class="inp-reviews" placeholder="Введите имя" name="name"/>
+                    </li>
+                    <li class="item-contact-det input-reviews-soc">
+                        <input type="text" class="inp-reviews" placeholder="Напишите отзыв" name="reviews"/>
+                    </li>
+                </ul>
+                <p class="wrapper-contact-btn-sub">
+                    <input type="submit" class="contact-btn-sub" value="Отправить"/>
+                </p>
+
+            </div>
+            <!-- /.wrapper-contact-details -->
+        </div>
+        <!-- /.bg__list-group-MG -->
+
+    </div>
+    <!-- /.right-write-us -->
+</div>
+<div class="bg-img-social" id="Soc-bg">
+    <div class="paralax" data-stellar-ratio="2"></div>
+</div>
+<!-- /.bg-img-social -->
+<!-- /.social-network-write-us -->
+<!--END SOCIAL NETWORKS                END SOCIAL NETWORKS                     END SOCIAL NETWORKS-->
+<!--//////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--NEWS JOBS                                  NEWS JOBS                               NEWS JOBS-->
+<div class="news-home types-jobs" id="servScroll">
+    <section class="types-our-services">
+        <div class="bg__types-our-services">
+            <h3 class="h-type-service">
+                Статьи
+            </h3>
+            <ul class="list-our-jobs">
+                <li class="item-jobs">
+                    <a href="#" class="dec-text-job">
+                        Общее
+                    </a>
+                </li>
+                <li class="item-jobs">
+                    <a href="#" class="dec-text-job">
+                        Разборка/Сборка
+                    </a>
+                </li>
+                <li class="item-jobs">
+                    <a href="#" class="dec-text-job">
+                        Замена модуля
+                    </a>
+                </li>
+                <li class="item-jobs">
+                    <a href="#" class="dec-text-job">
+                        Хранение данных
+                    </a>
+                </li>
+            </ul>
+            <a href="http://blog.master-glass.com.ua/" class="more-information__type-services" target="_blank">
+                Ещё
+            </a>
+        </div>
+    </section>
+    <!-- /.types-our-services -->
+    <div class="wrapper-articles">
+        <aside class="news-phone clearfix all-block-articles">
+            <div class="bg__news-phone">
+                <h4 class="text-news-phone">
+                    Последняя новость о разбитом корыте!
+                </h4>
+
+                <p class="about-all-phone">
+                    Смартфоны – незаменимые атрибуты нашей жизни. Трудно себе представить как отдых, так и обычный
+                    рабочий
+                    день
+                    без мощного девайса под рукой.
+                    Мир стремительно развивается, Каждый пользователь рано или поздно сталкивает-ся с неприятностью –
+                    легкие
+                    и
+                    хрупкие экраны идут трещинами даже от слабого удара. С развитием технологий становятся сложнее и
+                    проблемы,
+                    которые приходиться решать: в кнопочных телефонах прошлого замена экрана занимала
+                    минимум времени и усилий.
+
+                </p>
+                <a href="#" class="read-mor-details">
+                    Читать дальше
+                </a>
+            </div>
+        </aside>
+        <!-- /.news-phone-->
+        <aside class="disassembly-assembly-phone all-block-articles">
+            <h4 class="title-disassembly-assembly">
+                Как правильно разобрать/собрать на IPhone 5/5s
+            </h4>
+
+            <div class="wrapper-video">
+                <iframe class="iframe-video" src="https://www.youtube.com/embed/6ix4dIC4Jvw" allowfullscreen></iframe>
+            </div>
+            <!-- /.wrapper video -->
+        </aside>
+        <!-- /.disassembly-assembly-phone-->
+        <aside class="module-replacement all-block-articles">
+            <h4 class="title-module-replacement">
+                Замена модуля на IPhone 5/5s
+            </h4>
+
+            <div class="wrapper-video">
+                <iframe class="iframe-video" src="https://www.youtube.com/embed/6gzw8UOTnoc" allowfullscreen></iframe>
+            </div>
+        </aside>
+        <!-- /.module-replacement -->
+        <aside class="data-storage all-block-articles">
+            <h4 class="text-data-storage">
+                А Вы готовы, к такой безопасности?
+            </h4>
+
+            <p class="about-data-storage">
+                «Online» - именно это слово ярче всего говорит
+                о современном человеке. Банковские счета, социальные сети, новости, развлечения – через каждого из нас
+                проходят огромные потоки данных. Для работы с ними мы используем мобильные устройства, количество
+                которых только растет. Помимо этого, телефоны могут легко разбиться,
+                потеряться, в общем, прийти в негодность. Как при
+                таких условиях обеспечить
+                максимальную сохранность информации?
+            </p>
+            <a href="#" class="read-mor-details">
+                Читать дальше
+            </a>
+        </aside>
+        <!-- /.data-storage -->
+    </div>
+    <!-- /.wrapper-articles -->
+</div>
+<!-- /.news-home types-jobs -->
+<!--NEWS JOBS                              END NEWS JOBS                           END NEWS JOBS-->
+<!--//////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--FOOTER                                          FOOTER                              FOOTER-->
+<footer class="footer" id="footerSc">
+    <div class="location-contact-inform" id="contact-scroll">
+        <div class="contact-all-number">
+            <h5 class="contact__footer title-text-footer">
+                Контакты
+            </h5>
+            <ul class="contact-number__footer">
+                <li class="phone-number">
+                    <a href="" class="dec-contact__footer">
+                        +380 96 117 49 11
+                    </a>
+                </li>
+                <li class="phone-number">
+                    <a href="" class="dec-contact__footer">
+                        +380 95 600 19 11
+                    </a>
+                </li>
+                <li class="phone-number">
+                    <a href="" class="dec-contact__footer">
+                        +380 93 447 79 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.contact-all-number -->
+        <div class="office-location">
+            <h5 class="location title-text-footer">
+                Адрес
+            </h5>
+
+            <p class="map-coordinates">
+                г. Днепропетровск <br/>
+                ул. Короленко 1, <br/>
+                офис 303
+            </p>
+        </div>
+        <!-- /.office-location -->
+        <div class="wrapPart-map">
+            <div class="map" id="mapId"></div>
+            <!-- /.map -->
+        </div>
+        <!-- /.wrapPart wrapPart-map -->
+    </div>
+    <!-- /.location-contact-inform -->
+    <div class="feedback" id="callMy">
+        <h2 class="ask-question">
+            ВОЗНИКЛИ ВОПРОСЫ?
+        </h2>
+        <h4 class="call-waiting">
+            Закажите обратный звонок и наши консультанты Вам помогут.
+        </h4>
+
+        <form class="push-number" name="numberPhone" action="#" method="post">
+            <input class="feedback__form__input" type="text" name="numberPhone" placeholder="Ваш номер телефона"/>
+            <input class="feedback__form__btn" type="submit" value="Отправить"/>
+
+            <div class="text-error"></div>
+        </form>
+        <!-- /.push-number -->
+    </div>
+    <!-- /.feedback -->
+</footer>
+<!-- /.footer -->
+<div class="global-bg"></div>
+<!--FOOTER                                      END FOOTER                             END FOOTER-->
+<script src="https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js"></script>
+<script src="js/vendor/jquery-2.2.4.min.js"></script>
+<script src="js/vendor/slick.min.js"></script>
+<script src="js/vendor/jquery.formstyler.min.js"></script>
+<script src="js/vendor/stellar.js"></script>
+
+<script src="js/common.js"></script>
+</body>
+</html>

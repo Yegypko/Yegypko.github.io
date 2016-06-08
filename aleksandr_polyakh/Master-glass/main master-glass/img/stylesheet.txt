@@ -1,0 +1,125 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-arrow_form {
+    width: 13px;
+    height: 16px;
+    background-position: -170px -170px;
+}
+
+.sprite-arrow_form__hover {
+    width: 13px;
+    height: 16px;
+    background-position: -523px -170px;
+}
+
+.sprite-arrow_left {
+    width: 25px;
+    height: 58px;
+    background-position: -876px -170px;
+}
+
+.sprite-arrow_left_hover {
+    width: 25px;
+    height: 58px;
+    background-position: -1241px -170px;
+}
+
+.sprite-arrow_right {
+    width: 25px;
+    height: 58px;
+    background-position: -170px -568px;
+}
+
+.sprite-arrow_right__hover {
+    width: 25px;
+    height: 58px;
+    background-position: -535px -568px;
+}
+
+.sprite-arrow_selection {
+    width: 14px;
+    height: 11px;
+    background-position: -900px -568px;
+}
+
+.sprite-contacts- {
+    width: 60px;
+    height: 60px;
+    background-position: -1254px -568px;
+}
+
+.sprite-cross_application {
+    width: 25px;
+    height: 25px;
+    background-position: -170px -968px;
+}
+
+.sprite-cross_application_hover {
+    width: 25px;
+    height: 25px;
+    background-position: -535px -968px;
+}
+
+.sprite-map_icon {
+    width: 37px;
+    height: 40px;
+    background-position: -900px -968px;
+}
+
+.sprite-record- {
+    width: 60px;
+    height: 60px;
+    background-position: -1277px -968px;
+}
+
+.sprite-social_FB {
+    width: 21px;
+    height: 39px;
+    background-position: -170px -1368px;
+}
+
+.sprite-social_MG {
+    width: 45px;
+    height: 29px;
+    background-position: -531px -1368px;
+}
+
+.sprite-social_VK {
+    width: 40px;
+    height: 22px;
+    background-position: -916px -1368px;
+}
+
+.sprite-social_fb__-learn-more-about-us {
+    width: 30px;
+    height: 30px;
+    background-position: -1296px -1368px;
+}
+
+.sprite-social_vk__-learn-more-about-us {
+    width: 30px;
+    height: 30px;
+    background-position: -1606px -170px;
+}
+
+.sprite-telephone-handset {
+    width: 26px;
+    height: 30px;
+    background-position: -1654px -540px;
+}
+
+.sprite-web_money {
+    width: 60px;
+    height: 60px;
+    background-position: -1677px -910px;
+}
+
+.sprite-youtube__learn-more-about-us {
+    width: 30px;
+    height: 30px;
+    background-position: -1677px -1310px;
+}

@@ -1,0 +1,1803 @@
+/*============================================
+				Global settings
+  ============================================*/
+* {
+    -outline: 1px solid #000;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+h1, h2, h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+h4, h5, h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/*===========================================
+					Fonts
+  ===========================================*/
+
+html {
+    -webkit-font-smoothing: antialiased;
+    font-family: sans-serif;
+}
+
+/*open sansregular*/
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/opensans-regular-webfont.eot');
+    src: url('fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/opensans-regular-webfont.woff2') format('woff2'),
+    url('fonts/opensans-regular-webfont.woff') format('woff'),
+    url('fonts/opensans-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*open sansextrabold*/
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('fonts/opensans-extrabold-webfont.eot');
+    src: url('fonts/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/opensans-extrabold-webfont.woff2') format('woff2'),
+    url('fonts/opensans-extrabold-webfont.woff') format('woff'),
+    url('fonts/opensans-extrabold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*open sansemibold*/
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('fonts/opensans-semibold-webfont.eot');
+    src: url('fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/opensans-semibold-webfont.woff2') format('woff2'),
+    url('fonts/opensans-semibold-webfont.woff') format('woff'),
+    url('fonts/opensans-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*open sanslight*/
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('fonts/opensans-light-webfont.eot');
+    src: url('fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/opensans-light-webfont.woff2') format('woff2'),
+    url('fonts/opensans-light-webfont.woff') format('woff'),
+    url('fonts/opensans-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*open sansitalic*/
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('fonts/opensans-italic-webfont.eot');
+    src: url('fonts/opensans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/opensans-italic-webfont.woff2') format('woff2'),
+    url('fonts/opensans-italic-webfont.woff') format('woff'),
+    url('fonts/opensans-italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*latoregular*/
+@font-face {
+    font-family: 'latoregular';
+    src: url('fonts/lato-regular-webfont.eot');
+    src: url('fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/lato-regular-webfont.woff2') format('woff2'),
+    url('fonts/lato-regular-webfont.woff') format('woff'),
+    url('fonts/lato-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*===========================================
+				End fonts
+  ===========================================*/
+
+/*===============================================================================
+			BOX MENU				BOX MENU				BOX MENU
+  ===============================================================================*/
+
+.wrap-box-menu {
+    background-color: rgb(59, 67, 76);
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+}
+
+.box-menu {
+    position: relative;
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    background-color: rgb(59, 67, 76);
+}
+
+.cross {
+    z-index: 10;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 17px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 5px;
+    height: 30px;
+    background: #ffffff;
+}
+
+.cross:after {
+    content: "";
+    background: #ffffff;
+    height: 5px;
+    left: -12px;
+    position: absolute;
+    top: 13px;
+    width: 30px;
+}
+
+.text-box-menu {
+    font-size: 35px;
+    line-height: 70px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: open_sanssemibold, Arial, Arial, Helvetica, sans-serif;
+}
+
+.text-box-menu:hover {
+    color: #f7600e;
+}
+
+.show-menu {
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 40px;
+    padding-right: 12px;
+}
+
+.social-contacts-items-box-menu {
+    padding-top: 53px;
+}
+
+.contact-item-box {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.show-menu:before {
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 170px;
+    height: 2px;
+    background-color: #f7600e;
+}
+
+.soc-box {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.social-form-facebook-box-meu {
+    width: 43px;
+    height: 43px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -70px -430px;
+    background-repeat: no-repeat;
+}
+
+.social-form-facebook-box-meu:hover {
+    -webkit-box-shadow: 0px 0px 40px 7px #205B9F;
+    -moz-box-shadow: 0px 0px 40px 7px #205B9F;
+    -o-box-shadow: 0px 0px 40px 7px #205B9F;
+    box-shadow: 0px 0px 40px 7px #205B9F;
+}
+
+.social-form-twitter-box-menu {
+    width: 43px;
+    height: 43px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -253px -430px;
+    background-repeat: no-repeat;
+}
+
+.social-form-twitter-box-menu:hover {
+    -webkit-box-shadow: 0px 0px 40px 7px #00ACE3;
+    -moz-box-shadow: 0px 0px 40px 7px #00ACE3;
+    -o-box-shadow: 0px 0px 40px 7px #00ACE3;
+    box-shadow: 0px 0px 40px 7px #00ACE3;
+}
+
+
+.social-form-google-box-menu {
+    width: 43px;
+    height: 43px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -436px -430px;
+    background-repeat: no-repeat;
+}
+
+.social-form-google-box-menu:hover {
+    -webkit-box-shadow: 0px 0px 40px 7px #FF3921;
+    -moz-box-shadow: 0px 0px 40px 7px #FF3921;
+    -o-box-shadow: 0px 0px 40px 7px #FF3921;
+    box-shadow: 0px 0px 40px 7px #FF3921;
+}
+
+
+
+.social-form-eu-soc-one-box-menu {
+    width: 43px;
+    height: 43px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -619px -430px;
+    background-repeat: no-repeat;
+}
+
+.social-form-eu-soc-one-box-menu:hover {
+    -o-box-shadow: 0px 0px 40px 7px #FF72A5;
+    -webkit-box-shadow: 0px 0px 40px 7px #FF72A5;
+    -moz-box-shadow: 0px 0px 40px 7px #FF72A5;
+    box-shadow: 0px 0px 40px 7px #FF72A5;
+}
+
+
+.social-form-eu-soc-two-box-menu {
+    width: 43px;
+    height: 43px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -802px -430px;
+    background-repeat: no-repeat;
+}
+
+.social-form-eu-soc-two-box-menu:hover {
+    -webkit-box-shadow: 0px 0px 40px 7px #009BD5;
+    -moz-box-shadow: 0px 0px 40px 7px #009BD5;
+    -o-box-shadow: 0px 0px 40px 7px #009BD5;
+    box-shadow: 0px 0px 40px 7px #009BD5;
+}
+
+/*===============================================================================
+			END BOX MENU			END BOX MENU				END BOX MENU
+  ===============================================================================*/
+
+/*==================================================================================
+			GLOBAL FORM				GLOBAL FORM					GLOBAL FORM
+  ================================================================================*/
+
+.container-global-form {
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(54, 62, 71, 0.9);
+}
+
+.global-form {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    width: 40%;
+    top: 10%;
+    left: 0px;
+    right: 0px;
+    padding-bottom: 60px;
+    background-color: #ffffff;
+}
+
+.glob-form-cros {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    height: 5px;
+    width: 30px;
+    background: #000000;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+
+.glob-form-cros:after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    right: 12px;
+    height: 30px;
+    width: 5px;
+    background: #000000;
+}
+
+.title-glob {
+    font-size: 35px;
+    line-height: 70px;
+    color: #424242;
+    text-transform: uppercase;
+    font-family: open_sanssemibold, Arial, Arial, Helvetica, sans-serif;
+}
+
+.title {
+    color: #f7600e;
+}
+
+.paragraph-for-form {
+    margin: 0 auto;
+    width: 90%;
+    font-size: 16px;
+    line-height: 32px;
+    color: #424242;
+    font-family: open_sansregular, Arial, Arial, Helvetica, sans-serif;
+}
+
+.input-text {
+    width: 73%;
+    margin-top: 35px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    border: 1px solid #c4c6c9;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 38px;
+    font-family: open_sanslight, Arial, Arial, Helvetica, sans-serif;
+}
+
+.subject-global-form-style {
+    margin-top: 14px;
+}
+
+.area-text {
+    width: 73%;
+    min-height: 230px;
+    margin-top: 15px;
+    padding-top: 16px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    border: 1px solid #c4c6c9;
+    border-radius: 10px;
+    resize: none;
+}
+
+.push-message {
+    margin: 0 auto;
+    width: 73%;
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #f7600e;
+    font-size: 16px;
+    line-height: 32px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: open_sanssemibold, Arial, Arial, Helvetica, sans-serif;
+}
+
+/*================================================================================
+			END GLOBAL FORM			END GLOBAL FORM			END GLOBAL FORM
+  ================================================================================/*
+
+
+
+/*================================================================================
+			HEADER						HEADER						HEADER
+  =================================================================================*/
+
+.container-header {
+    margin: 0 auto;
+    background-image: url(../img/bg_top.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #424242;
+}
+
+.global-nav {
+    margin: 0px auto;
+    width: 80%;
+    max-width: 1170px;
+    text-align: justify;
+    text-align-last: justify;
+    padding-top: 15px;
+    padding-right: 0px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    line-height: 0px;
+    font-size: 1px;
+}
+
+.global-nav:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 0px;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.logotype {
+    display: inline-block;
+    width: 40%;
+    text-align: left;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 45px;
+}
+
+.menu-box {
+    display: inline-block;
+    width: 30%;
+    text-align-last: right;
+    text-align: right;
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.text-menu {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
+    padding-left: 23px;
+    font-size: 16px;
+    line-height: 32px;
+    color: #ffffff;
+    font-family: open_sansregular, Arial, Arial, Helvetica, sans-serif;
+}
+
+.text-menu:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    width: 26px;
+    height: 20px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -985px -430px;
+    background-repeat: no-repeat;
+}
+
+.text-menu:hover:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    width: 26px;
+    height: 20px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -985px -590px;
+    background-repeat: no-repeat;
+}
+
+/*====================================================================================
+			END HEADER					END HEADER				END HEADER
+  ====================================================================================*/
+
+/*====================================================================================
+				SLIDER					SLIDER					SLIDER
+  ====================================================================================*/
+
+.logo-text {
+    text-align: center;
+    padding-top: 126px;
+    padding-bottom: 10px;
+    font-size: 70px;
+    line-height: 90px;
+    color: #f8f8f8;
+    text-transform: uppercase;
+    font-family: open_sansextrabold, Arial, Arial, Helvetica, sans-serif;
+}
+
+.logo-text-decoration {
+    color: #f7600e;
+}
+
+.slider {
+    margin: 0px auto;
+    max-width: 1170px;
+    text-align: center;
+    font-size: 0px;
+}
+
+.slider-text {
+    margin: 0 auto;
+    width: 85%;
+    max-width: 750px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    font-size: 25px;
+    line-height: 42px;
+    font-weight: 500;
+    color: #f8f8f8;
+    font-family: open_sansregular, Arial, Arial, Helvetica, sans-serif;
+}
+
+.radius-for-button-slider {
+    display: inline-block;
+    width: 18%;
+    margin-top: 46px;
+    margin-right: 14px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    border: 1px solid #65696f;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button-for-slider {
+    font-size: 16px;
+    line-height: 46px;
+    color: #f8f8f8;
+    text-transform: uppercase;
+    font-family: open_sanssemibold, Arial, Arial, Helvetica, sans-serif;
+}
+
+.radius-for-button-slider:hover {
+    background-color: #f7600e;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.decoration-a-slider {
+    display: inline-block;
+    margin-top: 198px;
+    margin-right: 0px;
+    margin-bottom: 51px;
+    margin-left: 0px;
+    width: 34px;
+    height: 34px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -652px -70px;
+    background-repeat: no-repeat;
+}
+
+.decoration-a-slider:hover {
+    width: 34px;
+    height: 34px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -826px -70px;
+    background-repeat: no-repeat;
+}
+
+.container-global-form {
+    display: none;
+}
+
+/*==================================================================================
+				END	SLIDER			END	SLIDER			END	SLIDER
+  ==================================================================================*/
+
+/*==================================================================================
+			OUR SERVICES		OUR SERVICES			OUR SERVICES
+  ==================================================================================*/
+
+.our-services {
+    margin: 0px auto;
+    max-width: 1170px;
+    text-align: center;
+    padding-top: 85px;
+    padding-right: 0px;
+    padding-bottom: 81px;
+    padding-left: 0px;
+    font-size: 0px;
+}
+
+.item-service {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    overflow: hidden;
+    padding-top: 14px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.img-services-one {
+    display: inline-block;
+    width: 151px;
+    height: 151px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -70px -70px;
+    background-repeat: no-repeat;
+}
+
+.img-services-one:hover {
+    width: 151px;
+    height: 151px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -361px -70px;
+    background-repeat: no-repeat;
+}
+
+.img-services-two {
+    display: inline-block;
+    width: 151px;
+    height: 151px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -70px -750px;
+    background-repeat: no-repeat;
+}
+
+.img-services-two:hover {
+    width: 151px;
+    height: 151px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -361px -750px;
+    background-repeat: no-repeat;
+}
+
+.img-services-three {
+    display: inline-block;
+    width: 151px;
+    height: 151px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -1151px -361px;
+    background-repeat: no-repeat;
+}
+
+.img-services-three:hover {
+    width: 151px;
+    height: 151px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -1151px -652px;
+    background-repeat: no-repeat;
+}
+
+.img-services-four {
+    display: inline-block;
+    width: 151px;
+    height: 151px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -652px -750px;
+    background-repeat: no-repeat;
+}
+
+.img-services-four:hover {
+    width: 151px;
+    height: 151px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -1161px -70px;
+    background-repeat: no-repeat;
+}
+
+.our-title {
+    padding-top: 21px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-size: 16px;
+    line-height: 32px;
+    color: #3b434c;
+    text-transform: uppercase;
+    font-family: open_sanssemibold, Arial, Arial, Helvetica, sans-serif;
+}
+
+.we-are-working {
+    display: inline-block;
+    width: 70%;
+    padding-top: 7px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #3b434c;
+    font-family: open_sansregular, Arial, Arial, Helvetica, sans-serif;
+}
+
+/*==============================================================================
+		END	OUR SERVICES		END	OUR SERVICES		END	OUR SERVICES
+  ==============================================================================*/
+
+/*==============================================================================
+			NEWS LETTER			NEWS LETTER			NEWS LETTER
+  ==============================================================================*/
+
+.container-news-letter {
+    background-image: url(../img/bg_middle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #424242;
+}
+
+.news-letter {
+    margin: 0 auto;
+    max-width: 1170px;
+    font-size: 0px;
+    text-align: center;
+}
+
+.form-subscribe {
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 66px;
+}
+
+.style-for-news-letter {
+    width: 100%;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 22px;
+    border: 1px solid #cecece;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 16px;
+    line-height: 38px;
+    font-family: open_sanslight, Arial, Arial, Helvetica, sans-serif;
+}
+
+.font-family-for-text {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 35px;
+    padding-left: 0px;
+}
+
+.font-family-for-button {
+    display: inline-block;
+    width: 26%;
+    vertical-align: top;
+    overflow: hidden;
+    padding-top: 0px;
+    padding-right: 6px;
+    padding-bottom: 14px;
+    padding-left: 29px;
+}
+
+.button-for-subscribe {
+    display: inline-block;
+    width: 100%;
+    padding-top: 7px;
+    padding-right: 5px;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    border: none;
+    background-color: #f7600e;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 35px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: open_sanssemibold, Arial, Arial, Helvetica, sans-serif;
+}
+
+.button-for-subscribe:hover {
+    -webkit-box-shadow: inset 0px 0px 63px 15px #B03E00;
+    -moz-box-shadow: inset 0px 0px 63px 15px #B03E00;
+    -o-box-shadow: inset 0px 0px 63px 15px #B03E00;
+    box-shadow: inset 0px 0px 63px 15px #B03E00;
+}
+
+/*======================================================================================
+			END NEWS LETTER			END NEWS LETTER			END NEWS LETTER
+  ======================================================================================*/
+
+/*======================================================================================
+					OUR WORK		OUR WORK		OUR WORK
+  ======================================================================================*/
+
+.container-our-work {
+    width: 100%;
+}
+
+.our-works {
+    position: relative;
+    margin: 0px auto;
+    max-width: 1170px;
+    text-align: center;
+    padding-bottom: 48px;
+    font-size: 0px;
+}
+
+.text-our-work {
+    padding-top: 75px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    font-size: 35px;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-family: open_sanssemibold, Arial, Arial, Helvetica, sans-serif;
+}
+
+.decoration-text-our {
+    color: #f7600e;
+}
+
+.all-items-portfolio-work {
+    margin-top: 72px;
+}
+
+.item-portfolio-sheet {
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    margin: 15px;
+    height: 360px;
+    overflow: hidden;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.item-portfolio-sheet:hover > .text-hover-our-work {
+    opacity: 0.902;
+}
+
+.paragraph-dec-for-our-work {
+    display: inline-block;
+    width: 40%;
+    font-size: 16px;
+    line-height: 32px;
+    color: #3b434c;
+    font-family: open_sansregular, Arial, Arial, Helvetica, sans-serif;
+}
+
+.text-hover-our-work {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgb(247, 96, 14);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-out;
+    -moz-transition: opacity 0.3s ease-out;
+    -ms-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+}
+
+.text-decoration-hover {
+    padding-top: 77px;
+    padding-left: 17px;
+    padding-bottom: 15px;
+    font-size: 25px;
+    line-height: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: open_sanssemibold, Arial, Arial, Helvetica, sans-serif;
+}
+
+.hover-p {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #ffffff;
+    font-family: open_sansregular, Arial, Arial, Helvetica, sans-serif;
+}
+
+.show-our-project {
+    display: inline-block;
+    width: 70%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 16px;
+    line-height: 40px;
+    color: #df570d;
+    text-transform: uppercase;
+    font-family: open_sanssemibold, Arial, Arial, Helvetica, sans-serif;
+}
+
+.images-works {
+    width: auto;
+    height: 100%;
+    border-radius: 10px;
+    max-width: none;
+}
+
+.show-more {
+    display: inline-block;
+    width: 18%;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    margin-top: 86px;
+    margin-bottom: 50px;
+    border: 1px solid rgb(59, 67, 76);
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 40px;
+    color: #3b434c;
+    text-transform: uppercase;
+    font-family: open_sanssemibold, Arial, Arial, Helvetica, sans-serif;
+}
+
+.show-more:hover {
+    -webkit-box-shadow: 0px 0px 41px 12px #DDDDDD;
+    -moz-box-shadow: 0px 0px 41px 12px #DDDDDD;
+    -o-box-shadow: 0px 0px 41px 12px #DDDDDD;
+    box-shadow: 0px 0px 41px 12px #ADADAD;
+}
+
+/*======================================================================================
+				END OUR WORK		END OUR WORK		END OUR WORK
+  ======================================================================================*/
+
+/*======================================================================================
+		OUR PROFESSIONAL		OUR PROFESSIONAL		OUR PROFESSIONAL
+  ======================================================================================*/
+
+.sliders-container {
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+}
+
+.container-our-professionals {
+    background-image: url(../img/bg_bottom.jpg);
+    background-color: #424242;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.our-professionals {
+    position: relative;
+    margin: 0px auto;
+    max-width: 1170px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 64px;
+}
+
+.wrap-img-person {
+    margin: 0px auto;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.avatar-img-our-people {
+    display: inline-block;
+    margin: 0px auto;
+    width: 100%;
+    z-index: 1;
+    transform: scale(1.3);
+}
+
+.professionals-text {
+    display: inline-block;
+    width: 70%;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 43px;
+    font-family: open_sansitalic, Arial, Arial, Helvetica, sans-serif;
+}
+
+.all-items-slider {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.buttonSlider {
+    display: block;
+    cursor: pointer;
+}
+
+.prev {
+    position: absolute;
+    margin: auto;
+    top: -22px;
+    bottom: 0px;
+    left: 10%;
+    width: 21px;
+    height: 40px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -1000px -70px;
+    background-repeat: no-repeat;
+}
+
+.next {
+    position: absolute;
+    margin: auto;
+    top: -22px;
+    right: 10%;
+    bottom: 0px;
+    width: 21px;
+    height: 40px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -813px -250px;
+    background-repeat: no-repeat;
+}
+
+.title-prof {
+    display: block;
+    margin: 0px auto;
+    width: 15%;
+    padding-bottom: 30px;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: open_sanssemibold, Arial, Arial, Helvetica, sans-serif;
+}
+
+/*===============================================================================
+		END OUR PROFESSIONAL	END OUR PROFESSIONAL	END OUR PROFESSIONAL
+  ===============================================================================*/
+
+/*================================================================================
+			OUR TEAM GLOBAL			OUR TEAM GLOBAL			OUR TEAM GLOBAL
+  ===============================================================================*/
+
+.our-team-global {
+    margin: 0px auto;
+    max-width: 1170px;
+    text-align: center;
+}
+
+.our-team-title {
+    width: 100%;
+    padding-top: 78px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    font-size: 36px;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-family: open_sanssemibold, Arial, Arial, Helvetica, sans-serif;
+}
+
+.title-decoration-title {
+    color: #f7600e;
+}
+
+.skills-employees {
+    display: inline-block;
+    width: 60%;
+    font-size: 16px;
+    line-height: 32px;
+    color: #3b434c;
+    font-family: open_sansregular, Arial, Arial, Helvetica, sans-serif;
+}
+
+.people-good-team {
+    margin-top: 123px;
+    padding-bottom: 40px;
+    font-size: 0px;
+}
+
+.photo-team {
+    display: inline-block;
+    width: 234px;
+    margin-left: 38px;
+    margin-right: 15px;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.all-photo-team {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    max-width: none;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.all-photo-team-hover {
+
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    max-width: none;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.name-our-worker {
+    display: inline-block;
+    width: 90%;
+    padding-top: 10px;
+    font-size: 24px;
+    line-height: 48px;
+    color: #3b434c;
+    text-transform: uppercase;
+    font-family: open_sanssemibold, Arial, Arial, Helvetica, sans-serif;
+}
+
+.about-people-team {
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 28px;
+    font-family: open_sansregular, Arial, Arial, Helvetica, sans-serif;
+}
+
+.slider-for-team {
+    display: inline-block;
+    width: 50%;
+    padding-top: 50px;
+    padding-bottom: 90px;
+    opacity: 0;
+}
+
+.slider-btn {
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 12px;
+    height: 12px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -943px -943px;
+    background-repeat: no-repeat;
+}
+
+.slider-btn:hover {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -1095px -943px;
+    background-repeat: no-repeat;
+}
+
+.social-items {
+    display: inline-block;
+    width: 70%;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+
+.social-team-item {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.message {
+    margin-bottom: 28px;
+}
+
+.social-link-team-facebook {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -1250px -943px;
+    background-repeat: no-repeat;
+}
+
+.social-link-team-facebook:hover {
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -70px -1107px;
+    background-repeat: no-repeat;
+}
+
+.social-link-team-twitter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -562px -1107px;
+    background-repeat: no-repeat;
+}
+
+.social-link-team-twitter:hover {
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -726px -1107px;
+    background-repeat: no-repeat;
+}
+
+.social-link-team-google {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -234px -1107px;
+    background-repeat: no-repeat;
+}
+
+.social-link-team-google:hover {
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -398px -1107px;
+    background-repeat: no-repeat;
+}
+
+.link-people {
+    position: relative;
+    height: 285px;
+    max-width: none;
+    width: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.all-photo-team-hover {
+    display: none;
+}
+
+.link-people:hover img:first-of-type {
+    display: none;
+}
+
+.link-people:hover img:last-of-type {
+    display: block;
+}
+
+.link-people {
+    display: block;
+}
+
+#preloadedImages {
+    width: 1px;
+    height: 1px;
+    display: inline;
+    background-image: url(../img/photo_1_hover.jpg), url(../img/photo_2_hover.jpg), url(../img/photo_3_hover.jpg), url(../img/photo_4_hover.jpg);
+}
+/*===============================================================================
+		END OUR TEAM GLOBAL			END OUR TEAM GLOBAL		END OUR TEAM GLOBAL
+  ===============================================================================*/
+
+/*===============================================================================
+				CONTACTS			CONTACTS			CONTACTS
+  ===============================================================================*/
+
+.container-contact {
+    background-image: url(../img/bg_footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #424242;
+}
+
+.contact {
+    margin: 0px auto;
+    max-width: 1170px;
+    text-align: center;
+    padding-bottom: 137px;
+}
+
+.contacts-title-text {
+    padding-top: 80px;
+    font-size: 32px;
+    line-height: 72px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: open_sanssemibold, Arial, Arial, Helvetica, sans-serif;
+}
+
+.contact-title-decoration-text {
+    color: #f7600e;
+}
+
+.more-information-contact {
+    width: 50%;
+    margin: 0px auto;
+    margin-bottom: 70px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #ffffff;
+    font-family: open_sansregular, Arial, Arial, Helvetica, sans-serif;
+}
+
+.items-contacts {
+    width: 100%;
+}
+
+.email {
+    display: inline-block;
+    float: left;
+    width: 49%;
+    padding-top: 13px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+}
+
+.subject {
+    display: inline-block;
+    float: right;
+    width: 49%;
+    padding-top: 13px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+}
+
+.area-contact {
+    width: 100%;
+    min-height: 197px;
+    margin-top: 18px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    font-size: 16px;
+    line-height: 35px;
+    border-radius: 10px;
+    resize: none;
+    font-family: latoregular, Arial, Arial, Helvetica, sans-serif;
+}
+
+.contacts-input {
+    width: 100%;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border: 1px solid #cecece;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 16px;
+    line-height: 35px;
+    color: #3b434c;
+    font-family: open_sansregular, Arial, Arial, Helvetica, sans-serif;
+}
+
+.contact-item {
+    display: inline-block;
+    width: 18%;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.form-contact {
+    display: block;
+    width: 71%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.social-contacts-items {
+    display: inline-block;
+    float: right;
+    width: 45%;
+}
+
+.button-style-hire-us {
+    width: 25%;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 8px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #f7600e;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-family: open_sanssemibold, Arial, Arial, Helvetica, sans-serif;
+}
+
+.soc-all {
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.button-style-hire-us:hover {
+    background: -moz-linear-gradient(119deg, #F7600E 7%, #82401D 63%);
+    background: -webkit-linear-gradient(119deg, #F7600E 7%, #82401D 63%);
+    background: -o-linear-gradient(119deg, #F7600E 7%, #82401D 63%);
+    background: linear-gradient(119deg, #F7600E 7%, #82401D 63%);
+}
+
+.social-form-facebook {
+    display: block;
+    width: 43px;
+    height: 43px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -70px -430px;
+    background-repeat: no-repeat;
+}
+
+.social-form-facebook:hover {
+    -webkit-box-shadow: 0px 0px 40px 7px #205B9F;
+    -moz-box-shadow: 0px 0px 40px 7px #205B9F;
+    -o-box-shadow: 0px 0px 40px 7px #205B9F;
+    box-shadow: 0px 0px 40px 7px #205B9F;
+}
+
+.social-form-twitter {
+    display: block;
+    width: 43px;
+    height: 43px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -253px -430px;
+    background-repeat: no-repeat;
+}
+
+.social-form-twitter:hover {
+    -webkit-box-shadow: 0px 0px 40px 7px #00ACE3;
+    -moz-box-shadow: 0px 0px 40px 7px #00ACE3;
+    -o-box-shadow: 0px 0px 40px 7px #00ACE3;
+    box-shadow: 0px 0px 40px 7px #00ACE3;
+}
+
+.social-form-google {
+    display: block;
+    width: 43px;
+    height: 43px;
+    background-position: -436px -430px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-repeat: no-repeat;
+}
+
+.social-form-google:hover {
+    -webkit-box-shadow: 0px 0px 40px 7px #FF3921;
+    -moz-box-shadow: 0px 0px 40px 7px #FF3921;
+    -o-box-shadow: 0px 0px 40px 7px #FF3921;
+    box-shadow: 0px 0px 40px 7px #FF3921;
+}
+
+.social-form-eu-soc-one {
+    display: block;
+    width: 43px;
+    height: 43px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -619px -430px;
+    background-repeat: no-repeat;
+}
+
+.social-form-eu-soc-one:hover {
+    -o-box-shadow: 0px 0px 40px 7px #FF72A5;
+    -webkit-box-shadow: 0px 0px 40px 7px #FF72A5;
+    -moz-box-shadow: 0px 0px 40px 7px #FF72A5;
+    box-shadow: 0px 0px 40px 7px #FF72A5;
+}
+
+.social-form-eu-soc-two {
+    display: block;
+    width: 43px;
+    height: 43px;
+    background-image: url(../img/sprite_tanatos.png);
+    background-position: -802px -430px;
+    background-repeat: no-repeat;
+
+}
+
+.social-form-eu-soc-two:hover {
+    -webkit-box-shadow: 0px 0px 40px 7px #009BD5;
+    -moz-box-shadow: 0px 0px 40px 7px #009BD5;
+    -o-box-shadow: 0px 0px 40px 7px #009BD5;
+    box-shadow: 0px 0px 40px 7px #009BD5;
+}
+
+/*============================================================================================
+			END CONTACTS			END CONTACTS			END CONTACTS
+  ============================================================================================*/
+
+/*============================================================================================
+					 FOOTER				FOOTER				FOOTER
+  ============================================================================================*/
+
+.container-footer {
+    background-color: rgb(59, 67, 76);
+}
+
+.footer {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.design-title-studio {
+    display: inline-block;
+    width: 40%;
+    float: left;
+    padding-top: 35px;
+    padding-right: 0px;
+    padding-bottom: 40px;
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: open_sansregular, Arial, Arial, Helvetica, sans-serif;
+}
+
+.symu-text-title {
+    display: inline-block;
+    float: right;
+    width: 24%;
+    padding-top: 35px;
+    padding-right: 0px;
+    padding-bottom: 40px;
+    font-size: 16px;
+    line-height: 32px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: open_sansregular, Arial, Arial, Helvetica, sans-serif;
+}
+
+.dot {
+    color: #d42a44;
+}
+
+/*================================================================================================
+					END FOOTER				END FOOTER				END FOOTER
+ ==============================================================================================/*
+
+
+
+
+/*======================================================================
+				Media				Media			Media
+  =======================================================================*/
+
+@media screen and (max-width: 930px) {
+    .item-portfolio-sheet {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    .logotype {
+        text-align-last: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-box {
+        text-align: center;
+        text-align-last: center;
+        width: 100%;
+    }
+
+    .radius-for-button-slider {
+        width: 90%
+    }
+
+    .item-service {
+        width: 90%;
+    }
+
+    .font-family-for-text {
+        text-align: center;
+        width: 90%;
+    }
+
+    .font-family-for-button {
+        text-align: center;
+        width: 60%;
+        padding: 0px;
+    }
+
+    .paragraph-dec-for-our-work {
+        width: 100%
+    }
+
+    .title-prof {
+        width: 70%;
+    }
+
+    .item-portfolio-sheet {
+        display: table;
+        margin: 0 auto;
+        width: 95%;
+        padding: 15px 0px 15px 0px;
+    }
+
+    .show-more {
+        width: 80%
+    }
+
+    .avatar-img-our-people {
+        width: 100%
+    }
+
+    .style-for-news-letter {
+        font-size: 12px;
+    }
+
+    .professionals-text {
+        width: 95%;
+    }
+
+    .skills-employees {
+        width: 95%;
+    }
+
+    .prev {
+        top: 85%;
+    }
+
+    .next {
+        top: 85%;
+    }
+
+    .images-works {
+        height: auto;
+        width: 100%;
+    }
+
+    .photo-team {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .more-information-contact {
+        width: 95%;
+    }
+
+    .contact-input {
+        width: 100%;
+    }
+
+    .button-style-hire-us {
+        width: 100%;
+    }
+
+    .social-contacts-items {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .contact-item {
+        width: 18%;
+    }
+
+    .design-title-studio {
+        text-align: center;
+        width: 100%;
+    }
+
+    .symu-text-title {
+        width: 100%;
+    }
+
+    .symu-text-title {
+        text-align: center;
+        padding: 0px 0px 20px 0px;
+    }
+
+    .global-form {
+        width: 95%;
+    }
+
+    .img-our-work {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+/*============================
+			Clerfix
+  ============================*/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*==========================================
+				Print styles
+  ==========================================*/
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+                                       http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+}

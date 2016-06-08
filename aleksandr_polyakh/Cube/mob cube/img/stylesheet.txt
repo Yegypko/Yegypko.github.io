@@ -1,0 +1,35 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-arrow {
+    width: 41px;
+    height: 23px;
+    background-position: -100px -100px;
+}
+
+.sprite-arrow-top {
+    width: 70px;
+    height: 40px;
+    background-position: -341px -100px;
+}
+
+.sprite-brand-icon {
+    width: 58px;
+    height: 110px;
+    background-position: -100px -340px;
+}
+
+.sprite-car {
+    width: 302px;
+    height: 257px;
+    background-position: -611px -100px;
+}
+
+.sprite-img-menu {
+    width: 12px;
+    height: 51px;
+    background-position: -358px -557px;
+}
