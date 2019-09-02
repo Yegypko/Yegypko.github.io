@@ -1,0 +1,386 @@
+/*
+* Last edit: <DATE> by <NAME>;
+* Version 1.0.0
+*/
+
+body{
+	font-family: 'Poppins', sans-serif;
+	background-image: url('../image/bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+h1{
+	font-size: 32px;
+	text-align: center;
+	line-height: 34px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+h2{
+	font-size: 26px;
+	text-align: center;
+	line-height: 22px;
+}
+h3{
+	font-size: 22px;
+	text-align: center;
+	line-height: 22px;
+}
+p{
+	font-size: 14px;
+	line-height: 18px;
+	margin-top: 22px;
+	margin-bottom: 22px;
+	text-align: center;
+}
+
+/*------form input-------*/
+form input, form select{
+	width: 228px;
+	height: 36px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	margin-bottom: 12px;
+	border: 1px solid #a8a8a8;
+	border-radius: 3px;
+	float: left;
+	font-family: 'Poppins', sans-serif;
+	font-size: 13px;
+	color: #a8a8a8;
+}
+form select{
+	height: 38px;
+	width: 240px;
+}
+.days, .time{
+	width: 114px;
+	padding-left: 10px;
+}
+.time{
+	margin-left: 12px;
+}
+form button{
+	width: 240px;
+	height: 38px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 13px;
+	color: white;
+	background-color: #ff8251;
+	cursor: pointer;
+	border: 0px;
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+form button:hover{
+	background-color: black;
+}
+
+/*---for effect lightbox-- */
+html, body, .rule-1564dbc1-1f35-4ba8-9291-f0f7d0ad864c{
+	height: 100%;
+}
+
+/*------form input-------*/
+
+.bmnetContainer{
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.animateTop, .animateIntn, .animateClln, .animateClbck{
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
+}
+
+/*-----------TOPBAR------------
+-------------start-------------*/
+.animateTop{
+	align-self: stretch;
+	justify-content: center;
+	background-color: white;
+	position: relative;
+}
+.wrapperTop{
+	display: flex;
+}
+.telephon{
+	display: flex;
+}
+.telephon img{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.animateTop p{
+	font-size: 22px;
+	line-height: 24px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+.animateTop img:last-child{
+	padding-top: 10px;
+	padding-left: 10px;
+	height: 17px;
+	width: 17px;
+	align-self: flex-start;
+	position: absolute;
+	left: 97%;
+
+}
+/*-----------TOPBAR------------
+-------------finish-------------*/
+
+
+
+/*-----------INTENT------------
+-------------start-------------*/
+.intentPosition {
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.6); 
+	cursor: pointer;
+}
+.animateIntn{
+	flex-direction: column;
+	align-self: center;
+	max-width: 600px;
+	max-height: 400px;
+	background-color: white;
+	position: relative;
+	justify-content: flex-end;
+}
+.wrapper-form {
+	display: flex;
+	width: 246px;
+	float: left;
+	padding-left: 100px;
+	align-self: flex-start;
+}
+.animateIntn img:first-child{
+	padding-top: 10px;
+	padding-right: 10px;
+	height: 20px;
+	width: 20px;
+	align-self:flex-end;
+}
+.animateIntn img:last-child{
+	padding-bottom: 33px;
+	padding-right: 37px;
+	max-width: 100%;
+	height: auto;
+	align-self: flex-end;
+	position: absolute;
+
+}
+.animateIntn h1{
+	padding-right: 160px;
+}
+.animateIntn p{
+	padding-right: 135px;
+}
+/*-----------INTENT------------
+-------------finish-------------*/
+
+
+
+/*-----------CALLIN------------
+-------------start-------------*/
+.callinPosition{
+	justify-content: center;
+}
+.animateClln{
+	align-self: flex-end;
+	flex-direction: column;
+	background-color: white;
+	background-image: url('../image/gallaryCallcenter.jpg');
+	width: 350px;
+	height: 180px;
+	margin: 10px;
+	margin-bottom: 55px;
+}
+.animateClln img{
+	padding-top: 10px;
+	padding-right: 10px;
+	height: 17px;
+	width: 17px;
+	align-self: flex-end;
+}
+.animateClln h3, .animateClln p, .animateClln h2{
+	align-self: flex-start;
+	padding-left: 20px;
+}
+.animateClln h3{
+	margin-top: 18px;
+	margin-bottom: 0px;
+}
+.animateClln p{
+
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+.animateClln h2{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+/*-----------CALLIN------------
+-------------finish-------------*/
+
+
+
+/*-----------CALLBACK------------
+-------------start-------------*/
+.callbackPosition{
+	justify-content: flex-end;
+}
+.animateClbck{
+	align-self: flex-end;
+	flex-direction: column;
+	width: 350px;
+	height: 300px;
+	margin: 10px;
+	background-color: white;
+}
+.animateClbck img{
+	padding-top: 10px;
+	padding-right: 10px;
+	height: 17px;
+	width: 17px;
+	align-self: flex-end;
+}
+.animateClbck form{
+	display: flex;
+	flex-direction: column;
+
+}
+.animateClbck h2, .animateClbck p, .animateClbck form{
+	align-self: center;
+}
+.animateClbck h2{
+	line-height: 30px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.animateClbck p{
+	margin:14px;
+	font-size: 12px;
+}
+/*-----------CALLBACK------------
+-------------finish-------------*/
+
+
+
+
+/*------------MEDIA--------------
+--------------start--------------*/
+
+@media(max-width: 1200px){
+	.animateClbck, .animateClln{
+	align-self: center;
+}
+	.animateClln{
+		margin-bottom: 10px;
+		margin-top: 20px;
+	}
+}
+
+@media(max-width: 768px){
+	.wrapperTop{
+		flex-direction: column;
+
+	}
+	.telephon{
+		justify-content: center;
+	}
+	.animateTop p{
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	.animateTop img:last-child{
+		align-self: flex-start;
+		left: 95%;
+	}
+}
+
+@media(max-width: 600px){
+	.wrapper-form{
+		padding-left: 40px;
+	}
+	.animateTop img:last-child{
+		left: 94%;
+	}
+	.animateTop p {
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	.animateIntn img:last-child{
+		max-width: 30%;
+	}
+}
+
+@media(max-width: 480px){
+	p{
+		margin-top: 14px;
+		margin-bottom: 14px;
+
+	}
+	h1{
+		font-size: 28px;
+		line-height: 28px;
+	}
+	.animateIntn{
+		margin-top: 20px;
+	}
+	.animateIntn img:last-child{
+		display: none;
+	}
+	.wrapper-form {
+	align-self: center;
+	padding-left: 0px;
+	}
+	form input{
+		margin-bottom: 7px
+	}
+	.animateIntn p{
+		padding-right: 0px;
+	}
+	.animateIntn h1{
+		padding-right: 20px;
+	}
+	form button{
+		margin-bottom: 15px;
+	}
+	.animateTop p{
+		font-size: 18px;
+		font-height: 18px;
+	}
+	.animateTop img:last-child{
+		left: 92%;
+	}
+	.telephon img{
+		align-self: flex-end;
+		padding-bottom: 10px;
+	}
+}
+
+@media(max-width: 320px){
+	.telephon img{
+		height: 18px;
+		width: 18px;
+		padding-bottom: 6px;
+	}
+	.animateTop p{
+		font-size: 16px;
+		font-height: 16px;
+		margin-bottom: 0px;
+	}
+	.animateTop img:last-child{
+		left: 90%;
+	}
+	.animateClbck, .animateClln{
+		width: 100%;
+		height: auto;
+	}
+}
+
+/*------------MEDIA--------------
+--------------finish--------------
