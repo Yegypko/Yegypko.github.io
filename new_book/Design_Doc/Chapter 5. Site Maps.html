@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html -->
+<html class=" js flexbox flexboxlegacy no-touch websqldatabase indexeddb history csscolumns csstransforms localstorage sessionstorage no-applicationcache svg inlinesvg zoom" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#" itemscope="" itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/" data-offline-url="/" data-url="/library/view/communicating-design-developing/9780131385399/ch05.html" data-csrf-cookie="csrfsafari" data-user-id="11004957" data-user-uuid="9c5599ca-6951-4904-81d0-732bb961926b" data-username="visualcommcomua" data-account-type="Trial" data-activated-trial-date="03/21/2021" data-archive="9780131385399" data-publishers="New Riders" data-htmlfile-name="ch05.html" data-epub-title="Communicating Design: Developing Web Site Documentation for Design and Planning, Second Edition" data-debug="0" data-testing="0" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="author" content="O&#39;Reilly Media"><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"><meta name="HandheldFriendly" content="True"><meta name="MobileOptimized" content="320"><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9780131385399"><link rel="shortcut icon" href="https://www.oreilly.com/favicon.ico"><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"><meta property="twitter:account_id" content="4503599627559754"><link rel="shortcut icon" href="https://learning.oreilly.com/favicon.ico" type="image/x-icon"><link href="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/css" rel="stylesheet" type="text/css"><title>Chapter 5. Site Maps - Communicating Design: Developing Web Site Documentation for Design and Planning, Second Edition</title><link rel="stylesheet" href="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/output.5bdb4fcb2aad.css" type="text/css"><link rel="stylesheet" type="text/css" href="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/annotator.e3b0c44298fc.css"><link rel="stylesheet" href="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/font-awesome.min.css"><style type="text/css" title="ibis-book">
+    #sbo-rt-content div{margin-top:5pt;margin-bottom:5pt;margin-right:15pt}#sbo-rt-content .cover{margin-top:2pt;margin-bottom:2pt;text-align:center}#sbo-rt-content h1{page-break-before:right;margin-top:5pt;text-align:center;margin-bottom:12pt;font-weight:bold}#sbo-rt-content .subtitle{font-size:large;margin-top:30pt;margin-bottom:55pt;font-weight:bold;text-align:center}#sbo-rt-content .publisher{text-align:center;margin-top:6pt;margin-bottom:4pt}#sbo-rt-content .copyrightpage{page-break-before:right;margin-top:5pt;margin-bottom:5pt;text-indent:.002pt}#sbo-rt-content .copyright{margin-top:5pt;margin-bottom:5pt;text-indent:.002pt}#sbo-rt-content .dedication{page-break-before:right;margin-top:48pt;margin-bottom:5pt;text-align:center}#sbo-rt-content h2{page-break-before:right;margin-top:7pt;margin-bottom:25pt;font-weight:bold}#sbo-rt-content h3{margin-top:9pt;margin-bottom:8pt;font-weight:bold}#sbo-rt-content h4{margin-top:9pt;margin-bottom:6pt;font-weight:bold}#sbo-rt-content h5{margin-top:9pt;margin-bottom:6pt;font-weight:bold}#sbo-rt-content h6{margin-top:8pt;margin-bottom:6pt;font-weight:bold}#sbo-rt-content p{margin-top:5pt;margin-bottom:4pt;text-indent:.002pt}#sbo-rt-content .continued{margin-top:5pt;margin-bottom:4pt;text-indent:.002pt}#sbo-rt-content .author{text-align:center;font-weight:bold;margin-top:66pt;margin-bottom:50pt}#sbo-rt-content .bolditalic{font-weight:bold;font-style:italic}#sbo-rt-content .toc-part{margin-top:4pt;margin-bottom:5pt;font-weight:bold}#sbo-rt-content .toc-chapter{margin-top:5pt;margin-bottom:5pt;font-weight:bold}#sbo-rt-content em{font-style:italic}#sbo-rt-content .figure{margin-top:12pt;margin-bottom:5pt;text-align:center;font-weight:bold}#sbo-rt-content .figure-contents{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .figure-float{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .informalexample{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .itemizedlist{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .legalnotice{margin-top:8pt;margin-bottom:4pt}#sbo-rt-content .literallayout{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .mediaobject{margin-top:12pt;margin-bottom:12pt;text-align:center}#sbo-rt-content .tabimage{margin-top:12pt;margin-bottom:12pt;text-align:center}#sbo-rt-content .smaller{font-size:small}#sbo-rt-content .center{margin-top:50pt;margin-bottom:5pt;text-align:center}#sbo-rt-content .right{margin-top:5pt;margin-bottom:5pt;text-align:right}#sbo-rt-content .image{margin-top:5pt;margin-bottom:5pt;text-align:center}#sbo-rt-content .note{margin-top:6pt;margin-bottom:12pt;margin-left:36pt;margin-right:24pt;border:solid 1pt;padding:1pt 12pt 1pt 12pt}#sbo-rt-content .toc-preface{margin-top:4pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt;font-weight:bold}#sbo-rt-content .procedure{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .programlisting{font-family:"Courier New";font-size:small;margin-top:8pt;margin-bottom:8pt}#sbo-rt-content .programlisting1{font-family:"Courier New";font-size:small;margin-top:5pt;margin-bottom:4pt;margin-left:36pt}#sbo-rt-content code{font-size:x-small}#sbo-rt-content .toc-section{margin-top:4pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt}#sbo-rt-content .toc-index{margin-top:4pt;margin-bottom:4pt;font-weight:bold}#sbo-rt-content .toc-appendix{margin-top:4pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt}#sbo-rt-content .toc-appendix1{margin-top:20pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt}#sbo-rt-content .toc-glossary{margin-top:4pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt}#sbo-rt-content .toc-section1{margin-top:4pt;margin-bottom:4pt;margin-left:24pt;text-indent:24pt}#sbo-rt-content .toc-section2{margin-top:4pt;margin-bottom:4pt;margin-left:36pt;text-indent:36pt}#sbo-rt-content .sidebar{font-size:small;margin-top:5pt;margin-bottom:12pt;margin-left:15pt;border:solid 1pt;padding:1pt 12pt 1pt 12pt}#sbo-rt-content .sidebar1{font-size:small;margin-top:5pt;margin-bottom:12pt;margin-left:15pt;border:solid 1pt;padding:1pt 12pt 1pt 12pt;background-color:#e6e6e6}#sbo-rt-content .strong{font-weight:bold}#sbo-rt-content .italic{font-style:italic}#sbo-rt-content .table{margin-top:12pt;margin-bottom:5pt;text-align:center;font-weight:bold}#sbo-rt-content .table-contents{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .table-float{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .title{margin-top:12pt;margin-bottom:6pt;font-size:medium;font-weight:bold;text-align:center}#sbo-rt-content .title1{margin-top:12pt;margin-bottom:6pt;font-size:medium;font-weight:bold}#sbo-rt-content .titlepage{margin-top:3pt;margin-bottom:3pt}#sbo-rt-content .toc{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .blockquote{margin-top:12pt;margin-bottom:12pt;margin-left:24pt}#sbo-rt-content .attribution{margin-top:12pt;margin-bottom:12pt;margin-right:15pt;text-align:right}#sbo-rt-content .indexmain{margin-top:2pt;margin-bottom:2pt}#sbo-rt-content .indexsub{margin-top:2pt;margin-bottom:2pt;margin-left:15pt;text-indent:15pt}#sbo-rt-content .indexsubsub{margin-top:2pt;margin-bottom:2pt;margin-left:25pt;text-indent:25pt}#sbo-rt-content .indenthanging{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-12pt}#sbo-rt-content .indenthangingb{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-12pt}#sbo-rt-content .paraindent{margin-top:4pt;margin-bottom:4pt;margin-left:25pt}#sbo-rt-content .list{margin-top:4pt;margin-bottom:4pt;margin-left:30pt;text-indent:-8pt}#sbo-rt-content .indenthanding{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-8pt}#sbo-rt-content .indenthanding1{margin-top:4pt;margin-bottom:4pt;margin-left:48pt;text-indent:-8pt}#sbo-rt-content .indent{margin-top:4pt;margin-bottom:4pt;margin-left:36pt}#sbo-rt-content .underline{text-decoration:underline}#sbo-rt-content .legalnotice-title{font-size:medium;margin-top:5pt;margin-bottom:5pt}#sbo-rt-content .footnote{font-size:small;margin-top:5pt;margin-bottom:4pt;margin-left:20pt;text-indent:-8pt}#sbo-rt-content .creditline{font-size:small;margin-top:4pt;margin-bottom:8pt;text-align:center}#sbo-rt-content .caption{margin-top:4pt;margin-bottom:8pt;text-align:center}#sbo-rt-content .pd_red{color:#BD6B4C}#sbo-rt-content .pd_brown{color:#9E7E4C}#sbo-rt-content .pd_orange{color:#E78152}#sbo-rt-content .image1{margin-top:5pt;margin-bottom:5pt}#sbo-rt-content .bibliomixed{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-12pt}#sbo-rt-content .progimg{margin-top:5pt;margin-bottom:5pt}#sbo-rt-content .progimage{margin-top:5pt;margin-bottom:5pt}#sbo-rt-content .progimage1{margin-top:5pt;margin-bottom:5pt;margin-left:25pt}#sbo-rt-content .question{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-12pt}#sbo-rt-content .listimage{margin-top:12pt;margin-bottom:12pt;text-align:center}#sbo-rt-content .source{font-size:small;margin-top:12pt;margin-bottom:12pt;text-align:center}#sbo-rt-content .blockquote1{margin-top:15pt;margin-bottom:15pt;text-align:center;border:solid 1pt;padding:1pt 12pt 1pt 12pt;background-color:#E6E7E8}#sbo-rt-content .asa{margin-top:18pt;margin-bottom:4pt;text-indent:.002pt}#sbo-rt-content .note1{margin-top:6pt;margin-bottom:12pt;margin-left:36pt;margin-right:24pt}
+    </style><script type="text/javascript" async="" src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/cool-2.1.15.min.js.Без названия"></script><script type="text/javascript" async="" src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/ec.js.Без названия"></script><script type="text/javascript" async="" src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/analytics.js.Без названия"></script><script type="text/javascript" async="" src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/f.txt"></script><script type="text/javascript" async="" src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/js"></script><script crossorigin="anonymous" integrity="sha256-+LIVdo7S66HX09dkhZvbKz8NKAlkGOP3Z0kCUzr+MU8=" type="text/javascript" src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/appcues.main.11fd23733af68e25fa851da20bbd.Без названия" async=""></script><script async="" src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/gtm.js.Без названия"></script><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9780131385399/chapter/ch05.html",
+          "book_id": "9780131385399",
+          "chapter_uri": "ch05.html",
+          "position": 0,
+          "user_uuid": "9c5599ca-6951-4904-81d0-732bb961926b",
+          "next_chapter_uri": "/library/view/communicating-design-developing/9780131385399/ch06.html"
+        
+      },
+      title: "Communicating Design: Developing Web Site Documentation for Design and Planning, Second Edition",
+      author_list: "Dan M. Brown",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false
+    };
+    // ]]></script><script src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/modernizr.8e35451ddb64.js.Без названия"></script><script>
+    
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+      window.PRIVACY_CONTROL_SWITCH = true;
+
+      window.PUBLISHER_PAGES = true;
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "https://learning.oreilly.com/api/v2/search/select/",
+          "ENABLE_ONLINE_TRAINING": true
+        }
+      };
+  </script><link rel="canonical" href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html"><meta name="description" content=" Chapter 5. Site Maps A visual representation of the relationships between different pages on a web site. Also known as a structural model, taxonomy, hierarchy, navigation model, or site structure. ... "><meta property="og:title" content="Chapter 5. Site Maps"><meta itemprop="isPartOf" content="/library/view/communicating-design-developing/9780131385399/"><meta itemprop="name" content="Chapter 5. Site Maps"><meta property="og:url" itemprop="url" content="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html"><meta property="og:site_name" content="Safari"><meta property="og:image" itemprop="thumbnailUrl" content="https://learning.oreilly.com/library/cover/9780131385399/"><meta property="og:description" itemprop="description" content=" Chapter 5. Site Maps A visual representation of the relationships between different pages on a web site. Also known as a structural model, taxonomy, hierarchy, navigation model, or site structure. ... "><meta itemprop="inLanguage" content="en"><meta itemprop="publisher" content="New Riders"><meta property="og:type" content="book"><meta property="og:book:isbn" itemprop="isbn" content="9780131385399"><meta property="og:book:author" itemprop="author" content="Dan M. Brown"><meta property="og:book:tag" itemprop="about" content="Design"><meta property="og:book:tag" itemprop="about" content="Digital Media"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@OReillyMedia"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: &lt;%= font_size %&gt; !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: &lt;%= font_family %&gt; !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: &lt;%= column_width %&gt;% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; url=/library/no-js/" /></noscript><script>
+    var dataLayer = window.dataLayer || [];
+
+    
+      window.medalliaVsgUserIdentifier = '9c5599ca-6951-4904-81d0-732bb961926b';
+      dataLayer.push({userIdentifier: '9c5599ca-6951-4904-81d0-732bb961926b'});
+      dataLayer.push({loggedIn: 'yes'});
+
+      
+        window.medalliaVsgAccountIdentifier = '40a64ffb-0742-4e66-9d82-1192a9b6da49';
+        
+
+        window.medalliaVsgIsIndividual = true;
+        
+          
+          dataLayer.push({learningAccountType: 'free trial'});
+          
+        
+
+        
+      
+    
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+    (function () {
+      var VERSION = 'V1.1';
+      var AUTHOR = 'Awwad';
+      if (!window.GtmHelper)
+        window.GtmHelper = function () {
+          var instance = this;
+          var loc = document.location;
+          this.version = VERSION;
+          this.author = AUTHOR;
+          this.readCookie = function (name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+          };
+          this.createCookie = function (name, value, days, cookieDomain) {
+            var domain = "";
+            var expires = "";
+
+            if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + Math.ceil(days * 24 * 60 * 60 * 1000));
+              var expires = " expires=" + date.toGMTString() + ";";
+            }
+
+            if (typeof (cookieDomain) != 'undefined')
+              domain = " domain=" + cookieDomain + "; ";
+
+            document.cookie = name + "=" + value + ";" + expires + domain + "path=/";
+          };
+
+          this.isDuplicated = function (currentTransactionId) {
+            // the previous transaction id:
+            var previousTransIdValue = this.readCookie("previousTransId");
+
+            if (currentTransactionId === previousTransIdValue) {
+              return true; // Duplication
+            } else {
+              return false;
+            }
+          };
+        }
+    })()
+  </script><script defer="" src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/vendor.d0fe30932d64.js.Без названия"></script><script defer="" src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/reader.3833317c1bb0.js.Без названия"></script><script async="" src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/MathJax.js.Без названия"></script><style id="annotator-dynamic-style">.annotator-adder, .annotator-outer, .annotator-notice {
+  z-index: 100019;
+}
+.annotator-filter {
+  z-index: 100009;
+}</style><iframe src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource.html"></iframe><iframe src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource(2).html"></iframe><iframe src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource(3).html"></iframe><link rel="stylesheet" type="text/css" integrity="sha256-q9sKb2HpA5fJjN1cK9LjLaEXff5ix81Rv1Y3xJFptPE=" crossorigin="anonymous" href="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/container.11fd23733af68e25fa851da20bbd639c02ec4bd3.css"><iframe src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource(4).html"></iframe><script src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/f(1).txt"></script><style type="text/css" id="kampyleStyle">.noOutline{outline: none !important;}.wcagOutline:focus{outline: 1px dashed #595959 !important;outline-offset: 2px !important;transition: none !important;}</style></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts subscribe-panel library">
+
+    
+  <noscript> 
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+  
+
+
+<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li><a href="https://learning.oreilly.com/home/" class="l0 nav-icn"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.738 14H9.254v-3.676a.617.617 0 0 0-.621-.613H7.39a.617.617 0 0 0-.62.613V14H4.284a.617.617 0 0 1-.622-.613V10.22c0-.327.132-.64.367-.87l3.547-3.493a.627.627 0 0 1 .875 0l3.54 3.499c.234.229.366.54.367.864v3.167a.617.617 0 0 1-.62.613zM7.57 2.181a.625.625 0 0 1 .882 0l5.77 5.692-.93.92-5.28-5.209-5.28 5.208-.932-.919 5.77-5.692z"></path></svg><span>Home</span></a></li><li class="search"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"></path></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"></path></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#" class="l1 nav-icn "><!--?xml version="1.0" encoding="UTF-8"?--><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M8,8 C6.34321755,8 5.00013,6.65691245 5.00013,5.00013 C5.00013,3.34334755 6.34321755,2.00026001 8,2.00026001 C9.65678245,2.00026001 10.99987,3.34334755 10.99987,5.00013 C10.99987,6.65691245 9.65678245,8 8,8 Z M2.33024571,11.3523547 L2.33774538,11.3523547 C3.7622187,9.70968996 5.82947484,8.76608166 8.00374984,8.76608166 C10.1780248,8.76608166 12.245281,9.70968996 13.6697543,11.3523547 C13.8892083,11.6177474 14.0062813,11.9530021 13.99974,12.2973138 L13.99974,13.99974 L2.00026001,13.99974 L2.00026001,12.2973138 C1.99371867,11.9530021 2.11079172,11.6177474 2.33024571,11.3523547 Z" id="path-1"></path></svg><span>Your O'Reilly</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/profile/" class="l2 nav-icn"><span>Profile</span></a></li><li><a href="https://learning.oreilly.com/history/" class="l2 nav-icn"><span>History</span></a></li><li><a href="https://learning.oreilly.com/playlists/" class="l2 nav-icn"><span>Playlists</span></a></li><li><a href="https://learning.oreilly.com/u/9c5599ca-6951-4904-81d0-732bb961926b/" class="l2 nav-icn"><span>Highlights</span></a></li></ul></li><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#" class="l1 nav-icn "><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.564 2.263l2.172 2.174c.17.168.264.397.264.636V11a.6.6 0 0 1-.6.6h-.6V6.2h-6V2.6a.6.6 0 0 1 .6-.6h3.527c.239 0 .468.095.637.263zM2.6 14a.6.6 0 0 1-.6-.6V6.8a.6.6 0 0 1 .6-.6h1.903a1.2 1.2 0 0 1 .849.352L6.2 7.4H11a.6.6 0 0 1 .6.6v5.4a.6.6 0 0 1-.6.6H2.6zM11 5h1.8L11 3.2V5z"></path></svg><span>Featured</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/featured/navigating-21st-century/" class="l2 nav-icn"><span>Navigating Change</span></a></li><li><a href="https://learning.oreilly.com/recommendations/" class="l2 nav-icn"><span>Recommended</span></a></li></ul></li><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#" class="l1 nav-icn "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>queue icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 29.2C25.4 29.2 25.8 29.1 26.1 28.9L48.7 16.8C49.5 16.4 50 15.5 50 14.6 50 13.7 49.5 12.8 48.7 12.4L26.1 0.3C25.4-0.1 24.6-0.1 23.9 0.3L1.3 12.4C0.5 12.8 0 13.7 0 14.6 0 15.5 0.5 16.4 1.3 16.8L23.9 28.9C24.2 29.1 24.6 29.2 25 29.2ZM7.3 14.6L25 5.2 42.7 14.6 25 24 7.3 14.6ZM48.7 22.4L47.7 21.9 25 34.2 2.3 21.9 1.3 22.4C0.5 22.9 0 23.7 0 24.7 0 25.6 0.5 26.5 1.3 26.9L23.9 39.3C24.2 39.5 24.6 39.6 25 39.6 25.4 39.6 25.8 39.5 26.1 39.3L48.7 26.9C49.5 26.5 50 25.6 50 24.7 50 23.7 49.5 22.9 48.7 22.4ZM48.7 32.8L47.7 32.3 25 44.6 2.3 32.3 1.3 32.8C0.5 33.3 0 34.1 0 35.1 0 36 0.5 36.9 1.3 37.3L23.9 49.7C24.2 49.9 24.6 50 25 50 25.4 50 25.8 49.9 26.1 49.7L48.7 37.3C49.5 36.9 50 36 50 35.1 50 34.1 49.5 33.3 48.7 32.8Z"></path></g></svg><span>Explore</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/topics/" class="l2 nav-icn"><span>All Topics</span></a></li><li><a href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;sort=publication_date&amp;facet_json=true&amp;page=0" class="l2 nav-icn"><span>Early Releases</span></a></li><li><a href="https://learning.oreilly.com/playlists/discover/" class="l2 nav-icn"><span>Shared Playlists</span></a></li><li><a href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;formats=case%20study&amp;formats=learning%20path&amp;formats=live%20online%20training&amp;formats=notebook&amp;formats=oriole&amp;formats=video&amp;sort=popularity&amp;facet_json=true&amp;page=0&amp;collection_type=expert" class="l2 nav-icn"><span>Most Popular Titles</span></a></li><li><a href="https://learning.oreilly.com/resource-centers/" class="l2 nav-icn"><span>Resource Centers</span></a></li></ul></li><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#" class="l1 nav-icn "><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12.8 3.2A1.2 1.2 0 0 1 14 4.4v8.4a1.2 1.2 0 0 1-1.2 1.2H3.2A1.2 1.2 0 0 1 2 12.8V4.4a1.2 1.2 0 0 1 1.2-1.2h1.2V2h1.2v1.2h4.8V2h1.2v1.2h1.2zm-9.6 9.6h9.6V6.2H3.2v6.6zM8 9.5a1.35 1.35 0 1 1 0-2.7 1.35 1.35 0 0 1 0 2.7zm2.7 2.148v.552H5.3v-.552c0-.321.124-.634.355-.858a3.358 3.358 0 0 1 4.69 0c.23.224.355.537.355.858z"></path></svg><span>Live Events</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/attend/" class="l2 nav-icn"><span>All Events</span></a></li><li><a href="https://learning.oreilly.com/featured/architectural-katas/" class="l2 nav-icn"><span>Architectural Katas</span></a></li><li><a href="https://learning.oreilly.com/featured/ai" class="l2 nav-icn"><span>AI &amp; ML</span></a></li><li><a href="https://learning.oreilly.com/featured/strata/" class="l2 nav-icn"><span>Data Sci &amp; Eng</span></a></li><li><a href="https://learning.oreilly.com/featured/oscon/" class="l2 nav-icn"><span>Programming</span></a></li><li><a href="https://learning.oreilly.com/featured/infrastructure-ops/" class="l2 nav-icn"><span>Infra &amp; Ops</span></a></li><li><a href="https://learning.oreilly.com/featured/software-architecture/" class="l2 nav-icn"><span>Software Arch</span></a></li></ul></li><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#" class="l1 nav-icn "><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.6467109,4.35328907 L14.7964612,7.51003884 C15.0678463,7.78304342 15.0678463,8.22395603 14.7964612,8.49696061 L11.6467109,11.6467109 L10.6597892,10.6597892 L13.3055794,8 L10.6597892,5.34021084 L11.6467109,4.35328907 Z M4.35328907,11.6467109 L1.20353875,8.48996116 C0.932153749,8.21695658 0.932153749,7.77604397 1.20353875,7.50303939 L4.35328907,4.35328907 L5.34021084,5.34021084 L2.69442057,8 L5.34021084,10.6597892 L4.35328907,11.6467109 Z M5.84417089,11.4997226 L8.67194674,4.50027742 L10.1838269,4.50027742 L7.35605105,11.4997226 L5.84417089,11.4997226 Z" id="Mask"></path></svg><span>Interact</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/scenarios/?classification=content-scenario" class="l2 nav-icn"><span>Scenarios</span></a></li><li><a href="https://learning.oreilly.com/scenarios/?classification=sandbox-scenario" class="l2 nav-icn"><span>Sandboxes</span></a></li><li><a href="https://learning.oreilly.com/interactive/?classification=jupyter-notebook" class="l2 nav-icn"><span>Jupyter Notebooks</span></a></li></ul></li><li><a href="https://learning.oreilly.com/answers/" class="l1 nav-icn "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M2.31032699,3.75609006 C4.65421571,1.41371359 8.45302454,1.41472092 10.7955702,3.75860838 C13.1381158,6.10249583 13.1369405,9.90130261 10.7930518,12.243847 C8.44916311,14.5863913 4.65018639,14.5852161 2.30780867,12.2413286 C-0.0346204845,9.89749489 -0.0334929936,6.09853298 2.31032699,3.75609006 Z M8.8198605,4.98016308 C7.34193969,3.86924672 5.23410194,3.98609692 3.88914868,5.33104946 C3.12814393,6.09032122 2.72818176,7.13880077 2.79015179,8.21201133 C2.79115912,8.23064692 2.79233434,8.24928252 2.79350956,8.26791811 L2.79350956,8.26791811 C2.83179539,8.8307976 2.9944077,9.37404287 3.26947292,9.86201677 L3.26947292,9.86201677 L2.77621706,11.7027432 C2.7699968,11.7259241 2.77662063,11.7506624 2.79359185,11.7676337 C2.8105631,11.7846049 2.83530144,11.7912287 2.85848233,11.7850085 L2.85848233,11.7850085 L4.69400524,11.2922565 C5.26306363,11.6167344 5.90703177,11.786885 6.56209849,11.7858479 C8.64827865,11.7858479 10.3395879,10.094542 10.3395879,8.00836292 C10.3405204,6.84135608 9.80105674,5.73967784 8.87862141,5.02482134 L8.87862141,5.02482134 L8.82825492,4.98654283 Z M13.7933062,2 C14.7073496,2.00009863 15.4482759,2.74110484 15.4482759,3.65514822 C15.4482759,4.32460943 15.0449926,4.92814782 14.4264842,5.18432286 C13.8079757,5.44049789 13.096053,5.29885769 12.6226979,4.82545158 C12.1493429,4.35204547 12.0077795,3.64010743 12.2640213,3.02162665 C12.5202631,2.40314587 13.123845,1.99992776 13.7933062,2 Z"></path></svg><span>Answers</span></a></li><li><a href="https://learning.oreilly.com/certifications/" class="l1 nav-icn "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M12.912 9.18L14 8.014l-1.088-1.18a.304.304 0 01-.075-.268L13.195 5l-1.535-.463a.313.313 0 01-.194-.194l-.462-1.537-1.565.358c-.09.03-.194 0-.269-.074L8.007 2 6.845 3.09a.303.303 0 01-.269.074l-1.565-.358-.462 1.537a.313.313 0 01-.194.194L2.82 5l.358 1.567a.26.26 0 01-.075.269L2 8.015l1.088 1.164c.075.075.09.18.075.269l-.358 1.567 1.535.463c.09.03.164.104.194.194l.462 1.537 1.565-.358c.015 0 .045-.015.075-.015.075 0 .15.03.209.074L8.007 14l1.163-1.09a.303.303 0 01.269-.074l1.565.358.462-1.537a.313.313 0 01.194-.194L13.195 11l-.358-1.567a.338.338 0 01.075-.254zm-6.046 1.37L4.41 8.26l1.16-1.244 1.767 1.649L10.4 5.6l1.202 1.202-4.242 4.243-.495-.495z"></path></svg><span>Certifications</span></a></li><li><a href="https://learning.oreilly.com/preferences/" class="l1 nav-icn "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"></path></g></svg><span>Settings</span></a></li><li><a href="https://learning.oreilly.com/public/support/" class="l1 nav-icn "><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M7.363 6.656a2.692 2.692 0 0 1-2.681-2.703c0-1.493 1.2-2.703 2.681-2.703a2.692 2.692 0 0 1 2.682 2.703c0 1.493-1.2 2.703-2.682 2.703zm4.023 2.027c-1.852 0-3.352 1.513-3.352 3.379H2v-1.534c-.006-.31.099-.612.295-.852a6.666 6.666 0 0 1 9.09-.993zm-.543.676h1.12v.304c.003.284.16.543.408.676a.766.766 0 0 0 .77 0l.303-.176.556.966-.302.176a.772.772 0 0 0-.362.676v.08a.772.772 0 0 0 .362.677l.302.21-.556.965-.302-.175a.766.766 0 0 0-.771 0 .778.778 0 0 0-.409.675v.352h-1.106v-.372a.778.778 0 0 0-.409-.676.766.766 0 0 0-.77 0l-.303.176-.556-.912.302-.176a.772.772 0 0 0 .362-.676v-.04-.04a.772.772 0 0 0-.362-.676l-.302-.176.556-.966.289.155a.766.766 0 0 0 .77 0 .778.778 0 0 0 .41-.676V9.36zm1.562 2.703c0-.271-.108-.531-.3-.722a1.001 1.001 0 0 0-.72-.292 1.01 1.01 0 0 0-.992 1.023 1.01 1.01 0 0 0 1.01 1.004 1.01 1.01 0 0 0 1.002-1.013z"></path></svg><span>Support</span></a></li><li><a href="https://get.oreilly.com/email-signup.html" class="l1 nav-icn " target="&quot;_blank&quot;"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.564 2.263l2.172 2.174c.17.168.264.397.264.636V11a.6.6 0 0 1-.6.6h-.6V6.2h-6V2.6a.6.6 0 0 1 .6-.6h3.527c.239 0 .468.095.637.263zM2.6 14a.6.6 0 0 1-.6-.6V6.8a.6.6 0 0 1 .6-.6h1.903a1.2 1.2 0 0 1 .849.352L6.2 7.4H11a.6.6 0 0 1 .6.6v5.4a.6.6 0 0 1-.6.6H2.6zM11 5h1.8L11 3.2V5z"></path></svg><span>Newsletters</span></a></li><li><a href="https://learning.oreilly.com/accounts/logout/" class="l1 nav-icn "><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M2.613 12.63A.607.607 0 0 1 2 12.03V3.602C2 3.269 2.274 3 2.613 3h5.515v1.204H3.226v7.223h4.902v1.203H2.613zM5.677 9.02V6.611h4.903V4.926a.301.301 0 0 1 .19-.274.31.31 0 0 1 .33.063l2.722 2.673a.594.594 0 0 1 0 .849L11.1 10.909a.31.31 0 0 1-.331.063.301.301 0 0 1-.19-.274V9.02H5.677z"></path></svg><span>Sign Out</span></a></li></ul></div></li></ul></nav></header>
+
+
+
+      </div>
+      <div id="container" class="application" style="height: auto;">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Communicating Design: Developing Web Site Documentation for Design and Planning, Second Edition
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#" title="Search in archive" class="js-search-controls search-controls" onclick="window.Appcues.track(&#39;SearchBook_HeronBook&#39;)"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9780131385399/chapter/ch05.html"><div class="js-collections-dropdown collections-dropdown menu-bit-cards" onclick="window.Appcues.track(&#39;AddPlaylist_HeronBook&#39;)"><div data-reactroot="" class="menu-dropdown-wrapper js-menu-dropdown-wrapper align-right"><img class="hidden" src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/ajax-transp.gif" alt="loading spinner"><div class="menu-control"><div class="control "><div class="js-playlists-menu"><button class="js-playlist-icon"><svg class="icon-add-to-playlist-sml" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill-rule="nonzero" fill="#000000"><g transform="translate(-1.000000, 0.000000)"><rect x="5" y="0" width="12" height="2"></rect><title>Playlists</title><path d="M4.5,14 C6.43299662,14 8,12.4329966 8,10.5 C8,8.56700338 6.43299662,7 4.5,7 C2.56700338,7 1,8.56700338 1,10.5 C1,12.4329966 2.56700338,14 4.5,14 Z M2.5,10 L4,10 L4,8.5 L5,8.5 L5,10 L6.5,10 L6.5,11 L5,11 L5,12.5 L4,12.5 L4,11 L2.5,11 L2.5,10 Z"></path><circle cx="2" cy="5" r="1"></circle><circle cx="1.94117647" cy="1" r="1"></circle><rect x="5" y="4" width="12" height="2"></rect><rect x="9" y="8" width="8" height="2"></rect><rect x="9" y="12" width="8" height="2"></rect></g></g></g></svg><div class="js-playlist-addto-label">Add&nbsp;To</div></button></div></div></div></div></div></div></li><li class="js-font-control-panel font-control-activator"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size" onclick="window.Appcues.track(&#39;ChangeFont_HeronBook&#39;)"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#" class="trigger" data-push-state="false" title="Share" aria-label="Share" onclick="window.Appcues.track(&#39;Share_HeronBook&#39;)"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a class="twitter share-button t-twitter" target="_blank" aria-label="Share this section on Twitter" title="Share this section on Twitter" href="https://twitter.com/share?url=https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html&amp;text=Communicating%20Design%3A%20Developing%20Web%20Site%20Documentation%20for%20Design%20and%20Planning%2C%20Second%20Edition&amp;via=OReillyMedia"><span>Twitter</span></a></li><li><a class="facebook share-button t-facebook" target="_blank" aria-label="Share this section on Facebook" title="Share this section on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html"><span>Facebook</span></a></li><li><a class="googleplus share-button t-googleplus" target="_blank" aria-label="Share this secton on Google Plus" title="Share this secton on Google Plus" href="https://plus.google.com/share?url=https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html"><span>Google Plus</span></a></li><li><a class="email share-button t-email" aria-label="Share this section via email" title="Share this section via email" href="mailto:?subject=Safari:%20Chapter%205.%20Site%20Maps&amp;body=https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html%0D%0Afrom%20Communicating%20Design%3A%20Developing%20Web%20Site%20Documentation%20for%20Design%20and%20Planning%2C%20Second%20Edition%0D%0A"><span>Email</span></a></li></ul></li><!-- endif request.user.is_authenticated -->
+      </ul>
+    </div>
+
+      
+          
+      
+
+    <section role="document">
+        
+        
+
+
+
+
+  <script defer="" src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/djangoMessagesPage.14c7c03e1be9.js.Без названия"></script>
+
+
+        <script src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/48743.js.Без названия"></script>
+<script>
+  var userId = "9c5599ca-6951-4904-81d0-732bb961926b";
+
+  var userObject = {
+    firstName: "Michael",
+    segment: "Trial",
+    admin: "False",
+    profileCreatedOn: "2021-03-21",
+    academic: ""
+  };
+  window.Appcues.identify(userId, userObject);
+  window.Appcues.page();
+
+  setTimeout(function () {
+    window.Appcues.track('ViewingBook_HeronBook')
+  }, 20000);
+</script>
+
+
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">Chapter 4. Concept Models</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch06.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">Chapter 6. Flowcharts</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content" style="transform: none;"><div class="annotator-wrapper"><p><a id="ch05"></a></p>
+<h2>Chapter 5. Site Maps</h2>
+<p><a id="page_94"></a></p>
+<p><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/ch05text01.jpg" alt="image" width="100" height="17" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/ch05text01.jpg"></p>
+<p>A visual representation of the relationships between different pages on a web site. Also known as a structural model, taxonomy, hierarchy, navigation model, or site structure.</p>
+<div class="sidebar1">
+<p><a id="ch05lev1sec1"></a></p>
+<h3>Site Maps At-A-Glance</h3>
+<p><a id="page_95"></a></p>
+<p>Site maps represent the hierarchy of information on a web site. The nature of that hierarchy varies depending on the project. Also, site maps increasingly represent page types or templates in addition to (or instead of) specific pages.</p>
+<p><a id="ch05lev2sec1"></a></p>
+<h4>Purpose—What are site maps for?</h4>
+<p>A site map shows how all the information on a web site fits together. It provides the project team with one view of how the site will be constructed. It helps:</p>
+<p class="indenthanding">• <strong>Clarify information hierarchy:</strong> Site maps give the project team insight into where different pieces of content “live” and how they’re classified.</p>
+<p class="indenthanding">• <strong>Establish a navigational backbone:</strong> While a site may have multiple navigation mechanisms, a site map can describe the primary structure that helps users browse.</p>
+<p class="indenthanding">• <strong>Facilitate content migrations:</strong> Mapping content from an old site to a new one can be tedious, and a site map can help ensure nothing falls through the cracks.</p>
+<p><a id="ch05lev2sec2"></a></p>
+<h4>Audience—Who uses them?</h4>
+<p class="indenthanding">• <strong>Designers and developers:</strong> The project team will be interested in how the site fits together, how people browse content, and how the site handles content that can live in multiple categories.</p>
+<p class="indenthanding">• <strong>Project managers:</strong> Site maps make an excellent planning tool, playing a crucial role in establishing scope.</p>
+<p class="indenthanding">• <strong>Stakeholders:</strong> Navigation can be fraught with political and design controversy, and site maps allow project teams to work through these issues.</p>
+<p><a id="ch05lev2sec3"></a></p>
+<h4>Scale—How much work are they?</h4>
+<p>With the right inputs, a site map can take a day or two for the initial draft. But a site map is the kind of diagram that needs constant tinkering. New requirements or insights usually mean moving a box here or changing a label there. In this way, site maps can be a “live” document for the duration of the project.</p>
+<p><a id="ch05lev2sec4"></a></p>
+<h4>Context—Where do they fall in the process?</h4>
+<p>At the beginning, either to establish what a new structure will look like based on an audit of the content, or to create an “as-is” picture of the current structure. A view of the current structure can help diagnose navigation problems or identify gaps.</p>
+<p><a id="ch05lev2sec5"></a></p>
+<h4>Format—What do they look like?</h4>
+<p>Generally speaking, a site map consists of shapes representing different areas of the site, connected by lines. The lines generally show hierarchical relationships between the areas of the site but may show other kinds of relationships as well.</p>
+</div>
+<p><a id="page_96"></a>Designers and information architects use site maps to represent the hierarchy of information on a web site. Site maps generally illustrate “membership” relationships, where an item lower on the map belongs to an item higher on the map.</p>
+<p>While site maps only approximate navigation pathways, readers generally understand that people have multiple ways of accessing content at the lower levels of the hierarchy. Since external search engines allow users to bypass upper levels of the site altogether, the pathways on a site map may be better representations of how to navigate <em>up</em>.</p>
+<p><a id="ch05lev2sec6"></a></p>
+<h4>Site Maps Are Content!</h4>
+<p>Throughout this chapter, I’ll draw a clear line between site maps and content. A preposition-heavy definition would read: A site map is a depiction of the structure of content on a web site.</p>
+<p>So, what is content? The word <em>content</em> evokes the stuff that <a href="http://cnn.com/">CNN.com</a> and <a href="http://washingtonpost.com/">WashingtonPost.com</a> and <a href="http://wikipedia.org/">WikiPedia.org</a> are made of—static, long-form “articles,” maybe with pictures. Of course, content can be other stuff, too. <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#ch05table01">Table 5.1</a> describes different ways of thinking about content.</p>
+<p><a id="ch05table01"></a></p>
+<p class="caption"><strong>Table 5.1. Content, it’s what’s for breakfast. On the web.</strong></p>
+<p class="image"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0096_01.jpg" alt="image" width="450" height="70" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0096_01.jpg"></p>
+<p>For the purpose of this book (though you’re welcome to use it elsewhere), let’s define content as:</p><blockquote class="blockquote">
+<p>Anything accessible on the web that helps people learn, understand, or make a decision.</p></blockquote>
+<div class="note1">
+<p><a id="ch05sb01"></a></p>
+<p><strong>Org Chart</strong></p>
+<p>A diagram describing the hierarchy of a group of people.</p>
+</div>
+<div class="note1">
+<p><a id="ch05sb02"></a></p>
+<p><strong>Global Navigation</strong></p>
+<p>A menu of options available from every page of the web site.</p>
+</div>
+<p>Let’s also append this corollary definition:</p>
+<blockquote class="blockquote">
+<p>Content is anything on the web that can be linked to anything else.</p></blockquote>
+<p>Besides distinguishing the web as a publishing medium, linking is what gives content a structure beyond itself.</p>
+<p><a id="ch05lev2sec7"></a></p>
+<h4>Design Artifacts vs. Online Tools</h4>
+<p>By the way, just to be clear, these design artifact site maps are not the site maps you find on web sites themselves. Some sites include a “site map” that acts as an index of all the content. While they may be similar in some respects, the design and construction of a site map that someone is meant to use is very different from preparing an artifact in the course of a design project.</p>
+<p><a id="ch05lev1sec2"></a></p>
+<h3>Introducing Site Maps</h3>
+<p>Site maps have become common artifacts in the design process, and even people who have never before seen one in the flesh recognize what they convey.</p>
+<p>This basic site map (<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#ch05fig01">Figure 5.1</a>) shows a site map, somewhat evolved from the typical org-chart format. It shows three levels of navigation beyond the home page and is very specific about the categories of information. On this site, for example, you understand that the Freezer product category lives inside Large which lives inside Appliances. The gray ring “orbit” around the home page indicates which elements are available from the site’s global navigation.</p>
+<p><a id="page_97"></a></p>
+<p><a id="ch05fig01"></a></p>
+<p class="caption"><strong>Figure 5.1. A site map, showing three levels of hierarchy after the home page. The emphasis is on classification: The reader gets a sense of how different types of products have been categorized.</strong></p>
+<p class="mediaobject"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/05fig01.jpg" alt="image" width="500" height="533" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/05fig01.jpg"></p>
+<p>Site maps can be more abstract, too. While this one shows literal pages and literal categories, some site maps focus on the structure of the templates that comprise the site. If site maps get too abstract, however, they will stray into the realm of concept models. In my mind, there remains a pretty clear distinction between them, described in <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#ch05table02">Table 5.2</a>.</p>
+<p><a id="page_98"></a></p>
+<p><a id="ch05table02"></a></p>
+<p class="caption"><strong>Table 5.2. Comparing concept models and site maps, both are node-and-link structures but they describe different kinds of relationships.</strong></p>
+<p class="image"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0098_01.jpg" alt="image" width="500" height="202" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0098_01.jpg"></p>
+<p><a id="ch05lev2sec8"></a></p>
+<h4>Challenges</h4>
+<p>Most designers and information architects are not only familiar with site maps, but have used them extensively. The challenges with site maps lie in their ability to scale to accommodate larger and more dynamic sites.</p>
+<div class="note1">
+<p><a id="ch05sb03"></a></p>
+<p><strong>Navigation Mechanism</strong></p>
+<p>A menu or other interface element on the site that lets users browse content.</p>
+</div>
+<div class="note">
+<p><a id="ch05note01"></a></p>
+<h3>Tip: Three Levels Maximum</h3>
+<p class="notepara">If you need to communicate more than three levels of structure, consider breaking the site map up into several diagrams. While you might be able to show four levels in a pinch, anything more than that will be difficult to communicate effectively on a single page.</p>
+</div>
+<p>This latter case is important because it also covers situations where each piece of content has multiple locations, where the user can reach a single piece of content through any one of many different pathways. The site map may suit content in a particular set of relationships, but the dynamic nature of the web means that these relationships are not exclusive. It can be important to establish a set of primary categories for the content on the site, but the major risk is that other team members will think that the navigation is static.</p>
+<p class="indenthanding">• <strong>Demand:</strong> Because it’s an artifact that people recognize and have seen before, clients may insist on your creating a site map, even building it into the project contract. They may appreciate the elegance and simplicity they’ve seen in other site maps, and their ability to show the big picture. As a seasoned designer, you may recognize that a site map is not appropriate for a particular project.</p>
+<p class="indenthanding">• <strong>Structural reality:</strong> With web sites becoming more dynamic, the notion of one page “belonging” to another is becoming an increasingly antiquated concept. The meaningful relationships between content may not be hierarchical. Content may “live” in multiple places on a site, and users may get to that content in many different ways.</p>
+<p class="indenthanding">• <strong>Navigation vs. hierarchy:</strong> Even if the information on the site is hierarchical, the challenge with a site map is simultaneously implying how the site’s navigation works. Primary categories in the content hierarchy may not directly translate to one of the site’s navigation mechanisms.</p>
+<p class="indenthanding">• <strong>Detail:</strong> A site’s complexity is also reflected in the nuances of the content, which may be lost in a broad-brush diagram like a site map.</p>
+<div class="sidebar">
+<p><a id="ch05note02"></a></p>
+<h3>About the Examples: The Apple of Kitchens</h3>
+<p class="notepara">My recent work has involved looking at the information architecture of very large marketing web sites—designed to sell or describe products, along with the various services and “solutions” that come with such an endeavor. If you want to test your mettle as an information architect, redesign the web site structure for one of the Fortune 100.</p>
+<p class="notepara">Besides exercising my IA chops, this work has exposed me to the range of challenges around marketing a broad and deep catalog of products. Such portfolios are challenging because there are lots of ways to categorize products, lots of ways to combine them, they target lots of different kinds of customers, and they meet lots of different needs.</p>
+<p class="notepara">For the examples in this chapter, I married my experience with large marketing web sites with something I love—cooking. Hardware for the kitchen rivals the tech and consumer electronics industries in terms of quantity, range, and depth. So, I gave myself a simple assignment: What if Apple had gotten into the kitchen business instead of the computer business?</p>
+</div>
+<p><a id="page_99"></a>These challenges sometimes boil down to answering the question, “Should I be doing a site map at all?” For sites that consist of information that people will consume in some way, a site map is indispensable because it allows the design team to create a model for the structures that hold that information. It facilitates the rest of the design process because it allows the project team to deal with broad categories consisting of multiple pieces of content rather than every individual piece of content. This is especially true for design projects involving migrating an old site to a new structure, where the big picture of a site map can help ensure that everything has a place.</p>
+<p><a id="ch05lev1sec3"></a></p>
+<h3>Anatomy of a Site Map</h3>
+<p>At its most stripped down, a site map is a collection of web pages with connections between them. The additional layers of a site map can help create a more specific understanding of the structure a site map is trying to communicate. Layer 2 includes information on different types of pages and links, while layer 3 includes further context—the basis for structuring the site as shown in the map.</p>
+<p><a id="ch05tab03"></a></p>
+<p class="caption"><strong>Table 5.3. Layers of a site map, building from basics.</strong></p>
+<p class="image"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0099_01.jpg" alt="image" width="450" height="149" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0099_01.jpg"></p>
+<p><a id="ch05lev2sec9"></a></p>
+<h4>Layer 1: Boxes, Arrows, and Little Else</h4>
+<p>At its essence, a site map is a collection of shapes connected by lines. The shapes represent different pages on the web site. The lines can be structural, showing how users navigate through the information hierarchy.</p>
+<p><a id="ch05lev3sec1"></a></p>
+<h5>Pages and templates</h5>
+<p>The nodes in a site map correspond to pages on the site, but even simple site maps sometimes show more nuance:</p>
+<p class="indenthanding">• <strong>Just a page:</strong> The basic unit of currency in a site map is the page. Pages are typically represented by a square or rectangle, and sometimes by a circle, and they are always labeled with the name of the page.</p>
+<p class="indenthanding">• <strong>Group of pages:</strong> A node on the map represents a set of pages that share some function or purpose. Of course, your site map can include both individual pages and groups of pages, in which case it should clearly distinguish between them.</p>
+<p class="indenthanding">• <strong>Asset:</strong> Your site map may include things other than HTML pages, specifically downloads of other file types. If you’re keeping your site map basic, you can differentiate these kinds of downloads from regular pages by including the file type in the label—for example, “Company Overview (PDF).” If you decide to make your site map more elaborate, as described in layer 2, you can differentiate between these different formats visually.</p>
+<p class="indenthanding">• <strong>Category:</strong> Finally, a node may represent an entire area of the site. More than just a group of pages, a node on your site map can represent an entire section consisting of many, many pages. This works well when you just want to present a general structure for the entire site at a very high level. A site map using areas, rather than groups or individual pages, can act as an introduction to a much more complex site map or set of maps.</p>
+<p><a id="ch05fig02"></a></p>
+<p class="caption"><strong>Figure 5.2. The nodes of a site map can include various nuances of a “page,” each giving the reader a slightly different impression of how the page works. Regardless of the meaning you assign to each type of node, be sure to apply them consistently.</strong></p>
+<p class="mediaobject"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/05fig02.jpg" alt="image" width="458" height="91" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/05fig02.jpg"></p>
+<p><a id="page_100"></a></p>
+<p><a id="ch05fig03"></a></p>
+<p class="caption"><strong>Figure 5.3. Different shapes for nodes give the site map a distinct feel.</strong></p>
+<p class="mediaobject"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/05fig03.jpg" alt="image" width="500" height="185" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/05fig03.jpg"></p>
+<p>These days, however, most pages on a web site are generated “on-the-fly” combining content from a database with a template. Site maps generally reflect the relationships between those templates. To distinguish between a unique page and a template page, I generally visualize templates with a “page stack.”</p>
+<p>My tastes go through phases, but I generally represent pages on a site map with squares. At the lower levels of the site, these become rectangles to save space and accommodate longer labels. You can also use rectangles or circles.</p>
+<p><a id="ch05tab04"></a></p>
+<p class="caption"><strong>Table 5.4. Different shapes for nodes in site maps can be good for different situations. Whatever you do, be consistent and try not to use more than one shape.</strong></p>
+<p class="image"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0100_01.jpg" alt="image" width="450" height="198" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0100_01.jpg"></p>
+<p>Finally, the labels on the nodes should correspond to the page name or page template. It’s best to err on the side of using user-facing labels. That is, the site map should use the names of the pages that users will themselves see on the live site. When labeling templates, however, this isn’t possible: Users will never see the name of the template. Instead use the content type.</p>
+<p><a id="ch05lev3sec2"></a></p>
+<h5>Links</h5>
+<p>The links between nodes are deceptively simple. There’s a lot going on behind the connections between the pages and templates of your site. The main decision you need to make is whether you’re showing hierarchical relationships or navigational relationships:</p>
+<p class="indenthanding">• <strong>Showing hierarchy:</strong> Typically, site maps represent only the parent-child relationships between pages on a site. They show which pages “belong” to others. Linking one page to another shows that that page has a more narrow focus on the same topic. While this relationship also implies navigation, it tacitly acknowledges that there are numerous ways to browse to the pages.</p>
+<p class="indenthanding">• <a id="page_101"></a><strong>Showing navigation:</strong> When mapping sites with a less rigid hierarchy of content, the map can show the primary ways to travel between major destinations.</p>
+<p>While I’m wary of geographic metaphors applied to the web, in this case a comparison to urban landscapes can help clarify the hierarchy/navigation distinction. In answering the question “Where is the Washington Monument?” you might say:</p>
+<p class="blockquote"><strong>The Washington Monument is on the National Mall in downtown Washington, DC.</strong></p>
+<p>This describes a hierarchical relationship between regions in Washington, DC. But you can also answer the question this way:</p><blockquote class="blockquote">
+<p><strong>The Washington Monument is a ten-minute walk from the Smithsonian metro station on the orange and blue lines.</strong></p></blockquote>
+<p>This describes a navigational relationship. It indicates where the Washington Monument is based on how to get there.</p>
+<p><a id="ch05fig04"></a></p>
+<p class="caption"><strong>Figure 5.4. Hierarchy vs. navigation described through a geographical metaphor.</strong></p>
+<p class="mediaobject"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/05fig04.jpg" alt="image" width="500" height="165" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/05fig04.jpg"></p>
+<p>Generally, connections don’t need labels on a site map because every link represents the same thing: belonging. Where you want to distinguish between different kinds of belonging, you can use different line formats.</p>
+<p><a id="ch05lev3sec3"></a></p>
+<h5>Layout</h5>
+<p>The site map’s layout—how the nodes and links are placed on the page—is crucial for communicating a site’s structure. Site maps that show hierarchy should be laid out to reinforce those relationships. Usually this means aligning the nodes to a grid and laying them out top-down. When a site map is meant to emphasize navigation, strict adherence to a grid is less necessary.</p>
+<p>The advantage to org-chart-like site maps is that they are easy to understand because they follow a convention of sorts. On the other hand, they don’t show a lot of detail, and this format can take up a lot of space on the page. If your site map means to communicate strict hierarchical relationships between the content areas, an org-chart approach is your best choice. The layout reinforces the hierarchy and readers can look at any node and immediately ascertain where it sits in the overall structure.</p>
+<p>If the site map’s emphasis is instead navigation, or the hierarchy is less strict, consider a layout that isn’t confined to a grid. A diagram more like a concept model communicates the inherent complexity of the relationships between the information. A web-like layout is appropriate when the structure:</p>
+<p class="indenthanding">• <strong>Operates at a higher level of abstraction:</strong> Site maps capture templates or content types, not individual categories or pieces of content.</p>
+<p class="indenthanding">• <strong>Emphasizes the hierarchy of content types:</strong> Templates relate to each other differently from topical and subject-driven categories. Some templates are “parents” to others when they contain a basic layout or structure that is adapted by “child” templates.</p>
+<p class="indenthanding">• <strong>Describes navigation between templates:</strong> Such pathways are not necessarily hierarchical in nature, but instead might follow more of a hub-and-spoke model.</p>
+<p><a id="page_102"></a></p>
+<p><a id="ch05fig05"></a></p>
+<p class="caption"><strong>Figure 5.5. Comparing layouts on site maps that show (a) strict hierarchical relationships and (b) not so much.</strong></p>
+<p class="mediaobject"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/05fig05.jpg" alt="image" width="500" height="197" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/05fig05.jpg"></p>
+<p>With a looser layout, however, you need to make sure you enforce the hierarchy with other visualization techniques. Moving central pages to the middle of the page and increasing the size of the primary categories can cue readers on where to start. You may have to take a moment to familiarize your project team with the new approach. Use an example or two to show how this format changes the emphasis of the site map without completely abandoning hierarchy.</p>
+<p><a id="ch05lev2sec10"></a></p>
+<h4>Layer 2: Elaborating on Pages and Links</h4>
+<p>Rectangles connected by lines can say a lot about the structure of a site, but your situation may call for more detail. Layer 2 builds on the basic structure created by the boxes and lines to elaborate on each.</p>
+<p><a id="ch05lev3sec4"></a></p>
+<h5>Page details and distinctions</h5>
+<p>Your project may require supplying some detail about each page or providing some distinctions between them. One of the most common:</p>
+<p class="indenthanding">• <strong>Existing vs. new:</strong> Site maps may aid projects to update web sites by incorporating new information while leaving the old mostly intact. In this case, before-and-after site maps might be less useful than a site map showing how the old stuff fits into the new stuff. (Or the glass is half full, your choice.)</p>
+<p>Some other useful distinctions:</p>
+<p class="indenthanding">• <strong>Global navigation item:</strong> Your site map needs to show hierarchy, but you also want to clarify what items belong in particular navigation mechanisms. Marking a node as “appears in global navigation” or “appears in product navigation” can help readers understand the browsing tools as well as the underlying structure.</p>
+<p class="indenthanding">• <a id="page_103"></a><strong>Template types:</strong> Different areas of the site may support different content but rely on the same templates for displaying that information. Site maps can visually distinguish the nodes to indicate which templates are in use.</p>
+<p class="indenthanding">• <strong>Administrative or management issues:</strong> While some organizations are more dynamic than the information on their web sites, it can be useful to depict the relationship between the content and the people supporting it. Administrative and management issues can include ownership, timing, or frequency of updates.</p>
+<p class="indenthanding">• <strong>Partial pages or page elements:</strong> In some instances it can be useful to show that a component appears on a page. Too early in the design process and it might be difficult for you to represent the details of page contents on a site map. In this case you can represent a page element as a node as well, changing the shape or other stylistic element to distinguish it from a full page.</p>
+<p>So, how to distinguish? <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#ch05table05">Table 5.5</a> shows various techniques for describing the differences between nodes.</p>
+<p><a id="ch05table05"></a></p>
+<p class="caption"><strong>Table 5.5. Embellishing nodes in your site map can help clarify functions or properties of different pages.</strong></p>
+<p class="image"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0103_01.jpg" alt="image" width="550" height="204" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0103_01.jpg"></p>
+<p>Use caution with these styles. My site maps never use more than two or three stylistic distinctions, and I always apply them sparingly. Too much variety in line weight, for example, can have the opposite effect: It creates too much visual noise to let readers make useful distinctions.</p>
+<p><a id="ch05lev3sec5"></a></p>
+<h5>Grouping pages</h5>
+<p>Even though site maps show categories through hierarchical linking, there may be other useful ways to group pages together. Here are three common cases:</p>
+<p><a id="ch05fig06"></a></p>
+<p class="caption"><strong>Figure 5.6. Applying styles to a node can distinguish it from its peers.</strong></p>
+<p class="mediaobject"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/05fig06.jpg" alt="image" width="120" height="332" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/05fig06.jpg"></p>
+<p class="indenthanding">• <strong>Page pools:</strong> Sometimes links on a category page are drawn from a pool of content. For example, the site map has a pool of white papers to draw from. The link between the category page and the pool shows that the category may link to one or more pages in that group. You could do the exact same thing with a page stack icon, but visually a pool may be easily linked to many different categories. It also communicates that from a hierarchical perspective, these are a set of interchangeable pages.</p>
+<p class="indenthanding">• <a id="page_104"></a><strong>Functional groups:</strong> You can group pages that relate to each other because they serve some common purpose.</p>
+<p class="indenthanding">• <strong>Contextual groups:</strong> A collection of pages can capture some external context, like being intended for a particular set of users or managed by a particular part of the organization.</p>
+<p>So, how do you group nodes on a site map? Draw a line around ’em! Or, for the more subtle among you, use a backdrop. An enclosing shape allows you to represent links to the group as a whole, rather than having to link to individual pages. Sometimes I create a mass of pages to do the same thing.</p>
+<p><a id="ch05fig07"></a></p>
+<p class="caption"><strong>Figure 5.7. Grouping nodes on a site map involves enclosing them with a box, circle, or irregular shape. You can use a line or a lightly shaded backdrop. You can also just create a mass of pages.</strong></p>
+<p class="mediaobject"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/05fig07.jpg" alt="image" width="500" height="129" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/05fig07.jpg"></p>
+<p>You might have noticed that pretty much any of the distinctions you might make at the “node level” you could also make by grouping the nodes. The value of visually grouping pages together is that they can be treated as a unit, at least from a hierarchical perspective. Individual white papers may be managed differently inside the organization, but from the perspective of the site’s information architecture, they can be treated the exact same way.</p>
+<p>There are any number of ways to group pages visually, but the key concern from a design perspective is to avoid confusing groupings with links. The visual conventions you use to group pages, therefore, should be subordinate to the links between them.</p>
+<div class="sidebar1">
+<p><a id="ch05sb04"></a></p>
+<h3><em>Ask the Expert</em></h3>
+<p class="mediaobject"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/Donna.jpg" alt="image" width="120" height="168" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/Donna.jpg"></p>
+<p class="source"><em>Donna Spencer, Information Architect, Maadmob</em></p>
+<p><strong><em>DB: What makes for a good site map?</em></strong></p>
+<p><em>DS: A good site map has four attributes: it has good content, is easy to understand, uses the appropriate form, and is simple.</em></p>
+<p><em>Content is the most important part of a site map. No amount of perfect alignment or sexy typefaces will help if the content of the site map is poor. And that means your information architecture must be good—your categories must be sensible (both for the users and the content) and use clear, descriptive labels.</em></p>
+<p><em>Good site maps can be understood even when you aren’t there to explain them. Even though you may explain them to the client initially, other people will need to look at them later on. Good site maps have:</em></p>
+<p class="indenthanding">• <em>just enough annotation or explanation to anticipate people’s questions, without swimming in detail</em></p>
+<p class="indenthanding">• <em>a legend to explain the different shapes, colors, or icons</em></p>
+<p class="indenthanding">• <em>additional detail in some sort of supporting document (particularly for complex sites)</em></p>
+<p class="indenthanding">• <em>examples of how the site map will be represented via navigation in the final site.</em></p>
+<p><em>The form of a site map is also important. For a simple hierarchical site, a simple hierarchical diagram is appropriate. For a database-driven product site, a document that lists out metadata for each object may be best. For a large hierarchical site, a big spreadsheet will be easier to create, read, and maintain. For complex sites, all of these may be needed.</em></p>
+<p><em>A good site map is also simple. It has just enough information to communicate exactly what you need to communicate, and no more. Focus on what it needs to do, and do that well.</em></p>
+</div>
+<p><a id="ch05lev3sec6"></a></p>
+<h5>Additional connections</h5>
+<p><a id="page_105"></a></p>
+<p>Site maps that primarily show hierarchy may need to depict other important relationships. Layering an entire navigation system on top of a hierarchy is challenging and likely unnecessary. But showing some important navigation links can help complete the picture of the user experience, especially in light of some of the ways we’ve embellished nodes.</p>
+<p>Other links you might consider:</p>
+<p class="indenthanding">• <strong>“Also linked from…”:</strong> Web sites will be rife with cross-linking, and showing every possible link is pointless. But there can be value in highlighting particular links. (<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#ch05fig08">Figure 5.8</a>, annotation 1)</p>
+<p class="indenthanding">• <strong>Context-setting link:</strong> Sometimes, you might be designing—and therefore depicting—only part of a web site. Showing pages that may be out of scope for your current project can help set the context for the in-scope pages. I tend to make these nodes and links recede (lighter values). They’re there to answer questions like, “How do I get here from…?” (<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#ch05fig08">Figure 5.8</a>, annotation 2)</p>
+<p class="indenthanding">• <strong>Connecting to groups:</strong> Links don’t have to occur between specific pages. In this case, the site map shows a link to the group of pages, indicating that every page in the group is linked, without showing multiple lines. (<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#ch05fig08">Figure 5.8</a>, annotation 3)</p>
+<p class="indenthanding">• <strong>“Appearing in…”:</strong> Some of your nodes may represent partial pages or page components. Though these nodes should be formatted differently, using a differently styled connection will also clarify that the link isn’t exactly navigational or hierarchical. (<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#ch05fig08">Figure 5.8</a>, annotation 4)</p>
+<p><a id="ch05fig08"></a></p>
+<p class="caption"><strong>Figure 5.8. Beyond hierarchical connections, there are other kinds of links you can use in a site map. This portion of the basic site map shows all four approaches: also linked (1), context-setting (2), groups (3), appearing-in (4).</strong></p>
+<p class="mediaobject"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/05fig08.jpg" alt="image" width="500" height="289" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/05fig08.jpg"></p>
+<p><a id="ch05lev2sec11"></a></p>
+<h4>Layer 3: Providing Further Context</h4>
+<p>The information in the last layer takes readers outside the user experience and provides context for the site’s structural information. “Context” refers to other aspects of the project, from content and editorial strategy to business objectives and technical constraints.</p>
+<p>Besides applying styles to the shapes themselves, there are a few other techniques for supplying more information about the pages in a site map (<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#ch05fig09">Figure 5.9</a>):</p>
+<p><a id="page_106"></a></p>
+<p><a id="ch05fig09"></a></p>
+<p class="caption"><strong>Figure 5.9. Additional information about a node can be embedded using annotations or little tabs. Use these techniques consistently—a tab, for example, should always represent a template type. Also style them appropriately. If annotations are meant to point out problems, use a distinct color.</strong></p>
+<p class="mediaobject"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/05fig09.jpg" alt="image" width="150" height="529" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/05fig09.jpg"></p>
+<p class="indenthanding">• <strong>Annotation:</strong> Sometimes, it’s easiest to simply embed a note right next to the node. I use a distinct typeface and color, though the style will depend on the purpose of the note. Pointing out problem areas, I’ll use red text.</p>
+<p class="indenthanding">• <strong>Little tabs or corners:</strong> If you can use a short word to distinguish nodes, you can embellish the node with a tab or corner to label it. I like this approach for classifying nodes by content type or template type.</p>
+<p class="indenthanding">• <strong>Icons:</strong> A little more intrusive than either of the other two techniques, a small icon is useful for distinguishing nodes based on page type or user need. I’d also use icons to highlight pages from an administrative perspective, distinguishing them based on project phase or priority.</p>
+<p>The context you provide in a site map depends on the purpose of the map. Be sure you consider how you’ll be using the site map (see “Purpose and timing” in the “Basic decisions” section later) before adding all of the following data points.</p>
+<p><a id="ch05lev3sec7"></a></p>
+<h5>Project management and planning</h5>
+<p>Site maps make great project management tools, especially when you need to look at a big picture and determine a plan of attack. Site maps offer an overview of the landscape and a chance for project participants to move their pieces around to focus on specific territories. (Be grateful it’s taken me this long to milk the metaphor.) Project management considerations include:</p>
+<p class="indenthanding">• <strong>Priority:</strong> Which areas of the map will you pursue first?</p>
+<p class="indenthanding">• <strong>Order:</strong> How do areas of the site correspond to phases in the project?</p>
+<p class="indenthanding">• <strong>Ownership:</strong> Who is responsible for different areas of the site?</p>
+<p><a id="ch05lev3sec8"></a></p>
+<h5>Content and editorial strategy</h5>
+<p>Site maps make great conversation pieces between information architects and content strategists (if your team makes such a distinction). Where information architecture focuses on the structure of the experience, content strategy focuses on what people find in that experience. The site map is a tool for making decisions about content, both right now and from here on out:</p>
+<p class="indenthanding">• <strong>Emphasis:</strong> What’s the most important thing on this page? The content strategy will need to specify how to prioritize content. Prioritization can be topical (which kind of content) or thematic (what do we need to say).</p>
+<p class="indenthanding">• <strong>Updates:</strong> Another way to distinguish pages is by the interval of their editorial lifecycle. Areas of the site requiring more frequent updates get one color and those that are static get another.</p>
+<p class="indenthanding">• <strong>Source:</strong> An ideal label for content migrations, the source of the material can be added as an annotation with the specific URL.</p>
+<p>Content strategy is an emerging discipline, becoming more formal as the web matures into a robust medium for large-scale publishing and consumption. As the needs of content strategy become more structrured and specific, you will need to reflect and document these needs in the diagram.</p>
+<p><a id="ch05lev3sec9"></a></p>
+<h5>User needs</h5>
+<p>Illustrating a relationship between the site’s structure and user needs can provide a rationale for the approach defined in the site map. Some site maps show the relative importance of different pages based on how well they address the needs of the target audience. A more robust way to capture nuance between different groups in the target audience is to mark pages based on their importance to different personas.</p>
+<p><a id="ch05lev1sec4"></a></p>
+<h3>Creating Site Maps</h3>
+<p>Knowing the parts of a site map can only take you so far. This section describes how to put them together.</p>
+<p><a id="ch05lev2sec12"></a></p>
+<h4>Basic Decisions for Site Maps</h4>
+<p>The simplicity of site maps makes it tempting to dive right in without careful planning. Like any design diagram, however, a little planning goes a long way. Who will use the site map and how they’ll use it can make a huge difference in its final format.</p>
+<p><a id="ch05lev3sec10"></a></p>
+<h5>Purpose and timing</h5>
+<p><a id="page_107"></a></p>
+<p>A site map shows one of two things in the design process:</p>
+<p class="indenthanding">• <strong>As-is state:</strong> A site map showing what the structure of the site is today. Frequently fraught with notes and exceptions that highlight the organic growth of content.</p>
+<p class="indenthanding">• <strong>To-be state:</strong> A site map showing the target information architecture for the site. If building a site from scratch, the emphasis here may be rationale–why this structure makes the most sense. If migrating an existing site, the emphasis will likely be on mapping the old content to the new structure, pointing out potential gaps.</p>
+<p>A site map serves several purposes on a project, and these are not mutually exclusive:</p>
+<p class="indenthanding">• <strong>Depict a navigation strategy:</strong> A navigation strategy answers the question, how do users get from one area of the site to another. Navigation strategies describe one or more systems for browsing content on the web. A site map can help zero in on appropriate strategies by showing the range of content and desired pathways between them.</p>
+<p class="indenthanding">• <strong>Illustrate a classification strategy:</strong> A classification strategy establishes a framework for categorizing information. Those classifications yield a structure for content to live in, and a site map can help you visualize the resulting architecture of a categorization scheme.</p>
+<p class="indenthanding">• <strong>Validate a content strategy:</strong> A content strategy describes what content you’re going to use where. It operates within the framework established by the site map to optimize delivery of content appropriate to the anticipated target audience. Like a content migration (see next bullet), a content strategy can use a site map to see all the gaps it needs to fill.</p>
+<p class="indenthanding">• <strong>Facilitate a content migration:</strong> In a content migration, a web site is being moved (in part or in whole) to a new structure. The reasons for doing so are myriad and usually slightly irrational. A site map helps this process by allowing you to map old content to new content.</p>
+<p class="indenthanding">• <strong>Diagnose any of the above:</strong> By depicting the site’s structure in its current state, you can gain insights into current problems (and strengths) of the navigation, classification, and content strategies.</p>
+<p>The inherent big picture-ness of a site map makes it an ideal tool for the beginning of the design process. It sets the stage like a concept model does, but (done right) will provide even more actionable input into the design. (Concept models are useful for establishing an overall approach, but don’t necessarily provide meaningful design principles.)</p>
+<p><a id="ch05lev3sec11"></a></p>
+<h5>Audience</h5>
+<p>The message behind a site map is relatively simple, which means there isn’t much nuance based on who you’re building it for. Designers, developers, and project stakeholders all expect the same thing—a document that establishes site structure, site navigation, and page priorities.</p>
+<p><a id="ch05lev3sec12"></a></p>
+<h5>Content development</h5>
+<p>Before committing the site map to paper, you may find it useful to create a list of all the pages you want to capture in the document. This approach allows you to think through each data point you might want to capture for each area of the site—how important it is, what type of page it is, or any of the other distinctions mentioned in layers 2 and 3.</p>
+<p>If you’re using the site map for one of the specific purposes just discussed, <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#ch05table06">Table 5.6</a> identifies ways to embellish the diagram.</p>
+<p><a id="ch05table06"></a></p>
+<p class="caption"><strong>Table 5.6. Embellishments to site maps should be driven by the purpose of the diagram.</strong></p>
+<p class="image"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0108_01.jpg" alt="image" width="550" height="117" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0108_01.jpg"></p>
+<p>Regardless of what you call them (pages, templates, what-have-you), the nodes on a site map represent discrete parts of the user experience. They are recognizable chunks of the <a id="page_108"></a>site that are responsible for presenting information, as well as informing users of where they are in the structure. It can be easy to lose sight of this when you’re pushing boxes around a page.</p>
+<p>A crucial decision for each node is the level of abstraction. This is a tension between two extremes: Is the node purely structural or is it a specific piece of content? Does the node represent, at one extreme, any category of product? A broad category of product? A very specific category? <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#ch05fig11">Figure 5.11</a> shows how a single concept (refrigerators) can be expressed in three different ways, at three different levels of abstraction.</p>
+<p>The decision is ultimately one of design: The information architect’s job is to figure out the range and depth of templates required to create a meaningful experience. But this decision cascades to the deliverable: How do you successfully convey the purpose of a category through the visualization?</p>
+<p>Though more and more, I find my information architectures operating at a higher level of abstraction, there are two risks:</p>
+<p class="indenthanding">• <strong>Exceptions:</strong> Instances of a category may have exceptions. So, while Refrigerators maps accurately to the abstract structure, a category like Accessories might not.</p>
+<p class="indenthanding">• <strong>Additional documentation:</strong> Even though the abstract site map might successfully describe the site’s underlying structure and template system, you may need additional documents to specify the exact content. What are the exact categories, subcategories, and products? A spreadsheet (or something) accompanying the site map will help flesh out the picture of the user experience.</p>
+<div class="note1">
+<p><a id="ch05sb05"></a></p>
+<p><strong>Instance</strong></p>
+<p>Used here to mean an example of an abstract category.</p>
+</div>
+<p><a id="ch05fig10"></a></p>
+<p class="caption"><strong>Figure 5.10. Levels of abstraction may seem like just another information hierarchy, but what this diagram shows is that you can describe the same collection of content (refrigerators) in a few different ways. Any one of these labels (“category” “product family,” or “appliances”) is a legitimate label describing the same group of objects. Ranges and toasters could also be described with these labels. At the same time, the labels you select have dramatic implications on the overall design of the site.</strong></p>
+<p class="mediaobject"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/05fig10.jpg" alt="image" width="400" height="224" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/05fig10.jpg"></p>
+<p><a id="page_109"></a></p>
+<p><a id="ch05fig11"></a></p>
+<p class="caption"><strong>Figure 5.11. Rendered as an abstract structure, the sample site looks substantially different. The emphasis here is less about “what lives where” and more “what’s the structure of the experience”. Though the site map references specific content, it does so by way of example, showing what kinds of content are represented by different templates. The links are more nuanced because templates (pages at a higher level of abstraction) can relate to each other in more subtle (and more numerous) ways.</strong></p>
+<p class="mediaobject"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/05fig11.jpg" alt="image" width="500" height="444" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/05fig11.jpg"></p>
+<div class="sidebar1">
+<p><a id="ch05sb06"></a></p>
+<h3><em>Ask the Expert</em></h3>
+<p class="mediaobject"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/James.jpg" alt="image" width="200" height="200" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/James.jpg"></p>
+<p class="source"><em>James Melzer, Senior User Experience Designer, EightShapes, LLC</em></p>
+<p><strong><em>DB: What makes site maps hard?</em></strong></p>
+<p><em>JM: The challenge to making a great site map is finding the balance between clarity and richness. A simple tree structure is the clearest way to communicate with stakeholders—every page has one place and one parent, like an outline. I always start with the tree if I can. But what web site actually follows a strict tree anymore? Inevitably, the web experience is more nuanced and interconnected than a simple tree, so the site map needs to communicate key organization or navigation patterns too.</em></p>
+<p><em>In addition, the site map usually exists to tell a bigger story than where the pages sit in a content management system. More often than not, the site is broken in some way and a site map is the clearest way to communicate the underlying problem.</em></p>
+<p><em>This bigger story can be told by layering color, positioning, and other cues on top of the basic tree to convey key attributes. For me, the exact combination of attributes is different each time, but generally falls into these groups:</em></p>
+<p class="indenthanding">• <em>user navigation</em></p>
+<p class="indenthanding">• <em>traffic</em></p>
+<p class="indenthanding">• <em>content management</em></p>
+<p class="indenthanding">• <em>project scope</em></p>
+<p class="indenthanding">• <em>content type</em></p>
+<p><em>To tell the web site’s story, I sometimes have to try several combinations of attributes to find the right set. I often take a step back and try to explain it to a coworker. This forces me to communicate the story verbally and confirm that my site map supports it. Was the basic structure lost? Do the additional layers paint a clear picture? It always takes a few iterations to find the right balance with a complex site or a subtle story. Having someone to bounce ideas off of always helps me find that balance.</em></p>
+</div>
+<p><a id="ch05lev2sec13"></a></p>
+<h4>Tips for Stellar Site Maps</h4>
+<p><a id="page_110"></a>The basic org-chart format for this artifact is adequate, and if this is your first site map, that may be the easiest approach. After you create a few site maps, however, you might begin to see some inadequacies with such a strict layout. These tips can help you move beyond the rigid presentation of site maps.</p>
+<p><a id="ch05lev3sec13"></a></p>
+<h5>Isometric layout</h5>
+<p>One trend in site maps is to use an isometric layout. In an isometric layout, the diagram creates a sense of perspective by skewing the angles on the nodes. (A picture is worth a thousand words here.) Nodes are placed behind each other to show them receding backward. This depends on keeping to a grid, therefore reinforcing the sense of hierarchy. Isometric layouts are best when:</p>
+<p class="indenthanding">• <strong>Showing hierarchy:</strong> Navigational layouts, which may not easily conform to a grid, can be challenging to represent with isometric site maps.</p>
+<p class="indenthanding">• <strong>Showing as-is states:</strong> You can use screen-grabs for the nodes to show the hierarchy of existing pages. With the challenges of labeling nodes in an isometric site map (see <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#ch05fig12">Figure 5.12</a>), it’s best to use recognizable pages that don’t require extensive labeling.</p>
+<p><a id="ch05fig12"></a></p>
+<p class="caption"><strong>Figure 5.12. Isometric layouts for site maps are useful for communicating a strict hierarchy.</strong></p>
+<p class="mediaobject"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/05fig12.jpg" alt="image" width="300" height="200" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/05fig12.jpg"></p>
+<p>In isometric site maps, labels generally appear outside the node. The shape of the node (a skewed rectangle) makes it difficult to include legible labels. Arranging the nodes “behind” each other leaves less space on the node to put a label. You can label nodes by moving the label outside the shape, but this takes up more room.</p>
+<p><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#ch05fig13">Figure 5.13</a> shows that some diagramming applications don’t let you skew the text to align appropriately to the isometric grid.</p>
+<p><a id="page_111"></a></p>
+<p><a id="ch05fig13"></a></p>
+<p class="caption"><strong>Figure 5.13. The challenges for labeling nodes in isometric site maps.</strong></p>
+<p class="mediaobject"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/05fig13.jpg" alt="image" width="120" height="409" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/05fig13.jpg"></p>
+<p>That said, isometric site maps are great for showing <em>quantity</em> and <em>groupings</em>. They are powerful tools for communicating existing challenges of managing content.</p>
+<p><a id="ch05lev3sec14"></a></p>
+<h5>Visual language</h5>
+<p>In short, create a stencil of your favorite site mapping shapes and use them over and over again.</p>
+<p>A stencil will help you be consistent across different artifacts and within a diagram. It will force you to make difficult (but good and important) decisions about what to leave in and what to leave out. It’s not about constraining your creativity, but focusing it on devising the most effective symbols for your stencil. The stencil will then reinforce your set of visual conventions and guidelines.</p>
+<p>The most effective way to develop a visual language for your site maps is to make a list of everything you need to describe in the diagram. After prioritizing this list, you can identify how to represent each kind of information.</p>
+<div class="note">
+<p><a id="ch05note03"></a></p>
+<h3>TIP: More Isometrics</h3>
+<p class="notepara">The single best source of learning more about isometric site maps is the book <em>Mapping Web Sites</em>, by Paul Kahn and Krzysztof Lenk. They provide a range of excellent examples.</p>
+<p class="notepara">My firm released templates for creating isometric site maps as part of its EightShapes Unify documentation system.</p>
+</div>
+<p><a id="ch05lev3sec15"></a></p>
+<h5>Large maps</h5>
+<p>One way to tame an unruly site map is to break it up across several different pages. Separating each logical section of content onto a different page makes the map easy to understand because each page is more or less self-contained. A cover page can show how all the smaller site maps fit together.</p>
+<p><a id="ch05lev2sec14"></a></p>
+<h4>Level-Up Your Site Mapping Skills</h4>
+<p>As web sites become more complex and dense with information, it will be more difficult to capture all that information in a simple two-dimensional map.</p>
+<p><a id="ch05lev3sec16"></a></p>
+<h5>Keep connections simple</h5>
+<p>Though it can be tempting to show all the different connections, keep your site maps to only showing the ones that help communicate structure.</p>
+<p>Decide what links you must represent based on the purpose of the diagram and the overall structure of the site. In either case show only those links that communicate the essential structure.</p>
+<div class="note1">
+<p><a id="ch05sb07"></a></p>
+<p><strong>Isometric</strong></p>
+<p>Creating a sense of perspective by angling elements in the diagram.</p>
+</div>
+<div class="note1">
+<p><a id="ch05sb08"></a></p>
+<p><strong>Stencil</strong></p>
+<p>A collection of shapes used to create specific kinds of diagrams.</p>
+</div>
+<p><a id="page_112"></a></p>
+<div class="note">
+<p><a id="ch05note04"></a></p>
+<h3>Tip: Stencils in Diagramming Apps</h3>
+<p class="notepara">Most illustration tools—like Microsoft Visio or Omni-Group’s OmniGraffle—allow you to save individual shapes in a stencil so that you can reuse them. Once you have a visual language that works, there’s no point in reinventing the wheel.</p>
+</div>
+<p><a id="ch05lev3sec17"></a></p>
+<h5>Minimize distinctions</h5>
+<p>Web pages come in all shapes and sizes, despite your best efforts to put them in nice little buckets. As described in layer 2, a site map can make many different kinds of distinctions between pages, from the behind-the-scenes technology to additional layers of information architecture to project management issues. You may be tempted to pack as much information in as possible—after all, it’s a special feat to communicate lots of detail in a little space. On the other hand, this can make your site map dense and clumsy.</p>
+<p>One way to show additional information about the pages is to create multiple versions of the site map. Some tools offer features to make it easy to (literally) layer on different kinds of information. Most diagramming applications have a layering function that allows you to hide or show different parts of your drawing. Regardless of how you make it happen, you can create different versions that show different aspects, so one version might focus on the technical issues and another on the editorial issues.</p>
+<p><a id="ch05lev3sec18"></a></p>
+<h5>Oversimplifying</h5>
+<p>You can also go in the other direction, showing too little information. Watch out for:</p>
+<p class="indenthanding">• <strong>Missing content or categories:</strong> It may seem unlikely that you’ll leave out entire sections of the site, but it happens. Focusing on other higher priority or more visible areas can leave others falling through the cracks. If you’re responsible for the site map, you’re likely to be responsible for making sure that doesn’t happen.</p>
+<p class="indenthanding">• <strong>Missing distinctions:</strong> Showing how pages differ from each other is a crucial piece of information for planning sites. If you’re struggling to capture all the distinctions, leaving some out is a good inclination, but you don’t want to leave too many out.</p>
+<p class="indenthanding">• <strong>Missing links:</strong> Most of my site maps incorporate the assumption that users can pretty much get from any page to any other page. Depicting every one of those links is, therefore, unnecessary. But to show only one kind of linking may be doing your structure a disservice.</p>
+<p>How do you avoid leaving out too much? A couple techniques:</p>
+<p class="indenthanding">• <strong>Make a list</strong> of everything you think you could include in the site map and ask the people who will use the diagram to prioritize. “Look, there’s a lot going on here. Is it more important for me, at this stage of the project, to distinguish between content templates or content ownership? I don’t think the diagram will support both.”</p>
+<p class="indenthanding">• <strong>Check and double-check</strong> your work against the source material. Have a content inventory? Is there a place for everything on the content inventory in your site map?</p>
+<p><a id="ch05lev1sec5"></a></p>
+<h3>Presenting Site Maps</h3>
+<p>A site map can communicate a site’s structure effectively, but it contains complex and sometimes controversial information. The only way to work through these issues is through a meeting. Or two.</p>
+<p><a id="ch05lev2sec15"></a></p>
+<h4>Establish a Purpose for Meeting</h4>
+<p>Most of the site map–specific meetings I lead or sit through are attempting to answer one of two questions: “What’s here?” and “What’s missing?” (<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#ch05table07">Table 5.7</a> describes ways to position a site map in these meetings.)</p>
+<p><a id="ch05table07"></a></p>
+<p class="caption"><strong>Table 5.7. Different ways to position a site map in a meeting introducing the artifact.</strong></p>
+<p class="image"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0113_01.jpg" alt="image" width="550" height="162" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0113_01.jpg"></p>
+<p><a id="ch05lev3sec19"></a></p>
+<h5>Providing a lay of the land: What’s here?</h5>
+<p>In the introduction to the site map, your role is to play tour guide. Like any good tour guide, your job is to, in a sense, personalize the landscape for the people on the tour. At the same time, you need to communicate what makes this <a id="page_113"></a>particular structure unique. And you thought the hard part was walking backwards.</p>
+<p>An introduction has a few key messages:</p>
+<p class="indenthanding">• <strong>Unifying theme:</strong> This is the singular vision that led to the design of the structure. For site maps describing as-is architectures, your unifying theme will not be design vision as much as key insight. “In putting the site map together, we realized that though most of the organic growth occurred in the products section, lots of good content was added to solutions, too.”</p>
+<p class="indenthanding">• <strong>Important landmarks:</strong> Certain aspects of the architecture are going to be more important to meeting participants. These landmarks satisfy some need that’s important to the stakeholders, but also serve as a means for illustrating the unifying theme. They can also be a bridge for drawing participants’ attention to another aspect of the architecture that has been neglected.</p>
+<p class="indenthanding">• <strong>What’s changed:</strong> If this isn’t the first time you’ve shown the site map, your overview of it isn’t an introduction as it is a version history. As you present each evolution, your message is “We heard your feedback and here’s how we responded.”</p>
+<p>For the sample abstract site map in <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#ch05fig14">Figure 5.14</a>, here are the key messages I might use in an overview meeting:</p>
+<p><a id="ch05fig14"></a></p>
+<p class="caption"><strong>Figure 5.14. OmniGraffle’s layers make it easy to show and hide different parts of the drawing.</strong></p>
+<p class="mediaobject"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/05fig14.jpg" alt="image" width="220" height="181" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/05fig14.jpg"></p>
+<p>A “lay of the land meeting” may happen several times over the course of a project. You may have new stakeholders who require a tour. Equally likely, the emphasis of the meetings will change from providing an introduction to showing how the structure has evolved over the course of your work.</p>
+<p><a id="ch05lev3sec20"></a></p>
+<h5>Validating approach: What’s missing?</h5>
+<p>Once stakeholders are familiar with the site map, they become crucial reviewers. In some cases, you’ll discuss the site map with people who are more familiar with the content and site requirements than you are. They will be able to identify where the site map does not align with content. You’re looking for two kinds of gaps:</p>
+<p class="indenthanding">• <strong>Where does X go?</strong> The project team needs to understand how a particular piece of content fits into the overall architecture.</p>
+<p class="indenthanding">• <strong>What do you expect to go here?</strong> The project team needs clarity on what content will fit into a particular category.</p>
+<p>You may show up to the meeting with questions of this ilk. You might leave the meeting with an inventory of questions like these about particular pieces of content. The purpose is different from an introductory meeting: You’re seeking some movement from the current state of the site map to something better, more refined, more complete, more detailed.</p>
+<p>In these kinds of meetings, the tone must reflect two messages:</p>
+<p class="indenthanding">• <strong>This is just the beginning:</strong> There will be lots of opportunities to validate the site maps as the project progresses. I usually use such a message to help set people at ease, noting they will have other opportunities to provide input. BUT…</p>
+<p><a id="page_114"></a></p>
+<p class="indenthanding">• <strong>This is a crucial step</strong> for ensuring we’re building from a solid foundation. While “this is only the beginning” takes the pressure off, participants also need to understand that their inputs need to be correct. Decisions at this stage can not be arbitrary.</p>
+<p>If you uncover critical missing components which slipped through, and the site map review brought this to light, then your meeting has been a success.</p>
+<p><a id="ch05lev3sec21"></a></p>
+<h5>Adapt the Basic Meeting Structure</h5>
+<p>The generic meeting structure described in the introduction requires little modification for site maps. Here are some ideas on how to tailor the sections for a site map discussion.</p>
+<div class="sidebar1">
+<p><a id="ch05sb09"></a></p>
+<h3><em>Ask the Expert</em></h3>
+<p class="mediaobject"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/Donna.jpg" alt="image" width="120" height="168" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/Donna.jpg"></p>
+<p class="source"><em>Donna Spencer, Information Architect, Maadmob</em></p>
+<p><strong><em>DB: What do you do to a site map to make it “client-ready”?</em></strong></p>
+<p><em>DS: I don’t always show my site maps to clients and I’ve recommended that other people don’t either. I used to do it, but more often than not they were met with puzzled looks. And if I didn’t get puzzled looks, I’d get a barrage of questions when the clients first saw the navigation design—questions that should have come up at the time they saw the IA.</em></p>
+<p><em>What was happening? My clients didn’t know how to interpret the site map. It was an abstract diagram and they had never seen anything like it before. They didn’t know what to think, what to focus on, and what to ask. Most importantly, they didn’t know how to extrapolate what they were seeing to a built web site or intranet.</em></p>
+<p><em>So how do you avoid this?</em></p>
+<p class="indenthanding">• <em>Understand your client: Learn about your client’s previous experience with site maps. Find out whether it’s the first time they’ve ever received one or whether they have seen many. If they’ve seen many, find out which ones they liked and understood best.</em></p>
+<p class="indenthanding">• <em>Explain in person: Don’t just send a site map diagram via email. Present it to them—face to face or remotely, whichever makes sense for you.</em></p>
+<p class="indenthanding">• <em>Go through it step by step: Don’t just show them a full diagram. When you are explaining it, step through it section by section. Explain what each is about, how you came up with it, and the alternative options that you decided not to keep.</em></p>
+<p class="indenthanding">• <em>Put it in context: Show how the site map relates to the finished site. If you haven’t designed the navigation for your current project, show how previous site maps you’ve designed related to the navigation. Show that there are lots of ways to eventually represent a site map.</em></p>
+<p class="indenthanding">• <em>Wait: Wait until you’ve designed the navigation and pages, and show the client both at the same time.</em></p>
+</div>
+<p><a id="ch05lev3sec22"></a></p>
+<h5>1. Establish context</h5>
+<p>At the beginning of the meeting you help participants understand where you are and where you’re going:</p>
+<p class="indenthanding">• <strong>Project context:</strong> A site map, while providing concrete information, can feel very abstract to participants, and it can be easy to lose the thread of your design process. By telling a quick story at the beginning of the meeting, you can help project participants locate the site map in the overall project.</p>
+<p class="indenthanding">• <strong>Users:</strong> Context also means reminding the team who the users are and why they’re coming to the site. For each type of user, provide an overview of their needs and hint at how the structure supports them. You’ll have ample opportunity to dig into these details later in the meeting. If user groups have been prioritized, start with the highest priority group. If not, you can start with the user profile that represents the most common tasks or scenarios.</p>
+<p><a id="ch05lev3sec23"></a></p>
+<h5>2. Describe visual conventions</h5>
+<p><a id="page_115"></a></p>
+<p>Before digging into the details, make sure meeting participants understand the format of the site map. Explain the visual conventions you used, and pay particular attention to the distinctions. From the participants’ perspective, every box represents a page. So, if you’ve gone out of your way to distinguish the boxes, take a moment to confirm that the people in the meeting know what those distinctions mean.</p>
+<p><a id="ch05lev3sec24"></a></p>
+<h5>3. Highlight major design decisions</h5>
+<p>With a site map, the major design decisions are generally structural—what categories you chose and how you connected them. In this part of the meeting, your job is to point out the important decisions you made about the structure. These could include:</p>
+<p class="indenthanding">• <strong>Unifying theme driving the structure:</strong> Structural themes can describe why the primary categories were selected. They can highlight novel ways of classifying content or navigational connections. They can be expressed as an objective, as in “In addition to supporting people finding just the right oven, we wanted to create a structure that let you create meaningful groups of products outside the context of the merchandising hierarchy.”</p>
+<p class="indenthanding">• <strong>Significant changes from the existing site:</strong> Entire areas have been moved whole-hog elsewhere or renamed.</p>
+<p class="indenthanding">• <strong>Surprises:</strong> Items got categorized in areas that you wouldn’t likely expect, but ultimately have the best rationale.</p>
+<p>There are other decisions reflected in this diagram. For example, your site map may specify the range of templates needed to support the site, or may be specific about which templates apply to which pages.</p>
+<p><a id="ch05lev3sec25"></a></p>
+<h5>4. Offer rationale and identify constraints</h5>
+<p>No doubt the best rationale for structural decisions stems from the people using the content. If you have insight into how they go about finding the information on the site, use this to justify your design decisions.</p>
+<p>There are, of course, other constraints that might drive design decisions on a site’s structure:</p>
+<p class="indenthanding">• <strong>Technical constraints:</strong> It can be hard for a designer to understand developers when they say, “We can’t put that content there.” Still, legacy content management systems (homegrown or otherwise) often impose constraints on how content is structured. Acknowledging these in your meeting is important, but it’s equally important to focus on the technology, not the people responsible for the technology.</p>
+<p class="indenthanding">• <strong>Political constraints:</strong> More challenging to point out, but important nonetheless. In this case, you’ve categorized or linked content because of some political issue in the organization. You are not empowered to sort out these issues within the organization itself. And while it’s perhaps expedient to avoid naming names, it is important to acknowledge that the constraints yielded a design different from what you would recommend.</p>
+<p>Be sure the meeting participants leave understanding why you chose to make certain critical decisions, and why and where you were constrained to make others.</p>
+<p><a id="ch05lev3sec26"></a></p>
+<h5>5. Point out details</h5>
+<p>The purpose of this section of the meeting agenda is to dive into specific examples. Contrasted with the “major design decisions,” which describe the design in a more <a id="page_116"></a>thematic way, this portion of the conversation should illustrate those themes with specific examples. For site maps, these details include:</p>
+<p class="indenthanding">• <strong>Connections between content:</strong> Though these will be self-evident from the diagram itself, you can point out some good examples of how content is linked.</p>
+<p class="indenthanding">• <strong>Classification and labeling:</strong> Point out some of the categories and the labels you’ve chosen for them. Describe what content fits in this category.</p>
+<p class="indenthanding">• <strong>Template choices:</strong> If the site map indicates what templates are in use, be sure to point out an example of each. In addition, inventory all the templates that are needed to build the site structure specified.</p>
+<p class="indenthanding">• <strong>Exceptions:</strong> Draw participants’ attention to any part of the site structure decisions strays outside the design principles, standards, or vision.</p>
+<p>The objective here isn’t to cover every box and every link, but use good examples to describe the range of design decisions you made.</p>
+<p><a id="ch05lev3sec27"></a></p>
+<h5>6. Communicate implications</h5>
+<p>Every design decision has a downstream impact on engineering and on the business as a whole. Those communicated in site maps are no exception, and for site maps describing a new direction, you should be prepared to enumerate:</p>
+<div class="note">
+<p><a id="ch05note05"></a></p>
+<h3>TIP: Don’t Read Every Box</h3>
+<p class="notepara">Quite simply: Don’t use the meeting time to read every label in every box. It’s boring. If you need detailed feedback on the site map, give people homework—five days or so to put together their comments—and remind them several times during the course of the week.</p>
+</div>
+<p class="indenthanding">• <strong>Content gaps:</strong> In meeting business and user needs, the new structure may demand new or revised content. Stakeholders need to understand that launching a revised structure also means updating and filling in content.</p>
+<p class="indenthanding">• <strong>Dependencies:</strong> Crucial to project planning, dependencies on a site map show which areas of the site affect others. Especially if you’re talking about the process for building a site, presentation should point out where particular areas of the site will need development earlier in the project.</p>
+<p class="indenthanding">• <strong>Template changes:</strong> Whether you’re adding some new templates to the mix or making significant changes to existing templates, the engineering team will need this information to understand the scale and scope of their work.</p>
+<p class="indenthanding">• <strong>Operational impacts:</strong> New structures mean new spaces to fill. The structure you designed may create an ongoing need to generate new content.</p>
+<p>As-is site maps will yield the same implications, just in a different time frame. You can use the site map to talk about the current downstream impacts of having such a structure. This conversation can be a useful input to project planning, especially if you’re using an as-is site map to discuss how changes to the structure might impact other areas of the organization.</p>
+<p>You can communicate these implications in conjunction with the details (in the previous section “Pointing out details”), but prior to transitioning to “Soliciting feedback,” upcoming, you should recapitulate the big ones.</p>
+<p><a id="ch05lev3sec28"></a></p>
+<h5>7. Solicit feedback</h5>
+<p>To get the most effective feedback from meeting participants, you need to establish scope and then break your questions down into two categories.</p>
+<p>The scope of feedback establishes constraints on the discussion: It can be easy to wander off into every crevice of the site structure. The site map provides a framework for getting feedback, but you need to direct participants’ attention to the important elements. For a site map, these might include categories, content, labeling, connections, and template selections. (See <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#ch05table08">Table 5.8</a>.) You can direct attention to any or all of these, but be explicit as to why you’re focusing on some aspects, but not others.</p>
+<p><a id="ch05table08"></a></p>
+<p class="caption"><strong>Table 5.8. A framework for soliciting feedback on site maps asks two key questions about five aspects of the site structure.</strong></p>
+<p class="image"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0117_01.jpg" alt="image" width="550" height="244" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0117_01.jpg"></p>
+<p>As described in the introduction, soliciting feedback means asking two kinds of questions. Here are those questions mapped against the different areas requiring feedback.</p>
+<p><a id="ch05lev3sec29"></a></p>
+<h5>8. Provide a framework for review</h5>
+<p><a id="page_117"></a></p>
+<p>Getting people to review abstract diagrams like site maps on their own time can be challenging. Giving them a means for doing the evaluation can help ensure you get the feedback you need and they’re not faced with such a daunting task.</p>
+<p>At the close of the meeting, the minutes should:</p>
+<p class="indenthanding">• <strong>Capture the scope</strong> of what people should focus on. For example, please review labeling and connections for areas A, B, and C.</p>
+<p class="indenthanding">• <strong>Make a list of remaining questions</strong>. Try to be specific, like “Does ‘Appliances’ need to be expanded to clarify that it includes both large and small products?”</p>
+<p class="indenthanding">• <strong>Establish a realistic deadline</strong>. For internal reviews of site maps, one to two days is sufficient. For most of my clients, two to four days is a feasible turnaround on a site map.</p>
+<p>Ultimately, the point is you should not conclude a meeting with “Please get me additional feedback by tomorrow.” You must provide a set of questions to give them some direction for their feedback.</p>
+<p><a id="ch05lev2sec16"></a></p>
+<h4>Avoid Newbie Mistakes</h4>
+<p>Site maps are rife with opportunities to get off track in a meeting. Every box is another rabbit hole. Stakeholders may direct their attention to the wrong part of your map (labels are particularly tricky). You might also face a situation where site maps surface some organizational politics.</p>
+<p><a id="ch05lev3sec30"></a></p>
+<h5>Getting stuck on labels</h5>
+<p><a id="page_118"></a></p>
+<p>A question for the philosophers: If categories don’t have labels, are they really categories? As designers, we understand that a category can represent a collection of content and the label can be tentative. A label on your site map refers to a category, but it may not be the exact wording you use on the site.</p>
+<div class="note">
+<p><a id="ch05note06"></a></p>
+<h3>TIP: Big Labeling Problems</h3>
+<p class="notepara">It can be tempting to try to solve big labeling problems. “Solutions,” for example, is a meaningless category. But nearly every web site marketing high-tech enterprise products uses it. It’s wrong, but it works. Instead, direct your passion and energy to some of the more complex and specific problems.</p>
+</div>
+<p>For some conversations about site maps, the labels are out of scope. That is, we’ve acknowledged they’re tentative, we’re not interested in nailing those down at the moment, and our primary concern is getting the structure right. (Can a structure even be right without labels? You’re welcome to tape the philosopher’s mouth closed.)</p>
+<p>Thinking of the structure before you hash out the labels is a perfectly legitimate approach and process. But to meeting participants, the labels can be a distraction. Still, if this is the worst thing that happens during your meeting, consider yourself lucky (as discussed in the next section).</p>
+<p>To mitigate this risk, build the site map to make the labels look like placeholders, or include a note on the site map.</p>
+<p><a id="ch05fig15"></a></p>
+<p class="caption"><strong>Figure 5.15. Labeling options when you haven’t zeroed in on an exact label.</strong></p>
+<p class="mediaobject"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/05fig15.jpg" alt="image" width="450" height="111" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/05fig15.jpg"></p>
+<p>When people argue about labels without any real foundation for validating their choices, meetings lose steam and take on a competitive atmosphere rather than a collaborative one. You attempt to redirect attention by writing label ideas on the whiteboard, saying:</p>
+<p class="blockquote"><strong>These are all great ideas. I’ve captured them on the whiteboard so we can consider them at the end of this meeting if we have time. If we don’t, labeling is the main agenda item for our next working session.</strong></p>
+<div class="note">
+<p><a id="ch05note07"></a></p>
+<h3>TIP: Discussing labels</h3>
+<p class="notepara">If the purpose of your meeting is to define the labels, you should include several alternatives on the site map itself. This shows that you’re considering several possibilities for the label of a section, and it can jump-start the brainstorming. You may not be able to do this for every box or category because, well, thinking of labels is hard. Start the meeting with categories where you have a more substantial starting point: this will get people in the right mood for brainstorming.</p>
+</div>
+<p><a id="ch05lev3sec31"></a></p>
+<h5>The politics of hierarchy</h5>
+<p>Creating a structure for a web site brings out the worst in organizational politics, which is why so many web sites—especially in the early days—were organized around corporate structure. To validate the design of a new structure, you may need to bring all the different players to the table. With teams consisting of people from every part of the organization, everyone frowns at seeing “their” content buried deep in the site while someone else’s content is at the surface.</p>
+<p>Your skills as a facilitator will be challenged. The introduction to this book describes some general techniques for dealing with conflict in design, but here are a few specific to site maps:</p>
+<p class="indenthanding">• <strong>It’s not your content:</strong> The desire to “own” something in an organization can overshadow the true need. In this case, while different people may be responsible for creating, managing, and updating the content, it really <a id="page_119"></a>belongs to the people using the content. If the content is not presented in a way that’s meaningful or legible to them, it doesn’t matter who “owns” it.</p>
+<p class="indenthanding">• <strong>Contrary to vision:</strong> A good design process will establish a purpose or vision for each page. This singular summary of what a page is “supposed to do” can be a powerful mechanism for weeding out requests that don’t contribute to that vision.</p>
+<p class="indenthanding">• <strong>Not everything can go on the home page:</strong> Stakeholders may wonder why everything isn’t linked from the home page. Your explanation needs to clarify that burdening the home page with a link to every piece of content (or every area) will yield an unusable home page.</p>
+<p class="indenthanding">• <strong>Users don’t enter through the home page:</strong> Reminding stakeholders that at least half the entry into their site comes from search, not from visiting the home, can encourage them to think broadly about the role of the home page.</p>
+<p class="indenthanding">• <strong>There are multiple navigation systems:</strong> A good navigation strategy includes multiple mechanisms for browsing the site. A single navigation mechanism (say, “topical navigation”) can not realistically provide access to every area of the site.</p>
+<p class="indenthanding">• <strong>Here’s an example:</strong> Use examples (both good and bad) from around the web to show what happens when content and structure don’t play well together. While a web site can’t tell us everything about the design decisions behind it, we can speculate about how it came to be.</p>
+<p>It can be easy, as a designer, to dismiss organizational politics: All you can do is point out the problems, not solve them. You’re a designer of products, not a therapist. As described in the first chapter, politics can be an obstacle to project completion or a catalyst for compromise. As the designer you can position yourself outside the fray (align yourself with the product or with the target audience, either works for me) and facilitate the process to do what’s best for the project.</p>
+<p><a id="ch05lev1sec6"></a></p>
+<h3>Using and Applying Site Maps</h3>
+<p>Site maps, inherently big-picture views of the project, provide ample opportunity to use them throughout the design process.</p>
+<p><a id="ch05lev2sec17"></a></p>
+<h4>Planning Projects</h4>
+<p>Planning a web site project means, among other things, determining “what will we work on and when?” Site maps figure into this dialog by helping you see the range of possibilities. They can help you zero in on scope because they let you physically draw circles around the areas of the site you will work on.</p>
+<div class="note1">
+<p><a id="ch05sb10"></a></p>
+<p><strong>Navigation Strategy</strong></p>
+<p>The collection of mechanisms for browsing a web site.</p>
+</div>
+<div class="note1">
+<p><a id="ch05sb11"></a></p>
+<p><strong>Scope</strong></p>
+<p>The “what” of what you’re going to work on.</p>
+</div>
+<div class="sidebar">
+<p><a id="ch05sb12"></a></p>
+<h3><em>Aside: Planning Documentation</em></h3>
+<p>Are site maps special? Are they the only ones that can be used for planning? They are certainly not the only artifact useful for planning, but they offer some advantages over flowcharts and concept models:</p>
+<p class="indenthanding">• Concept models: A good candidate for planning, but sometimes they don’t tie concepts—circles on the diagram—to specific areas of the site. A plan is useless if you can’t be specific about what you’re working on.</p>
+<p class="indenthanding">• Flowcharts: Flowcharts generally reflect a self-contained process. While you may choose to leave some things out—phasing different portions of the flow—a flowchart doesn’t necessarily provide a comprehensive picture of the site. This big picture is necessary to talk about the site in chunks.</p>
+<p>Site maps themselves can fall flat as planning tools if they show only a portion of the site (as flowcharts often do) or they map out something besides specific pages (navigation categories, for example).</p>
+</div>
+<p><a id="page_120"></a></p>
+<p><a id="ch05fig16"></a></p>
+<p class="caption"><strong>Figure 5.16. For planning purposes, this version of the site map highlights the scope of activities happening immediately and then attaches phase numbers to other areas of the site.</strong></p>
+<p class="mediaobject"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/05fig16.jpg" alt="image" width="500" height="528" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/05fig16.jpg"></p>
+<p><a id="page_121"></a>Adorn a site map with dates or phase numbers, and you can show the “when” portion of planning questions. You can use color to distinguish between “what we’re doing now” and “what we’re doing later.”</p>
+<p>Planning depends on, well, dependencies. Being able to identify all the moving parts and how moving one affects others is important for establishing a plan. Dependencies determine order and scope: what you need to build when and how much needs building in any given portion of work. Site maps illuminate dependencies by literally drawing connections between areas of the site and templates.</p>
+<p>While a site map won’t automatically provide an answer on what you need to build first, the diagram provides a good basis for brainstorming with the team about dependencies.</p>
+<p>None of this conversation changes if the site map describes an as-is state. As-is site maps also provide opportunities to describe the phases of the project or identify dependencies.</p>
+<p><a id="ch05lev2sec18"></a></p>
+<h4>Site Maps and Wireframes</h4>
+<p>You can use site maps with other diagrams to show their relationship to the site structure.</p>
+<p>If you do nothing else, at least number the boxes on a site map and use the same numbers to identify wireframes (or whatever you’re using to describe screens). Even a simple inventory like this can help with project execution, ensuring that you’ve designed every screen and addressed every dependency.</p>
+<p>Site maps can become a visual element in other parts of your documentation to communicate context visually. Miniaturize the site map, place it next to wireframes elsewhere in your deliverable, and highlight the relevant box, as in <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#ch05fig17">Figure 5.17</a>.</p>
+<p><a id="ch05fig17"></a></p>
+<p class="caption"><strong>Figure 5.17. Site maps can provide context for a wireframe. In this sample page from a user experience specification, a simplified, miniature site map evokes the structure established in the larger version. Simple contrast differentiation can highlight the relevant box.</strong></p>
+<p class="mediaobject"><img src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/05fig17.jpg" alt="image" width="500" height="386" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/05fig17.jpg"></p>
+<p><a id="ch05lev1sec7"></a></p>
+<h3>The Web’s Cartographic Conundrum</h3>
+<p><a id="page_122"></a></p>
+<p>In the first edition I dismissed site maps as a dying artifact—too static and too rigid for the emergent web. They (those site maps) are laughing in my face now as they remain a diagram I use again and again.</p>
+<p>They have evolved, no doubt, to keep up with the changing nature of the web. I tend to favor a more abstract version of site maps: one that emphasizes templates over specific content or even categories. My site maps today are shorter lived, too, providing a means for jump-starting the design process.</p>
+<p>I hereby change my assessment of site maps: They remain useful blueprints for mapping out web projects, especially in conjunction with other artifacts described in this book. That said, the web continues to evolve, and site maps will need to find ways to keep up.</p>
+<p>Parallels between the web and physical space continue to obscure the potential of the web. A “page” on the web continues to lose coherence as a discrete location. Site maps can enforce this metaphor, to the detriment of functionality.</p>
+<p>Nathan Curtis, in his book <em>Modular Web Design</em>, envisions the design process as creating a collection of Lego-like bricks. Page templates are convenient ways of arranging these bricks (what he calls “components”), but content meets structure at this component level. Is it feasible for information architects to continue designing at a page level when it’s the representation of structures at a smaller level that really matters?</p>
+<p>Finally, can site maps deal with trends around social networking and user-generated content? Such newer technologies permit a looser relationship between a site and its content. Some web sites have little predictable structure; this it true, for example, of sites that act as repositories for user-contributed content.</p>
+<p>Increasing reliance on the web as a publishing medium. Increasingly complex transactions. Greater traffic of content. More nuanced exceptions within content strategies. Innovations in classification techniques and strategies. And perhaps most significantly, a dramatic increased comfort level with users of complex structures. Designers are taking advantage of the medium in new ways every day. Is the site map up to the challenge?</p>
+<p>I’ve had my doubts. Yet the site map remains a useful artifact for conceiving structures. Every one of those challenges relies on some underlying structure in its solution. They rely on establishing a set of connections between real parts of a product. Concept models will provide an understanding of the domain, but once you start linking together screens, content, interactions, or features, you’re creating a more concrete blueprint—a site map—for the web site.</p>
+<p><a id="ch05lev2sec19"></a></p>
+<h3>Exercises</h3>
+<p><a id="page_123"></a></p>
+<ol>
+<li>Sit in a public place with clear boundaries (I’m in a Starbucks as I write this, for example) and make a “site map” of it. (I could imagine doing this in a playground, too, but be careful sitting on a bench, scribbling in a notebook, in a place with lots of kids.) What is the range of “content” in the place? What are the different areas people go to? How are they connected? Focus your effort on the place, such that the site map describes a browsing experience. You’re not trying to describe a domain of information, like you would with a concept model, or a series of steps people perform to accomplish a task.</li>
+<li>In the site map from the previous exercise, add further layers of information—perhaps user types, or a classification for different kinds of areas. Since you’re observing in real time, consider including some sense of frequency. (Customers step up to the coffee bar frequently, but rarely peruse the shelves of Starbucks-emblazoned paraphernalia. About a third of the customers stick around at a table, while the rest take their caffeine to go.)</li>
+</ol>
+<div class="annotator-outer annotator-viewer viewer annotator-hide">
+  <ul class="annotator-widget annotator-listing"></ul>
+</div><div class="annotator-modal-wrapper annotator-editor-modal annotator-editor annotator-hide">
+	<div class="annotator-outer editor">
+		<h2 class="title">Highlight</h2>
+		<form class="annotator-widget">
+			<ul class="annotator-listing">
+			<li class="annotator-item"><textarea id="annotator-field-0" placeholder="Add a note using markdown (optional)" class="js-editor" maxlength="750"></textarea></li></ul>
+			<div class="annotator-controls">
+				<a class="link-to-markdown" href="https://daringfireball.net/projects/markdown/basics" target="_blank">?</a>
+				<ul>
+					<li class="delete annotator-hide"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#delete" class="annotator-delete-note button positive">Delete Note</a></li>
+					<li class="save"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#save" class="annotator-save annotator-focus button positive">Save Note</a></li>
+					<li class="cancel"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#cancel" class="annotator-cancel button">Cancel</a></li>
+				</ul>
+			</div>
+		</form>
+	</div>
+</div><div class="annotator-modal-wrapper annotator-delete-confirm-modal" style="display: none;">
+  <div class="annotator-outer">
+    <h2 class="title">Highlight</h2>
+      <a class="js-close-delete-confirm annotator-cancel close" href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#close">Close</a>
+      <div class="annotator-widget">
+         <div class="delete-confirm">
+            Are you sure you want to permanently delete this note?
+         </div>
+         <div class="annotator-controls">
+            <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#cancel" class="annotator-cancel button js-cancel-delete-confirm">No, I changed my mind</a>
+            <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#delete" class="annotator-delete button positive js-delete-confirm">Yes, delete it</a>
+         </div>
+       </div>
+   </div>
+</div><div class="annotator-adder" style="display: none;">
+	<ul class="adders">
+		
+		<li class="copy"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#">Copy</a></li>
+		
+		<li class="add-highlight"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#">Add Highlight</a></li>
+		<li class="add-note"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#">
+			Add Note
+		</a></li>
+		
+	</ul>
+</div></div></div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">Chapter 4. Concept Models</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch06.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">Chapter 6. Flowcharts</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag collapsed slideUp">
+        
+        
+          <p class="usage-data">Find answers on the fly, or master something new. Subscribe today. <a href="https://learning.oreilly.com/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+        
+
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+        
+
+<footer class="pagefoot t-pagefoot" style="padding-bottom: 75px;">
+  <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#" class="icon-up" onclick="window.Appcues.track(&#39;JumpTop_HeronBook&#39;)" style="display: none;"><div class="visuallyhidden">Back to top</div></a>
+  <ul class="js-footer-nav">
+  
+    
+    <li><a href="https://learning.oreilly.com/public/support/">Support</a></li>
+    
+    <li><a href="https://learning.oreilly.com/accounts/logout/">Sign Out</a></li>
+    
+  
+  
+  </ul>
+  <span class="copyright">© 2021 <a href="https://learning.oreilly.com/" target="_blank">O'Reilly Media, Inc</a>.</span>
+  
+    
+    <a href="https://www.oreilly.com/terms/">Terms of Service</a> 
+     / 
+    
+    <a href="https://learning.oreilly.com/privacy">Privacy Policy</a> 
+    
+    
+  
+</footer>
+
+      
+    
+    <script src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource" charset="utf-8"></script>
+    <script src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource(1)" charset="utf-8"></script>
+  
+
+<div class="annotator-notice"></div><div class="font-flyout" style="top: 201.003px; left: 1834px;"><div class="font-controls-panel">
+	<div class="nightmodes">
+		<ul>
+			<li class="day"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#" id="day-mode" title="Day Mode">
+				<i class="fa fa-sun-o"></i>
+				<span>Day Mode</span></a></li>
+			<li class="cloudy"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#" id="cloudy-mode" title="Cloudy Mode">
+				<i class="fa fa-cloud"></i>
+				<span>Cloud Mode</span>
+			</a></li>
+			<li class="night"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#" id="night-mode" title="Night Mode">
+				<i class="fa fa-moon-o"></i>
+				<span>Night Mode</span>
+			</a></li>
+		</ul>
+	</div>
+
+	<div class="font-resizer resizer">
+		<div class="draggable-containment-wrapper">
+			<i class="fa fa-font left"></i>
+			<span class="filler" style="width: 50%;"></span>
+			<div id="js-font-size-draggable" class="draggable ui-widget-content ui-draggable ui-draggable-handle" style="position: relative; left: 80px;"></div>
+			<i class="fa fa-font right"></i>
+		</div>
+	</div>
+
+	<div class="column-resizer resizer">
+		<div class="draggable-containment-wrapper">
+			<i class="fa fa-compress left"></i>
+			<span class="filler" style="width: 50%;"></span>
+			<div id="js-column-size-draggable" class="draggable ui-widget-content ui-draggable ui-draggable-handle" style="position: relative; left: 80px;"></div>
+			<i class="fa fa-expand right"></i>
+		</div>
+	</div>
+
+	<a id="reset" class="button" href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html#">Reset</a>
+</div>
+</div><script type="text/javascript" id="">(function(){window.medalliaUserIdentifier=document.documentElement.dataset.userUuid;window.medalliaUserName=document.documentElement.dataset.username})();</script>
+<script type="text/javascript" id="" src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/embed.js.Без названия"></script><script type="text/javascript" id="">ev=document.querySelectorAll("div[class*\x3d'event']");0<ev.length&&ev.forEach(function(a,b){b=a.querySelector("a");var c=a.querySelector("h3").textContent.toLowerCase();b.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"outbound links",eventAct:"non-oreilly",eventLbl:"add a reminder: "+c})})});</script><div></div><div></div><script type="text/javascript" async="" src="./Chapter 5. Site Maps - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/generic1607612729884.js.Без названия" charset="UTF-8"></script><script type="text/javascript" id="">function forceInputUppercase(a){var b=a.target.selectionStart,c=a.target.selectionEnd;a.target.value=a.target.value.toUpperCase();a.target.setSelectionRange(b,c)}void 0!=document.getElementById("id_promotion")&&null!=document.getElementById("id_promotion")&&document.getElementById("id_promotion").addEventListener("keyup",forceInputUppercase,!1);
+void 0!=document.getElementsByName("promotionCode")[0]&&null!=document.getElementsByName("promotionCode")[0]&&document.getElementsByName("promotionCode")[0].addEventListener("keyup",forceInputUppercase,!1);</script><script type="text/javascript" id="">var nonwExpandable=document.querySelectorAll(".orm-ff-NavigationSubnav-headerListItem a, .orm-ff-NavigationView-headerListItem a");nonwExpandable.forEach(function(a,b){b+1!=nonwExpandable.length?a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.childNodes[1].textContent})}):b+1==nonwExpandable.length&&a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"user login",eventAct:"logout",eventLbl:"global nav | unified"})})});
+var nonwExpandableFo=document.querySelectorAll(".drop-content li:not(.flyout-parent) a");
+nonwExpandableFo.forEach(function(a,b){"drop-content"==a.parentNode.parentNode.parentNode.className&&b+1!=nonwExpandableFo.length?a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.childNodes[1].textContent})}):"drop-content"==a.parentNode.parentNode.parentNode.className&&b+1==nonwExpandableFo.length&&a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"user login",eventAct:"logout",eventLbl:"global nav | unified"})})});
+var expandable=document.querySelectorAll(".orm-ff-NavigationSubnav-toggleControls a, .orm-ff-NavigationView-toggleControls a");expandable.forEach(function(a){a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.parentNode.parentNode.parentNode.querySelectorAll(".orm-Button-btnContentWrap span")[0].childNodes[1].textContent+" | "+a.textContent})})});var flyoutLinks=document.querySelectorAll(".flyout a");
+flyoutLinks.forEach(function(a){a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.closest("li.flyout-parent").getElementsByTagName("a")[0].textContent+" | "+a.textContent})})});</script><span></span></body></html>

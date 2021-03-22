@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html -->
+<html class=" js flexbox flexboxlegacy no-touch websqldatabase indexeddb history csscolumns csstransforms localstorage sessionstorage no-applicationcache svg inlinesvg zoom" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#" itemscope="" itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/" data-offline-url="/" data-url="/library/view/communicating-design-developing/9780131385399/ch12.html" data-csrf-cookie="csrfsafari" data-user-id="11004957" data-user-uuid="9c5599ca-6951-4904-81d0-732bb961926b" data-username="visualcommcomua" data-account-type="Trial" data-activated-trial-date="03/21/2021" data-archive="9780131385399" data-publishers="New Riders" data-htmlfile-name="ch12.html" data-epub-title="Communicating Design: Developing Web Site Documentation for Design and Planning, Second Edition" data-debug="0" data-testing="0" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="author" content="O&#39;Reilly Media"><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"><meta name="HandheldFriendly" content="True"><meta name="MobileOptimized" content="320"><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9780131385399"><link rel="shortcut icon" href="https://www.oreilly.com/favicon.ico"><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"><meta property="twitter:account_id" content="4503599627559754"><link rel="shortcut icon" href="https://learning.oreilly.com/favicon.ico" type="image/x-icon"><link href="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/css" rel="stylesheet" type="text/css"><title>Chapter 12. Usability Reports - Communicating Design: Developing Web Site Documentation for Design and Planning, Second Edition</title><link rel="stylesheet" href="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/output.5bdb4fcb2aad.css" type="text/css"><link rel="stylesheet" type="text/css" href="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/annotator.e3b0c44298fc.css"><link rel="stylesheet" href="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/font-awesome.min.css"><style type="text/css" title="ibis-book">
+    #sbo-rt-content div{margin-top:5pt;margin-bottom:5pt;margin-right:15pt}#sbo-rt-content .cover{margin-top:2pt;margin-bottom:2pt;text-align:center}#sbo-rt-content h1{page-break-before:right;margin-top:5pt;text-align:center;margin-bottom:12pt;font-weight:bold}#sbo-rt-content .subtitle{font-size:large;margin-top:30pt;margin-bottom:55pt;font-weight:bold;text-align:center}#sbo-rt-content .publisher{text-align:center;margin-top:6pt;margin-bottom:4pt}#sbo-rt-content .copyrightpage{page-break-before:right;margin-top:5pt;margin-bottom:5pt;text-indent:.002pt}#sbo-rt-content .copyright{margin-top:5pt;margin-bottom:5pt;text-indent:.002pt}#sbo-rt-content .dedication{page-break-before:right;margin-top:48pt;margin-bottom:5pt;text-align:center}#sbo-rt-content h2{page-break-before:right;margin-top:7pt;margin-bottom:25pt;font-weight:bold}#sbo-rt-content h3{margin-top:9pt;margin-bottom:8pt;font-weight:bold}#sbo-rt-content h4{margin-top:9pt;margin-bottom:6pt;font-weight:bold}#sbo-rt-content h5{margin-top:9pt;margin-bottom:6pt;font-weight:bold}#sbo-rt-content h6{margin-top:8pt;margin-bottom:6pt;font-weight:bold}#sbo-rt-content p{margin-top:5pt;margin-bottom:4pt;text-indent:.002pt}#sbo-rt-content .continued{margin-top:5pt;margin-bottom:4pt;text-indent:.002pt}#sbo-rt-content .author{text-align:center;font-weight:bold;margin-top:66pt;margin-bottom:50pt}#sbo-rt-content .bolditalic{font-weight:bold;font-style:italic}#sbo-rt-content .toc-part{margin-top:4pt;margin-bottom:5pt;font-weight:bold}#sbo-rt-content .toc-chapter{margin-top:5pt;margin-bottom:5pt;font-weight:bold}#sbo-rt-content em{font-style:italic}#sbo-rt-content .figure{margin-top:12pt;margin-bottom:5pt;text-align:center;font-weight:bold}#sbo-rt-content .figure-contents{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .figure-float{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .informalexample{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .itemizedlist{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .legalnotice{margin-top:8pt;margin-bottom:4pt}#sbo-rt-content .literallayout{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .mediaobject{margin-top:12pt;margin-bottom:12pt;text-align:center}#sbo-rt-content .tabimage{margin-top:12pt;margin-bottom:12pt;text-align:center}#sbo-rt-content .smaller{font-size:small}#sbo-rt-content .center{margin-top:50pt;margin-bottom:5pt;text-align:center}#sbo-rt-content .right{margin-top:5pt;margin-bottom:5pt;text-align:right}#sbo-rt-content .image{margin-top:5pt;margin-bottom:5pt;text-align:center}#sbo-rt-content .note{margin-top:6pt;margin-bottom:12pt;margin-left:36pt;margin-right:24pt;border:solid 1pt;padding:1pt 12pt 1pt 12pt}#sbo-rt-content .toc-preface{margin-top:4pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt;font-weight:bold}#sbo-rt-content .procedure{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .programlisting{font-family:"Courier New";font-size:small;margin-top:8pt;margin-bottom:8pt}#sbo-rt-content .programlisting1{font-family:"Courier New";font-size:small;margin-top:5pt;margin-bottom:4pt;margin-left:36pt}#sbo-rt-content code{font-size:x-small}#sbo-rt-content .toc-section{margin-top:4pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt}#sbo-rt-content .toc-index{margin-top:4pt;margin-bottom:4pt;font-weight:bold}#sbo-rt-content .toc-appendix{margin-top:4pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt}#sbo-rt-content .toc-appendix1{margin-top:20pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt}#sbo-rt-content .toc-glossary{margin-top:4pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt}#sbo-rt-content .toc-section1{margin-top:4pt;margin-bottom:4pt;margin-left:24pt;text-indent:24pt}#sbo-rt-content .toc-section2{margin-top:4pt;margin-bottom:4pt;margin-left:36pt;text-indent:36pt}#sbo-rt-content .sidebar{font-size:small;margin-top:5pt;margin-bottom:12pt;margin-left:15pt;border:solid 1pt;padding:1pt 12pt 1pt 12pt}#sbo-rt-content .sidebar1{font-size:small;margin-top:5pt;margin-bottom:12pt;margin-left:15pt;border:solid 1pt;padding:1pt 12pt 1pt 12pt;background-color:#e6e6e6}#sbo-rt-content .strong{font-weight:bold}#sbo-rt-content .italic{font-style:italic}#sbo-rt-content .table{margin-top:12pt;margin-bottom:5pt;text-align:center;font-weight:bold}#sbo-rt-content .table-contents{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .table-float{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .title{margin-top:12pt;margin-bottom:6pt;font-size:medium;font-weight:bold;text-align:center}#sbo-rt-content .title1{margin-top:12pt;margin-bottom:6pt;font-size:medium;font-weight:bold}#sbo-rt-content .titlepage{margin-top:3pt;margin-bottom:3pt}#sbo-rt-content .toc{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .blockquote{margin-top:12pt;margin-bottom:12pt;margin-left:24pt}#sbo-rt-content .attribution{margin-top:12pt;margin-bottom:12pt;margin-right:15pt;text-align:right}#sbo-rt-content .indexmain{margin-top:2pt;margin-bottom:2pt}#sbo-rt-content .indexsub{margin-top:2pt;margin-bottom:2pt;margin-left:15pt;text-indent:15pt}#sbo-rt-content .indexsubsub{margin-top:2pt;margin-bottom:2pt;margin-left:25pt;text-indent:25pt}#sbo-rt-content .indenthanging{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-12pt}#sbo-rt-content .indenthangingb{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-12pt}#sbo-rt-content .paraindent{margin-top:4pt;margin-bottom:4pt;margin-left:25pt}#sbo-rt-content .list{margin-top:4pt;margin-bottom:4pt;margin-left:30pt;text-indent:-8pt}#sbo-rt-content .indenthanding{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-8pt}#sbo-rt-content .indenthanding1{margin-top:4pt;margin-bottom:4pt;margin-left:48pt;text-indent:-8pt}#sbo-rt-content .indent{margin-top:4pt;margin-bottom:4pt;margin-left:36pt}#sbo-rt-content .underline{text-decoration:underline}#sbo-rt-content .legalnotice-title{font-size:medium;margin-top:5pt;margin-bottom:5pt}#sbo-rt-content .footnote{font-size:small;margin-top:5pt;margin-bottom:4pt;margin-left:20pt;text-indent:-8pt}#sbo-rt-content .creditline{font-size:small;margin-top:4pt;margin-bottom:8pt;text-align:center}#sbo-rt-content .caption{margin-top:4pt;margin-bottom:8pt;text-align:center}#sbo-rt-content .pd_red{color:#BD6B4C}#sbo-rt-content .pd_brown{color:#9E7E4C}#sbo-rt-content .pd_orange{color:#E78152}#sbo-rt-content .image1{margin-top:5pt;margin-bottom:5pt}#sbo-rt-content .bibliomixed{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-12pt}#sbo-rt-content .progimg{margin-top:5pt;margin-bottom:5pt}#sbo-rt-content .progimage{margin-top:5pt;margin-bottom:5pt}#sbo-rt-content .progimage1{margin-top:5pt;margin-bottom:5pt;margin-left:25pt}#sbo-rt-content .question{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-12pt}#sbo-rt-content .listimage{margin-top:12pt;margin-bottom:12pt;text-align:center}#sbo-rt-content .source{font-size:small;margin-top:12pt;margin-bottom:12pt;text-align:center}#sbo-rt-content .blockquote1{margin-top:15pt;margin-bottom:15pt;text-align:center;border:solid 1pt;padding:1pt 12pt 1pt 12pt;background-color:#E6E7E8}#sbo-rt-content .asa{margin-top:18pt;margin-bottom:4pt;text-indent:.002pt}#sbo-rt-content .note1{margin-top:6pt;margin-bottom:12pt;margin-left:36pt;margin-right:24pt}
+    </style><script type="text/javascript" async="" src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/cool-2.1.15.min.js.Без названия"></script><script type="text/javascript" async="" src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/ec.js.Без названия"></script><script type="text/javascript" async="" src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/analytics.js.Без названия"></script><script type="text/javascript" async="" src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/f.txt"></script><script type="text/javascript" async="" src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/js"></script><script crossorigin="anonymous" integrity="sha256-+LIVdo7S66HX09dkhZvbKz8NKAlkGOP3Z0kCUzr+MU8=" type="text/javascript" src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/appcues.main.11fd23733af68e25fa8.Без названия" async=""></script><script async="" src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/gtm.js.Без названия"></script><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9780131385399/chapter/ch12.html",
+          "book_id": "9780131385399",
+          "chapter_uri": "ch12.html",
+          "position": 0,
+          "user_uuid": "9c5599ca-6951-4904-81d0-732bb961926b",
+          "next_chapter_uri": "/library/view/communicating-design-developing/9780131385399/apa.html"
+        
+      },
+      title: "Communicating Design: Developing Web Site Documentation for Design and Planning, Second Edition",
+      author_list: "Dan M. Brown",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false
+    };
+    // ]]></script><script src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/modernizr.8e35451ddb64.js.Без названия"></script><script>
+    
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+      window.PRIVACY_CONTROL_SWITCH = true;
+
+      window.PUBLISHER_PAGES = true;
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "https://learning.oreilly.com/api/v2/search/select/",
+          "ENABLE_ONLINE_TRAINING": true
+        }
+      };
+  </script><link rel="canonical" href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html"><meta name="description" content=" Chapter 12. Usability Reports A document prepared after a usability test, capturing the findings and observations and, potentially, recommendations. After conducting a usability test, the design team will have a ... "><meta property="og:title" content="Chapter 12. Usability Reports"><meta itemprop="isPartOf" content="/library/view/communicating-design-developing/9780131385399/"><meta itemprop="name" content="Chapter 12. Usability Reports"><meta property="og:url" itemprop="url" content="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html"><meta property="og:site_name" content="Safari"><meta property="og:image" itemprop="thumbnailUrl" content="https://learning.oreilly.com/library/cover/9780131385399/"><meta property="og:description" itemprop="description" content=" Chapter 12. Usability Reports A document prepared after a usability test, capturing the findings and observations and, potentially, recommendations. After conducting a usability test, the design team will have a ... "><meta itemprop="inLanguage" content="en"><meta itemprop="publisher" content="New Riders"><meta property="og:type" content="book"><meta property="og:book:isbn" itemprop="isbn" content="9780131385399"><meta property="og:book:author" itemprop="author" content="Dan M. Brown"><meta property="og:book:tag" itemprop="about" content="Design"><meta property="og:book:tag" itemprop="about" content="Digital Media"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@OReillyMedia"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: &lt;%= font_size %&gt; !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: &lt;%= font_family %&gt; !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: &lt;%= column_width %&gt;% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; url=/library/no-js/" /></noscript><script>
+    var dataLayer = window.dataLayer || [];
+
+    
+      window.medalliaVsgUserIdentifier = '9c5599ca-6951-4904-81d0-732bb961926b';
+      dataLayer.push({userIdentifier: '9c5599ca-6951-4904-81d0-732bb961926b'});
+      dataLayer.push({loggedIn: 'yes'});
+
+      
+        window.medalliaVsgAccountIdentifier = '40a64ffb-0742-4e66-9d82-1192a9b6da49';
+        
+
+        window.medalliaVsgIsIndividual = true;
+        
+          
+          dataLayer.push({learningAccountType: 'free trial'});
+          
+        
+
+        
+      
+    
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+    (function () {
+      var VERSION = 'V1.1';
+      var AUTHOR = 'Awwad';
+      if (!window.GtmHelper)
+        window.GtmHelper = function () {
+          var instance = this;
+          var loc = document.location;
+          this.version = VERSION;
+          this.author = AUTHOR;
+          this.readCookie = function (name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+          };
+          this.createCookie = function (name, value, days, cookieDomain) {
+            var domain = "";
+            var expires = "";
+
+            if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + Math.ceil(days * 24 * 60 * 60 * 1000));
+              var expires = " expires=" + date.toGMTString() + ";";
+            }
+
+            if (typeof (cookieDomain) != 'undefined')
+              domain = " domain=" + cookieDomain + "; ";
+
+            document.cookie = name + "=" + value + ";" + expires + domain + "path=/";
+          };
+
+          this.isDuplicated = function (currentTransactionId) {
+            // the previous transaction id:
+            var previousTransIdValue = this.readCookie("previousTransId");
+
+            if (currentTransactionId === previousTransIdValue) {
+              return true; // Duplication
+            } else {
+              return false;
+            }
+          };
+        }
+    })()
+  </script><script defer="" src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/vendor.d0fe30932d64.js.Без названия"></script><script defer="" src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/reader.3833317c1bb0.js.Без названия"></script><iframe src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource.html"></iframe><iframe src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource(2).html"></iframe><iframe src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource(3).html"></iframe><link rel="stylesheet" type="text/css" integrity="sha256-q9sKb2HpA5fJjN1cK9LjLaEXff5ix81Rv1Y3xJFptPE=" crossorigin="anonymous" href="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/container.11fd23733af68e25fa851da20bbd639.css"><iframe src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource(4).html"></iframe><script src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/f(1).txt"></script><script async="" src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/MathJax.js.Без названия"></script><style id="annotator-dynamic-style">.annotator-adder, .annotator-outer, .annotator-notice {
+  z-index: 100019;
+}
+.annotator-filter {
+  z-index: 100009;
+}</style><style type="text/css" id="kampyleStyle">.noOutline{outline: none !important;}.wcagOutline:focus{outline: 1px dashed #595959 !important;outline-offset: 2px !important;transition: none !important;}</style></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts subscribe-panel library">
+
+    
+  <noscript> 
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+  
+
+
+<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li><a href="https://learning.oreilly.com/home/" class="l0 nav-icn"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.738 14H9.254v-3.676a.617.617 0 0 0-.621-.613H7.39a.617.617 0 0 0-.62.613V14H4.284a.617.617 0 0 1-.622-.613V10.22c0-.327.132-.64.367-.87l3.547-3.493a.627.627 0 0 1 .875 0l3.54 3.499c.234.229.366.54.367.864v3.167a.617.617 0 0 1-.62.613zM7.57 2.181a.625.625 0 0 1 .882 0l5.77 5.692-.93.92-5.28-5.209-5.28 5.208-.932-.919 5.77-5.692z"></path></svg><span>Home</span></a></li><li class="search"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"></path></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"></path></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#" class="l1 nav-icn "><!--?xml version="1.0" encoding="UTF-8"?--><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M8,8 C6.34321755,8 5.00013,6.65691245 5.00013,5.00013 C5.00013,3.34334755 6.34321755,2.00026001 8,2.00026001 C9.65678245,2.00026001 10.99987,3.34334755 10.99987,5.00013 C10.99987,6.65691245 9.65678245,8 8,8 Z M2.33024571,11.3523547 L2.33774538,11.3523547 C3.7622187,9.70968996 5.82947484,8.76608166 8.00374984,8.76608166 C10.1780248,8.76608166 12.245281,9.70968996 13.6697543,11.3523547 C13.8892083,11.6177474 14.0062813,11.9530021 13.99974,12.2973138 L13.99974,13.99974 L2.00026001,13.99974 L2.00026001,12.2973138 C1.99371867,11.9530021 2.11079172,11.6177474 2.33024571,11.3523547 Z" id="path-1"></path></svg><span>Your O'Reilly</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/profile/" class="l2 nav-icn"><span>Profile</span></a></li><li><a href="https://learning.oreilly.com/history/" class="l2 nav-icn"><span>History</span></a></li><li><a href="https://learning.oreilly.com/playlists/" class="l2 nav-icn"><span>Playlists</span></a></li><li><a href="https://learning.oreilly.com/u/9c5599ca-6951-4904-81d0-732bb961926b/" class="l2 nav-icn"><span>Highlights</span></a></li></ul></li><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#" class="l1 nav-icn "><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.564 2.263l2.172 2.174c.17.168.264.397.264.636V11a.6.6 0 0 1-.6.6h-.6V6.2h-6V2.6a.6.6 0 0 1 .6-.6h3.527c.239 0 .468.095.637.263zM2.6 14a.6.6 0 0 1-.6-.6V6.8a.6.6 0 0 1 .6-.6h1.903a1.2 1.2 0 0 1 .849.352L6.2 7.4H11a.6.6 0 0 1 .6.6v5.4a.6.6 0 0 1-.6.6H2.6zM11 5h1.8L11 3.2V5z"></path></svg><span>Featured</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/featured/navigating-21st-century/" class="l2 nav-icn"><span>Navigating Change</span></a></li><li><a href="https://learning.oreilly.com/recommendations/" class="l2 nav-icn"><span>Recommended</span></a></li></ul></li><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#" class="l1 nav-icn "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>queue icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 29.2C25.4 29.2 25.8 29.1 26.1 28.9L48.7 16.8C49.5 16.4 50 15.5 50 14.6 50 13.7 49.5 12.8 48.7 12.4L26.1 0.3C25.4-0.1 24.6-0.1 23.9 0.3L1.3 12.4C0.5 12.8 0 13.7 0 14.6 0 15.5 0.5 16.4 1.3 16.8L23.9 28.9C24.2 29.1 24.6 29.2 25 29.2ZM7.3 14.6L25 5.2 42.7 14.6 25 24 7.3 14.6ZM48.7 22.4L47.7 21.9 25 34.2 2.3 21.9 1.3 22.4C0.5 22.9 0 23.7 0 24.7 0 25.6 0.5 26.5 1.3 26.9L23.9 39.3C24.2 39.5 24.6 39.6 25 39.6 25.4 39.6 25.8 39.5 26.1 39.3L48.7 26.9C49.5 26.5 50 25.6 50 24.7 50 23.7 49.5 22.9 48.7 22.4ZM48.7 32.8L47.7 32.3 25 44.6 2.3 32.3 1.3 32.8C0.5 33.3 0 34.1 0 35.1 0 36 0.5 36.9 1.3 37.3L23.9 49.7C24.2 49.9 24.6 50 25 50 25.4 50 25.8 49.9 26.1 49.7L48.7 37.3C49.5 36.9 50 36 50 35.1 50 34.1 49.5 33.3 48.7 32.8Z"></path></g></svg><span>Explore</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/topics/" class="l2 nav-icn"><span>All Topics</span></a></li><li><a href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;sort=publication_date&amp;facet_json=true&amp;page=0" class="l2 nav-icn"><span>Early Releases</span></a></li><li><a href="https://learning.oreilly.com/playlists/discover/" class="l2 nav-icn"><span>Shared Playlists</span></a></li><li><a href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;formats=case%20study&amp;formats=learning%20path&amp;formats=live%20online%20training&amp;formats=notebook&amp;formats=oriole&amp;formats=video&amp;sort=popularity&amp;facet_json=true&amp;page=0&amp;collection_type=expert" class="l2 nav-icn"><span>Most Popular Titles</span></a></li><li><a href="https://learning.oreilly.com/resource-centers/" class="l2 nav-icn"><span>Resource Centers</span></a></li></ul></li><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#" class="l1 nav-icn "><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12.8 3.2A1.2 1.2 0 0 1 14 4.4v8.4a1.2 1.2 0 0 1-1.2 1.2H3.2A1.2 1.2 0 0 1 2 12.8V4.4a1.2 1.2 0 0 1 1.2-1.2h1.2V2h1.2v1.2h4.8V2h1.2v1.2h1.2zm-9.6 9.6h9.6V6.2H3.2v6.6zM8 9.5a1.35 1.35 0 1 1 0-2.7 1.35 1.35 0 0 1 0 2.7zm2.7 2.148v.552H5.3v-.552c0-.321.124-.634.355-.858a3.358 3.358 0 0 1 4.69 0c.23.224.355.537.355.858z"></path></svg><span>Live Events</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/attend/" class="l2 nav-icn"><span>All Events</span></a></li><li><a href="https://learning.oreilly.com/featured/architectural-katas/" class="l2 nav-icn"><span>Architectural Katas</span></a></li><li><a href="https://learning.oreilly.com/featured/ai" class="l2 nav-icn"><span>AI &amp; ML</span></a></li><li><a href="https://learning.oreilly.com/featured/strata/" class="l2 nav-icn"><span>Data Sci &amp; Eng</span></a></li><li><a href="https://learning.oreilly.com/featured/oscon/" class="l2 nav-icn"><span>Programming</span></a></li><li><a href="https://learning.oreilly.com/featured/infrastructure-ops/" class="l2 nav-icn"><span>Infra &amp; Ops</span></a></li><li><a href="https://learning.oreilly.com/featured/software-architecture/" class="l2 nav-icn"><span>Software Arch</span></a></li></ul></li><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#" class="l1 nav-icn "><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.6467109,4.35328907 L14.7964612,7.51003884 C15.0678463,7.78304342 15.0678463,8.22395603 14.7964612,8.49696061 L11.6467109,11.6467109 L10.6597892,10.6597892 L13.3055794,8 L10.6597892,5.34021084 L11.6467109,4.35328907 Z M4.35328907,11.6467109 L1.20353875,8.48996116 C0.932153749,8.21695658 0.932153749,7.77604397 1.20353875,7.50303939 L4.35328907,4.35328907 L5.34021084,5.34021084 L2.69442057,8 L5.34021084,10.6597892 L4.35328907,11.6467109 Z M5.84417089,11.4997226 L8.67194674,4.50027742 L10.1838269,4.50027742 L7.35605105,11.4997226 L5.84417089,11.4997226 Z" id="Mask"></path></svg><span>Interact</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/scenarios/?classification=content-scenario" class="l2 nav-icn"><span>Scenarios</span></a></li><li><a href="https://learning.oreilly.com/scenarios/?classification=sandbox-scenario" class="l2 nav-icn"><span>Sandboxes</span></a></li><li><a href="https://learning.oreilly.com/interactive/?classification=jupyter-notebook" class="l2 nav-icn"><span>Jupyter Notebooks</span></a></li></ul></li><li><a href="https://learning.oreilly.com/answers/" class="l1 nav-icn "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M2.31032699,3.75609006 C4.65421571,1.41371359 8.45302454,1.41472092 10.7955702,3.75860838 C13.1381158,6.10249583 13.1369405,9.90130261 10.7930518,12.243847 C8.44916311,14.5863913 4.65018639,14.5852161 2.30780867,12.2413286 C-0.0346204845,9.89749489 -0.0334929936,6.09853298 2.31032699,3.75609006 Z M8.8198605,4.98016308 C7.34193969,3.86924672 5.23410194,3.98609692 3.88914868,5.33104946 C3.12814393,6.09032122 2.72818176,7.13880077 2.79015179,8.21201133 C2.79115912,8.23064692 2.79233434,8.24928252 2.79350956,8.26791811 L2.79350956,8.26791811 C2.83179539,8.8307976 2.9944077,9.37404287 3.26947292,9.86201677 L3.26947292,9.86201677 L2.77621706,11.7027432 C2.7699968,11.7259241 2.77662063,11.7506624 2.79359185,11.7676337 C2.8105631,11.7846049 2.83530144,11.7912287 2.85848233,11.7850085 L2.85848233,11.7850085 L4.69400524,11.2922565 C5.26306363,11.6167344 5.90703177,11.786885 6.56209849,11.7858479 C8.64827865,11.7858479 10.3395879,10.094542 10.3395879,8.00836292 C10.3405204,6.84135608 9.80105674,5.73967784 8.87862141,5.02482134 L8.87862141,5.02482134 L8.82825492,4.98654283 Z M13.7933062,2 C14.7073496,2.00009863 15.4482759,2.74110484 15.4482759,3.65514822 C15.4482759,4.32460943 15.0449926,4.92814782 14.4264842,5.18432286 C13.8079757,5.44049789 13.096053,5.29885769 12.6226979,4.82545158 C12.1493429,4.35204547 12.0077795,3.64010743 12.2640213,3.02162665 C12.5202631,2.40314587 13.123845,1.99992776 13.7933062,2 Z"></path></svg><span>Answers</span></a></li><li><a href="https://learning.oreilly.com/certifications/" class="l1 nav-icn "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M12.912 9.18L14 8.014l-1.088-1.18a.304.304 0 01-.075-.268L13.195 5l-1.535-.463a.313.313 0 01-.194-.194l-.462-1.537-1.565.358c-.09.03-.194 0-.269-.074L8.007 2 6.845 3.09a.303.303 0 01-.269.074l-1.565-.358-.462 1.537a.313.313 0 01-.194.194L2.82 5l.358 1.567a.26.26 0 01-.075.269L2 8.015l1.088 1.164c.075.075.09.18.075.269l-.358 1.567 1.535.463c.09.03.164.104.194.194l.462 1.537 1.565-.358c.015 0 .045-.015.075-.015.075 0 .15.03.209.074L8.007 14l1.163-1.09a.303.303 0 01.269-.074l1.565.358.462-1.537a.313.313 0 01.194-.194L13.195 11l-.358-1.567a.338.338 0 01.075-.254zm-6.046 1.37L4.41 8.26l1.16-1.244 1.767 1.649L10.4 5.6l1.202 1.202-4.242 4.243-.495-.495z"></path></svg><span>Certifications</span></a></li><li><a href="https://learning.oreilly.com/preferences/" class="l1 nav-icn "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"></path></g></svg><span>Settings</span></a></li><li><a href="https://learning.oreilly.com/public/support/" class="l1 nav-icn "><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M7.363 6.656a2.692 2.692 0 0 1-2.681-2.703c0-1.493 1.2-2.703 2.681-2.703a2.692 2.692 0 0 1 2.682 2.703c0 1.493-1.2 2.703-2.682 2.703zm4.023 2.027c-1.852 0-3.352 1.513-3.352 3.379H2v-1.534c-.006-.31.099-.612.295-.852a6.666 6.666 0 0 1 9.09-.993zm-.543.676h1.12v.304c.003.284.16.543.408.676a.766.766 0 0 0 .77 0l.303-.176.556.966-.302.176a.772.772 0 0 0-.362.676v.08a.772.772 0 0 0 .362.677l.302.21-.556.965-.302-.175a.766.766 0 0 0-.771 0 .778.778 0 0 0-.409.675v.352h-1.106v-.372a.778.778 0 0 0-.409-.676.766.766 0 0 0-.77 0l-.303.176-.556-.912.302-.176a.772.772 0 0 0 .362-.676v-.04-.04a.772.772 0 0 0-.362-.676l-.302-.176.556-.966.289.155a.766.766 0 0 0 .77 0 .778.778 0 0 0 .41-.676V9.36zm1.562 2.703c0-.271-.108-.531-.3-.722a1.001 1.001 0 0 0-.72-.292 1.01 1.01 0 0 0-.992 1.023 1.01 1.01 0 0 0 1.01 1.004 1.01 1.01 0 0 0 1.002-1.013z"></path></svg><span>Support</span></a></li><li><a href="https://get.oreilly.com/email-signup.html" class="l1 nav-icn " target="&quot;_blank&quot;"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.564 2.263l2.172 2.174c.17.168.264.397.264.636V11a.6.6 0 0 1-.6.6h-.6V6.2h-6V2.6a.6.6 0 0 1 .6-.6h3.527c.239 0 .468.095.637.263zM2.6 14a.6.6 0 0 1-.6-.6V6.8a.6.6 0 0 1 .6-.6h1.903a1.2 1.2 0 0 1 .849.352L6.2 7.4H11a.6.6 0 0 1 .6.6v5.4a.6.6 0 0 1-.6.6H2.6zM11 5h1.8L11 3.2V5z"></path></svg><span>Newsletters</span></a></li><li><a href="https://learning.oreilly.com/accounts/logout/" class="l1 nav-icn "><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M2.613 12.63A.607.607 0 0 1 2 12.03V3.602C2 3.269 2.274 3 2.613 3h5.515v1.204H3.226v7.223h4.902v1.203H2.613zM5.677 9.02V6.611h4.903V4.926a.301.301 0 0 1 .19-.274.31.31 0 0 1 .33.063l2.722 2.673a.594.594 0 0 1 0 .849L11.1 10.909a.31.31 0 0 1-.331.063.301.301 0 0 1-.19-.274V9.02H5.677z"></path></svg><span>Sign Out</span></a></li></ul></div></li></ul></nav></header>
+
+
+
+      </div>
+      <div id="container" class="application" style="height: auto;">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Communicating Design: Developing Web Site Documentation for Design and Planning, Second Edition
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#" title="Search in archive" class="js-search-controls search-controls" onclick="window.Appcues.track(&#39;SearchBook_HeronBook&#39;)"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9780131385399/chapter/ch12.html"><div class="js-collections-dropdown collections-dropdown menu-bit-cards" onclick="window.Appcues.track(&#39;AddPlaylist_HeronBook&#39;)"><div data-reactroot="" class="menu-dropdown-wrapper js-menu-dropdown-wrapper align-right"><img class="hidden" src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/ajax-transp.gif" alt="loading spinner"><div class="menu-control"><div class="control "><div class="js-playlists-menu"><button class="js-playlist-icon"><svg class="icon-add-to-playlist-sml" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill-rule="nonzero" fill="#000000"><g transform="translate(-1.000000, 0.000000)"><rect x="5" y="0" width="12" height="2"></rect><title>Playlists</title><path d="M4.5,14 C6.43299662,14 8,12.4329966 8,10.5 C8,8.56700338 6.43299662,7 4.5,7 C2.56700338,7 1,8.56700338 1,10.5 C1,12.4329966 2.56700338,14 4.5,14 Z M2.5,10 L4,10 L4,8.5 L5,8.5 L5,10 L6.5,10 L6.5,11 L5,11 L5,12.5 L4,12.5 L4,11 L2.5,11 L2.5,10 Z"></path><circle cx="2" cy="5" r="1"></circle><circle cx="1.94117647" cy="1" r="1"></circle><rect x="5" y="4" width="12" height="2"></rect><rect x="9" y="8" width="8" height="2"></rect><rect x="9" y="12" width="8" height="2"></rect></g></g></g></svg><div class="js-playlist-addto-label">Add&nbsp;To</div></button></div></div></div></div></div></div></li><li class="js-font-control-panel font-control-activator"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size" onclick="window.Appcues.track(&#39;ChangeFont_HeronBook&#39;)"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#" class="trigger" data-push-state="false" title="Share" aria-label="Share" onclick="window.Appcues.track(&#39;Share_HeronBook&#39;)"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a class="twitter share-button t-twitter" target="_blank" aria-label="Share this section on Twitter" title="Share this section on Twitter" href="https://twitter.com/share?url=https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html&amp;text=Communicating%20Design%3A%20Developing%20Web%20Site%20Documentation%20for%20Design%20and%20Planning%2C%20Second%20Edition&amp;via=OReillyMedia"><span>Twitter</span></a></li><li><a class="facebook share-button t-facebook" target="_blank" aria-label="Share this section on Facebook" title="Share this section on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html"><span>Facebook</span></a></li><li><a class="googleplus share-button t-googleplus" target="_blank" aria-label="Share this secton on Google Plus" title="Share this secton on Google Plus" href="https://plus.google.com/share?url=https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html"><span>Google Plus</span></a></li><li><a class="email share-button t-email" aria-label="Share this section via email" title="Share this section via email" href="mailto:?subject=Safari:%20Chapter%2012.%20Usability%20Reports&amp;body=https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html%0D%0Afrom%20Communicating%20Design%3A%20Developing%20Web%20Site%20Documentation%20for%20Design%20and%20Planning%2C%20Second%20Edition%0D%0A"><span>Email</span></a></li></ul></li><!-- endif request.user.is_authenticated -->
+      </ul>
+    </div>
+
+      
+          
+      
+
+    <section role="document">
+        
+        
+
+
+
+
+  <script defer="" src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/djangoMessagesPage.14c7c03e1be9..Без названия"></script>
+
+
+        <script src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/48743.js.Без названия"></script>
+<script>
+  var userId = "9c5599ca-6951-4904-81d0-732bb961926b";
+
+  var userObject = {
+    firstName: "Michael",
+    segment: "Trial",
+    admin: "False",
+    profileCreatedOn: "2021-03-21",
+    academic: ""
+  };
+  window.Appcues.identify(userId, userObject);
+  window.Appcues.page();
+
+  setTimeout(function () {
+    window.Appcues.track('ViewingBook_HeronBook')
+  }, 20000);
+</script>
+
+
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch11.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">Chapter 11. Usability Plans</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/apa.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">Recommended Bookshelf Additions</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content" style="transform: none;"><div class="annotator-wrapper"><p><a id="ch12"></a></p>
+<h2>Chapter 12. Usability Reports</h2>
+<p><a id="page_274"></a></p>
+<p><img src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/ch12text01.jpg" alt="image" width="200" height="16" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/ch12text01.jpg"></p>
+<p><strong>A document prepared after a usability test, capturing the findings and observations and, potentially, recommendations.</strong></p>
+<p><a id="page_275"></a>After conducting a usability test, the design team will have a pile of data. This information provides useful direction for design activities, but the team’s ability to respond to the results hinges on how the results are presented.</p>
+<p>Usability results are usually presented as a report. In our industry we are resigned to expect a fat report coming out of usability testing. Experience shows that design teams don’t need big reports, which generally include information not essential to the design effort.</p>
+<p>This chapter positions usability results as a design tool, minimizing the extraneous stuff and focusing on how designers can use them as a valuable input into their process.</p>
+<p>Different design teams have different conceptions of usability testing outputs. Some teams ask their usability person to perform tests and report on what the users thought. Others want to see design recommendations based on the observations. This chapter assumes that there’s a clear delineation between the observations made during a usability test and the interpretation and analysis of those results, regardless of who’s responsible.</p>
+<p><a id="ch12lev1sec1"></a></p>
+<h3>What Makes a Good Usability Report</h3>
+<p>To be useful to the project team, a usability report must overcome three challenges:</p>
+<p class="indenthanding">• <strong>Actionability:</strong> Data coming out of a usability test can be so rich as to be difficult to boil down into digestible direction for designers. Reporting observations loses much of the flavor and context of an actual person reacting to the actual design. In an effort to avoid losing that information, you may be tempted to embellish results with the context or explanation. These distractions make it difficult for designers to know exactly what to respond to.</p>
+<p class="indenthanding">• <strong>Authority:</strong> What makes actionability especially challenging is that usability observations should reflect a rationale: They need to come with some authority. If you’re summarizing lots of observations to provide the essential direction, it may appear as if you’re simply critiquing the design without any basis.</p>
+<p class="indenthanding">• <strong>Accessibility:</strong> Finally, another danger of usability reports is that they try to justify themselves too much. Depending on the methods used, usability testing can be extremely complex. To explain the complexity of the tests, you might develop a report that buries the observations in elaborate analysis. At the same time, if you generalize too much, the reader may have a skewed view of the results.</p>
+<p>The following sections describe attributes of good usability reports, ones that address these challenges and provide value to the project team.</p>
+<p><a id="ch12lev2sec1"></a></p>
+<h4>Focus and Relevance</h4>
+<p>Usability testing can go in lots of different directions. Here are some typical objectives in conducting usability studies:</p>
+<p class="indenthanding">• Diagnosing problems with a design</p>
+<p class="indenthanding">• Establishing priorities for a design project</p>
+<p class="indenthanding">• Learning more about users and their behaviors</p>
+<p class="indenthanding">• Validating design concepts</p>
+<p class="indenthanding">• Validating and prioritizing requirements</p>
+<p>A good usability report keeps content focused on one of these purposes. All the observations and insights captured in the document should support this singular focus. Stating this purpose at the beginning of the document helps set context.</p>
+<p>If your study covered more than one of the themes above, that’s OK, just be sure to clearly distinguish them in the report. For example, you might have made the following observations during a study:</p>
+<p class="indenthanding">• <a id="page_276"></a>Users can’t find the submit button during the checkout process.</p>
+<p class="indenthanding">• Two users (of eight) asked for the ability to ship to multiple addresses.</p>
+<p>Though both of these are about the checkout process, the second represents a significantly larger endeavor from a design and implementation perspective. The first observation is a smaller fix, but more severe and immediate. The observations may be equally high priority but should occupy separate places in the document.</p>
+<p><a id="ch12lev2sec2"></a></p>
+<h4>Prioritized Results and More</h4>
+<p>A good usability report distinguishes priorities, such that the design team knows which issues they need to pursue immediately. The usability report must be an input into a plan. The plan’s timeframe is irrelevant for the purposes of a theoretical discussion; designers just need to know which issues to address now and which they can save for later.</p>
+<p>In the next section, we’ll talk about severity. While severity is an important and useful measure to drive priority, a prioritized document involves more than that. In preparing a usability report, you must not only prioritize observations but also how the document is presented.</p>
+<p>To keep the document <em>actionable</em>, the results directly tied to specific design tasks must be prioritized over supporting information. Methodology, user profiles, and rationale for the approach are all relevant background, but they don’t lead into concrete tasks for the design team. Exploring the psychological implications of the observations may yield valuable insights about the target audience, but doesn’t give the design team a specific set of objectives for the next week.</p>
+<p>Prioritizing observations over this context also keeps the document <em>accessible</em>. Contextual content like methodological theory may be ethically necessary, to provide a rationale for the kinds of results captured, but can muddy the content. Documents with too much theory can feel like scientific papers instead of design tools. The trick to a good usability report is balancing the needs of the design team with methodological integrity.</p>
+<p><a id="ch12lev2sec3"></a></p>
+<h4>Tips for Presenting Usability Reports</h4>
+<p>The presentation outline described in Diagram Basics (<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch02.html">Chapter 2</a>) works perfectly for presenting usability reports. The structure allows you to communicate the main messages (step 3), elaborate on specific findings (step 5), and offer recommendations (step 6, implications). So, no need to depart from that framework, but here are a few things to consider as you prepare for presenting usability results.</p>
+<p><a id="ch12lev3sec1"></a></p>
+<h5>Establish a purpose</h5>
+<p>Ideally, usability testing should lead to ongoing conversations within the team. The results should pervade every design discussion. If this isn’t the team’s culture, however, or if you need to kick off these discussions, determine what you want to get out of your meeting about usability testing. There are two flavors:</p>
+<p class="indenthanding">• <strong>Establish a plan of attack:</strong> In this meeting, your intent is to answer the question, “What should we focus on?” This meeting can be structured to describe the findings from the study. Alternatively, if the team is familiar with the tenor of the test, you can do a prioritization activity to determine which problems deserve attention first.</p>
+<p class="indenthanding">• <strong>Brainstorm design directions:</strong> If the design team is familiar with the range of problems raised during usability testing, your meeting might instead focus on solving those problems. The value of this discussion will vary depending on your team’s ability to brainstorm design concepts. The role of the usability test report in this kind of conversation is to keep the team focused on the core problems.</p>
+<p><a id="ch12lev3sec2"></a></p>
+<h5>Report findings ASAP</h5>
+<p><a id="page_277"></a></p>
+<p>One of the greatest challenges with usability reports is that if the project team doesn’t actively participate in the test, they don’t get to see the observations in real time. A report helps bridge that gap (though if everyone was there to observe, the need for a report diminishes). A report can take some time to compose, and the relevance of the results diminishes over time.</p>
+<p>In my practice, I’ve tried to reduce turnaround time on a report to a matter of days. Having a selection of templates helps with the formatting of usability reports. Eliminating any deep analysis means the report just needs to report what happened, and I can limit the amount of time we spend poring over results.</p>
+<p>We also try to hold a meeting the day after the testing is complete. In this conversation we provide our initial high-level impressions and describe the most severe findings.</p>
+<p><a id="ch12lev3sec3"></a></p>
+<h5>Be objective and honest</h5>
+<p>Usability testing, as practiced by most people, is an inexact science, and the results leave room for interpretation. During your presentation of the observations, be careful to distinguish between what happened and your interpretation of what happened. For example, users of a web application might consistently miss a submit button. You don’t know why they missed it—perhaps it is too small, or the contrast isn’t right, or perhaps it doesn’t look clickable enough—but you might have asked users why they missed the button.</p>
+<p>In reporting this observation, you can say that people consistently missed the button and then offer several explanations why. Unfortunately, the nature of usability testing is that you may never find an exact explanation, but the team may need to agree on one in order to develop a solution.</p>
+<div class="sidebar1">
+<p><a id="ch12sb01"></a></p>
+<h3><em>Ask the Expert</em></h3>
+<p class="mediaobject"><img src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/chisnell.jpg" alt="image" width="150" height="181" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/chisnell.jpg"></p>
+<p class="source"><em>Dana Chisnell, Independent Researcher, UsabilityWorks</em></p>
+<p><strong><em>DB: What’s the best format for communicating results from usability tests?</em></strong></p>
+<p><em>DC: The best format for your team and stakeholders can vary by where the team is in the life of the design, the culture of the team and the larger organization, and the purpose of the test. Typically, the assumption is that there will be a report of some kind. It is not unusual for the researcher to put together a highlights video, splicing together video clips from the session to illustrate issues. Often there is a presentation.</em></p>
+<p><em>Teams that create the best user experiences don’t report results in those traditional ways. Written reports take a lot of time and often the content depends solely on the perceptions of (and data gathered by) the researcher. Instead, great UX teams find that the best format for communicating results is conversation.</em></p>
+<p><em>Usability testing (and other user research) is most effective when everyone who touches a design observes sessions. When that happens, results are the shared stories, told orally by teammates to other teammates, of the experiences users had during the sessions. If the team observes users using the design in an exploratory, formative usability test, they’re usually so excited that there is little need for a written report or a presentation because every person on the team was a witness.</em></p>
+<p><em>If you’re in a documentation-loving organization, though, there are a few ways to collaborate within a team on analyzing the observations and end up with a “report.” A progression I’ve developed that seems to work well has two steps. First, keep a rolling issues list during the test. Second, prioritize individuals’ observations within the group to identify the three to five most important issues by conducting a KJ activity.</em></p>
+<p><em>Rolling issues lists are simple. During the break after each usability test session, the team identifies observations and issues and writes them on a whiteboard. Next to each observation, they note the number for the participant who had the issue. These observations might be issues or good things that happened. The key to recording them is that they’re important to the design, and that they are only what was heard or what was seen—not design solutions.</em></p>
+</div>
+<p><a id="ch12lev3sec4"></a></p>
+<h5>Prepare for questions about design</h5>
+<p><a id="page_278"></a></p>
+<p>The Recommendations discussion in the Anatomy of a Usability Report section that follows gives some suggestions for how to incorporate recommendations into your process and your document. Suffice it to say, regardless of what strategy you choose, the question of “What should we do?” will come up as you describe the problems with the site design.</p>
+<p>Your strategy will dictate exactly how you respond, but here are some considerations for walking through the presentation:</p>
+<div class="note">
+<p><a id="ch12note01"></a></p>
+<h3>Tip: Search “Usability Report”</h3>
+<p class="notepara">Doing a web search for “usability report” yields thousands of results—tips and templates for delivering your observations and recommendations. No doubt, each article and template comes with a range of biases and is born from the context of a specific situation (much like the diatribe in this chapter). Remember, anything you find online (or again, in this chapter) is a starting point, demanding adaptation for your project and project team.</p>
+</div>
+<p class="indenthanding">• <strong>Set expectations:</strong> Even before you start testing, determine whether you’ll make recommendations as part of your usability test report, and the extent of those recommendations. Communicate this approach at the outset, helping the project team understand the exact nature of the outputs of the usability testing.</p>
+<p class="indenthanding">• <strong>Remind:</strong> At every opportunity throughout testing, remind project participants about the scope of the test and the report.</p>
+<p class="indenthanding">• <strong>Incorporate:</strong> If you choose to incorporate recommendations into your report, consider how they will factor into the discussion. Your higher priority might be to convince the project team about a broader range of problems, and getting distracted with specific recommendations may not help move the project along. By contrast, there may be a few things the project team can do to address some of the major concerns. Each of these situations implies a different way to organize.</p>
+<p><a id="ch12lev3sec5"></a></p>
+<h5>Don’t get defensive about methodology</h5>
+<p>That the industry is still exploring different usability techniques (remote vs. in-person, moderated vs. unmoderated, prototype vs. live, paper vs. on-screen, small sample vs. large sample) shows only that there are a variety of tools for evaluating a design. Even the role of such studies is subject to controversy in the design community. To people not typically involved with these activities, this variety smacks of lack of rigor. The logic is sound: If you can’t tell me how many participants is the right number, why should I trust that this work will give us meaningful results?</p>
+<p>Deliverables aren’t a silver bullet to addressing methodological concerns. Producing a nice report won’t alleviate underlying doubts. The content of that report is crucial, but your work starts long before the study even begins. The following advice assumes you’ve laid groundwork early in the project, helping the team understand the technique you’ve decided to use and working with them to refine the approach:</p>
+<p class="indenthanding">• <strong>Summarize methodology and rationale:</strong> Your deliverable should summarize the methodology used and, if possible, include some rationale for the methodology. This justification is, hopefully, a summary of conversations you had with the project team at the outset. It should only, therefore, be a reminder of what and why your approach was selected.</p>
+<p class="indenthanding">• <strong>Acknowledge methodological limitations:</strong> You may be conducting testing even though lingering doubts remain with the project team. Be transparent, acknowledging that no technique is bulletproof. Enumerate the pros and cons of the technique you’re using and be careful not to speculate on results outside what’s permitted by the technique.</p>
+<p class="indenthanding">• <strong>Capture departures from the plan:</strong> Sometimes, a study benefits from some improvisation during the test. If you had to make changes to your approach on the fly (and again, the professionals’ opinions on this vary wildly) be sure to document those modifications. On-the-fly adaptations shouldn’t affect the quality of your results, especially if your plan or technique anticipated that such changes might happen.</p>
+<p><a id="ch12lev1sec2"></a></p>
+<h3>Anatomy of a Usability Report</h3>
+<p><a id="page_279"></a></p>
+<p>The primary purpose of usability results is to summarize observations made during a test and any other data gathered. Usability testing almost always happens in the context of a web site—actual screens, wireframes, or some kind of prototype. These artifacts provide a framework for documenting the results, too, as in <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#ch12fig01">Figure 12.1</a>.</p>
+<p><a id="ch12fig01"></a></p>
+<p class="caption"><strong>Figure 12.1. A simple usability result, using the screen (in this case a high fidelity wireframe) tested to provide context for the observations.</strong></p>
+<p class="mediaobject"><img src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/12fig01.jpg" alt="image" width="500" height="113" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/12fig01.jpg"></p>
+<p>This is the basic building block of a usability report, but it can’t survive on its own. Some ideas follow on how to build a document around this atom.</p>
+<p><a id="ch12lev2sec4"></a></p>
+<h4>Organizing a Usability Report</h4>
+<p>Here’s a good table of contents for a usability report (<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#ch12tab01">Table 12.1</a>).</p>
+<p><a id="ch12tab01"></a></p>
+<p class="caption"><strong>Table 12.1. A usability report structure should summarize the key takeaways at the beginning of the document and then organize the observations around the scenarios of the test.</strong></p>
+<p class="image"><img src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0279_01.jpg" alt="image" width="447" height="549" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0279_01.jpg"></p>
+<p>Two other ways to organize the observations’ chapters:</p>
+<p><a id="ch12lev3sec6"></a></p>
+<h5>Organizing by scenario and task</h5>
+<p>The example goes screen-by-screen, showing results for each screen involved in a particular scenario. The author could instead dedicate each page in the report to a task within the scenario. For example, here’s one scenario for a usability test on an e-commerce site:</p><blockquote class="blockquote">
+<p><strong>It’s holiday time. You’ve loaded your cart with goodies for the family, and you want to send them directly to the recipients. You have stuff to send to yourself, and stuff you want to send to two other addresses.</strong></p></blockquote>
+<p>This might involve several tasks:</p>
+<p class="indenthanding">• Designate items to send elsewhere.</p>
+<p class="indenthanding">• Choose a destination address.</p>
+<p class="indenthanding">• Add a new destination address.</p>
+<p class="indenthanding">• Configure gift wrap options.</p>
+<p class="indenthanding">• Select shipping options.</p>
+<p><a id="page_280"></a>All these may happen on one single screen or across several different screens, depending on the design. The usability report can dedicate a page to each of these tasks. This helps put the observation in context and avoids cluttering observations on a single screen, especially if those observations relate to different kinds of tasks.</p>
+<p><a id="ch12lev3sec7"></a></p>
+<h5>Organizing by theme</h5>
+<p>In analyzing the observations, you might identify certain emergent themes. Here are some themes that came out of a recent usability study:</p>
+<p class="indenthanding">• Users don’t know what to do next.</p>
+<p class="indenthanding">• Users didn’t understand jargon.</p>
+<p class="indenthanding">• Users didn’t understand visual conventions.</p>
+<p class="indenthanding">• Users missed important content.</p>
+<p>You might have dozens of observations that support each of these themes. Categorizing observations in this way can help provide an overview of the results, the bottom line summary of the test. On the other hand, it can be difficult to act on these themes if they all come from different scenarios and reflect different severity levels.</p>
+<p><a id="ch12lev2sec5"></a></p>
+<h4>Observations and Severity</h4>
+<p>An observation is a single discrete behavior exhibited by a participant during a scenario of a usability test. User moves mouse around the screen looking for the submit button. User misses additional information because he or she didn’t scroll. User indicates he or she has no idea what the shipping charges will be. All of these are observations.</p>
+<p>When reporting observations, there are a couple things to think about:</p>
+<p class="indenthanding">• <strong>Consolidation:</strong> If we reported every specific observation, usability reports would be difficult to read. In practice, reports take liberty with the definition of an observation, frequently consolidating them when more than one user (a) exhibited the same behavior or (b) exhibited such similar behaviors in the same scenario as to yield the same result.</p>
+<p class="indenthanding">• <strong>Design context:</strong> The example observations in the first paragraph are all pretty straightforward, but even so could do with a visual context. Attaching an observation to a specific design element helps readers clearly interpret the observation.</p>
+<p>There are a few ways to format observations, much in the same way as there are a few ways to annotate wireframes (<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#ch12fig02">Figure 12.2</a>).</p>
+<p><a id="ch12fig02"></a></p>
+<p class="caption"><strong>Figure 12.2. Capturing observations.</strong></p>
+<p class="mediaobject"><img src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/12fig02.jpg" alt="image" width="500" height="129" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/12fig02.jpg"></p>
+<p>Some considerations for each approach:</p>
+<p class="indenthanding">• <strong>Callouts:</strong> The most effective approach for showing lots of observations on one screen is to annotate the screen. Though this separates the data (the observation) from the target (the design element) it doesn’t obscure too much of the context.</p>
+<p class="indenthanding">• <strong>Overlays:</strong> With a short and sweet observation, overlays create the most direct connection between it and the design element. On the other hand, overlays can obscure the screen and therefore the context. Too many observations on a single screen, of course, and the overlays will obscure the screen completely.</p>
+<p class="indenthanding">• <strong>Excerpts:</strong> Removing the design element from the screen gets readers to focus on the specific area and places the observation(s) directly adjacent to it. This is ideal if one area of the screen comprised most of the observations. On the other hand, outside of the entire screen, an excerpt loses some context, and it may be difficult for readers to understand where it fits in.</p>
+<p><a id="ch12lev3sec8"></a></p>
+<h5>Summarizing observations in a table</h5>
+<p><a id="page_281"></a></p>
+<p>Frankly, your usability report may be ideally represented by a simple but well-designed list of observations. A good spreadsheet can capture the essential elements and drive next steps much more efficiently. A good project team generally needs nothing more than a spreadsheet of to-dos sorted by severity to jump into action.</p>
+<p>Tables don’t require a specific level of abstraction. That is, you can incorporate all kinds of observations in a table, especially in a sortable spreadsheet. You can make sweeping statements about the labeling throughout the experience, or you can identify the label on a particular button.</p>
+<p>If you can’t have a stand-alone table, you can still include one as an appendix in your report. The table should include at least all the key pieces of information discussed in this chapter:</p>
+<p class="indenthanding">• The observation</p>
+<p class="indenthanding">• The severity of the observation</p>
+<p class="indenthanding">• Design context</p>
+<p>A note about design context: While pictures speak louder than words, screen grabs embedded in a spreadsheet look kind of tacky. Therefore, for tables to be successful, teams need a consistent way of referring to aspects of the design. The first few columns of the table should clearly locate the observation (<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#ch12tab02">Table 12.2</a>).</p>
+<p><a id="ch12tab02"></a></p>
+<p class="caption"><strong>Table 12.2. Summarizing usability results in a table must include an elegant way of addressing or locating the observations. This example shows the first five columns of the table, short of the observation itself, just to locate the observation.</strong></p>
+<p class="image"><img src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0281_01.jpg" alt="image" width="550" height="81" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0281_01.jpg"></p>
+<p><a id="ch12lev3sec9"></a></p>
+<h5>Severity</h5>
+<p>An important data point you should attach to every observation is severity. Books on usability testing methodology can provide a better description of how to measure and assign severity. Suffice it to say that I generally use a scale related to whether users were able to complete a task (<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#ch12tab03">Table 12.3</a>). Position severity adjacent to the observation.</p>
+<p><a id="ch12tab03"></a></p>
+<p class="caption"><strong>Table 12.3. Measuring severity in usability observations usually comes down to users’ ability to complete a task. Severity might also incorporate the number of users who faced the problem. Your severity scale will vary depending on the technique you used in your study.</strong></p>
+<p class="image"><img src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0281_02.jpg" alt="image" width="550" height="121" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0281_02.jpg"></p>
+<p><a id="ch12fig03"></a></p>
+<p class="caption"><strong>Figure 12.3. Use icons to show severity.</strong></p>
+<p class="mediaobject"><img src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/12fig03.jpg" alt="image" width="400" height="200" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/12fig03.jpg"></p>
+<p><a id="ch12fig04"></a></p>
+<p class="caption"><strong>Figure 12.4. Show severity by categorizing the observations.</strong></p>
+<p class="mediaobject"><img src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/12fig04.jpg" alt="image" width="500" height="387" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/12fig04.jpg"></p>
+<p><a id="ch12lev3sec10"></a></p>
+<h5>Further embellishments</h5>
+<p><a id="page_282"></a></p>
+<p>Here are a couple other ways you can embellish reporting observations. Remember that the observation itself and severity are most important. Use these embellishments to provide further context or clarity. If they obscure the results, leave them out.</p>
+<p class="indenthanding">• <strong>Category:</strong> As indicated in the Organizing a Usability Report section, results are typically categorized by the scenario to which they belong. Other categories describe what part of the site or what kind of task is involved: navigation, browsing, search, checkout. You can attach a simple label on the observation to show category. Icons or other visual devices may distract from the purpose.</p>
+<p class="indenthanding">• <strong>Sensitizing quote:</strong> No doubt more powerful than another layer of categorization, direct quotes from participants can further clarify the observation and lend some credence to it. Consolidating observations opens the risk of misinterpretation: Readers may wonder how much license you took in summarizing what you saw. Quotes support observations by eliminating the interpretation.</p>
+<p><a id="ch12lev2sec6"></a></p>
+<h4>Summary and Analysis</h4>
+<p>Perhaps the most important page in the usability report is the summary. Usability reports can seem overwhelming—packed with lots of data and rife with brutally candid feedback. A good summary page not only helps people focus on the most important findings, but it also sets the tone of the report.</p>
+<p>Summaries should surface the main takeaways from the study, indicating the site’s primary strengths and weaknesses, and giving the project team a sense of priority. The summary may have explicit next steps, but they also may be implied based on the characterization of the findings. Clearly articulated findings with unambiguous priorities may be all the next steps you need (<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#ch12fig05">Figure 12.5</a>).</p>
+<p><a id="ch12fig05"></a></p>
+<p class="caption"><strong>Figure 12.5. Summarizing usability results entails escalating key findings and providing a snapshot of what you did.</strong></p>
+<p class="mediaobject"><img src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/12fig05.jpg" alt="image" width="500" height="387" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/12fig05.jpg"></p>
+<p>Successful summaries visually describe the mechanics of the test. Avatars representing user groups along with a numbered list of relevant scenarios may be all you need to describe how the test worked.</p>
+<p><a id="ch12lev3sec11"></a></p>
+<h5>Analysis</h5>
+<p>Any time you attempt to interpret your observations to surface a pattern, theme, or motivation, you are analyzing the results. Analysis provides a unified explanation of the findings.</p>
+<p>Incorporating such discussion into the document depends on the content. <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#ch12tab04">Table 12.4</a> identifies the different forms analysis can take, and offers ideas on how to include it in the structure of the document.</p>
+<p><a id="ch12tab04"></a></p>
+<p class="caption"><strong>Table 12.4. Forms that analysis can take.</strong></p>
+<p class="image"><img src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0283_01.jpg" alt="image" width="550" height="174" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0283_01.jpg"></p>
+<p><a id="ch12lev2sec7"></a></p>
+<h4>Recommendations</h4>
+<p><a id="page_283"></a></p>
+<p>Beyond analysis, another way to interpret results is to offer some recommendations. To state the obvious, you can suggest how to improve the site based on the data you gathered through the study.</p>
+<p>You could narrate a recommendation:</p><blockquote class="blockquote">
+<p><strong>Instead of a set of blue buttons for the controls, consider using a single button for the main action and links for secondary actions.</strong></p></blockquote>
+<p>But this is a book about using pictures to help with the design process, so the natural conclusion is creating a mock-up of the suggested approach. There are, of course, several ways to do this. <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#ch12fig06">Figure 12.6</a> shows one approach.</p>
+<p><a id="ch12fig06"></a></p>
+<p class="caption"><strong>Figure 12.6. Incorporating recommendations into a usability report using overlays.</strong></p>
+<p class="mediaobject"><img src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/12fig06.jpg" alt="image" width="500" height="387" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/12fig06.jpg"></p>
+<p>In layering in recommendations, don’t lose sight of the purpose of the document. It can be easy to get carried away with recommendations, but if they obscure the findings, you should leave them out altogether or include a chapter at the end of the document.</p>
+<p><a id="ch12lev3sec12"></a></p>
+<h5>Saving recommendations for the end</h5>
+<p>Note that the table of contents in <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#ch12tab01">Table 12.1</a> doesn’t include a chapter on recommendations. Basic reports probably don’t need them; that’s the role of the design team (see the upcoming Aside). With just a handful of recommendations, the approach just described will likely work just fine. When you’re on the hook to provide a series of recommendations across the whole experience, trying to stuff them on the same pages as the findings can be challenging.</p>
+<p>There are several ways to organize the recommendations chapter, and your choice depends on the kinds of recommendations, elaborated in <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#ch12tab05">Table 12.5</a>.</p>
+<p><a id="ch12tab05"></a></p>
+<p class="caption"><strong>Table 12.5. Different recommendations call for different organization schemes in the document.</strong></p>
+<p class="image"><a id="page_284"></a><img src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0284_01.jpg" alt="image" width="550" height="212" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0284_01.jpg"></p>
+<p>One last note on recommendations: In my experience, the most effective recommendations are expressed as themes (“revisit labeling”) with supporting examples (“abbreviated field label ‘Med Vert’ caused confusion”). Give each theme its own page in the recommendations section and then show before and after pictures for two or three different prime examples.</p>
+<p><a id="ch12lev2sec8"></a></p>
+<h4>Supporting Content</h4>
+<p>You might be surprised to find methodology under “supporting content.” Presumably, usability reports need to describe what you did, right? Ultimately, the reason to deprioritize the methodology and other mechanics of the study is that they don’t directly help the design effort. Actionability of results does not depend on knowing the method. The document is inaccessible if readers struggle to separate the wheat from the chaff.</p>
+<p><a id="ch12lev3sec13"></a></p>
+<h5>Methodology</h5>
+<p>Summarizing the methodology of a usability test study requires these six points of data:</p>
+<p class="indenthanding">• The technique (for example, a moderated remote study)</p>
+<p class="indenthanding">• The number of participants</p>
+<p class="indenthanding">• The types of users represented by the participants (referencing personas, for example)</p>
+<p class="indenthanding">• The materials used in the study (a web site or prototype)</p>
+<p class="indenthanding">• Scope of the study (which part of the experience)</p>
+<p class="indenthanding">• A quantification of the study scale (number of scenarios)</p>
+<p>When elaborating on the study’s methodology, you could also capture the high points of the study’s script. At the very least, you can list the scenarios or tasks users were asked to perform.</p>
+<p>To boil down the methodology further, for including in the executive summary, I’ve also chosen three or four (at <a id="page_285"></a>most!) of the points in the previous list. This makes for a very compact display appropriate for an early page of the document.</p>
+<p>Incorporating such a summary may not be necessary if your project team is generally aware that the study is happening and the technique you’re using. Stakeholders that aren’t heavily involved or are unfamiliar with usability testing may benefit from the summary, especially as the document gets passed around.</p>
+<div class="sidebar">
+<p><a id="ch12sb02"></a></p>
+<h3><em>Aside: The Actionability of Recommendations</em></h3>
+<p>Call me a purist, but I prefer usability reports that don’t make specific interface recommendations. Piecemeal recommendations don’t take the whole experience into account. And users experience the design holistically. In other words, solving each individual problem may, in turn, create problems with the overall interface. It’s a forest and trees problem.</p>
+<p>A good designer will consider all the problems raised during a usability study, prioritizing and refactoring the design as appropriate to address the needs.</p>
+<p>On the other hand, recommendations can take other forms; they don’t have to be concrete changes to the design, but instead can be more strategic without losing their actionability. For example:</p>
+<p class="indenthanding">• Users struggled with some of the jargon in the interface. Consider running a card sort to zero in on more appropriate labels.</p>
+<p class="indenthanding">• Though not rated as particularly severe, the color of the buttons was disconcerting to some users, since it does not align with the aesthetic. Consider revisiting the design of the buttons to match the overall visual design.</p>
+<p>Ultimately, the point is actionability. While a recommendation is actionable (structured right, a recommendation tells me exactly what I need to do), it is not necessarily efficient. It makes more sense to engage with the design team to talk through the problems raised and make changes to the design on the fly. Eliminate the middle step.</p>
+</div>
+<p><a id="ch12lev3sec14"></a></p>
+<h5>Participant profiles and recruiting</h5>
+<p>Team members who weren’t involved in the study are most likely to ask, “Who did you talk to?” They’re more interested in who than they are in what. The motivations for asking are generally methodological:</p>
+<p class="indenthanding">• You didn’t talk to enough people</p>
+<p class="indenthanding">• You didn’t talk to the right people</p>
+<p class="indenthanding">• You missed people of a particular type</p>
+<p>My reports sometimes include a separate page describing the participants to address these concerns at the outset. At the very least, such a page gives us something to speak to when we discuss these concerns.</p>
+<p>The table-based approach to describing users lists out each participant and some key attributes. This is a good way of showing that you incorporated an appropriate variety of users.</p>
+<p><a id="ch12fig07"></a></p>
+<p class="caption"><strong>Figure 12.7. Summarizing the methodology in a very compact display makes a useful element on the first page of the report.</strong></p>
+<p class="mediaobject"><img src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/12fig07.jpg" alt="image" width="200" height="315" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/12fig07.jpg"></p>
+<p><a id="ch12fig08"></a></p>
+<p class="caption"><strong>Figure 12.8. A table summarizing participants can highlight the criteria you used to recruit them, addressing concerns about talking to the “right” people.</strong></p>
+<p class="mediaobject"><img src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/12fig08.jpg" alt="image" width="500" height="214" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/12fig08.jpg"></p>
+<div class="sidebar1">
+<p><a id="ch12sb03"></a><a id="page_286"></a></p>
+<h3><em>Ask the Expert</em></h3>
+<p class="mediaobject"><img src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/chisnell.jpg" alt="image" width="150" height="181" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/chisnell.jpg"></p>
+<p class="source"><em>Dana Chisnell, Independent Researcher, UsabilityWorks</em></p>
+<p><strong><em>DB: Is there a good alternative to writing a usability results report?</em></strong></p>
+<p><em>DC: If team members aren’t involved in user research, it’s difficult for them to keep users in mind as they design. If team members have not observed users themselves, no document will make the experience of the users real. By delivering reports and presentations, we risk objectifying the flesh-and-blood folks who helped us learn enough to make informed decisions about the design direction. People turn into data; they become abstractions.</em></p>
+<p><em>User researchers often complain that team members don’t read their reports. They’re too busy; the report is too large; they don’t know how to apply what the report says; the users aren’t real to them, so the results aren’t meaningful. This leads me to conclude that writing a report is a poor way to convey test results to any team. The solution: Don’t waste your time writing reports. Get the team to come to sessions instead. Let them tell the stories of their experiences observing the users’ experiences to one another.</em></p>
+</div>
+<p><a id="ch12fig09"></a></p>
+<p class="caption"><strong>Figure 12.9. Avatars representing participants can build on earlier segmentation analysis. Use avatars that directly relate to that previous work, incorporating the same iconography or color scheme.</strong></p>
+<p class="mediaobject"><img src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/12fig09.jpg" alt="image" width="500" height="387" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/12fig09.jpg"></p>
+<p>If you already have user segments or personas from work earlier in the project, you can use a cartoon-based approach. The cartoon-based approach shows groups of participants based on the preexisting segments. You can accompany these groups with bullet lists describing the key attributes you sought in recruiting participants from this group.</p>
+<p><a id="ch12lev1sec3"></a></p>
+<h3>Getting Inside Their Heads</h3>
+<p>The conclusion of the last chapter implied that usability testing will live forever, in some form. Far be it from me to change my mind in the space of a chapter, but it’s important to consider what form it will take.</p>
+<p>Done correctly, usability testing is a great way to see whether a web site works, but it has some serious methodological concerns to overcome. Placing users in an artificial environment—outside the very place they’ll use the site, sitting next to someone they’ll never see again, responding to questions no one has ever asked them before—means that usability testing in its current form is a design technique trying to be a science.</p>
+<p>Many user experience professionals these days advocate getting out of the lab, that is, shedding the artificial environment and going to where people actually do use the web. This sounds daunting. If we have a hard enough time finding the time to schedule a couple days of testing and getting a good selection of users to come to the lab, won’t it be more difficult to visit their homes and offices? The answer is most likely “yes,” but the bigger concern isn’t logistical; it is, again, methodological. This kind of testing is not appropriate for every situation.</p>
+<p>In fact, the evolution of the web and the web design process points to more immediate access to usability results. More and more web-based services launch so-called “beta” versions of their sites—mostly finished, but far from final. <a id="page_287"></a>Some sites live in what the industry used to call “perpetual beta.” Like the house up the street whose owners are constantly renovating, these sites are being tweaked daily. Basic assumptions about how the web is built and used shift constantly. (For example, since the first edition of this book, perpetual beta has fallen out of favor. Now, some designers just assume that the “final” version of a site is one that’s constantly evolving. Still other teams can’t escape the idea that a launched web site must be complete in every way.)</p>
+<p>Early adopters of this methodological shift are probably not doing usability testing the way you and I are doing it. They’re probably planning the initial site carefully, putting it out there, soliciting feedback, and issuing new “releases” every quarter, every month, every week in response. And now we get back to the point of this chapter: understanding how people use a web site. When you do a usability test, sitting with actual users, you get a rich array of data. The people who are building perpetual beta sites don’t have access to that same depth of information. The next stage of usability testing needs to be a convergence of these two ideas: rich data with near-real-time response.</p>
+<p>Like any deliverable, usability reports will need to adapt to pace the evolution of technique and method. Yet the essential content—observations, design context, and severity—will remain the same. It’s these elements that trigger a response from the design team and help define what that response should be.</p>
+<div class="sidebar">
+<p><a id="ch12sb04"></a></p>
+<h3><em>Example: Justifying the Who</em></h3>
+<p>My colleague Chris Detzi did some in-depth user research for a government client. Early in the project, they identified about 10 different user groups. These groups were convenient ways of thinking about people (for example, the press or Congress), but they didn’t speak to motivations, tasks, or behaviors.</p>
+<p>Chris did some analysis to identify these aspects of each group and find common attributes across groups. Through this analysis, he identified two groups that represented the majority of attributes across groups, and those that were most important to the business. When conducting usability studies, Chris was able to recruit from these two groups, already having established that they represent the majority of user needs. The client needed no further convincing.</p>
+</div>
+<p><a id="ch12lev1sec4"></a></p>
+<h3>Exercise</h3>
+<p><a id="page_288"></a></p>
+<p>Developing a good usability report depends on having good content. I would not recommend outlining an abstract usability report: You won’t know if it makes sense or not. One good source for “usability” data is product reviews. What’s great about product reviews is that they usually don’t have recommendations: Reviewers aren’t on the hook for making the product better, just telling you what’s wrong with it.</p>
+<p>Next time you’re in the market for something (a baby stroller, for example, or a digital camera or a home theater projector or an espresso maker), find a few different product reviews online and translate the review into a collection of observations. You can start with a spreadsheet, entering each relevant quote from the review into a separate row in the table.</p>
+<p>Analyze the “observations” to determine if they can be categorized, and if they’re at a particular level of abstraction. (For an espresso maker, a review may focus on the range of features, or it may describe the usability of a particular feature. It will, hopefully, also address the quality of the coffee.) Assign severity levels to the observations. Decide on whether you want to incorporate recommendations.</p>
+<p>The number of observations won’t rival the scale of observations you’d get in a usability exercise. (Only one user and limited by the constraints imposed by the original publishing medium.) If you need more fodder, use three or four reviews, acknowledging they may come from different products. (You’re just trying to generate some fake content.) Compose a report from the product review(s), including product images as if you were including screenshots.</p>
+<p>If you have a study group, present the report to them. Make sure they wear their “project team” hats, each playing a different role on the team—designers, stakeholders, engineers. Offer to buy the product for the team member who plays their role the best. (Just kidding.)</p>
+<div class="annotator-outer annotator-viewer viewer annotator-hide">
+  <ul class="annotator-widget annotator-listing"></ul>
+</div><div class="annotator-modal-wrapper annotator-editor-modal annotator-editor annotator-hide">
+	<div class="annotator-outer editor">
+		<h2 class="title">Highlight</h2>
+		<form class="annotator-widget">
+			<ul class="annotator-listing">
+			<li class="annotator-item"><textarea id="annotator-field-0" placeholder="Add a note using markdown (optional)" class="js-editor" maxlength="750"></textarea></li></ul>
+			<div class="annotator-controls">
+				<a class="link-to-markdown" href="https://daringfireball.net/projects/markdown/basics" target="_blank">?</a>
+				<ul>
+					<li class="delete annotator-hide"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#delete" class="annotator-delete-note button positive">Delete Note</a></li>
+					<li class="save"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#save" class="annotator-save annotator-focus button positive">Save Note</a></li>
+					<li class="cancel"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#cancel" class="annotator-cancel button">Cancel</a></li>
+				</ul>
+			</div>
+		</form>
+	</div>
+</div><div class="annotator-modal-wrapper annotator-delete-confirm-modal" style="display: none;">
+  <div class="annotator-outer">
+    <h2 class="title">Highlight</h2>
+      <a class="js-close-delete-confirm annotator-cancel close" href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#close">Close</a>
+      <div class="annotator-widget">
+         <div class="delete-confirm">
+            Are you sure you want to permanently delete this note?
+         </div>
+         <div class="annotator-controls">
+            <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#cancel" class="annotator-cancel button js-cancel-delete-confirm">No, I changed my mind</a>
+            <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#delete" class="annotator-delete button positive js-delete-confirm">Yes, delete it</a>
+         </div>
+       </div>
+   </div>
+</div><div class="annotator-adder" style="display: none;">
+	<ul class="adders">
+		
+		<li class="copy"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#">Copy</a></li>
+		
+		<li class="add-highlight"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#">Add Highlight</a></li>
+		<li class="add-note"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#">
+			Add Note
+		</a></li>
+		
+	</ul>
+</div></div></div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch11.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">Chapter 11. Usability Plans</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/apa.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">Recommended Bookshelf Additions</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag collapsed slideUp">
+        
+        
+          <p class="usage-data">Find answers on the fly, or master something new. Subscribe today. <a href="https://learning.oreilly.com/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+        
+
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+        
+
+<footer class="pagefoot t-pagefoot" style="padding-bottom: 75px;">
+  <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#" class="icon-up" onclick="window.Appcues.track(&#39;JumpTop_HeronBook&#39;)" style="display: none;"><div class="visuallyhidden">Back to top</div></a>
+  <ul class="js-footer-nav">
+  
+    
+    <li><a href="https://learning.oreilly.com/public/support/">Support</a></li>
+    
+    <li><a href="https://learning.oreilly.com/accounts/logout/">Sign Out</a></li>
+    
+  
+  
+  </ul>
+  <span class="copyright">© 2021 <a href="https://learning.oreilly.com/" target="_blank">O'Reilly Media, Inc</a>.</span>
+  
+    
+    <a href="https://www.oreilly.com/terms/">Terms of Service</a> 
+     / 
+    
+    <a href="https://learning.oreilly.com/privacy">Privacy Policy</a> 
+    
+    
+  
+</footer>
+
+      
+    
+    <script src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource" charset="utf-8"></script><script type="text/javascript" id="">(function(){window.medalliaUserIdentifier=document.documentElement.dataset.userUuid;window.medalliaUserName=document.documentElement.dataset.username})();</script>
+<script type="text/javascript" id="" src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/embed.js.Без названия"></script><script type="text/javascript" id="">ev=document.querySelectorAll("div[class*\x3d'event']");0<ev.length&&ev.forEach(function(a,b){b=a.querySelector("a");var c=a.querySelector("h3").textContent.toLowerCase();b.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"outbound links",eventAct:"non-oreilly",eventLbl:"add a reminder: "+c})})});</script>
+    <script src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource(1)" charset="utf-8"></script>
+  
+
+<div></div><div></div><div class="annotator-notice"></div><div class="font-flyout" style="top: 201.003px; left: 1834px;"><div class="font-controls-panel">
+	<div class="nightmodes">
+		<ul>
+			<li class="day"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#" id="day-mode" title="Day Mode">
+				<i class="fa fa-sun-o"></i>
+				<span>Day Mode</span></a></li>
+			<li class="cloudy"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#" id="cloudy-mode" title="Cloudy Mode">
+				<i class="fa fa-cloud"></i>
+				<span>Cloud Mode</span>
+			</a></li>
+			<li class="night"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#" id="night-mode" title="Night Mode">
+				<i class="fa fa-moon-o"></i>
+				<span>Night Mode</span>
+			</a></li>
+		</ul>
+	</div>
+
+	<div class="font-resizer resizer">
+		<div class="draggable-containment-wrapper">
+			<i class="fa fa-font left"></i>
+			<span class="filler" style="width: 50%;"></span>
+			<div id="js-font-size-draggable" class="draggable ui-widget-content ui-draggable ui-draggable-handle" style="position: relative; left: 80px;"></div>
+			<i class="fa fa-font right"></i>
+		</div>
+	</div>
+
+	<div class="column-resizer resizer">
+		<div class="draggable-containment-wrapper">
+			<i class="fa fa-compress left"></i>
+			<span class="filler" style="width: 50%;"></span>
+			<div id="js-column-size-draggable" class="draggable ui-widget-content ui-draggable ui-draggable-handle" style="position: relative; left: 80px;"></div>
+			<i class="fa fa-expand right"></i>
+		</div>
+	</div>
+
+	<a id="reset" class="button" href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch12.html#">Reset</a>
+</div>
+</div><iframe src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/pixel.html" style="display: none;"></iframe><script type="text/javascript" async="" src="./Chapter 12. Usability Reports - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/generic1607612729884.js.Без названия" charset="UTF-8"></script><span></span><script type="text/javascript" id="">function forceInputUppercase(a){var b=a.target.selectionStart,c=a.target.selectionEnd;a.target.value=a.target.value.toUpperCase();a.target.setSelectionRange(b,c)}void 0!=document.getElementById("id_promotion")&&null!=document.getElementById("id_promotion")&&document.getElementById("id_promotion").addEventListener("keyup",forceInputUppercase,!1);
+void 0!=document.getElementsByName("promotionCode")[0]&&null!=document.getElementsByName("promotionCode")[0]&&document.getElementsByName("promotionCode")[0].addEventListener("keyup",forceInputUppercase,!1);</script><script type="text/javascript" id="">var nonwExpandable=document.querySelectorAll(".orm-ff-NavigationSubnav-headerListItem a, .orm-ff-NavigationView-headerListItem a");nonwExpandable.forEach(function(a,b){b+1!=nonwExpandable.length?a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.childNodes[1].textContent})}):b+1==nonwExpandable.length&&a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"user login",eventAct:"logout",eventLbl:"global nav | unified"})})});
+var nonwExpandableFo=document.querySelectorAll(".drop-content li:not(.flyout-parent) a");
+nonwExpandableFo.forEach(function(a,b){"drop-content"==a.parentNode.parentNode.parentNode.className&&b+1!=nonwExpandableFo.length?a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.childNodes[1].textContent})}):"drop-content"==a.parentNode.parentNode.parentNode.className&&b+1==nonwExpandableFo.length&&a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"user login",eventAct:"logout",eventLbl:"global nav | unified"})})});
+var expandable=document.querySelectorAll(".orm-ff-NavigationSubnav-toggleControls a, .orm-ff-NavigationView-toggleControls a");expandable.forEach(function(a){a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.parentNode.parentNode.parentNode.querySelectorAll(".orm-Button-btnContentWrap span")[0].childNodes[1].textContent+" | "+a.textContent})})});var flyoutLinks=document.querySelectorAll(".flyout a");
+flyoutLinks.forEach(function(a){a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.closest("li.flyout-parent").getElementsByTagName("a")[0].textContent+" | "+a.textContent})})});</script></body></html>

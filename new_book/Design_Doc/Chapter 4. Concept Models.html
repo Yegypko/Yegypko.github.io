@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html -->
+<html class=" js flexbox flexboxlegacy no-touch websqldatabase indexeddb history csscolumns csstransforms localstorage sessionstorage no-applicationcache svg inlinesvg zoom" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#" itemscope="" itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/" data-offline-url="/" data-url="/library/view/communicating-design-developing/9780131385399/ch04.html" data-csrf-cookie="csrfsafari" data-user-id="11004957" data-user-uuid="9c5599ca-6951-4904-81d0-732bb961926b" data-username="visualcommcomua" data-account-type="Trial" data-activated-trial-date="03/21/2021" data-archive="9780131385399" data-publishers="New Riders" data-htmlfile-name="ch04.html" data-epub-title="Communicating Design: Developing Web Site Documentation for Design and Planning, Second Edition" data-debug="0" data-testing="0" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="author" content="O&#39;Reilly Media"><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"><meta name="HandheldFriendly" content="True"><meta name="MobileOptimized" content="320"><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9780131385399"><link rel="shortcut icon" href="https://www.oreilly.com/favicon.ico"><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"><meta property="twitter:account_id" content="4503599627559754"><link rel="shortcut icon" href="https://learning.oreilly.com/favicon.ico" type="image/x-icon"><link href="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/css" rel="stylesheet" type="text/css"><title>Chapter 4. Concept Models - Communicating Design: Developing Web Site Documentation for Design and Planning, Second Edition</title><link rel="stylesheet" href="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/output.5bdb4fcb2aad.css" type="text/css"><link rel="stylesheet" type="text/css" href="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/annotator.e3b0c44298fc.css"><link rel="stylesheet" href="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/font-awesome.min.css"><style type="text/css" title="ibis-book">
+    #sbo-rt-content div{margin-top:5pt;margin-bottom:5pt;margin-right:15pt}#sbo-rt-content .cover{margin-top:2pt;margin-bottom:2pt;text-align:center}#sbo-rt-content h1{page-break-before:right;margin-top:5pt;text-align:center;margin-bottom:12pt;font-weight:bold}#sbo-rt-content .subtitle{font-size:large;margin-top:30pt;margin-bottom:55pt;font-weight:bold;text-align:center}#sbo-rt-content .publisher{text-align:center;margin-top:6pt;margin-bottom:4pt}#sbo-rt-content .copyrightpage{page-break-before:right;margin-top:5pt;margin-bottom:5pt;text-indent:.002pt}#sbo-rt-content .copyright{margin-top:5pt;margin-bottom:5pt;text-indent:.002pt}#sbo-rt-content .dedication{page-break-before:right;margin-top:48pt;margin-bottom:5pt;text-align:center}#sbo-rt-content h2{page-break-before:right;margin-top:7pt;margin-bottom:25pt;font-weight:bold}#sbo-rt-content h3{margin-top:9pt;margin-bottom:8pt;font-weight:bold}#sbo-rt-content h4{margin-top:9pt;margin-bottom:6pt;font-weight:bold}#sbo-rt-content h5{margin-top:9pt;margin-bottom:6pt;font-weight:bold}#sbo-rt-content h6{margin-top:8pt;margin-bottom:6pt;font-weight:bold}#sbo-rt-content p{margin-top:5pt;margin-bottom:4pt;text-indent:.002pt}#sbo-rt-content .continued{margin-top:5pt;margin-bottom:4pt;text-indent:.002pt}#sbo-rt-content .author{text-align:center;font-weight:bold;margin-top:66pt;margin-bottom:50pt}#sbo-rt-content .bolditalic{font-weight:bold;font-style:italic}#sbo-rt-content .toc-part{margin-top:4pt;margin-bottom:5pt;font-weight:bold}#sbo-rt-content .toc-chapter{margin-top:5pt;margin-bottom:5pt;font-weight:bold}#sbo-rt-content em{font-style:italic}#sbo-rt-content .figure{margin-top:12pt;margin-bottom:5pt;text-align:center;font-weight:bold}#sbo-rt-content .figure-contents{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .figure-float{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .informalexample{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .itemizedlist{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .legalnotice{margin-top:8pt;margin-bottom:4pt}#sbo-rt-content .literallayout{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .mediaobject{margin-top:12pt;margin-bottom:12pt;text-align:center}#sbo-rt-content .tabimage{margin-top:12pt;margin-bottom:12pt;text-align:center}#sbo-rt-content .smaller{font-size:small}#sbo-rt-content .center{margin-top:50pt;margin-bottom:5pt;text-align:center}#sbo-rt-content .right{margin-top:5pt;margin-bottom:5pt;text-align:right}#sbo-rt-content .image{margin-top:5pt;margin-bottom:5pt;text-align:center}#sbo-rt-content .note{margin-top:6pt;margin-bottom:12pt;margin-left:36pt;margin-right:24pt;border:solid 1pt;padding:1pt 12pt 1pt 12pt}#sbo-rt-content .toc-preface{margin-top:4pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt;font-weight:bold}#sbo-rt-content .procedure{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .programlisting{font-family:"Courier New";font-size:small;margin-top:8pt;margin-bottom:8pt}#sbo-rt-content .programlisting1{font-family:"Courier New";font-size:small;margin-top:5pt;margin-bottom:4pt;margin-left:36pt}#sbo-rt-content code{font-size:x-small}#sbo-rt-content .toc-section{margin-top:4pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt}#sbo-rt-content .toc-index{margin-top:4pt;margin-bottom:4pt;font-weight:bold}#sbo-rt-content .toc-appendix{margin-top:4pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt}#sbo-rt-content .toc-appendix1{margin-top:20pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt}#sbo-rt-content .toc-glossary{margin-top:4pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt}#sbo-rt-content .toc-section1{margin-top:4pt;margin-bottom:4pt;margin-left:24pt;text-indent:24pt}#sbo-rt-content .toc-section2{margin-top:4pt;margin-bottom:4pt;margin-left:36pt;text-indent:36pt}#sbo-rt-content .sidebar{font-size:small;margin-top:5pt;margin-bottom:12pt;margin-left:15pt;border:solid 1pt;padding:1pt 12pt 1pt 12pt}#sbo-rt-content .sidebar1{font-size:small;margin-top:5pt;margin-bottom:12pt;margin-left:15pt;border:solid 1pt;padding:1pt 12pt 1pt 12pt;background-color:#e6e6e6}#sbo-rt-content .strong{font-weight:bold}#sbo-rt-content .italic{font-style:italic}#sbo-rt-content .table{margin-top:12pt;margin-bottom:5pt;text-align:center;font-weight:bold}#sbo-rt-content .table-contents{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .table-float{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .title{margin-top:12pt;margin-bottom:6pt;font-size:medium;font-weight:bold;text-align:center}#sbo-rt-content .title1{margin-top:12pt;margin-bottom:6pt;font-size:medium;font-weight:bold}#sbo-rt-content .titlepage{margin-top:3pt;margin-bottom:3pt}#sbo-rt-content .toc{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .blockquote{margin-top:12pt;margin-bottom:12pt;margin-left:24pt}#sbo-rt-content .attribution{margin-top:12pt;margin-bottom:12pt;margin-right:15pt;text-align:right}#sbo-rt-content .indexmain{margin-top:2pt;margin-bottom:2pt}#sbo-rt-content .indexsub{margin-top:2pt;margin-bottom:2pt;margin-left:15pt;text-indent:15pt}#sbo-rt-content .indexsubsub{margin-top:2pt;margin-bottom:2pt;margin-left:25pt;text-indent:25pt}#sbo-rt-content .indenthanging{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-12pt}#sbo-rt-content .indenthangingb{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-12pt}#sbo-rt-content .paraindent{margin-top:4pt;margin-bottom:4pt;margin-left:25pt}#sbo-rt-content .list{margin-top:4pt;margin-bottom:4pt;margin-left:30pt;text-indent:-8pt}#sbo-rt-content .indenthanding{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-8pt}#sbo-rt-content .indenthanding1{margin-top:4pt;margin-bottom:4pt;margin-left:48pt;text-indent:-8pt}#sbo-rt-content .indent{margin-top:4pt;margin-bottom:4pt;margin-left:36pt}#sbo-rt-content .underline{text-decoration:underline}#sbo-rt-content .legalnotice-title{font-size:medium;margin-top:5pt;margin-bottom:5pt}#sbo-rt-content .footnote{font-size:small;margin-top:5pt;margin-bottom:4pt;margin-left:20pt;text-indent:-8pt}#sbo-rt-content .creditline{font-size:small;margin-top:4pt;margin-bottom:8pt;text-align:center}#sbo-rt-content .caption{margin-top:4pt;margin-bottom:8pt;text-align:center}#sbo-rt-content .pd_red{color:#BD6B4C}#sbo-rt-content .pd_brown{color:#9E7E4C}#sbo-rt-content .pd_orange{color:#E78152}#sbo-rt-content .image1{margin-top:5pt;margin-bottom:5pt}#sbo-rt-content .bibliomixed{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-12pt}#sbo-rt-content .progimg{margin-top:5pt;margin-bottom:5pt}#sbo-rt-content .progimage{margin-top:5pt;margin-bottom:5pt}#sbo-rt-content .progimage1{margin-top:5pt;margin-bottom:5pt;margin-left:25pt}#sbo-rt-content .question{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-12pt}#sbo-rt-content .listimage{margin-top:12pt;margin-bottom:12pt;text-align:center}#sbo-rt-content .source{font-size:small;margin-top:12pt;margin-bottom:12pt;text-align:center}#sbo-rt-content .blockquote1{margin-top:15pt;margin-bottom:15pt;text-align:center;border:solid 1pt;padding:1pt 12pt 1pt 12pt;background-color:#E6E7E8}#sbo-rt-content .asa{margin-top:18pt;margin-bottom:4pt;text-indent:.002pt}#sbo-rt-content .note1{margin-top:6pt;margin-bottom:12pt;margin-left:36pt;margin-right:24pt}
+    </style><script type="text/javascript" async="" src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/cool-2.1.15.min.js.Без названия"></script><script type="text/javascript" async="" src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/ec.js.Без названия"></script><script type="text/javascript" async="" src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/analytics.js.Без названия"></script><script type="text/javascript" async="" src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/f.txt"></script><script type="text/javascript" async="" src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/js"></script><script crossorigin="anonymous" integrity="sha256-+LIVdo7S66HX09dkhZvbKz8NKAlkGOP3Z0kCUzr+MU8=" type="text/javascript" src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/appcues.main.11fd23733af68e25fa851da.Без названия" async=""></script><script async="" src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/gtm.js.Без названия"></script><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9780131385399/chapter/ch04.html",
+          "book_id": "9780131385399",
+          "chapter_uri": "ch04.html",
+          "position": 0,
+          "user_uuid": "9c5599ca-6951-4904-81d0-732bb961926b",
+          "next_chapter_uri": "/library/view/communicating-design-developing/9780131385399/ch05.html"
+        
+      },
+      title: "Communicating Design: Developing Web Site Documentation for Design and Planning, Second Edition",
+      author_list: "Dan M. Brown",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false
+    };
+    // ]]></script><script src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/modernizr.8e35451ddb64.js.Без названия"></script><script>
+    
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+      window.PRIVACY_CONTROL_SWITCH = true;
+
+      window.PUBLISHER_PAGES = true;
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "https://learning.oreilly.com/api/v2/search/select/",
+          "ENABLE_ONLINE_TRAINING": true
+        }
+      };
+  </script><link rel="canonical" href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html"><meta name="description" content=" Chapter 4. Concept Models A concept model is a diagram that shows the relationships between different abstract ideas. You can apply the concept modeling technique in a variety of circumstances ... "><meta property="og:title" content="Chapter 4. Concept Models"><meta itemprop="isPartOf" content="/library/view/communicating-design-developing/9780131385399/"><meta itemprop="name" content="Chapter 4. Concept Models"><meta property="og:url" itemprop="url" content="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html"><meta property="og:site_name" content="Safari"><meta property="og:image" itemprop="thumbnailUrl" content="https://learning.oreilly.com/library/cover/9780131385399/"><meta property="og:description" itemprop="description" content=" Chapter 4. Concept Models A concept model is a diagram that shows the relationships between different abstract ideas. You can apply the concept modeling technique in a variety of circumstances ... "><meta itemprop="inLanguage" content="en"><meta itemprop="publisher" content="New Riders"><meta property="og:type" content="book"><meta property="og:book:isbn" itemprop="isbn" content="9780131385399"><meta property="og:book:author" itemprop="author" content="Dan M. Brown"><meta property="og:book:tag" itemprop="about" content="Design"><meta property="og:book:tag" itemprop="about" content="Digital Media"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@OReillyMedia"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: &lt;%= font_size %&gt; !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: &lt;%= font_family %&gt; !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: &lt;%= column_width %&gt;% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; url=/library/no-js/" /></noscript><script>
+    var dataLayer = window.dataLayer || [];
+
+    
+      window.medalliaVsgUserIdentifier = '9c5599ca-6951-4904-81d0-732bb961926b';
+      dataLayer.push({userIdentifier: '9c5599ca-6951-4904-81d0-732bb961926b'});
+      dataLayer.push({loggedIn: 'yes'});
+
+      
+        window.medalliaVsgAccountIdentifier = '40a64ffb-0742-4e66-9d82-1192a9b6da49';
+        
+
+        window.medalliaVsgIsIndividual = true;
+        
+          
+          dataLayer.push({learningAccountType: 'free trial'});
+          
+        
+
+        
+      
+    
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+    (function () {
+      var VERSION = 'V1.1';
+      var AUTHOR = 'Awwad';
+      if (!window.GtmHelper)
+        window.GtmHelper = function () {
+          var instance = this;
+          var loc = document.location;
+          this.version = VERSION;
+          this.author = AUTHOR;
+          this.readCookie = function (name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+          };
+          this.createCookie = function (name, value, days, cookieDomain) {
+            var domain = "";
+            var expires = "";
+
+            if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + Math.ceil(days * 24 * 60 * 60 * 1000));
+              var expires = " expires=" + date.toGMTString() + ";";
+            }
+
+            if (typeof (cookieDomain) != 'undefined')
+              domain = " domain=" + cookieDomain + "; ";
+
+            document.cookie = name + "=" + value + ";" + expires + domain + "path=/";
+          };
+
+          this.isDuplicated = function (currentTransactionId) {
+            // the previous transaction id:
+            var previousTransIdValue = this.readCookie("previousTransId");
+
+            if (currentTransactionId === previousTransIdValue) {
+              return true; // Duplication
+            } else {
+              return false;
+            }
+          };
+        }
+    })()
+  </script><script defer="" src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/vendor.d0fe30932d64.js.Без названия"></script><script defer="" src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/reader.3833317c1bb0.js.Без названия"></script><script async="" src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/MathJax.js.Без названия"></script><style id="annotator-dynamic-style">.annotator-adder, .annotator-outer, .annotator-notice {
+  z-index: 100019;
+}
+.annotator-filter {
+  z-index: 100009;
+}</style><iframe src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource.html"></iframe><iframe src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource(2).html"></iframe><iframe src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource(3).html"></iframe><link rel="stylesheet" type="text/css" integrity="sha256-q9sKb2HpA5fJjN1cK9LjLaEXff5ix81Rv1Y3xJFptPE=" crossorigin="anonymous" href="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/container.11fd23733af68e25fa851da20bbd639c02e.css"><iframe src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource(4).html"></iframe><script src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/f(1).txt"></script><style type="text/css" id="kampyleStyle">.noOutline{outline: none !important;}.wcagOutline:focus{outline: 1px dashed #595959 !important;outline-offset: 2px !important;transition: none !important;}</style></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts subscribe-panel library">
+
+    
+  <noscript> 
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+  
+
+
+<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li><a href="https://learning.oreilly.com/home/" class="l0 nav-icn"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.738 14H9.254v-3.676a.617.617 0 0 0-.621-.613H7.39a.617.617 0 0 0-.62.613V14H4.284a.617.617 0 0 1-.622-.613V10.22c0-.327.132-.64.367-.87l3.547-3.493a.627.627 0 0 1 .875 0l3.54 3.499c.234.229.366.54.367.864v3.167a.617.617 0 0 1-.62.613zM7.57 2.181a.625.625 0 0 1 .882 0l5.77 5.692-.93.92-5.28-5.209-5.28 5.208-.932-.919 5.77-5.692z"></path></svg><span>Home</span></a></li><li class="search"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"></path></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"></path></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#" class="l1 nav-icn "><!--?xml version="1.0" encoding="UTF-8"?--><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M8,8 C6.34321755,8 5.00013,6.65691245 5.00013,5.00013 C5.00013,3.34334755 6.34321755,2.00026001 8,2.00026001 C9.65678245,2.00026001 10.99987,3.34334755 10.99987,5.00013 C10.99987,6.65691245 9.65678245,8 8,8 Z M2.33024571,11.3523547 L2.33774538,11.3523547 C3.7622187,9.70968996 5.82947484,8.76608166 8.00374984,8.76608166 C10.1780248,8.76608166 12.245281,9.70968996 13.6697543,11.3523547 C13.8892083,11.6177474 14.0062813,11.9530021 13.99974,12.2973138 L13.99974,13.99974 L2.00026001,13.99974 L2.00026001,12.2973138 C1.99371867,11.9530021 2.11079172,11.6177474 2.33024571,11.3523547 Z" id="path-1"></path></svg><span>Your O'Reilly</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/profile/" class="l2 nav-icn"><span>Profile</span></a></li><li><a href="https://learning.oreilly.com/history/" class="l2 nav-icn"><span>History</span></a></li><li><a href="https://learning.oreilly.com/playlists/" class="l2 nav-icn"><span>Playlists</span></a></li><li><a href="https://learning.oreilly.com/u/9c5599ca-6951-4904-81d0-732bb961926b/" class="l2 nav-icn"><span>Highlights</span></a></li></ul></li><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#" class="l1 nav-icn "><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.564 2.263l2.172 2.174c.17.168.264.397.264.636V11a.6.6 0 0 1-.6.6h-.6V6.2h-6V2.6a.6.6 0 0 1 .6-.6h3.527c.239 0 .468.095.637.263zM2.6 14a.6.6 0 0 1-.6-.6V6.8a.6.6 0 0 1 .6-.6h1.903a1.2 1.2 0 0 1 .849.352L6.2 7.4H11a.6.6 0 0 1 .6.6v5.4a.6.6 0 0 1-.6.6H2.6zM11 5h1.8L11 3.2V5z"></path></svg><span>Featured</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/featured/navigating-21st-century/" class="l2 nav-icn"><span>Navigating Change</span></a></li><li><a href="https://learning.oreilly.com/recommendations/" class="l2 nav-icn"><span>Recommended</span></a></li></ul></li><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#" class="l1 nav-icn "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>queue icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 29.2C25.4 29.2 25.8 29.1 26.1 28.9L48.7 16.8C49.5 16.4 50 15.5 50 14.6 50 13.7 49.5 12.8 48.7 12.4L26.1 0.3C25.4-0.1 24.6-0.1 23.9 0.3L1.3 12.4C0.5 12.8 0 13.7 0 14.6 0 15.5 0.5 16.4 1.3 16.8L23.9 28.9C24.2 29.1 24.6 29.2 25 29.2ZM7.3 14.6L25 5.2 42.7 14.6 25 24 7.3 14.6ZM48.7 22.4L47.7 21.9 25 34.2 2.3 21.9 1.3 22.4C0.5 22.9 0 23.7 0 24.7 0 25.6 0.5 26.5 1.3 26.9L23.9 39.3C24.2 39.5 24.6 39.6 25 39.6 25.4 39.6 25.8 39.5 26.1 39.3L48.7 26.9C49.5 26.5 50 25.6 50 24.7 50 23.7 49.5 22.9 48.7 22.4ZM48.7 32.8L47.7 32.3 25 44.6 2.3 32.3 1.3 32.8C0.5 33.3 0 34.1 0 35.1 0 36 0.5 36.9 1.3 37.3L23.9 49.7C24.2 49.9 24.6 50 25 50 25.4 50 25.8 49.9 26.1 49.7L48.7 37.3C49.5 36.9 50 36 50 35.1 50 34.1 49.5 33.3 48.7 32.8Z"></path></g></svg><span>Explore</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/topics/" class="l2 nav-icn"><span>All Topics</span></a></li><li><a href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;sort=publication_date&amp;facet_json=true&amp;page=0" class="l2 nav-icn"><span>Early Releases</span></a></li><li><a href="https://learning.oreilly.com/playlists/discover/" class="l2 nav-icn"><span>Shared Playlists</span></a></li><li><a href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;formats=case%20study&amp;formats=learning%20path&amp;formats=live%20online%20training&amp;formats=notebook&amp;formats=oriole&amp;formats=video&amp;sort=popularity&amp;facet_json=true&amp;page=0&amp;collection_type=expert" class="l2 nav-icn"><span>Most Popular Titles</span></a></li><li><a href="https://learning.oreilly.com/resource-centers/" class="l2 nav-icn"><span>Resource Centers</span></a></li></ul></li><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#" class="l1 nav-icn "><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12.8 3.2A1.2 1.2 0 0 1 14 4.4v8.4a1.2 1.2 0 0 1-1.2 1.2H3.2A1.2 1.2 0 0 1 2 12.8V4.4a1.2 1.2 0 0 1 1.2-1.2h1.2V2h1.2v1.2h4.8V2h1.2v1.2h1.2zm-9.6 9.6h9.6V6.2H3.2v6.6zM8 9.5a1.35 1.35 0 1 1 0-2.7 1.35 1.35 0 0 1 0 2.7zm2.7 2.148v.552H5.3v-.552c0-.321.124-.634.355-.858a3.358 3.358 0 0 1 4.69 0c.23.224.355.537.355.858z"></path></svg><span>Live Events</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/attend/" class="l2 nav-icn"><span>All Events</span></a></li><li><a href="https://learning.oreilly.com/featured/architectural-katas/" class="l2 nav-icn"><span>Architectural Katas</span></a></li><li><a href="https://learning.oreilly.com/featured/ai" class="l2 nav-icn"><span>AI &amp; ML</span></a></li><li><a href="https://learning.oreilly.com/featured/strata/" class="l2 nav-icn"><span>Data Sci &amp; Eng</span></a></li><li><a href="https://learning.oreilly.com/featured/oscon/" class="l2 nav-icn"><span>Programming</span></a></li><li><a href="https://learning.oreilly.com/featured/infrastructure-ops/" class="l2 nav-icn"><span>Infra &amp; Ops</span></a></li><li><a href="https://learning.oreilly.com/featured/software-architecture/" class="l2 nav-icn"><span>Software Arch</span></a></li></ul></li><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#" class="l1 nav-icn "><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.6467109,4.35328907 L14.7964612,7.51003884 C15.0678463,7.78304342 15.0678463,8.22395603 14.7964612,8.49696061 L11.6467109,11.6467109 L10.6597892,10.6597892 L13.3055794,8 L10.6597892,5.34021084 L11.6467109,4.35328907 Z M4.35328907,11.6467109 L1.20353875,8.48996116 C0.932153749,8.21695658 0.932153749,7.77604397 1.20353875,7.50303939 L4.35328907,4.35328907 L5.34021084,5.34021084 L2.69442057,8 L5.34021084,10.6597892 L4.35328907,11.6467109 Z M5.84417089,11.4997226 L8.67194674,4.50027742 L10.1838269,4.50027742 L7.35605105,11.4997226 L5.84417089,11.4997226 Z" id="Mask"></path></svg><span>Interact</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/scenarios/?classification=content-scenario" class="l2 nav-icn"><span>Scenarios</span></a></li><li><a href="https://learning.oreilly.com/scenarios/?classification=sandbox-scenario" class="l2 nav-icn"><span>Sandboxes</span></a></li><li><a href="https://learning.oreilly.com/interactive/?classification=jupyter-notebook" class="l2 nav-icn"><span>Jupyter Notebooks</span></a></li></ul></li><li><a href="https://learning.oreilly.com/answers/" class="l1 nav-icn "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M2.31032699,3.75609006 C4.65421571,1.41371359 8.45302454,1.41472092 10.7955702,3.75860838 C13.1381158,6.10249583 13.1369405,9.90130261 10.7930518,12.243847 C8.44916311,14.5863913 4.65018639,14.5852161 2.30780867,12.2413286 C-0.0346204845,9.89749489 -0.0334929936,6.09853298 2.31032699,3.75609006 Z M8.8198605,4.98016308 C7.34193969,3.86924672 5.23410194,3.98609692 3.88914868,5.33104946 C3.12814393,6.09032122 2.72818176,7.13880077 2.79015179,8.21201133 C2.79115912,8.23064692 2.79233434,8.24928252 2.79350956,8.26791811 L2.79350956,8.26791811 C2.83179539,8.8307976 2.9944077,9.37404287 3.26947292,9.86201677 L3.26947292,9.86201677 L2.77621706,11.7027432 C2.7699968,11.7259241 2.77662063,11.7506624 2.79359185,11.7676337 C2.8105631,11.7846049 2.83530144,11.7912287 2.85848233,11.7850085 L2.85848233,11.7850085 L4.69400524,11.2922565 C5.26306363,11.6167344 5.90703177,11.786885 6.56209849,11.7858479 C8.64827865,11.7858479 10.3395879,10.094542 10.3395879,8.00836292 C10.3405204,6.84135608 9.80105674,5.73967784 8.87862141,5.02482134 L8.87862141,5.02482134 L8.82825492,4.98654283 Z M13.7933062,2 C14.7073496,2.00009863 15.4482759,2.74110484 15.4482759,3.65514822 C15.4482759,4.32460943 15.0449926,4.92814782 14.4264842,5.18432286 C13.8079757,5.44049789 13.096053,5.29885769 12.6226979,4.82545158 C12.1493429,4.35204547 12.0077795,3.64010743 12.2640213,3.02162665 C12.5202631,2.40314587 13.123845,1.99992776 13.7933062,2 Z"></path></svg><span>Answers</span></a></li><li><a href="https://learning.oreilly.com/certifications/" class="l1 nav-icn "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M12.912 9.18L14 8.014l-1.088-1.18a.304.304 0 01-.075-.268L13.195 5l-1.535-.463a.313.313 0 01-.194-.194l-.462-1.537-1.565.358c-.09.03-.194 0-.269-.074L8.007 2 6.845 3.09a.303.303 0 01-.269.074l-1.565-.358-.462 1.537a.313.313 0 01-.194.194L2.82 5l.358 1.567a.26.26 0 01-.075.269L2 8.015l1.088 1.164c.075.075.09.18.075.269l-.358 1.567 1.535.463c.09.03.164.104.194.194l.462 1.537 1.565-.358c.015 0 .045-.015.075-.015.075 0 .15.03.209.074L8.007 14l1.163-1.09a.303.303 0 01.269-.074l1.565.358.462-1.537a.313.313 0 01.194-.194L13.195 11l-.358-1.567a.338.338 0 01.075-.254zm-6.046 1.37L4.41 8.26l1.16-1.244 1.767 1.649L10.4 5.6l1.202 1.202-4.242 4.243-.495-.495z"></path></svg><span>Certifications</span></a></li><li><a href="https://learning.oreilly.com/preferences/" class="l1 nav-icn "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"></path></g></svg><span>Settings</span></a></li><li><a href="https://learning.oreilly.com/public/support/" class="l1 nav-icn "><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M7.363 6.656a2.692 2.692 0 0 1-2.681-2.703c0-1.493 1.2-2.703 2.681-2.703a2.692 2.692 0 0 1 2.682 2.703c0 1.493-1.2 2.703-2.682 2.703zm4.023 2.027c-1.852 0-3.352 1.513-3.352 3.379H2v-1.534c-.006-.31.099-.612.295-.852a6.666 6.666 0 0 1 9.09-.993zm-.543.676h1.12v.304c.003.284.16.543.408.676a.766.766 0 0 0 .77 0l.303-.176.556.966-.302.176a.772.772 0 0 0-.362.676v.08a.772.772 0 0 0 .362.677l.302.21-.556.965-.302-.175a.766.766 0 0 0-.771 0 .778.778 0 0 0-.409.675v.352h-1.106v-.372a.778.778 0 0 0-.409-.676.766.766 0 0 0-.77 0l-.303.176-.556-.912.302-.176a.772.772 0 0 0 .362-.676v-.04-.04a.772.772 0 0 0-.362-.676l-.302-.176.556-.966.289.155a.766.766 0 0 0 .77 0 .778.778 0 0 0 .41-.676V9.36zm1.562 2.703c0-.271-.108-.531-.3-.722a1.001 1.001 0 0 0-.72-.292 1.01 1.01 0 0 0-.992 1.023 1.01 1.01 0 0 0 1.01 1.004 1.01 1.01 0 0 0 1.002-1.013z"></path></svg><span>Support</span></a></li><li><a href="https://get.oreilly.com/email-signup.html" class="l1 nav-icn " target="&quot;_blank&quot;"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.564 2.263l2.172 2.174c.17.168.264.397.264.636V11a.6.6 0 0 1-.6.6h-.6V6.2h-6V2.6a.6.6 0 0 1 .6-.6h3.527c.239 0 .468.095.637.263zM2.6 14a.6.6 0 0 1-.6-.6V6.8a.6.6 0 0 1 .6-.6h1.903a1.2 1.2 0 0 1 .849.352L6.2 7.4H11a.6.6 0 0 1 .6.6v5.4a.6.6 0 0 1-.6.6H2.6zM11 5h1.8L11 3.2V5z"></path></svg><span>Newsletters</span></a></li><li><a href="https://learning.oreilly.com/accounts/logout/" class="l1 nav-icn "><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M2.613 12.63A.607.607 0 0 1 2 12.03V3.602C2 3.269 2.274 3 2.613 3h5.515v1.204H3.226v7.223h4.902v1.203H2.613zM5.677 9.02V6.611h4.903V4.926a.301.301 0 0 1 .19-.274.31.31 0 0 1 .33.063l2.722 2.673a.594.594 0 0 1 0 .849L11.1 10.909a.31.31 0 0 1-.331.063.301.301 0 0 1-.19-.274V9.02H5.677z"></path></svg><span>Sign Out</span></a></li></ul></div></li></ul></nav></header>
+
+
+
+      </div>
+      <div id="container" class="application" style="height: auto;">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Communicating Design: Developing Web Site Documentation for Design and Planning, Second Edition
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#" title="Search in archive" class="js-search-controls search-controls" onclick="window.Appcues.track(&#39;SearchBook_HeronBook&#39;)"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9780131385399/chapter/ch04.html"><div class="js-collections-dropdown collections-dropdown menu-bit-cards" onclick="window.Appcues.track(&#39;AddPlaylist_HeronBook&#39;)"><div data-reactroot="" class="menu-dropdown-wrapper js-menu-dropdown-wrapper align-right"><img class="hidden" src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/ajax-transp.gif" alt="loading spinner"><div class="menu-control"><div class="control "><div class="js-playlists-menu"><button class="js-playlist-icon"><svg class="icon-add-to-playlist-sml" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill-rule="nonzero" fill="#000000"><g transform="translate(-1.000000, 0.000000)"><rect x="5" y="0" width="12" height="2"></rect><title>Playlists</title><path d="M4.5,14 C6.43299662,14 8,12.4329966 8,10.5 C8,8.56700338 6.43299662,7 4.5,7 C2.56700338,7 1,8.56700338 1,10.5 C1,12.4329966 2.56700338,14 4.5,14 Z M2.5,10 L4,10 L4,8.5 L5,8.5 L5,10 L6.5,10 L6.5,11 L5,11 L5,12.5 L4,12.5 L4,11 L2.5,11 L2.5,10 Z"></path><circle cx="2" cy="5" r="1"></circle><circle cx="1.94117647" cy="1" r="1"></circle><rect x="5" y="4" width="12" height="2"></rect><rect x="9" y="8" width="8" height="2"></rect><rect x="9" y="12" width="8" height="2"></rect></g></g></g></svg><div class="js-playlist-addto-label">Add&nbsp;To</div></button></div></div></div></div></div></div></li><li class="js-font-control-panel font-control-activator"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size" onclick="window.Appcues.track(&#39;ChangeFont_HeronBook&#39;)"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#" class="trigger" data-push-state="false" title="Share" aria-label="Share" onclick="window.Appcues.track(&#39;Share_HeronBook&#39;)"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a class="twitter share-button t-twitter" target="_blank" aria-label="Share this section on Twitter" title="Share this section on Twitter" href="https://twitter.com/share?url=https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html&amp;text=Communicating%20Design%3A%20Developing%20Web%20Site%20Documentation%20for%20Design%20and%20Planning%2C%20Second%20Edition&amp;via=OReillyMedia"><span>Twitter</span></a></li><li><a class="facebook share-button t-facebook" target="_blank" aria-label="Share this section on Facebook" title="Share this section on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html"><span>Facebook</span></a></li><li><a class="googleplus share-button t-googleplus" target="_blank" aria-label="Share this secton on Google Plus" title="Share this secton on Google Plus" href="https://plus.google.com/share?url=https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html"><span>Google Plus</span></a></li><li><a class="email share-button t-email" aria-label="Share this section via email" title="Share this section via email" href="mailto:?subject=Safari:%20Chapter%204.%20Concept%20Models&amp;body=https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html%0D%0Afrom%20Communicating%20Design%3A%20Developing%20Web%20Site%20Documentation%20for%20Design%20and%20Planning%2C%20Second%20Edition%0D%0A"><span>Email</span></a></li></ul></li><!-- endif request.user.is_authenticated -->
+      </ul>
+    </div>
+
+      
+          
+      
+
+    <section role="document">
+        
+        
+
+
+
+
+  <script defer="" src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/djangoMessagesPage.14c7c03e1be9.js.Без названия"></script>
+
+
+        <script src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/48743.js.Без названия"></script>
+<script>
+  var userId = "9c5599ca-6951-4904-81d0-732bb961926b";
+
+  var userObject = {
+    firstName: "Michael",
+    segment: "Trial",
+    admin: "False",
+    profileCreatedOn: "2021-03-21",
+    academic: ""
+  };
+  window.Appcues.identify(userId, userObject);
+  window.Appcues.page();
+
+  setTimeout(function () {
+    window.Appcues.track('ViewingBook_HeronBook')
+  }, 20000);
+</script>
+
+
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch03.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">Chapter 3. Personas</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">Chapter 5. Site Maps</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content" style="transform: none;"><div class="annotator-wrapper"><p><a id="ch04"></a></p>
+<h2>Chapter 4. Concept Models</h2>
+<p><a id="page_64"></a></p>
+<p><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/ch04text01.jpg" alt="image" width="155" height="15" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/ch04text01.jpg"></p>
+<p>A concept model is a diagram that shows the relationships between different abstract ideas. You can apply the concept modeling technique in a variety of circumstances to explain different aspects of a web site. Also known as concept maps or affinity diagrams.</p>
+<div class="sidebar1">
+<p><a id="ch04lev1sec1"></a></p>
+<h3>Concept Models At-A-Glance</h3>
+<p><a id="page_65"></a></p>
+<p>Concept models describe structures, how different ideas relate to each other. The format doesn’t prescribe particular kinds of relationships, nor does it assume any specific types of ideas. As an artifact of the web design process, it can capture the range of different kinds of information to be represented on the site.</p>
+<p><a id="ch04lev2sec1"></a></p>
+<h4>Purpose—What are concept models for?</h4>
+<p>There really is only one reason to create a concept model: to understand the different kinds of information that the site needs to display. This structure can drive requirements for the page designs, helping you to determine how to link templates to each other. With the structure ironed out, you might also use the model to help scope your project—determining what parts of the site to build when.</p>
+<p><a id="ch04lev2sec2"></a></p>
+<h4>Audience—Who uses them?</h4>
+<p>Use concept models for yourself. Ultimately, they are the most selfish, introspective, and self-indulgent artifact, a means for facilitating your own creative process.</p>
+<p><a id="ch04lev2sec3"></a></p>
+<h4>Scale—How much work are they?</h4>
+<p>You can spend as much or as little time as you need, but it can be difficult to predict how much time to dedicate. The effort here isn’t creating the illustration, but dissecting the various information that constitutes the site.</p>
+<p><a id="ch04lev2sec4"></a></p>
+<h4>Context—Where do they fall in the process?</h4>
+<p>Concept models are tools for helping you to frame the design problem, so build them at the beginning of your process. Of course, you might realize late in a project that you needed to spend more time uncovering the site’s underlying structure. Further along in the timeline, concept models can help provide context for existing design work.</p>
+<p><a id="ch04lev2sec5"></a></p>
+<h4>Format—What do they look like?</h4>
+<p>Concept models are, at their heart, circles connected by lines. Such a simple format lends itself to some embellishment to highlight different kinds of concepts and relationships.</p>
+</div>
+<p><a id="page_66"></a>In addition to communicating ideas, design artifacts help you, the designer, work through difficult problems. Putting a structure on paper, sketching a screen layout, or summarizing user needs can all help you find new insights and new inspiration. I won’t pretend to understand the neuroscience behind this. All I can tell you is, from experience, whenever I think I can neglect this part of the process I’m proven dead wrong.</p>
+<p>Concept models swing more toward the personal side of the spectrum than perhaps any other diagram in this book. It is the diagram I most often keep to myself, rarely sharing it with clients and occasionally not even other team members. It is one of the first diagrams I build, almost immediately as I start familiarizing myself with a project’s requirements. It helps build my comfort level with a project’s scope and the related <em>domain</em> of information.</p>
+<div class="note1">
+<p><a id="ch04sb01"></a></p>
+<p><strong>Domain</strong></p>
+<p>The sphere of information related to the project you’re working on.</p>
+</div>
+<p>I transition concept models from hand-drawn sketches to vector art faster than any other diagram. Putting them into a diagramming application lets me manipulate their structure and content quickly, allowing me to see the ideas in new ways.</p>
+<p>What ideas? What is it that a concept model helps to envision? Web sites have underlying structures: More than just navigation menus, a site’s skeleton is the collection of stuff that makes it what it is. Imagine taking the concept of “article” or “story” away from CNN.com. The site would be fundamentally different.</p>
+<p><a id="ch04tab01"></a></p>
+<p class="caption"><strong>Table 4.1. Different kinds of content that typically appears on sites.</strong></p>
+<p class="image"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0066_01.jpg" alt="image" width="450" height="150" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0066_01.jpg"></p>
+<p>The complexity of web sites is not just in the level of interaction they permit, but also in their sophistication in dealing with the underlying information. The role of the concept model is to help designers iron out the structure for that information. Through modeling the concepts, designers learn:</p>
+<p class="indenthanding">• How to link content together</p>
+<p class="indenthanding">• How to expose content at different areas of the site</p>
+<p class="indenthanding">• What kinds of information should be associated with each concept</p>
+<p class="indenthanding">• The kinds of interactions users might expect with different kinds of information</p>
+<p class="indenthanding">• The relative priorities of different kinds of content or features</p>
+<p class="indenthanding">• The concepts that will serve as central “home” areas of the web site</p>
+<p class="indenthanding">• Which concepts will provide a context to view other kinds of information</p>
+<p><a id="ch04lev1sec2"></a></p>
+<h3>Introducing Concept Models</h3>
+<p>A concept model follows the format of a few other diagrams in this book—shapes connected by lines. In this case, the shapes (sometimes called <em>nodes</em>) represent concepts. The lines represent the relationships between the concepts. Both site maps and flowcharts belong to the same family, but concept models are, in a sense, a superset. They don’t prescribe a particular type of relationship or presume a particular type of node. <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#ch04tab02">Table 4.2</a> differentiates between concept models and site maps around some fundamental characteristics.</p>
+<p>The one constraint on concept models is that the nodes are nouns and the connections are verbs. Each node-link-node combination can read as a sentence, as in:</p><blockquote class="blockquote">
+<p><strong>Concept Models Are Diagrams.</strong></p></blockquote>
+<p><a id="ch04tab02"></a></p>
+<p class="caption"><strong>Table 4.2. Contrasting concept models and site maps. How do concept models differ from site maps? Let me count the ways...four. There are four ways.</strong></p>
+<p class="image"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0067_01.jpg" alt="image" width="450" height="215" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0067_01.jpg"></p>
+<p><a id="page_67"></a>It’s not much of a constraint; the format offers much flexibility, which cuts both ways. Sometimes it can be hard to determine what to include in the model and what to leave out.</p>
+<p><a id="ch04lev2sec6"></a></p>
+<h4>How Concept Models Help: A Short Preview</h4>
+<p>Concept models fill a void between requirements and design, between stating the problem and solving the problem. Designers must internalize the design problem. Somewhere between “getting into the user’s shoes,” recognizing technical constraints. and understanding the business context there is a need for a unified vision of the product. A concept model establishes a consolidated, holistic view of what the thing is, what it does, and who it helps.</p>
+<p>Concepts in the model translate to different parts of the site. A concept model can help determine your strategy for establishing templates, components, modules, navigation, <em>metadata</em>, and the underlying structure of a content management system. It can provide insight into the range of interactions users will need to perform. Short, right?</p>
+<div class="note1">
+<p><a id="ch04sb02"></a></p>
+<p><strong>Metadata</strong></p>
+<p>A collection of information that describes other information. The distinction between metadata and the data it describes is becoming increasingly blurred.</p>
+</div>
+<p><a id="ch04fig01"></a></p>
+<p class="caption"><strong>Figure 4.1. A concept model to explain concept models. I thought you might like the recursion.</strong></p>
+<p class="mediaobject"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/04fig01.jpg" alt="image" width="500" height="394" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/04fig01.jpg"></p>
+<div class="sidebar1">
+<p><a id="ch04sb03"></a></p>
+<h3><em>Ask the Expert</em></h3>
+<p class="mediaobject"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/stephen.jpg" alt="image" width="120" height="120" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/stephen.jpg"></p>
+<p class="source"><em>Stephen P. Anderson, PoetPainter, LLC</em></p>
+<p><strong><em>DB: What is a concept model?</em></strong></p>
+<p><em>SA: Concept models are pictures that simplify complex information. How? By modeling relationships through visuals and words.</em></p>
+<p><em>I’m careful not to specify a particular form—a concept model can be anything from the “nouns and verb” bubble maps to Venn diagrams to complex infographics (such as the famous Napoleon’s March poster). I’d even consider familiar business tools like swimlanes, matrices, and process diagrams to be concept models.</em></p>
+<p><em>I do distinguish between concept models and other things like narrative explanations, graphical notetaking, charts and data visualizations. All of these tools help people think and communicate, but concept models are exactly that—a model of some difficult conceptual idea. This is very different from capturing notes—even visual notes—in real time, or visualizing statistical data. Concept models represent a particular viewpoint on how different pieces of information might relate to each other.</em></p>
+</div>
+<div class="sidebar">
+<p><a id="ch04sb04"></a></p>
+<h3><em>Interlude: A History of Concept Models</em></h3>
+<p>Concept models are not unique to web design or even software engineering circles. According to Wikipedia, concept mapping was developed by Joseph D. Novak at Cornell in the 1970s as a learning tool. It has since been subsumed into other formal methodologies, including the Unified Modeling Language, a system of documentation techniques for software engineers.</p>
+<p>One of Novak’s basic tenets was that learning involves incorporating new ideas into existing ones—that when we learn something new we do so in the context of stuff we already know. For the purposes of web design and underlying structures, the important thing is to help the project team understand how parts of the business (stuff they already know) will be incorporated into the web design (new ideas). The simplicity of a concept model makes it ideal for communicating these notions.</p>
+<p>For more detailed history, and for some good comparisons to other techniques, check out the Wikipedia entry <a href="http://en.wikipedia.org/wiki/Concept_map">http://en.wikipedia.org/wiki/Concept_map</a>.</p>
+</div>
+<p><a id="ch04lev2sec7"></a></p>
+<h4>A rose by any other name</h4>
+<p><a id="page_68"></a>Someone once asked me how concept models are different from affinity diagrams. Affinity diagramming is an exercise to help a group of people identify similarities across a broad set of qualitative information, like observations during user research. Affinity diagramming is like any other grouping and prioritization activity—meant to consolidate a range of information and identify patterns. Beyer and Holtzblatt use affinity diagramming to consolidate observations from their user research technique, contextual inquiry, and identify new insights about the target audience.</p>
+<p>Which sounds a lot like concept modeling.</p>
+<p>Affinity diagrams don’t follow the exact format I describe here, which is based more on Novak’s concept mapping work (see sidebar on History of Concept Models). Beyer and Holtzblatt put a strong emphasis on consolidation through categorization and grouping, whereas my concept models don’t necessarily revolve around a hierarchy.</p>
+<p>Concept modeling is not unique to web design, nor is that the only name for this activity. Explicitly connecting ideas through visualization is a technique that comes in many flavors. I can only urge you to find the flavor you like best, or, like Ben and Jerry, invent one that suits your taste... er... style and approach.</p>
+<p><a id="page_69"></a></p>
+<p><a id="ch04fig02"></a></p>
+<p class="caption"><strong>Figure 4.2. Concept models establish frameworks that give the design team a vocabulary for talking about a domain. This model about comics clarifies some of the more obscure concepts and describes the key relationships.</strong></p>
+<p class="mediaobject"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/04fig02.jpg" alt="image" width="500" height="400" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/04fig02.jpg"></p>
+<div class="sidebar">
+<p><a id="ch04sb05"></a></p>
+<h3><em>About the Examples: Comic Books</em></h3>
+<p>I love comics, a fact widely known in my personal and professional circles. In 2009 I was introduced to a couple of guys, Ben Scofield and Nick Plante. They also love comics, and we got together to try to reinvent the online comics experience. We didn’t get too far, but I did a bit of concept modeling to help me wrap my head around the complexities of the architecture of comics.</p>
+<p>Comic books are an interesting domain because they bring some unique dimensions. For example, the character (like Superman or Spider-Man) is the franchise. Spider-Man can appear in multiple series. This means there are multiple storylines (sometimes intersecting, sometimes in completely different universes) involving the same character. (TV actors can appear in one and only one series at a time, right? The occasional crossover happens, but we assume that the character remains exactly the same in all appearances.)</p>
+<p>Authors and artists play a large role in reader preference. I’ll buy a new comic by Ed Brubaker, just like I’d buy a new novel by Elmore Leonard. The prominence of the creator in movies perhaps has equal weight, but not in television. When was the last time you watched an episode of something because so-and-so wrote or directed it? On the larger comics franchises, writers and artists rotate. Brubaker wrote <em>Daredevil</em> for a few years but has since moved on. Readers may drop a series because their favorite writer or artist is no longer working on the book. (Admittedly, the new team on <em>Daredevil</em> has kept up the pace and tone set by Brubaker, so it remains in my monthly stack.)</p>
+<p>Comics also appear in multiple formats—single issues and collections. There is also a substantial corpus of non-superhero comics (sometimes called graphic novels). All these nuances yield a set of concepts with complex relationships that make your intranet look positively flat.</p>
+<p>Even if you’re not into comics, the examples should still be meaningful. I don’t geek out too much (that may be the last you hear of Spider-Man and Daredevil), and the concepts are directly relevant to most kinds of entertainment: movies, television shows, music. They should be, therefore, pretty accessible.</p>
+</div>
+<p><a id="ch04lev2sec8"></a></p>
+<h4>Challenges</h4>
+<p><a id="page_70"></a>Because it’s an artifact to facilitate your thought process, the challenges with concept models—more than any other artifact—have to do with getting out of your own head:</p>
+<p class="indenthanding">• <strong>Analysis paralysis:</strong> There’s nothing more absorbing than fiddling with a model. Whether you go back and forth on the diagram’s layout or engage in an endless internal debate on the right structure, you can lose sight of its purpose. Ultimately, you don’t need to get everything “right,” you need to get it “right enough.” Take your deliberations far enough to help you move to the next step. Have a good sense of the range of templates you’ll need? Then stop messing with the line weight on your connections and move on!</p>
+<p class="indenthanding">• <strong>Practicality:</strong> Even if you bookend your thought process effectively, you might create a document that doesn’t effortlessly take you into the next stage of the design process. Any good artifact must further your thinking, whether in understanding the problem better or creating a meaningful design to address the problem. Concept models are inherently fussy and force you to dwell in abstract concepts. The result can easily be an output with no obvious next step. Knowing when to stop (see “analysis paralysis”) is key, but knowing what’s going to offer the most utility is also important.</p>
+<p class="indenthanding">• <strong>Perspective:</strong> Like other artifacts, concept models depict a slice of reality, telling a story about how things are or ought to be. Unlike a flowchart, for example, a concept model has no clear protagonist, no obvious perspective. Put another way, two people creating a flowchart of the same process will come closer to each other than two people creating a concept model of a set of ideas. As self-indulgent as concept models can be, your models can be more successful if you incorporate multiple perspectives—or at least acknowledge that there may be <a id="page_71"></a>several different ways of looking at the world. Perspectives can influence which concepts you incorporate and how you describe the relationships between them.</p>
+<div class="note">
+<p><a id="ch04note01"></a></p>
+<h3>Tip: Watch Out for Biased Models</h3>
+<p class="notepara">When I showed my concept model of comics to a workshop in the Research Triangle Park in North Carolina, one participant raised her hand and asked, “Where are the people?” My initial model included all the concepts we might use to classify a comic (the title, the characters, the author, the genre) but neglected to illustrate the ecosystem around comics (the store, the seller, the buyer, the reader).</p>
+<p class="notepara">Perhaps because I could place myself in one of those circles, I couldn’t see them, those concepts. Whatever the reason, I admit it was not a conscious choice. That’s the real lesson here: It’s important to establish a rationale for why things are kept in and left out of the model.</p>
+</div>
+<p>The previous challenges may rest on one central challenge: Concept models are, out of necessity, an abstraction. They don’t talk about things, they talk about <em>kinds</em> of things. They don’t represent the physical manifestation of any content or interface element. Their elements don’t necessarily directly translate to parts of the interface. They remain at the highest possible levels of content, not digging into the dirty details of what goes where.</p>
+<p>I’ve almost convinced myself to stop doing these things. Potential lack of practicality? Risks to the project plan? Abstract thinking? That can’t be fun for anyone. And yet, I find myself turning to modeling project after project. As a tool for design, they help me start to shape structures, if only in the most basic way. As a tool for understanding, they help me gain insights into a particular domain to get the lay of the land and to give myself a starting point for design. Drawing pictures, even quick ones to lay some groundwork, yields more fruitful design work than simply starting with screens.</p>
+<p><a id="ch04lev1sec3"></a></p>
+<h3>Anatomy of a Concept Model</h3>
+<p>Concept models illuminate domains of information, subjecting them to structured classification and relationships. The advantage of a concept model is that it doesn’t force a hierarchical relationship among the domain’s concepts. To be effective, the concept model must be clear about what’s included and how the concepts and domains all relate to each other.</p>
+<p>This section discusses the layout and style of concept models. Subsequent sections discuss choosing appropriate concepts and some of the weird things that happen when we try to boil the world down into circles connected by lines.</p>
+<p><a id="ch04tab03"></a></p>
+<p class="caption"><strong>Table 4.3. Three layers of concept models and the components of each.</strong></p>
+<p class="image"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0071_01.jpg" alt="image" width="450" height="156" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0071_01.jpg"></p>
+<p><a id="ch04lev2sec9"></a></p>
+<h4>Layer 1: The Basics</h4>
+<p>With concept models, we have two basic building blocks to work with: nodes and links. The format for a concept model suggests only that the nodes represent nouns and the links represent verbs describing the relationships between them.</p>
+<p><a id="ch04lev3sec1"></a></p>
+<h5>Nodes</h5>
+<p><a id="page_72"></a></p>
+<p>Use circles to represent nodes. The advantages of circles:</p>
+<p class="indenthanding">• <strong>They’re easy to connect with each other.</strong> Without sides (or with infinite sides, depending on your relationship with Euclid), it’s easy to attach links to a circle. A line that connects to a circle’s center is clean and easy to understand. The same thing with a square or other shape can be inelegant and yield “visual noise” that could confuse the diagram.</p>
+<p class="indenthanding">• <strong>They don’t crave a grid.</strong> Four-sided shapes want to live on a grid. Circles don’t need a grid to ensure legibility and visual appeal, which means they can get close to each other pretty easily, and you’re not dependent on layout to convey a sense of hierarchy. A nice corollary to this is that aligning circles to a grid is a powerful communication device. Without doing anything besides lining them up, you can imply a particularly strong or central relationship.</p>
+<p class="indenthanding">• <strong>Squares and rectangles imply screens or pages.</strong> This may be appropriate in some instances—when your concept model actually represents a network of templates—but if you’re laying conceptual groundwork, circles are good for concepts.</p>
+<p><a id="ch04fig03"></a></p>
+<p class="caption"><strong>Figure 4.3. Nodes should be circles. Squares just don’t connect well.</strong></p>
+<p class="mediaobject"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/04fig03.jpg" alt="image" width="150" height="229" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/04fig03.jpg"></p>
+<p>Label your circles. A couple of tips:</p>
+<p class="indenthanding">• <strong>Remember, these are the nouns.</strong> The next section covers how to choose appropriate concepts.</p>
+<p class="indenthanding">• <strong>Use the plural.</strong> It’s easier to craft appropriate verbs in the links, and the purpose of these concepts is to generalize about the domain of information. Plurals don’t require an article (“a”, “an” or “the”), making it easy to construct sentences.</p>
+<p class="indenthanding">• <strong>Specificity is good, but use examples in a subtitle.</strong> Note that the sample concept model uses “Genres” as the main concept and “Fantasy” as the example.</p>
+<p><a id="ch04fig04"></a></p>
+<p class="caption"><strong>Figure 4.4. Give your concepts specificity, under the main concept of “Genres” a specific example is given—“Fantasy.”</strong></p>
+<p class="mediaobject"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/04fig04.jpg" alt="image" width="300" height="300" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/04fig04.jpg"></p>
+<div class="note1">
+<p><a id="ch04sb06"></a></p>
+<p><strong>Noun</strong></p>
+<p>Person, place, or thing, but you remember that, right?</p>
+</div>
+<p><a id="ch04lev3sec2"></a></p>
+<h5>Links</h5>
+<p>Use lines to represent the connections between nodes. In concept models, the links always have directionality. That is, they’re always read as one-way from one node to another. Always label your links; I always regret it when I leave them off. Some ideas for good labels:</p>
+<p class="indenthanding">• <strong>Remember, these are the verbs.</strong> They should describe the relationship between one concept and the other by describing how the one acts on the other.</p>
+<p class="indenthanding">• <strong>Avoid “to be.”</strong> This isn’t a Strunk and White–like grudge against the passive voice. “To be” implies belonging, a hierarchical relationship. It doesn’t illuminate the relationship. You’re using a concept model because the relationships between the concepts are more interesting than a series of nested categories.</p>
+<p class="indenthanding">• <strong>Avoid wishy-washy modifiers.</strong> If you try to hedge your relationships by using “may” and “might”, your whole model will be one giant apology. A good concept model is like good writing—authoritative and confident. Readers understand implicitly that not every relationship will hold true in every instance.</p>
+<p class="indenthanding">• <strong>Avoid constructing multinode sentences.</strong> You might be tempted to concoct a chain of relationships to create a more complete picture. (The next layer talks about how to deal with more complex relationships.) Generally speaking, I try to keep my node-link-node relationships self-contained. Although it’s important to capture the complexity of reality, it’s more important to create an artifact that serves the design process. Standing at any node, you should understand how it relates to the concepts around it, outside the context of concepts two or more degrees away.</p>
+<p>A set of nodes and their relationships may break this last rule, but only when they represent the “backbone” of the domain—the essential theme that ties everything together. The section Creating Concept Models describes different starting points and basic structures for concept models.</p>
+<p><a id="page_73"></a></p>
+<p><a id="ch04fig05"></a></p>
+<p class="caption"><strong>Figure 4.5. The challenges of multinode sentences: They lack of immediate context. Though the bottom version feels a little disjointed, the reader can start at any node and apprehend a complete thought. Using prepositions alone, in the top example, doesn’t illuminate the concepts.</strong></p>
+<p class="mediaobject"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/04fig05.jpg" alt="image" width="400" height="303" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/04fig05.jpg"></p>
+<p><a id="ch04lev2sec10"></a></p>
+<h4>Layer 2: More Detail</h4>
+<p>It won’t take long for you to run into severe constraints with the simple concept models described with layer 1 elements. Indeed, reality frequently demands richer visualizations. The devices in the second layer extend basic node-link-node relationships to afford us more power in describing these complexities.</p>
+<p><a id="ch04tab04"></a></p>
+<p class="caption"><strong>Table 4.4. Techniques for showing nodes, how they are similar or different in a concept model.</strong></p>
+<p class="image"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0073_01.jpg" alt="image" width="550" height="172" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0073_01.jpg"></p>
+<p><a id="ch04lev3sec3"></a></p>
+<h5>Distinguishing nodes with styles and backgrounds</h5>
+<p>Not every concept in your model is necessarily weighted the same. Some concepts are more central to the story. Others are more important to emphasize. Further, you might identify patterns in the nodes that are not immediately apparent from the relationships between them. You might want to highlight that some nodes represent people while others represent physical objects. In the case of the comic book model, for example, I could distinguish between concepts that allow me to classify and identify comics and those that have to do with the business of comics.</p>
+<p>Determining appropriate distinctions and groupings will be discussed in Creating Concept Models, a few pages ahead. There are a few techniques for styling nodes to highlight the differences between them.</p>
+<p>Similarly, you can use the same techniques to style the links between nodes. Of course, styling links has different implications. (See <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#ch04tab05">Table 4.5</a>.)</p>
+<p><a id="ch04tab05"></a></p>
+<p class="caption"><strong>Table 4.5. Techniques for distinguishing types of links between nodes in a concept model.</strong></p>
+<p class="image"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0074_01.jpg" alt="image" width="550" height="115" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0074_01.jpg"></p>
+<p><a id="ch04fig06"></a></p>
+<p class="caption"><strong>Figure 4.6. Differently styled nodes and links, even just using circles, fills, and lines, offer a lot of flexibility to communicating differences.</strong></p>
+<p class="mediaobject"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/04fig06.jpg" alt="image" width="220" height="531" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/04fig06.jpg"></p>
+<p><a id="page_74"></a>How much is too much? Readers need to know where to start and what to focus on. They need to come to a particular conclusion. Judiciously applied, styles can enhance the model’s ability to tell the story. But too many can further confuse the issue.</p>
+<p>In the comics model, I used the heavy arrows around the perimeter to establish a framework for the whole diagram with the main relationships connecting the primary concepts.</p>
+<p><a id="ch04lev3sec4"></a></p>
+<h5>The branched relationship</h5>
+<p>Sometimes, when I get down to the leaves of the tree, so to speak, describing the smaller details of a model, I’m capturing various facets of those small concepts. A single concept is linked to several smaller ones that, in and of themselves, serve only to describe the larger concept. Identifying unique relationships to each of these smaller concepts may be more trouble than it’s worth.</p>
+<p>Enter, the branched relationship. A single label identifies all the links between the larger concept and the smaller ones. It looks somewhat different: instead of a single line between the concepts, the larger concept has a line that branches and the label sits on that single “trunk” or at the intersection of all the branched lines.</p>
+<p><a id="ch04fig07"></a></p>
+<p class="caption"><strong>Figure 4.7. A branched relationship connects one concept to two others with the same verb. In this case, the value of a comic depends on two things—its condition and important milestones in the story.</strong></p>
+<p class="mediaobject"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/04fig07.jpg" alt="image" width="500" height="206" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/04fig07.jpg"></p>
+<p>There are any number of reasons why you might use this approach, but two specifically come to mind:</p>
+<p class="indenthanding">• The smaller concepts are descriptive of the larger concept. In this case, it’s useful to identify specific aspects, perhaps because you want to highlight particular properties of the larger concept.</p>
+<p class="indenthanding">• The smaller concepts represent various possible states or conditions for the larger concept.</p>
+<p><a id="ch04lev3sec5"></a></p>
+<h5>Direct and indirect objects</h5>
+<p>The grammarians among you might start to wonder about the simplicity of sentences based on noun-verb-noun. The domains you’ll be modeling will likely demand more <a id="page_75"></a>complex relationships. Breaking down the language of a concept model, the two nodes act as a subject and object: Subject acts on object.</p>
+<p>This may be appropriate for most relationships you need to describe. In some instances, however, the relationship makes sense only with the addition of an indirect object.</p>
+<p>In my own models, I’ve found that central ideas need to appear throughout the model. They, in a sense, mediate relationships between other nodes. In our running example, concepts like “Comic Books” and “Stories” are central concepts that may be indirect objects in many of the other relationships.</p>
+<p>In some cases, you can change the perspective to frame the same relationship in a different way:</p><blockquote class="blockquote">
+<p><strong>Sellers sell comic books in Stores -&gt;</strong></p>
+<p><strong>Stores [are] owned by Owners</strong></p></blockquote>
+<p>In other cases, you can phrase the verb to swap the object and indirect object:</p><blockquote class="blockquote">
+<p><strong>Distributors distribute comic books to Stores -&gt;</strong></p>
+<p><strong>Distributors supply Stores (with comic books)</strong></p></blockquote>
+<p>Such an approach is grammatically and stylistically questionable, but appropriate for the purposes of the model.</p>
+<p>If you find you can’t effectively describe a relationship without mentioning another noun, consider embedding it in the link’s label. You can give it a distinct color, matching the color of the original concept.</p>
+<p><a id="ch04lev2sec11"></a></p>
+<h4>Layer 3: From Model to Illustration</h4>
+<p>You can stop at layer 2. Seriously, if you don’t take your model beyond circles and lines, that’s OK, especially if you’re not likely to show it to anyone else.</p>
+<p>But if you’re anything like me, you sometimes want a little more. You want a meaningful picture that’s fun to look at. If your project allows (or you have nothing better to do on the weekends) you might take some time to refine your model.</p>
+<p>There’s no easy way to teach this in the space of a few pages, but here are some techniques that I use to refine my models.</p>
+<div class="note1">
+<p><a id="ch04sb07"></a></p>
+<p><strong>Refine</strong></p>
+<p>Taking a diagram from bare bones to a polished illustration.</p>
+</div>
+<p><a id="ch04lev3sec6"></a></p>
+<h5>Amplify a particular comparison</h5>
+<p>Successful diagrams let readers compare ideas. You might pick two concepts, or two groups of concepts, and massage the visualization to show the similarities and differences between them.</p>
+<p><a id="ch04fig08"></a></p>
+<p class="caption"><strong>Figure 4.8. Comparing the business and the consumption of comics. This comparison emerged as I was evolving the model, distinguishing the experience of comics (bottom arc) from the business of making them (top arc).</strong></p>
+<p class="mediaobject"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/04fig08.jpg" alt="image" width="500" height="400" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/04fig08.jpg"></p>
+<p><a id="ch04lev3sec7"></a></p>
+<h5>Find a metaphor</h5>
+<p><a id="page_76"></a></p>
+<p>Like a concept model, a metaphor is a way of organizing relationships between ideas. By using a metaphor, we’re mapping one domain to another and making inferences about the target domain based on knowledge we have about the mapped domain. In a less abstract way: When comparing arguments to battle, I’m mapping the elements of an argument (participants, discussion) to elements of battles (opponents, fighting, winners and losers). This comparison frames the concept of an argument in a particular way, and implies certain conclusions.</p>
+<p>Look through the key relationships in your concept model. Is there one set that lends itself to a visual metaphor? Starting with that foundation, extend the metaphor to encompass other concepts in your original model. How does the metaphor explain relationships to other concepts?</p>
+<p><a id="ch04fig09"></a></p>
+<p class="caption"><strong>Figure 4.9. Transforming simple models into beautiful illustrations is a hallmark of Stephen Anderson’s work. Driven by a small handful of concepts, Stephen elaborated the basic idea—a definition of user experience—into a visual metaphor that drives the point home. You can learn more about Stephen’s work at poetpainter.com.</strong></p>
+<p class="mediaobject"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/04fig09.jpg" alt="image" width="500" height="368" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/04fig09.jpg"></p>
+<p><a id="ch04lev3sec8"></a></p>
+<h5>Concepts as backdrops</h5>
+<p><a id="page_77"></a></p>
+<p>A mature model will have a number of midsized concepts. Ideas that are crucial to the story, but serve as a bridge between the central ideas and the meaty details. Instead of using these concepts as a bridge, have them recede, using them as a backdrop for the more detailed concepts.</p>
+<p><a id="ch04fig10"></a></p>
+<p class="caption"><strong>Figure 4.10. Receding concepts into backdrops can add depth to the model as well as communicate simple relationships with less visual noise.</strong></p>
+<p class="mediaobject"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/04fig10.jpg" alt="image" width="500" height="519" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/04fig10.jpg"></p>
+<p><a id="ch04lev3sec9"></a></p>
+<h5>Simplified story</h5>
+<p>Another technique to facilitate the transition from circles and lines to something more sophisticated is to strip out some concepts. With a smaller number of concepts, you can focus on showing the relationships between them instead of describing them through labels.</p>
+<p>There are two ways to get to a simpler story:</p>
+<p class="indenthanding">• <strong>Focus on one part:</strong> A good model can show how seemingly unrelated things have important connections. That said, the conceptual leap from one end of your diagram to the other may not be the central part of the story. To generate a more visually appealing illustration, you can zoom in on one part of your model. This may yield one or two concepts serving as the central focus, and you can show how the more detailed and specific concepts relate to them.</p>
+<p class="indenthanding">• <strong>Focus on higher levels:</strong> Starting with the model’s primary concepts, keep only those nodes that are one or two degrees away, shaving off everything “lower” in the model. With trimmed details, the model becomes easier to shape into a picture. You can play up certain relationships and identify other visual devices for describing the major concepts. As you zero-in on how to tell the high-level story, you can decide whether it’s appropriate and feasible to incorporate the stripped-out details.</p>
+<p><a id="ch04lev1sec4"></a></p>
+<h3>Creating Concept Models</h3>
+<p>Diagramming concepts can lead you down pretty abstract, esoteric, and sometimes unproductive lines of thought. A little planning goes a long way, at least by making some basic decisions about purpose, audience, and content. These will give the model focus and ensure you’re not spinning.</p>
+<div class="note1">
+<p><a id="ch04sb08"></a></p>
+<p><strong>Spinning</strong></p>
+<p>When “creative efforts” are more effort than creative. Also known as analysis paralysis.</p>
+</div>
+<p><a id="ch04lev2sec12"></a></p>
+<h4>Basic Decisions for Concept Models</h4>
+<p>Sometimes I don’t know the answers to the following questions when I start modeling the concepts behind a new project. It’s a useful exercise for me, and I’ve become reasonably responsible about not getting pulled too far down the rabbit hole. That said, once the model is underway and I’ve got a better sense of range and scope, I also start to frame up what role the model will play on the project. Either way, as the model starts to form up, answering these questions can help give you a sense of focus.</p>
+<p><a id="ch04lev3sec10"></a></p>
+<h5>What is the purpose?</h5>
+<p><a id="page_78"></a></p>
+<p>In design, the purpose of high level conceptual thinking is to inform the entire process. At different stages of the design process, the conceptual model will serve different purposes. The chief purpose of a model is, in my mind, to answer the question, “What are we dealing with here?” It seeks to illustrate and frame the range, scope, and depth of the things we’re interested in.</p>
+<p>While the answer to that question may shift and settle over the course of the project, its boundaries generally remain intact. The answer to that question, however, contributes to all the other decisions you and your team will have to make throughout the process. At the beginning, you might use a model to comprehend a new domain. As you get underway, the decisions might be about what’s in scope and what’s out of scope for the project.</p>
+<p>Even the simplest concept models can help. I created a very simple model at the start of a project to help clarify some overlapping concepts (<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#ch04fig11">Figure 4.11</a>).</p>
+<p><a id="ch04fig11"></a></p>
+<p class="caption"><strong>Figure 4.11. To help inspire new ways of thinking about the product, I created this concept model to better understand all the different moving parts. It’s a pretty simple model, but it was enormously useful in clarifying the relationships. Note how this model completely evolved from circles-and-lines to more of an illustration.</strong></p>
+<p class="mediaobject"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/04fig11.jpg" alt="image" width="350" height="351" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/04fig11.jpg"></p>
+<p><a id="ch04lev3sec11"></a></p>
+<h5>Who is the audience?</h5>
+<p>“Well, that didn’t go so well.” So said my colleague Chris as we came out of a meeting where I presented a concept model to a group of business stakeholders. Boy, was he right. They just didn’t get it. Unless a model is fleshed out and highly illustrated (and perhaps even if it is), you’ll struggle to get any meaningful response. <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#ch04tab06">Table 4.6</a> explains why.</p>
+<p><a id="ch04tab06"></a></p>
+<p class="caption"><strong>Table 4.6. Concept models can be difficult for people to understand.</strong></p>
+<p class="image"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0078_01.jpg" alt="image" width="450" height="182" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0078_01.jpg"></p>
+<p>The section up ahead that deals with presenting concept models can give you some ideas on how to fine-tune the model depending on whether you need to show it to a client or not.</p>
+<p><a id="page_79"></a>Generally speaking, I create concept models for myself. If I need to solicit input from someone else, I’ll package the diagram to tell a specific story. Here are some things you can do to facilitate such a presentation:</p>
+<p><a id="ch04tab07"></a></p>
+<p class="caption"><strong>Table 4.7. To make concept models more accessible, consider tapping into people’s strengths.</strong></p>
+<p class="image"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0079_01.jpg" alt="image" width="450" height="248" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0079_01.jpg"></p>
+<p>It’s a big investment, so I always double-check that I have the time and budget and ask myself, “What feedback do I want from this person? Is this the best way to get that information out of them?”</p>
+<p><a id="ch04lev3sec12"></a></p>
+<h5>What should you include in the model?</h5>
+<p>What makes a good node? Four things should drive whether you end up including a concept in the model:</p>
+<p class="indenthanding">• <strong>Important to users:</strong> Through primary or secondary research, you will learn what ideas are central to the users’ experience of the site.</p>
+<p class="indenthanding">• <strong>Important to stakeholders:</strong> Interviews and requirements-gathering with stakeholders will reveal which ideas are important to them. These ideas are central to an organization’s conception of success.</p>
+<p class="indenthanding">• <strong>Meaningful landmark:</strong> Some concepts provide a useful way to link other ideas together. They serve as a central point or bridge two concepts.</p>
+<p class="indenthanding">• <strong>Offers insight:</strong> As you elaborate on your model, you may identify additional concepts that can help illuminate the underlying domain.</p>
+<p><a id="ch04fig12"></a></p>
+<p class="caption"><strong>Figure 4.12. Good nodes are important to users, important to the business, provide a contextual landmark, or offer an insight.</strong></p>
+<p class="mediaobject"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/04fig12.jpg" alt="image" width="500" height="265" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/04fig12.jpg"></p>
+<p>After you have a first draft of your model, you can also try to bring “bad” nodes to the surface—concepts that don’t substantially contribute to explaining the domain. One way to do this is to pull out common words, concepts that are so broad that outside the context of the model it’s hard to determine what they might be talking about.</p>
+<p><a id="ch04fig13"></a></p>
+<p class="caption"><strong>Figure 4.13. Common words are good opportunities to prune the model. One early version of the comics model included the concept “People,” which was easy to eliminate.</strong></p>
+<p class="mediaobject"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/04fig13.jpg" alt="image" width="500" height="103" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/04fig13.jpg"></p>
+<p><a id="page_80"></a>The links between nodes should all strive for greatest interest and appeal. You should seek out relationships that:</p>
+<p class="indenthanding">• <strong>Highlight the active:</strong> Use active verbs that describe how one concept affects, influences, or otherwise changes another.</p>
+<p class="indenthanding">• <strong>Evoke interface actions:</strong> Assuming all the concepts will translate eventually into information on the web site, all the links could reflect the various actions users might perform. While not a necessity, the exercise lays groundwork for doing subsequent design work. If you subscribe to the idea that all interactions with data can be reduced to CRUD (create, retrieve, update, and delete), here are some verbs that relate to each of those actions:</p>
+<p><a id="ch04tab08"></a></p>
+<p class="caption"><strong>Table 4.8. Relationships in concept models may try to highlight the same sort of connection over and over again. These nuances, however, can have a major impact on the design process. “Create” could refer to something generated or yielded passively, as a by-product, or something with much more intent, like “composes”.</strong></p>
+<p class="image"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0080_01.jpg" alt="image" width="450" height="145" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0080_01.jpg"></p>
+<p><a id="ch04tab09"></a></p>
+<p class="caption"><strong>Table 4.9. Three basic structures for concept models. Each has its own place, and may be a useful starting point if you have no specific ideas on how to initiate the model.</strong></p>
+<p class="image"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0080_02.jpg" alt="image" width="550" height="326" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0080_02.jpg"></p>
+<p><a id="ch04lev3sec13"></a></p>
+<h5>How you should lay out the model?</h5>
+<p>Concept models start out messy. As you clarify the story and insights start to emerge, you may want to clean it up. The insights you learn should drive how you structure the model: They should tell you what concepts and relationships to prioritize.</p>
+<p>My models tend to fall under one of three typical structures. These structures may be useful starting points once you’ve had a chance to move the concepts around the page a bit.</p>
+<p>Note that it’s rare for me to start with one of these structures right off the bat. In my initial models I do not prioritize any concepts. Only after I see how the story emerges do I zero-in on one of these approaches as appropriate for providing a framework for the model.</p>
+<p><a id="ch04lev2sec13"></a></p>
+<h4>Tips for Crystal Clear Concept Models</h4>
+<p>It’s not too hard to get some initial ideas down on paper, especially if you’re familiar with the domain. But if you don’t know much about it, you might get only a few nodes on paper before you get stuck. Here are some ideas for getting, you know, unstuck.</p>
+<p><a id="ch04lev3sec14"></a></p>
+<h5>Do your research</h5>
+<p><a id="page_81"></a></p>
+<p>Flesh out your understanding of the domain by reading up on it. Nothing gives you more nouns and verbs to draw upon than a few comprehensive, detailed descriptions of the business.</p>
+<p>When I started an 18-month contract at the wireless division of the Federal Communications Commission (FCC), it was clear I knew nothing about the business. While the FCC’s web site was a good starting point, I also sought out other web sites that cater to the same target audiences. This afternoon of surfing gave me enough fodder to build up a model. Ultimately, the model was never shared with others, but was a good tool for me to become comfortable with the various players and underlying business model.</p>
+<p>User research is even better. Transcripts of interviews are rife with concepts that are important and meaningful to users.</p>
+<p><a id="ch04lev3sec15"></a></p>
+<h5>Look under the hood</h5>
+<p>If you’re stuck, pick a node and ask yourself, “What else can I say about this concept?” Unpack the concept, forcing yourself to be as specific as possible. If you need more specific questions, pretend you’re interviewing a person (not a circle) who knows about the concept or the domain.</p>
+<p>One of the jargon words used in talking about comics is “mythology,” which informally refers to a character’s backstory. Because many popular characters have been around for decades, and have been subject to so many interpretations, there are multiple mythologies for some characters. This idea is difficult to model.</p>
+<p>Some questions I asked myself about the “mythologies” concept in order to arrive at a more detailed model:</p>
+<p class="indenthanding">• What makes one mythology different from another?</p>
+<p class="indenthanding">• How do storytellers deal with multiple mythologies?</p>
+<p class="indenthanding">• What other concepts are affected by a character’s mythology?</p>
+<p><a id="ch04fig14"></a></p>
+<p class="caption"><strong>Figure 4.14. Some details emerge only after forcing yourself to unpack a concept. In this early version of the comics concept model, I elaborated on the concept of a “mythology”. While it didn’t make it into the final model, I did keep “relevant milestones”.</strong></p>
+<p class="mediaobject"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/04fig14.jpg" alt="image" width="500" height="192" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/04fig14.jpg"></p>
+<div class="note1">
+<p><a id="ch04sb09"></a></p>
+<p><strong>FCC</strong></p>
+<p>The organization in the U.S. government that regulates telecommunications and broadcasting</p>
+</div>
+<p>In elaborating on this concept, I knew there was a relationship to another key idea—a universe. In short, one way to resolve competing or conflicting backstories is to place different versions of the same character in parallel universes. (And people wonder why comics aren’t more mainstream.)</p>
+<p>It was difficult for me to think of a specific verb that created a relationship between Mythology and Universe, so instead I tried to think of concepts that “mediated” between them. This helped me flesh out this part of the diagram.</p>
+<p>If you can’t generate answers or find them through research, capture the questions in the model itself. When you get to interview an expert, these questions can guide your agenda.</p>
+<p><a id="ch04lev3sec16"></a></p>
+<h5>Move stuff around</h5>
+<p>If you have dozens of concepts, it may be challenging to find a central focus for the diagram. The best way to <a id="page_82"></a>elaborate on the model, focus it, and find insights in the relationships is to move the nodes around. This might seem like an oversimplification, and a very mechanical way of iterating on the model. By moving concepts around, however, you can test out new kinds of relationships, explore positioning relationships in a new way, and zero-in on gaps in the model.</p>
+<p><a id="ch04lev3sec17"></a></p>
+<h5>Build up then tear down</h5>
+<p>Since it’s difficult to picture the end state before you start a model, err on the side of too much information. Include concepts that may not be entirely relevant. Link a concept to as many others as you can. Your page will be covered with circles and lines, but starting with too much is part of the creative process, giving you more opportunities for insight. You’ll have to cut things out ruthlessly when it comes time to clean up the model, but the pruning process can also lead to insights.</p>
+<p>To <strong>reduce links</strong>, look for triangles (<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#ch04fig15">Figure 4.15</a>). Three interconnected nodes can indicate that one of the relationships is redundant. Eliminate the relationship between the two less important nodes, focusing on the relationship between the important node and the ideas that support it. Alternatively, identify a chain of nodes that tells the simplest story.</p>
+<p><a id="ch04fig15"></a></p>
+<p class="caption"><strong>Figure 4.15. Reducing triangles from three connections to two can help clean up the model. Looking for triangles (like these from an early version of the comics concept model) can reveal opportunities to consolidate and focus the model.</strong></p>
+<p class="mediaobject"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/04fig15.jpg" alt="image" width="500" height="317" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/04fig15.jpg"></p>
+<p>To <strong>reduce nodes</strong>, eliminate words that are so common they are merely a convenient mechanism for bridging to other concepts. In an early version of the comics concept model, I used the concept “words” to encompass the different kinds of verbiage in a comic book–dialog, narrative, thoughts, and so on. Since I was already using the concepts “scripts” and “writers,” “words” felt unnecessary.</p>
+<p><a id="ch04fig16"></a></p>
+<p class="caption"><strong>Figure 4.16. Redundant words make for good opportunities to simplify the model. Though writing a script is an accurate depiction of the comic authoring process, it may not be essential for planning the user experience. Of course, if one of the requirements for the project calls for allowing users to download scripts, it would be worthwhile to keep this concept in.</strong></p>
+<p class="mediaobject"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/04fig16.jpg" alt="image" width="500" height="85" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/04fig16.jpg"></p>
+<p><a id="ch04lev2sec14"></a></p>
+<h4>Level-Up Your Concept Model Skills</h4>
+<p>It can be easy to spin in circles (ha ha) with a concept model. Here are some things I watch out for:</p>
+<p><a id="ch04lev3sec18"></a></p>
+<h5>Convergence: Everything wants to link to one concept</h5>
+<p>Though the hub-and-spoke model is a perfectly good way to represent how a central concept is the foundation for a series of interconnected concepts, the hub shouldn’t be the <a id="page_83"></a><em>only</em> concept everything links to. A model with a hub and one level of spokes without much more doesn’t help readers understand the rich array of relationships that drive the concept.</p>
+<p>If you find yourself wanting to make statements about the same concept over and over again, a concept model may not be the right tool to describe the domain. Then again, you can try a couple techniques to breathe some life into the diagram:</p>
+<p class="indenthanding">• <strong>Take the central concept out.</strong> I know: crazy, right? When I find myself unable to express any relationship without linking to the central concept, I take the concept out and treat it as an assumption for all the other relationships. This helps me focus on the relationships between the concepts.</p>
+<p class="indenthanding">• <strong>Use a value proposition structure.</strong> Value proposition links three or four concepts together in a sentence, like “<strong>Concept models</strong> are <strong>diagrams</strong> that describe <strong>complex ideas</strong>.” Treating this as your central theme (instead of the single concept) gives you more opportunities to explore detailed concepts.</p>
+<p><a id="ch04lev3sec19"></a></p>
+<h5>Keep the concept in perspective</h5>
+<p>You may be tempted to define life, the universe, and everything with a concept model. Once you get the hang of noun-verb-noun, your inner 18th-century philosopher will be clamoring to be let loose on the world. Why shouldn’t you be able to represent everything as interconnected circles?</p>
+<p>Ultimately, you’re trying to explain a domain. Serving only yourself, the concept model doesn’t need to unearth the deepest assumptions. A model for readers will only be undermined by too much information.</p>
+<p>There’s no litmus test to see if you’ve gone too far, but practice shows that most of my models include no more than a couple dozen concepts.</p>
+<p><a id="ch04lev3sec20"></a></p>
+<h5>Keep the model practical</h5>
+<p>Stay three or four steps ahead as you’re constructing the model. You don’t want to censor yourself to the point of eliminating every concept. But you also don’t want to take your concepts down to the building blocks of life. Ask yourself these questions as your put the model together:</p>
+<p class="indenthanding">• Is this concept relevant to the target audience?</p>
+<p class="indenthanding">• How important is this concept to the business?</p>
+<p class="indenthanding">• Which relationships would the target audience prioritize?</p>
+<p class="indenthanding">• Can I imagine how these concepts will be turned into elements of the interface?</p>
+<p class="indenthanding">• Can I imagine some user research that would help me validate these concepts?</p>
+<p>Answer “no” to any of these questions and you might be pushing into the realms of the impractical.</p>
+<p>A concept model in the design process is like salt in a recipe: it sets the stage for a broader palette of flavors. Too much, and you’ll overwhelm the rest of the ingredients. To remain practical, a concept model has to just provide a foundation for inspiring, informing, and establishing context in the design process.</p>
+<p><a id="ch04lev1sec5"></a></p>
+<h3>Presenting Concept Models</h3>
+<p>First things first: Ask yourself, “Do I need to share my concept model with team members or stakeholders at all?” If you’re using it as a tool to get things straight for your own purposes, or with a small team, this may not be a formal deliverable: It will never see the light of the conference room. It may be more responsible to shield your stakeholders and other team members from this kind of document if it operates at a level of abstraction that would be difficult for them to comprehend without concrete examples.</p>
+<p>If you decide that the concept model includes ideas that are essential for understanding the overall approach, think <a id="page_84"></a>about whether you need to show the entire model. Is there an abbreviated version you can put together that boils the ideas down to just what’s needed as prerequisites for the rest of the design? Alternatively, if the model yielded an insight or specific conundrum, you might assemble a separate diagram describing just the small piece.</p>
+<p>Presenting a concept model means telling a story, putting the concept model into a context that team members and stakeholders can relate to. Your story needs to be grounded in reality, and this section describes several ways to do this.</p>
+<p><a id="ch04lev2sec15"></a></p>
+<h4>Establish a Purpose for Meeting</h4>
+<p>The presentation should be driven by the purpose. With concept models, there are usually only two reasons why you’d present them: to prepare participants for more in-depth design discussions, or to hash out the model itself.</p>
+<p><a id="ch04lev3sec21"></a></p>
+<h5>Preparing for design</h5>
+<p>One reason for presenting a concept model is to lay a foundation for the design, prepping the meeting participants for a more detailed discussion about the user experience. These meetings usually start out with, “I know you’re eager to dig into the design, but there are some basic concepts we need to clear up before we do.”</p>
+<p>We could use our comics concept model (or a portion of it) to describe the design team’s assumptions in designing the web site’s interface. Those assumptions include answers to these questions:</p>
+<p class="indenthanding">• What are the most important categories of content?</p>
+<p class="indenthanding">• How do other types of content relate to those most important categories?</p>
+<p class="indenthanding">• What kinds of functions might users expect?</p>
+<p>These kinds of meetings have at least one of these three key messages:</p>
+<p class="indenthanding">• <strong>This is a useful exercise because...:</strong> Be sure you understand how the concept model fits into the design process and where you’re going with it next. Prepare a simple rationale for doing the concept model, and refer to it when the meeting loses focus.</p>
+<p class="indenthanding">• <strong>Some initial design principles or requirements:</strong> Pull out a few of the insights and use these as themes or talking points throughout the discussion. These insights should be positioned as design principles or guidelines: They are boundaries and constraints that help the design team focus their efforts.</p>
+<p class="indenthanding">• <strong>Some remaining questions about scope:</strong> Highlight the areas of the model that remain unclear, or which called into question the scope of the project. The model may have revealed dependencies that would make the established scope challenging. The model may have identified additional requirements not yet incorporated into the thought process.</p>
+<p>Analysis of the concept model may have yielded some initial ideas about design—which content will get its own templates, what the information priorities are, a metadata model. If you’re confident about your design decisions, you can use these as themes in the meeting. Otherwise, use them in the Communicate Implications section of the agenda.</p>
+<p><a id="ch04lev3sec22"></a></p>
+<h5>Modeling together</h5>
+<p>The other reason to put a concept model in front of team members and stakeholders is to collaborate in its construction. In this case, rougher models are better because they lend themselves to feedback and discussion. It’s important to come to a consensus about the underlying structure that supports a web site’s user experience because it drives so many subsequent design decisions.</p>
+<p>As described previously, concept models can help at any point in the design process. Building them collaboratively does not change this. You may come to an impasse in the <a id="page_85"></a>design process, a clue that there’s disagreement about the underlying assumptions, and use that as an opportunity to take a step back and facilitate a brainstorming meeting to flesh out the basic concepts.</p>
+<p>In these meetings, establish three key themes:</p>
+<p class="indenthanding">• <strong>Our focus is the scope:</strong> That is, the purpose of the exercise is to establish the boundaries of the domain. We want to get our arms around everything that may be relevant to the design problem. We can always remove concepts later.</p>
+<p class="indenthanding">• <strong>Our interest is in what’s missing:</strong> Participants should focus less on what’s there and more on what’s not there. They need to help identify concepts that may be important—even tangentially—and contribute to the overall picture of the domain.</p>
+<p class="indenthanding">• <strong>Abstract thinking is hard:</strong> Reassure participants that thinking about an information space in this way is not easy to do. We’re thinking about the web site not just as a series of building blocks, but as a series of templates. Some templates can represent so many different things that their structures look so far removed from the actual content as to be of questionable value. This is OK, and it can be hard to wrap your head around.</p>
+<p>The meeting structure following assumes you’re preparing for design, not modeling together. If the purpose of your meeting is to present a skeletal structure for the concept model and engage participants in fleshing it out, you might skip steps 5 and 6. In these portions of the agenda, you provide details (you don’t have any yet) and communicate implications (which would be premature).</p>
+<p><a id="ch04lev2sec16"></a></p>
+<h4>Adapt the basic meeting structure</h4>
+<p>The basic meeting structure from the introduction is ideal for concept models. As you delve further, you are uncovering more details. Keep an eye on meeting participants; they may start to lose the thread if you get too abstract. In this case, you’ve reached the end of the useful life of this meeting. Wherever you are in your agenda, transition to soliciting feedback and defining next steps.</p>
+<p>Refresh your memory on the timing of sharing diagrams (<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch02.html#ch02tab02">Table 2.2</a> in the Diagram Basics chapter). With concept models (perhaps more than any other diagram) timing is important because stakeholders’ unfamiliarity with the models may add unnecessary challenges to the rhythm of your story.</p>
+<p><a id="ch04lev3sec23"></a></p>
+<h5>1. Establish context</h5>
+<p>For concept models, which may occur early in the project, set the stage by explaining how this technique contributes to the design project. You can use this time in the meeting to clarify the parameters and boundaries you considered in putting the model together. Also provide a high-level description of your process—what sources you used, what it took to put the model together, and what you were attempting to capture in the model.</p>
+<p>You can show the model, or the high-level version of it, when you conclude your context-setting introduction. This will set you up for the visual conventions, coming up next.</p>
+<p><a id="ch04lev3sec24"></a></p>
+<h5>2. Describe visual conventions</h5>
+<p>Describe the model at a high level, first. The fact that the diagram consists of circles connected by lines may be self-evident, but it sets the stage for you to dig into the specifics.</p>
+<p>If you’ve kept your model simple, limiting the range of styles for nodes and links, you may not need to say much more. If you’ve used a more elaborate set of styles, describe the types of contrasts those styles are meant to show.</p>
+<p><a id="ch04lev3sec25"></a></p>
+<h5>3. Highlight major design decisions</h5>
+<p><a id="page_86"></a></p>
+<p>It’s now time to dig into the model. There are three broad descriptions you can offer before getting too deep into the details:</p>
+<p class="indenthanding">• <strong>Overall structure:</strong> Indicate the three or four main concepts that constitute the main pillars in the concept model. Describe the relationships between them, and how they form the main structure that supports everything else.</p>
+<p class="indenthanding">• <strong>Unifying theme:</strong> Describe the underlying story in the concept model. For example, the theme for the sample concept model is the two sides of the comics business. Models using the “value proposition” structure (see <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#ch04tab09">Table 4.9</a>) have their theme stated clearly.</p>
+<p class="indenthanding">• <strong>What’s in and what’s out:</strong> Distinguish the boundaries of the domain. This description is especially useful if you’re trying to zero-in on scope, and you need to clarify that you’ve left some things out of the concept model on purpose.</p>
+<p>Before moving on, this is a good opportunity to show the value of the model by describing insights that came from creating it. Some of these insights might include:</p>
+<p class="indenthanding">• <strong>New concepts essential to the experience:</strong> Through your research or brainstorming, you might have identified a concept that is a useful piece of information for users, or is a category that unites several other concepts together.</p>
+<p class="indenthanding">• <strong>New relationships between concepts:</strong> Concept models represent your priorities very clearly. Through modeling a domain, you make specific choices about what concepts to connect, and some of these links may represent a new spin on the information space.</p>
+<p class="indenthanding">• <strong>New perspectives on the experience:</strong> In creating the concept model, you may have stumbled upon a new idea for structuring the overall user experience. This may be a new navigation scheme or a new way to arrange the content templates.</p>
+<p><a id="ch04lev3sec26"></a></p>
+<h5>4. Offer rationale and identify constraints</h5>
+<p>Meeting participants might still be noncommittal about the concept model, not sure why they’re talking about circles and lines when (clearly!) there are bigger issues at stake. Use this portion of the meeting to reiterate the purpose of the model, how it fits into the project, and what you hope to get from the conversation.</p>
+<p>Use this time during the conversation to describe research you did to feed the model. Indicate what sources you used to generate lists of concepts and identify potential connections between them. Such discussion may trigger ideas from participants on other places you can look to flesh out your understanding of the domain.</p>
+<p><a id="ch04lev3sec27"></a></p>
+<h5>5. Point out details</h5>
+<p>Describing concept models in excruciating detail is useful only if you expect to get meaningful feedback at those deep layers. There’s no need to hit every circle in the diagram unless you only have about a dozen concepts. Otherwise, use this time to point out a few of the detail areas:</p>
+<p class="indenthanding">• <strong>Novel concepts:</strong> If you’ve added any concepts that stakeholders might not expect to see, dig into these and be explicit about where the concept came from and why it’s important.</p>
+<p class="indenthanding">• <strong>Insights:</strong> Assembling the concepts in this visual format may have yielded unexpected insights. Describe these areas of the concept model.</p>
+<p class="indenthanding">• <strong>Challenges:</strong> To transition to the next part of the agenda, you can draw participants’ attention to areas of the model that imply difficult design challenges.</p>
+<p><a id="ch04lev3sec28"></a></p>
+<h5>6. Communicate implications</h5>
+<p><a id="page_87"></a></p>
+<p>For concept models, where the rubber meets the road is in how the model will lead to design. Most of this chapter is dedicated to creating the model in the context of a design project, so hopefully you’ll have some ideas about what you’re getting out of the model. At the very least, you should be able to describe at least one of these things:</p>
+<p class="indenthanding">• <strong>A better understanding of the domain:</strong> But merely saying that you understand the domain after so many hours of putting together a concept model is a bit of a letdown. Be sure you have something else to share.</p>
+<p class="indenthanding">• <strong>A better understanding of the target audience:</strong> Better, but why didn’t you do personas?</p>
+<p class="indenthanding">• <strong>A prioritized list of requirements:</strong> This is good. The concept model helped you prioritize areas of the project: which parts of the site you’re going to work on first. Why? The concept model told you to do it.</p>
+<p class="indenthanding">• <strong>A list of potential challenges:</strong> This is also good, and it shows you’re thinking ahead. The concept model helped you identify relationships that will be difficult to communicate, concepts that will require lots of links, or processes that are not straightforward.</p>
+<p class="indenthanding">• <strong>An inventory of possible screens:</strong> This is best. The concept model yielded a set of concepts and relationships that helped identify a list of screens that you need to design for the user experience. It provided a foundation for the site’s underlying structure.</p>
+<p>When discussing concept models, you may need to jump ahead to this section: people may just want the bottom line. With concept models the conclusion is, “So how does this impact the design?” And there’s no reason to save the implications for last if they represent the most important conclusions from your work.</p>
+<p><a id="ch04lev3sec29"></a></p>
+<h5>7. Solicit feedback</h5>
+<p>You’re interested in getting input on four things:</p>
+<p><a id="ch04tab10"></a></p>
+<p class="caption"><strong>Table 4.10. A structured look at feedback helps ensure you get what you need.</strong></p>
+<p class="image"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0087_01.jpg" alt="image" width="450" height="327" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0087_01.jpg"></p>
+<p><a id="ch04lev3sec30"></a></p>
+<h5>8. Provide a framework for review</h5>
+<p>The next steps after a concept model discussion are all you, the design team. I can’t think of an instance where I sent off a business stakeholder or developer with homework to review the model. It’s an introspective tool, and we’ve let others in to see our thought process, maybe to validate it in real time.</p>
+<p>But the lack of context when reviewing it “offline” would make it difficult for others to provide meaningful feedback (unlike a flow or site map or wireframes, which are more concrete).</p>
+<p>Instead, clearly state where you’re going from here.</p>
+<p><a id="ch04lev2sec17"></a></p>
+<h4>Avoid newbie mistakes</h4>
+<p><a id="page_88"></a></p>
+<p>Even the most concrete concept models can confuse participants. Unless they can draw a parallel to something in the real world, they may not understand exactly what they’re looking at. And even if they do get it, they may not care.</p>
+<p><a id="ch04lev3sec31"></a></p>
+<h5>Potential response 1: I don’t get it.</h5>
+<p>Some people may just not get it, especially if the concept model dabbles in the really abstract. Models can represent categories of categories or tiny little blocks of data or information about metadata (which is information about information). They can use slight variations in visual conventions to represent different abstract ideas (arrows for navigation, arrows for transporting data, arrows for indicating semantic relationships). For people who are used to looking at spreadsheets, or the simple infographics in <em>USA Today</em>, these diagrams can be exhausting.</p>
+<p>Before going into a presentation where you think you might get this response, boil the concept down into three sentences. If you’re not getting anywhere with the diagram, whip out those bullet points. As you watch your meeting circling the drain, these three sentences can be a lifesaver, giving participants the essential message without belaboring the diagram.</p>
+<p>The key here is to not make them feel dumber than they already do. To that end, you might say something like: “Why don’t you take some time to digest this and give me feedback in a couple days? This model is important because it creates the overall foundation for our design work. While you’re looking at it, keep the following three things in mind. (Insert your summary sentences here.)”</p>
+<p><a id="ch04lev3sec32"></a></p>
+<h5>Potential response 2: So what?</h5>
+<p>Even if the meeting participants get it, they may not realize why it matters. You have two possible strategies in this situation: Try to show the connections between the model and the design, or simply cut the meeting short.</p>
+<p>Cutting the meeting short is always an embarrassing and difficult tactic, but sometimes you have more to gain by avoiding conversation than forcing it. Since concept models tend to be highly abstract tools for designers to get their thoughts in order, the stakeholders may have little to gain by going through it.</p>
+<p>Again, the key here is to not make them feel stupid. Try saying something like: “I think I’ve gotten everything I need. I appreciate your time. We’ll take this feedback and incorporate it into the design. If you have further thoughts, let me know. Otherwise, the next time we talk we’ll start to show you some of our design work.”</p>
+<p>Ending the meeting is a last-ditch tactic, and you should only use it if it’s clear the stakeholders or other team members aren’t interested in engaging at an abstract level.</p>
+<p><a id="ch04lev1sec6"></a></p>
+<h3>Applying Concept Models</h3>
+<p>Though potentially highly disposable, concept models can also have a long shelf-life to help drive ongoing design activities.</p>
+<p><a id="ch04lev2sec18"></a></p>
+<h4>Providing Context for Other Deliverables</h4>
+<p>Once the model is complete, I’ll stick it at the front of other deliverables. They provide a nice visual for stuff that usually comes at the beginning of the document: what is the problem we’re trying to solve, what principles drove <a id="page_89"></a>our design decisions, what is the relationship between the site’s audience and content, what is the scope of our design project.</p>
+<p>This is only meaningful if the concept model actually provided specific inspiration for the remainder of the document. Perhaps the model helped you identify what screens to build or seeded the idea for the site’s navigation strategy. If this is the case, the model can help tell that story as well. Besides the diagram itself, you might include some narrative text or at least three to four conclusions (“key take-aways”) drawn from the model.</p>
+<p>On subsequent pages of the document, the model can provide more specific context. You can miniaturize the diagram, scale back the color, and use deeper saturation to highlight the relevant area of the model for each wireframe or persona or what-have-you.</p>
+<p><a id="ch04lev2sec19"></a></p>
+<h4>From Model to Screens</h4>
+<p>If point A is the concept model, what’s point B? Where do you go from here? Ultimately, concept models should frame a domain such that you have a good handle on the range and depth of information the web site needs to accommodate. If you’re having trouble making that leap, from model to screen design, here are a few ideas to get you started:</p>
+<p><a id="ch04lev3sec33"></a></p>
+<h5>Concepts as screens</h5>
+<p>Any node in the model might be a good starting point for designing screens. Pick one and decide how the web site should represent that concept.</p>
+<p>Remember that nodes represent abstract concepts, generalizations across swaths of information. The “issue” concept in our comic book model can represent one of many different examples of a single issue of a series. Therefore, the screen we design to represent “issue” is a template or container: It has spaces in it to display information about a specific instance of the concept.</p>
+<p>Some nodes adjacent to the concept you picked relate to it in some way. Your screen should show how users might navigate to that kind of information. How do users, for example, get from a single issue to a page about the whole series? How do users get from a single issue of a series to a page about related series? How do users get from a single issue to everything authored by the issue’s writer? Or everything in the series authored by the issue’s writer?</p>
+<p><a id="ch04fig17"></a></p>
+<p class="caption"><strong>Figure 4.17. Identifying the insights gleaned from a concept model is one way to establish a set of design requirements. In this case, the page from the document also acknowledges what’s missing from the model.</strong></p>
+<p class="mediaobject"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/04fig17.jpg" alt="image" width="500" height="387" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/04fig17.jpg"></p>
+<div class="note1">
+<p><a id="ch04sb10"></a></p>
+<p><strong>Instance</strong></p>
+<p>A single example of a concept.</p>
+</div>
+<p><a id="page_90"></a></p>
+<p><a id="ch04fig18"></a></p>
+<p class="caption"><strong>Figures 4.18. Questions about navigation, embedded in the concept model itself, provide a powerful way to (a) highlight the relevance of the model and (b) provide a mechanism for focusing discussions.</strong></p>
+<p class="mediaobject"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/04fig18.jpg" alt="image" width="500" height="351" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/04fig18.jpg"></p>
+<p><a id="ch04lev3sec34"></a></p>
+<h5>Concepts as metadata</h5>
+<p>Some nodes are descriptive, providing details about the concept. Issues have numbers. They are a chapter in a story arc. They might have a summary of the plot. All of these are potentially useful pieces of information, but not enough to serve as navigation mechanisms (they don’t bridge to other concepts). Nor are they substantive enough to yield pages in and of themselves. Yet the concept model helps us see that they need to be represented on the main screen somehow.</p>
+<p><a id="ch04lev3sec35"></a></p>
+<h5>Models to inspire structures</h5>
+<p>In the previous examples, we’ve considered the concept model to be the basis for the site’s underlying architecture: Each of the major concepts translates to a template; the links between the concepts correspond to links between the templates. Site designs, however, may not be translated so literally from a concept model.</p>
+<p><a id="ch04fig19"></a></p>
+<p class="caption"><strong>Figure 4.19. Some concepts make good metadata elements. In this version of the model, candidate metadata elements have been marked with a little tag icon.</strong></p>
+<p class="mediaobject"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/04fig19.jpg" alt="image" width="500" height="305" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/04fig19.jpg"></p>
+<p>For a recent project, I created a concept model that helped me look at the domain in a new way. Instead of designing a site structure driven by content type, I suggested designing templates based on lifecycle. To be specific, everything that passed through the system, regardless of its format or content, went through a similar lifecycle. The target audience wasn’t concerned as much about format or content as they were about where something stood in the lifecycle: that was the factor that changed the decisions they made.</p>
+<p>Can we do this for the comic book model? Does it suggest any other ways for structuring the information in a meaningful way? The model reveals some potentially useful structures and contrasts:</p>
+<p class="indenthanding">• <strong>Reading vs. collecting:</strong> These two activities are more than just use cases; they represent different relationships to comics. What’s worth exploring is whether they can be served by the same web site and where the web site should be split to accommodate these two distinctions. Does an “issue” page template need separate tabs to display two different kinds of metadata? Do readers and collectors browse for comics differently?</p>
+<p class="indenthanding">• <a id="page_91"></a><strong>Character timelines:</strong> Working through the concept model helped me establish a clearer picture of the relationships between a character, its “mythology,” the ongoing story lines, and the continuity between all of them. This is a situation unique to comics, especially mainstream comics. A single character can appear in multiple books at the same time. Most readers care about which story line represents the “canonical” history of their favorite character. Could we design an interface that focuses on character history and show the relationships between those timelines and the published issues?</p>
+<p><a id="ch04lev3sec36"></a></p>
+<h5>Relationships as interactions</h5>
+<p>Finally, you could look at the relationships between concepts for inspiration on interactions. Verbs in the model may directly translate to actions users can take on the site. They might inspire functions or features you hadn’t considered. They might shed light on the requirements.</p>
+<p>These four techniques are hardly mutually exclusive. Picking one as the means for driving design does not mean the others won’t offer equally useful inspiration.</p>
+<p><a id="ch04lev1sec7"></a></p>
+<h3>Concepts Matter</h3>
+<p>Imagine a concept model, designed for a news publishing service, that describes the anatomy of a news story. It shows how the news story is composed of different kinds of information, the metadata attached to a news story, and the different types of news stories displayed on the site.</p>
+<p>The concept model establishes a vocabulary for talking about the structure of these stories, and how they might be formatted in different ways on different parts of the site. The front page will have short teasers. Subject category pages might have longer teasers and a couple of features with longer introductions. The design team gives all these data points distinct names so they can talk about them easily: short summaries, headlines, subheads, long summaries, main body, extended body, and many others.</p>
+<p>For all the effort put into this terminology, it may never be exposed to the end user. Its purpose is simply to facilitate the design process, to come to a common understanding of how the underlying concepts relate to each other. It is through the final design that the people using the site are intended to understand these concepts. Ironically, the design needs to be more effective than the concept model in communicating them.</p>
+<div class="sidebar1">
+<p><a id="ch04sb11"></a></p>
+<h3><em>Ask the Expert</em></h3>
+<p class="mediaobject"><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/stephen.jpg" alt="image" width="120" height="120" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/stephen.jpg"></p>
+<p class="source"><em>Stephen P. Anderson, PoetPainter, LLC</em></p>
+<p><strong><em>DB: How do you use concept models?</em></strong></p>
+<p><em>SA: A good concept model makes sense of something complex—it gets everyone saying “I see what you mean!” That’s it. Beyond that, effectiveness depends your intent. The posters I create are primarily for me—to make sense of things like “What makes an experience?” or “What’s involved with becoming a consultant?” In fact, I’m currently working on a concept model to make sense of all the varieties of artisan cheeses!</em></p>
+<p><em>On just about every client project, I use this same kind of visual thinking. If there’s a complex discussion that gone on for more than 10 minutes (or several emails), I find that even a basic sketch is invaluable to framing and facilitating a product discussion. In these cases, what is drawn on the whiteboard may be enough, or I may clean it up a bit in Apple Keynote if needed. But, full-blown infographics are rarely required except where an idea has a larger or extended audience.</em></p>
+<p><em>I’ve also created concept models explicitly to persuade people to think a certain way—to justify a particular course of action or shape how people think about a subject. In these cases, visual metaphors are quite powerful tools. Things like icebergs, canyons, trees, and other conceptual metaphors—once that relationship is established—are difficult to argue with!</em></p>
+</div>
+<p><a id="page_92"></a>And yet, many designs couldn’t get off the ground without some kind of conceptual model. This won’t change anytime soon, and with web-based systems becoming more complex and richer in their interactions with users, concept models will be more critical than ever to the planning process. Web sites whose navigation systems rely more on searching than browsing, or that depend on organic growth with content contributed from users, or that simplify information delivery through syndication, will require more conceptual designing up front. The concept model may become a more central tool in the process of designing web sites.</p>
+<p><a id="ch04lev2sec20"></a></p>
+<h3>Exercises</h3>
+<ol>
+<li><a id="ch04pro01"></a>Pick one of the following “systems” and create a concept model describing it, but don’t use the word itself in the model. The challenge here is separating the system from the processes associated with the system. For the library, for example, your model shouldn’t be a step-by-step description of how to check out a book. Instead, it needs to provide an overview of all the different things that make up the library and describe the relationships between them. Even if you can’t use the name of the system, you can use nouns and verbs that evoke the system.
+<p><img src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0092_01.jpg" alt="image" width="190" height="76" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0092_01.jpg"></p>
+</li>
+<li>Show someone else your concept model and see if they can guess what system it describes. Once you have that out of the way, practice walking through the model and soliciting feedback.</li>
+<li>Create a model like the one for comics for your favorite medium (television cop dramas or sitcoms, a specific genre of music, period literature, children’s books, and so on). Don’t be afraid of getting too specific. One of the most memorable models I’ve seen mapped different varieties of dance music, showing not only the relationships between them but the beats per minute along a scale. Your model should describe the experience of the medium from as many angles as possible, but you may decide to limit the depth. (Do you really need to talk about camera operators or technical consulting in the production of a television show?)</li>
+<li>Use the model to map out a web site (or other product) that supports, enhances, or commercializes the experience of the medium you selected. Identify two or three approaches for designing and structuring the site, inspired by the concept model. Your approach need not be elaborate. Instead state in a few sentences (or with a picture) how you intend to architect the site: What are the main templates and navigational mechanisms? What is the range of content you’ll support? What kinds of things will users be able to do? Reference the concept model (perhaps through color coding?) to provide a rationale for your approach.</li>
+</ol>
+<div class="annotator-outer annotator-viewer viewer annotator-hide">
+  <ul class="annotator-widget annotator-listing"></ul>
+</div><div class="annotator-modal-wrapper annotator-editor-modal annotator-editor annotator-hide">
+	<div class="annotator-outer editor">
+		<h2 class="title">Highlight</h2>
+		<form class="annotator-widget">
+			<ul class="annotator-listing">
+			<li class="annotator-item"><textarea id="annotator-field-0" placeholder="Add a note using markdown (optional)" class="js-editor" maxlength="750"></textarea></li></ul>
+			<div class="annotator-controls">
+				<a class="link-to-markdown" href="https://daringfireball.net/projects/markdown/basics" target="_blank">?</a>
+				<ul>
+					<li class="delete annotator-hide"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#delete" class="annotator-delete-note button positive">Delete Note</a></li>
+					<li class="save"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#save" class="annotator-save annotator-focus button positive">Save Note</a></li>
+					<li class="cancel"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#cancel" class="annotator-cancel button">Cancel</a></li>
+				</ul>
+			</div>
+		</form>
+	</div>
+</div><div class="annotator-modal-wrapper annotator-delete-confirm-modal" style="display: none;">
+  <div class="annotator-outer">
+    <h2 class="title">Highlight</h2>
+      <a class="js-close-delete-confirm annotator-cancel close" href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#close">Close</a>
+      <div class="annotator-widget">
+         <div class="delete-confirm">
+            Are you sure you want to permanently delete this note?
+         </div>
+         <div class="annotator-controls">
+            <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#cancel" class="annotator-cancel button js-cancel-delete-confirm">No, I changed my mind</a>
+            <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#delete" class="annotator-delete button positive js-delete-confirm">Yes, delete it</a>
+         </div>
+       </div>
+   </div>
+</div><div class="annotator-adder" style="display: none;">
+	<ul class="adders">
+		
+		<li class="copy"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#">Copy</a></li>
+		
+		<li class="add-highlight"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#">Add Highlight</a></li>
+		<li class="add-note"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#">
+			Add Note
+		</a></li>
+		
+	</ul>
+</div></div></div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch03.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">Chapter 3. Personas</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch05.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">Chapter 5. Site Maps</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag collapsed slideUp">
+        
+        
+          <p class="usage-data">Find answers on the fly, or master something new. Subscribe today. <a href="https://learning.oreilly.com/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+        
+
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+        
+
+<footer class="pagefoot t-pagefoot" style="padding-bottom: 75px;">
+  <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#" class="icon-up" onclick="window.Appcues.track(&#39;JumpTop_HeronBook&#39;)" style="display: none;"><div class="visuallyhidden">Back to top</div></a>
+  <ul class="js-footer-nav">
+  
+    
+    <li><a href="https://learning.oreilly.com/public/support/">Support</a></li>
+    
+    <li><a href="https://learning.oreilly.com/accounts/logout/">Sign Out</a></li>
+    
+  
+  
+  </ul>
+  <span class="copyright">© 2021 <a href="https://learning.oreilly.com/" target="_blank">O'Reilly Media, Inc</a>.</span>
+  
+    
+    <a href="https://www.oreilly.com/terms/">Terms of Service</a> 
+     / 
+    
+    <a href="https://learning.oreilly.com/privacy">Privacy Policy</a> 
+    
+    
+  
+</footer>
+
+      
+    
+    <script src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource" charset="utf-8"></script>
+    <script src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource(1)" charset="utf-8"></script>
+  
+
+<div class="annotator-notice"></div><div class="font-flyout" style="top: 201.006px; left: 1834px;"><div class="font-controls-panel">
+	<div class="nightmodes">
+		<ul>
+			<li class="day"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#" id="day-mode" title="Day Mode">
+				<i class="fa fa-sun-o"></i>
+				<span>Day Mode</span></a></li>
+			<li class="cloudy"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#" id="cloudy-mode" title="Cloudy Mode">
+				<i class="fa fa-cloud"></i>
+				<span>Cloud Mode</span>
+			</a></li>
+			<li class="night"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#" id="night-mode" title="Night Mode">
+				<i class="fa fa-moon-o"></i>
+				<span>Night Mode</span>
+			</a></li>
+		</ul>
+	</div>
+
+	<div class="font-resizer resizer">
+		<div class="draggable-containment-wrapper">
+			<i class="fa fa-font left"></i>
+			<span class="filler" style="width: 50%;"></span>
+			<div id="js-font-size-draggable" class="draggable ui-widget-content ui-draggable ui-draggable-handle" style="position: relative; left: 80px;"></div>
+			<i class="fa fa-font right"></i>
+		</div>
+	</div>
+
+	<div class="column-resizer resizer">
+		<div class="draggable-containment-wrapper">
+			<i class="fa fa-compress left"></i>
+			<span class="filler" style="width: 50%;"></span>
+			<div id="js-column-size-draggable" class="draggable ui-widget-content ui-draggable ui-draggable-handle" style="position: relative; left: 80px;"></div>
+			<i class="fa fa-expand right"></i>
+		</div>
+	</div>
+
+	<a id="reset" class="button" href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch04.html#">Reset</a>
+</div>
+</div><script type="text/javascript" id="">(function(){window.medalliaUserIdentifier=document.documentElement.dataset.userUuid;window.medalliaUserName=document.documentElement.dataset.username})();</script>
+<script type="text/javascript" id="" src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/embed.js.Без названия"></script><script type="text/javascript" id="">ev=document.querySelectorAll("div[class*\x3d'event']");0<ev.length&&ev.forEach(function(a,b){b=a.querySelector("a");var c=a.querySelector("h3").textContent.toLowerCase();b.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"outbound links",eventAct:"non-oreilly",eventLbl:"add a reminder: "+c})})});</script><div></div><div></div><iframe src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/pixel.html" style="display: none;"></iframe><script type="text/javascript" async="" src="./Chapter 4. Concept Models - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/generic1607612729884.js.Без названия" charset="UTF-8"></script><span></span><script type="text/javascript" id="">function forceInputUppercase(a){var b=a.target.selectionStart,c=a.target.selectionEnd;a.target.value=a.target.value.toUpperCase();a.target.setSelectionRange(b,c)}void 0!=document.getElementById("id_promotion")&&null!=document.getElementById("id_promotion")&&document.getElementById("id_promotion").addEventListener("keyup",forceInputUppercase,!1);
+void 0!=document.getElementsByName("promotionCode")[0]&&null!=document.getElementsByName("promotionCode")[0]&&document.getElementsByName("promotionCode")[0].addEventListener("keyup",forceInputUppercase,!1);</script><script type="text/javascript" id="">var nonwExpandable=document.querySelectorAll(".orm-ff-NavigationSubnav-headerListItem a, .orm-ff-NavigationView-headerListItem a");nonwExpandable.forEach(function(a,b){b+1!=nonwExpandable.length?a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.childNodes[1].textContent})}):b+1==nonwExpandable.length&&a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"user login",eventAct:"logout",eventLbl:"global nav | unified"})})});
+var nonwExpandableFo=document.querySelectorAll(".drop-content li:not(.flyout-parent) a");
+nonwExpandableFo.forEach(function(a,b){"drop-content"==a.parentNode.parentNode.parentNode.className&&b+1!=nonwExpandableFo.length?a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.childNodes[1].textContent})}):"drop-content"==a.parentNode.parentNode.parentNode.className&&b+1==nonwExpandableFo.length&&a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"user login",eventAct:"logout",eventLbl:"global nav | unified"})})});
+var expandable=document.querySelectorAll(".orm-ff-NavigationSubnav-toggleControls a, .orm-ff-NavigationView-toggleControls a");expandable.forEach(function(a){a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.parentNode.parentNode.parentNode.querySelectorAll(".orm-Button-btnContentWrap span")[0].childNodes[1].textContent+" | "+a.textContent})})});var flyoutLinks=document.querySelectorAll(".flyout a");
+flyoutLinks.forEach(function(a){a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.closest("li.flyout-parent").getElementsByTagName("a")[0].textContent+" | "+a.textContent})})});</script></body></html>

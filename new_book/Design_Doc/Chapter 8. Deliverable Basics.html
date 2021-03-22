@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html -->
+<html class=" js flexbox flexboxlegacy no-touch websqldatabase indexeddb history csscolumns csstransforms localstorage sessionstorage no-applicationcache svg inlinesvg zoom" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#" itemscope="" itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/" data-offline-url="/" data-url="/library/view/communicating-design-developing/9780131385399/ch08.html" data-csrf-cookie="csrfsafari" data-user-id="11004957" data-user-uuid="9c5599ca-6951-4904-81d0-732bb961926b" data-username="visualcommcomua" data-account-type="Trial" data-activated-trial-date="03/21/2021" data-archive="9780131385399" data-publishers="New Riders" data-htmlfile-name="ch08.html" data-epub-title="Communicating Design: Developing Web Site Documentation for Design and Planning, Second Edition" data-debug="0" data-testing="0" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="author" content="O&#39;Reilly Media"><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"><meta name="HandheldFriendly" content="True"><meta name="MobileOptimized" content="320"><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9780131385399"><link rel="shortcut icon" href="https://www.oreilly.com/favicon.ico"><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"><meta property="twitter:account_id" content="4503599627559754"><link rel="shortcut icon" href="https://learning.oreilly.com/favicon.ico" type="image/x-icon"><link href="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/css" rel="stylesheet" type="text/css"><title>Chapter 8. Deliverable Basics - Communicating Design: Developing Web Site Documentation for Design and Planning, Second Edition</title><link rel="stylesheet" href="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/output.5bdb4fcb2aad.css" type="text/css"><link rel="stylesheet" type="text/css" href="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/annotator.e3b0c44298fc.css"><link rel="stylesheet" href="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/font-awesome.min.css"><style type="text/css" title="ibis-book">
+    #sbo-rt-content div{margin-top:5pt;margin-bottom:5pt;margin-right:15pt}#sbo-rt-content .cover{margin-top:2pt;margin-bottom:2pt;text-align:center}#sbo-rt-content h1{page-break-before:right;margin-top:5pt;text-align:center;margin-bottom:12pt;font-weight:bold}#sbo-rt-content .subtitle{font-size:large;margin-top:30pt;margin-bottom:55pt;font-weight:bold;text-align:center}#sbo-rt-content .publisher{text-align:center;margin-top:6pt;margin-bottom:4pt}#sbo-rt-content .copyrightpage{page-break-before:right;margin-top:5pt;margin-bottom:5pt;text-indent:.002pt}#sbo-rt-content .copyright{margin-top:5pt;margin-bottom:5pt;text-indent:.002pt}#sbo-rt-content .dedication{page-break-before:right;margin-top:48pt;margin-bottom:5pt;text-align:center}#sbo-rt-content h2{page-break-before:right;margin-top:7pt;margin-bottom:25pt;font-weight:bold}#sbo-rt-content h3{margin-top:9pt;margin-bottom:8pt;font-weight:bold}#sbo-rt-content h4{margin-top:9pt;margin-bottom:6pt;font-weight:bold}#sbo-rt-content h5{margin-top:9pt;margin-bottom:6pt;font-weight:bold}#sbo-rt-content h6{margin-top:8pt;margin-bottom:6pt;font-weight:bold}#sbo-rt-content p{margin-top:5pt;margin-bottom:4pt;text-indent:.002pt}#sbo-rt-content .continued{margin-top:5pt;margin-bottom:4pt;text-indent:.002pt}#sbo-rt-content .author{text-align:center;font-weight:bold;margin-top:66pt;margin-bottom:50pt}#sbo-rt-content .bolditalic{font-weight:bold;font-style:italic}#sbo-rt-content .toc-part{margin-top:4pt;margin-bottom:5pt;font-weight:bold}#sbo-rt-content .toc-chapter{margin-top:5pt;margin-bottom:5pt;font-weight:bold}#sbo-rt-content em{font-style:italic}#sbo-rt-content .figure{margin-top:12pt;margin-bottom:5pt;text-align:center;font-weight:bold}#sbo-rt-content .figure-contents{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .figure-float{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .informalexample{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .itemizedlist{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .legalnotice{margin-top:8pt;margin-bottom:4pt}#sbo-rt-content .literallayout{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .mediaobject{margin-top:12pt;margin-bottom:12pt;text-align:center}#sbo-rt-content .tabimage{margin-top:12pt;margin-bottom:12pt;text-align:center}#sbo-rt-content .smaller{font-size:small}#sbo-rt-content .center{margin-top:50pt;margin-bottom:5pt;text-align:center}#sbo-rt-content .right{margin-top:5pt;margin-bottom:5pt;text-align:right}#sbo-rt-content .image{margin-top:5pt;margin-bottom:5pt;text-align:center}#sbo-rt-content .note{margin-top:6pt;margin-bottom:12pt;margin-left:36pt;margin-right:24pt;border:solid 1pt;padding:1pt 12pt 1pt 12pt}#sbo-rt-content .toc-preface{margin-top:4pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt;font-weight:bold}#sbo-rt-content .procedure{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .programlisting{font-family:"Courier New";font-size:small;margin-top:8pt;margin-bottom:8pt}#sbo-rt-content .programlisting1{font-family:"Courier New";font-size:small;margin-top:5pt;margin-bottom:4pt;margin-left:36pt}#sbo-rt-content code{font-size:x-small}#sbo-rt-content .toc-section{margin-top:4pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt}#sbo-rt-content .toc-index{margin-top:4pt;margin-bottom:4pt;font-weight:bold}#sbo-rt-content .toc-appendix{margin-top:4pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt}#sbo-rt-content .toc-appendix1{margin-top:20pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt}#sbo-rt-content .toc-glossary{margin-top:4pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt}#sbo-rt-content .toc-section1{margin-top:4pt;margin-bottom:4pt;margin-left:24pt;text-indent:24pt}#sbo-rt-content .toc-section2{margin-top:4pt;margin-bottom:4pt;margin-left:36pt;text-indent:36pt}#sbo-rt-content .sidebar{font-size:small;margin-top:5pt;margin-bottom:12pt;margin-left:15pt;border:solid 1pt;padding:1pt 12pt 1pt 12pt}#sbo-rt-content .sidebar1{font-size:small;margin-top:5pt;margin-bottom:12pt;margin-left:15pt;border:solid 1pt;padding:1pt 12pt 1pt 12pt;background-color:#e6e6e6}#sbo-rt-content .strong{font-weight:bold}#sbo-rt-content .italic{font-style:italic}#sbo-rt-content .table{margin-top:12pt;margin-bottom:5pt;text-align:center;font-weight:bold}#sbo-rt-content .table-contents{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .table-float{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .title{margin-top:12pt;margin-bottom:6pt;font-size:medium;font-weight:bold;text-align:center}#sbo-rt-content .title1{margin-top:12pt;margin-bottom:6pt;font-size:medium;font-weight:bold}#sbo-rt-content .titlepage{margin-top:3pt;margin-bottom:3pt}#sbo-rt-content .toc{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .blockquote{margin-top:12pt;margin-bottom:12pt;margin-left:24pt}#sbo-rt-content .attribution{margin-top:12pt;margin-bottom:12pt;margin-right:15pt;text-align:right}#sbo-rt-content .indexmain{margin-top:2pt;margin-bottom:2pt}#sbo-rt-content .indexsub{margin-top:2pt;margin-bottom:2pt;margin-left:15pt;text-indent:15pt}#sbo-rt-content .indexsubsub{margin-top:2pt;margin-bottom:2pt;margin-left:25pt;text-indent:25pt}#sbo-rt-content .indenthanging{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-12pt}#sbo-rt-content .indenthangingb{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-12pt}#sbo-rt-content .paraindent{margin-top:4pt;margin-bottom:4pt;margin-left:25pt}#sbo-rt-content .list{margin-top:4pt;margin-bottom:4pt;margin-left:30pt;text-indent:-8pt}#sbo-rt-content .indenthanding{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-8pt}#sbo-rt-content .indenthanding1{margin-top:4pt;margin-bottom:4pt;margin-left:48pt;text-indent:-8pt}#sbo-rt-content .indent{margin-top:4pt;margin-bottom:4pt;margin-left:36pt}#sbo-rt-content .underline{text-decoration:underline}#sbo-rt-content .legalnotice-title{font-size:medium;margin-top:5pt;margin-bottom:5pt}#sbo-rt-content .footnote{font-size:small;margin-top:5pt;margin-bottom:4pt;margin-left:20pt;text-indent:-8pt}#sbo-rt-content .creditline{font-size:small;margin-top:4pt;margin-bottom:8pt;text-align:center}#sbo-rt-content .caption{margin-top:4pt;margin-bottom:8pt;text-align:center}#sbo-rt-content .pd_red{color:#BD6B4C}#sbo-rt-content .pd_brown{color:#9E7E4C}#sbo-rt-content .pd_orange{color:#E78152}#sbo-rt-content .image1{margin-top:5pt;margin-bottom:5pt}#sbo-rt-content .bibliomixed{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-12pt}#sbo-rt-content .progimg{margin-top:5pt;margin-bottom:5pt}#sbo-rt-content .progimage{margin-top:5pt;margin-bottom:5pt}#sbo-rt-content .progimage1{margin-top:5pt;margin-bottom:5pt;margin-left:25pt}#sbo-rt-content .question{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-12pt}#sbo-rt-content .listimage{margin-top:12pt;margin-bottom:12pt;text-align:center}#sbo-rt-content .source{font-size:small;margin-top:12pt;margin-bottom:12pt;text-align:center}#sbo-rt-content .blockquote1{margin-top:15pt;margin-bottom:15pt;text-align:center;border:solid 1pt;padding:1pt 12pt 1pt 12pt;background-color:#E6E7E8}#sbo-rt-content .asa{margin-top:18pt;margin-bottom:4pt;text-indent:.002pt}#sbo-rt-content .note1{margin-top:6pt;margin-bottom:12pt;margin-left:36pt;margin-right:24pt}
+    </style><script type="text/javascript" async="" src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/cool-2.1.15.min.js.Без названия"></script><script type="text/javascript" async="" src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/ec.js.Без названия"></script><script type="text/javascript" async="" src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/analytics.js.Без названия"></script><script type="text/javascript" async="" src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/f.txt"></script><script type="text/javascript" async="" src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/js"></script><script crossorigin="anonymous" integrity="sha256-+LIVdo7S66HX09dkhZvbKz8NKAlkGOP3Z0kCUzr+MU8=" type="text/javascript" src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/appcues.main.11fd23733af68e25fa8.Без названия" async=""></script><script async="" src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/gtm.js.Без названия"></script><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9780131385399/chapter/ch08.html",
+          "book_id": "9780131385399",
+          "chapter_uri": "ch08.html",
+          "position": 0,
+          "user_uuid": "9c5599ca-6951-4904-81d0-732bb961926b",
+          "next_chapter_uri": "/library/view/communicating-design-developing/9780131385399/ch09.html"
+        
+      },
+      title: "Communicating Design: Developing Web Site Documentation for Design and Planning, Second Edition",
+      author_list: "Dan M. Brown",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false
+    };
+    // ]]></script><script src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/modernizr.8e35451ddb64.js.Без названия"></script><script>
+    
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+      window.PRIVACY_CONTROL_SWITCH = true;
+
+      window.PUBLISHER_PAGES = true;
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "https://learning.oreilly.com/api/v2/search/select/",
+          "ENABLE_ONLINE_TRAINING": true
+        }
+      };
+  </script><link rel="canonical" href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html"><meta name="description" content=" Chapter 8. Deliverable Basics A document submitted during the course of a web design project to facililtate communication, capture decisions, and stimulate conversation. The first edition of this book treated ... "><meta property="og:title" content="Chapter 8. Deliverable Basics"><meta itemprop="isPartOf" content="/library/view/communicating-design-developing/9780131385399/"><meta itemprop="name" content="Chapter 8. Deliverable Basics"><meta property="og:url" itemprop="url" content="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html"><meta property="og:site_name" content="Safari"><meta property="og:image" itemprop="thumbnailUrl" content="https://learning.oreilly.com/library/cover/9780131385399/"><meta property="og:description" itemprop="description" content=" Chapter 8. Deliverable Basics A document submitted during the course of a web design project to facililtate communication, capture decisions, and stimulate conversation. The first edition of this book treated ... "><meta itemprop="inLanguage" content="en"><meta itemprop="publisher" content="New Riders"><meta property="og:type" content="book"><meta property="og:book:isbn" itemprop="isbn" content="9780131385399"><meta property="og:book:author" itemprop="author" content="Dan M. Brown"><meta property="og:book:tag" itemprop="about" content="Design"><meta property="og:book:tag" itemprop="about" content="Digital Media"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@OReillyMedia"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: &lt;%= font_size %&gt; !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: &lt;%= font_family %&gt; !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: &lt;%= column_width %&gt;% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; url=/library/no-js/" /></noscript><script>
+    var dataLayer = window.dataLayer || [];
+
+    
+      window.medalliaVsgUserIdentifier = '9c5599ca-6951-4904-81d0-732bb961926b';
+      dataLayer.push({userIdentifier: '9c5599ca-6951-4904-81d0-732bb961926b'});
+      dataLayer.push({loggedIn: 'yes'});
+
+      
+        window.medalliaVsgAccountIdentifier = '40a64ffb-0742-4e66-9d82-1192a9b6da49';
+        
+
+        window.medalliaVsgIsIndividual = true;
+        
+          
+          dataLayer.push({learningAccountType: 'free trial'});
+          
+        
+
+        
+      
+    
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+    (function () {
+      var VERSION = 'V1.1';
+      var AUTHOR = 'Awwad';
+      if (!window.GtmHelper)
+        window.GtmHelper = function () {
+          var instance = this;
+          var loc = document.location;
+          this.version = VERSION;
+          this.author = AUTHOR;
+          this.readCookie = function (name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+          };
+          this.createCookie = function (name, value, days, cookieDomain) {
+            var domain = "";
+            var expires = "";
+
+            if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + Math.ceil(days * 24 * 60 * 60 * 1000));
+              var expires = " expires=" + date.toGMTString() + ";";
+            }
+
+            if (typeof (cookieDomain) != 'undefined')
+              domain = " domain=" + cookieDomain + "; ";
+
+            document.cookie = name + "=" + value + ";" + expires + domain + "path=/";
+          };
+
+          this.isDuplicated = function (currentTransactionId) {
+            // the previous transaction id:
+            var previousTransIdValue = this.readCookie("previousTransId");
+
+            if (currentTransactionId === previousTransIdValue) {
+              return true; // Duplication
+            } else {
+              return false;
+            }
+          };
+        }
+    })()
+  </script><script defer="" src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/vendor.d0fe30932d64.js.Без названия"></script><script defer="" src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/reader.3833317c1bb0.js.Без названия"></script><script src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/f(1).txt"></script><script async="" src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/MathJax.js.Без названия"></script><style id="annotator-dynamic-style">.annotator-adder, .annotator-outer, .annotator-notice {
+  z-index: 100019;
+}
+.annotator-filter {
+  z-index: 100009;
+}</style><iframe src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource.html"></iframe><iframe src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource(2).html"></iframe><iframe src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource(3).html"></iframe><link rel="stylesheet" type="text/css" integrity="sha256-q9sKb2HpA5fJjN1cK9LjLaEXff5ix81Rv1Y3xJFptPE=" crossorigin="anonymous" href="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/container.11fd23733af68e25fa851da20bbd639.css"><iframe src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource(4).html"></iframe><style type="text/css" id="kampyleStyle">.noOutline{outline: none !important;}.wcagOutline:focus{outline: 1px dashed #595959 !important;outline-offset: 2px !important;transition: none !important;}</style></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts subscribe-panel library">
+
+    
+  <noscript> 
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+  
+
+
+<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li><a href="https://learning.oreilly.com/home/" class="l0 nav-icn"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.738 14H9.254v-3.676a.617.617 0 0 0-.621-.613H7.39a.617.617 0 0 0-.62.613V14H4.284a.617.617 0 0 1-.622-.613V10.22c0-.327.132-.64.367-.87l3.547-3.493a.627.627 0 0 1 .875 0l3.54 3.499c.234.229.366.54.367.864v3.167a.617.617 0 0 1-.62.613zM7.57 2.181a.625.625 0 0 1 .882 0l5.77 5.692-.93.92-5.28-5.209-5.28 5.208-.932-.919 5.77-5.692z"></path></svg><span>Home</span></a></li><li class="search"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"></path></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"></path></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#" class="l1 nav-icn "><!--?xml version="1.0" encoding="UTF-8"?--><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M8,8 C6.34321755,8 5.00013,6.65691245 5.00013,5.00013 C5.00013,3.34334755 6.34321755,2.00026001 8,2.00026001 C9.65678245,2.00026001 10.99987,3.34334755 10.99987,5.00013 C10.99987,6.65691245 9.65678245,8 8,8 Z M2.33024571,11.3523547 L2.33774538,11.3523547 C3.7622187,9.70968996 5.82947484,8.76608166 8.00374984,8.76608166 C10.1780248,8.76608166 12.245281,9.70968996 13.6697543,11.3523547 C13.8892083,11.6177474 14.0062813,11.9530021 13.99974,12.2973138 L13.99974,13.99974 L2.00026001,13.99974 L2.00026001,12.2973138 C1.99371867,11.9530021 2.11079172,11.6177474 2.33024571,11.3523547 Z" id="path-1"></path></svg><span>Your O'Reilly</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/profile/" class="l2 nav-icn"><span>Profile</span></a></li><li><a href="https://learning.oreilly.com/history/" class="l2 nav-icn"><span>History</span></a></li><li><a href="https://learning.oreilly.com/playlists/" class="l2 nav-icn"><span>Playlists</span></a></li><li><a href="https://learning.oreilly.com/u/9c5599ca-6951-4904-81d0-732bb961926b/" class="l2 nav-icn"><span>Highlights</span></a></li></ul></li><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#" class="l1 nav-icn "><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.564 2.263l2.172 2.174c.17.168.264.397.264.636V11a.6.6 0 0 1-.6.6h-.6V6.2h-6V2.6a.6.6 0 0 1 .6-.6h3.527c.239 0 .468.095.637.263zM2.6 14a.6.6 0 0 1-.6-.6V6.8a.6.6 0 0 1 .6-.6h1.903a1.2 1.2 0 0 1 .849.352L6.2 7.4H11a.6.6 0 0 1 .6.6v5.4a.6.6 0 0 1-.6.6H2.6zM11 5h1.8L11 3.2V5z"></path></svg><span>Featured</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/featured/navigating-21st-century/" class="l2 nav-icn"><span>Navigating Change</span></a></li><li><a href="https://learning.oreilly.com/recommendations/" class="l2 nav-icn"><span>Recommended</span></a></li></ul></li><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#" class="l1 nav-icn "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>queue icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 29.2C25.4 29.2 25.8 29.1 26.1 28.9L48.7 16.8C49.5 16.4 50 15.5 50 14.6 50 13.7 49.5 12.8 48.7 12.4L26.1 0.3C25.4-0.1 24.6-0.1 23.9 0.3L1.3 12.4C0.5 12.8 0 13.7 0 14.6 0 15.5 0.5 16.4 1.3 16.8L23.9 28.9C24.2 29.1 24.6 29.2 25 29.2ZM7.3 14.6L25 5.2 42.7 14.6 25 24 7.3 14.6ZM48.7 22.4L47.7 21.9 25 34.2 2.3 21.9 1.3 22.4C0.5 22.9 0 23.7 0 24.7 0 25.6 0.5 26.5 1.3 26.9L23.9 39.3C24.2 39.5 24.6 39.6 25 39.6 25.4 39.6 25.8 39.5 26.1 39.3L48.7 26.9C49.5 26.5 50 25.6 50 24.7 50 23.7 49.5 22.9 48.7 22.4ZM48.7 32.8L47.7 32.3 25 44.6 2.3 32.3 1.3 32.8C0.5 33.3 0 34.1 0 35.1 0 36 0.5 36.9 1.3 37.3L23.9 49.7C24.2 49.9 24.6 50 25 50 25.4 50 25.8 49.9 26.1 49.7L48.7 37.3C49.5 36.9 50 36 50 35.1 50 34.1 49.5 33.3 48.7 32.8Z"></path></g></svg><span>Explore</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/topics/" class="l2 nav-icn"><span>All Topics</span></a></li><li><a href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;sort=publication_date&amp;facet_json=true&amp;page=0" class="l2 nav-icn"><span>Early Releases</span></a></li><li><a href="https://learning.oreilly.com/playlists/discover/" class="l2 nav-icn"><span>Shared Playlists</span></a></li><li><a href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;formats=case%20study&amp;formats=learning%20path&amp;formats=live%20online%20training&amp;formats=notebook&amp;formats=oriole&amp;formats=video&amp;sort=popularity&amp;facet_json=true&amp;page=0&amp;collection_type=expert" class="l2 nav-icn"><span>Most Popular Titles</span></a></li><li><a href="https://learning.oreilly.com/resource-centers/" class="l2 nav-icn"><span>Resource Centers</span></a></li></ul></li><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#" class="l1 nav-icn "><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12.8 3.2A1.2 1.2 0 0 1 14 4.4v8.4a1.2 1.2 0 0 1-1.2 1.2H3.2A1.2 1.2 0 0 1 2 12.8V4.4a1.2 1.2 0 0 1 1.2-1.2h1.2V2h1.2v1.2h4.8V2h1.2v1.2h1.2zm-9.6 9.6h9.6V6.2H3.2v6.6zM8 9.5a1.35 1.35 0 1 1 0-2.7 1.35 1.35 0 0 1 0 2.7zm2.7 2.148v.552H5.3v-.552c0-.321.124-.634.355-.858a3.358 3.358 0 0 1 4.69 0c.23.224.355.537.355.858z"></path></svg><span>Live Events</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/attend/" class="l2 nav-icn"><span>All Events</span></a></li><li><a href="https://learning.oreilly.com/featured/architectural-katas/" class="l2 nav-icn"><span>Architectural Katas</span></a></li><li><a href="https://learning.oreilly.com/featured/ai" class="l2 nav-icn"><span>AI &amp; ML</span></a></li><li><a href="https://learning.oreilly.com/featured/strata/" class="l2 nav-icn"><span>Data Sci &amp; Eng</span></a></li><li><a href="https://learning.oreilly.com/featured/oscon/" class="l2 nav-icn"><span>Programming</span></a></li><li><a href="https://learning.oreilly.com/featured/infrastructure-ops/" class="l2 nav-icn"><span>Infra &amp; Ops</span></a></li><li><a href="https://learning.oreilly.com/featured/software-architecture/" class="l2 nav-icn"><span>Software Arch</span></a></li></ul></li><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#" class="l1 nav-icn "><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.6467109,4.35328907 L14.7964612,7.51003884 C15.0678463,7.78304342 15.0678463,8.22395603 14.7964612,8.49696061 L11.6467109,11.6467109 L10.6597892,10.6597892 L13.3055794,8 L10.6597892,5.34021084 L11.6467109,4.35328907 Z M4.35328907,11.6467109 L1.20353875,8.48996116 C0.932153749,8.21695658 0.932153749,7.77604397 1.20353875,7.50303939 L4.35328907,4.35328907 L5.34021084,5.34021084 L2.69442057,8 L5.34021084,10.6597892 L4.35328907,11.6467109 Z M5.84417089,11.4997226 L8.67194674,4.50027742 L10.1838269,4.50027742 L7.35605105,11.4997226 L5.84417089,11.4997226 Z" id="Mask"></path></svg><span>Interact</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/scenarios/?classification=content-scenario" class="l2 nav-icn"><span>Scenarios</span></a></li><li><a href="https://learning.oreilly.com/scenarios/?classification=sandbox-scenario" class="l2 nav-icn"><span>Sandboxes</span></a></li><li><a href="https://learning.oreilly.com/interactive/?classification=jupyter-notebook" class="l2 nav-icn"><span>Jupyter Notebooks</span></a></li></ul></li><li><a href="https://learning.oreilly.com/answers/" class="l1 nav-icn "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M2.31032699,3.75609006 C4.65421571,1.41371359 8.45302454,1.41472092 10.7955702,3.75860838 C13.1381158,6.10249583 13.1369405,9.90130261 10.7930518,12.243847 C8.44916311,14.5863913 4.65018639,14.5852161 2.30780867,12.2413286 C-0.0346204845,9.89749489 -0.0334929936,6.09853298 2.31032699,3.75609006 Z M8.8198605,4.98016308 C7.34193969,3.86924672 5.23410194,3.98609692 3.88914868,5.33104946 C3.12814393,6.09032122 2.72818176,7.13880077 2.79015179,8.21201133 C2.79115912,8.23064692 2.79233434,8.24928252 2.79350956,8.26791811 L2.79350956,8.26791811 C2.83179539,8.8307976 2.9944077,9.37404287 3.26947292,9.86201677 L3.26947292,9.86201677 L2.77621706,11.7027432 C2.7699968,11.7259241 2.77662063,11.7506624 2.79359185,11.7676337 C2.8105631,11.7846049 2.83530144,11.7912287 2.85848233,11.7850085 L2.85848233,11.7850085 L4.69400524,11.2922565 C5.26306363,11.6167344 5.90703177,11.786885 6.56209849,11.7858479 C8.64827865,11.7858479 10.3395879,10.094542 10.3395879,8.00836292 C10.3405204,6.84135608 9.80105674,5.73967784 8.87862141,5.02482134 L8.87862141,5.02482134 L8.82825492,4.98654283 Z M13.7933062,2 C14.7073496,2.00009863 15.4482759,2.74110484 15.4482759,3.65514822 C15.4482759,4.32460943 15.0449926,4.92814782 14.4264842,5.18432286 C13.8079757,5.44049789 13.096053,5.29885769 12.6226979,4.82545158 C12.1493429,4.35204547 12.0077795,3.64010743 12.2640213,3.02162665 C12.5202631,2.40314587 13.123845,1.99992776 13.7933062,2 Z"></path></svg><span>Answers</span></a></li><li><a href="https://learning.oreilly.com/certifications/" class="l1 nav-icn "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M12.912 9.18L14 8.014l-1.088-1.18a.304.304 0 01-.075-.268L13.195 5l-1.535-.463a.313.313 0 01-.194-.194l-.462-1.537-1.565.358c-.09.03-.194 0-.269-.074L8.007 2 6.845 3.09a.303.303 0 01-.269.074l-1.565-.358-.462 1.537a.313.313 0 01-.194.194L2.82 5l.358 1.567a.26.26 0 01-.075.269L2 8.015l1.088 1.164c.075.075.09.18.075.269l-.358 1.567 1.535.463c.09.03.164.104.194.194l.462 1.537 1.565-.358c.015 0 .045-.015.075-.015.075 0 .15.03.209.074L8.007 14l1.163-1.09a.303.303 0 01.269-.074l1.565.358.462-1.537a.313.313 0 01.194-.194L13.195 11l-.358-1.567a.338.338 0 01.075-.254zm-6.046 1.37L4.41 8.26l1.16-1.244 1.767 1.649L10.4 5.6l1.202 1.202-4.242 4.243-.495-.495z"></path></svg><span>Certifications</span></a></li><li><a href="https://learning.oreilly.com/preferences/" class="l1 nav-icn "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"></path></g></svg><span>Settings</span></a></li><li><a href="https://learning.oreilly.com/public/support/" class="l1 nav-icn "><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M7.363 6.656a2.692 2.692 0 0 1-2.681-2.703c0-1.493 1.2-2.703 2.681-2.703a2.692 2.692 0 0 1 2.682 2.703c0 1.493-1.2 2.703-2.682 2.703zm4.023 2.027c-1.852 0-3.352 1.513-3.352 3.379H2v-1.534c-.006-.31.099-.612.295-.852a6.666 6.666 0 0 1 9.09-.993zm-.543.676h1.12v.304c.003.284.16.543.408.676a.766.766 0 0 0 .77 0l.303-.176.556.966-.302.176a.772.772 0 0 0-.362.676v.08a.772.772 0 0 0 .362.677l.302.21-.556.965-.302-.175a.766.766 0 0 0-.771 0 .778.778 0 0 0-.409.675v.352h-1.106v-.372a.778.778 0 0 0-.409-.676.766.766 0 0 0-.77 0l-.303.176-.556-.912.302-.176a.772.772 0 0 0 .362-.676v-.04-.04a.772.772 0 0 0-.362-.676l-.302-.176.556-.966.289.155a.766.766 0 0 0 .77 0 .778.778 0 0 0 .41-.676V9.36zm1.562 2.703c0-.271-.108-.531-.3-.722a1.001 1.001 0 0 0-.72-.292 1.01 1.01 0 0 0-.992 1.023 1.01 1.01 0 0 0 1.01 1.004 1.01 1.01 0 0 0 1.002-1.013z"></path></svg><span>Support</span></a></li><li><a href="https://get.oreilly.com/email-signup.html" class="l1 nav-icn " target="&quot;_blank&quot;"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.564 2.263l2.172 2.174c.17.168.264.397.264.636V11a.6.6 0 0 1-.6.6h-.6V6.2h-6V2.6a.6.6 0 0 1 .6-.6h3.527c.239 0 .468.095.637.263zM2.6 14a.6.6 0 0 1-.6-.6V6.8a.6.6 0 0 1 .6-.6h1.903a1.2 1.2 0 0 1 .849.352L6.2 7.4H11a.6.6 0 0 1 .6.6v5.4a.6.6 0 0 1-.6.6H2.6zM11 5h1.8L11 3.2V5z"></path></svg><span>Newsletters</span></a></li><li><a href="https://learning.oreilly.com/accounts/logout/" class="l1 nav-icn "><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M2.613 12.63A.607.607 0 0 1 2 12.03V3.602C2 3.269 2.274 3 2.613 3h5.515v1.204H3.226v7.223h4.902v1.203H2.613zM5.677 9.02V6.611h4.903V4.926a.301.301 0 0 1 .19-.274.31.31 0 0 1 .33.063l2.722 2.673a.594.594 0 0 1 0 .849L11.1 10.909a.31.31 0 0 1-.331.063.301.301 0 0 1-.19-.274V9.02H5.677z"></path></svg><span>Sign Out</span></a></li></ul></div></li></ul></nav></header>
+
+
+
+      </div>
+      <div id="container" class="application" style="height: auto;">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Communicating Design: Developing Web Site Documentation for Design and Planning, Second Edition
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#" title="Search in archive" class="js-search-controls search-controls" onclick="window.Appcues.track(&#39;SearchBook_HeronBook&#39;)"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9780131385399/chapter/ch08.html"><div class="js-collections-dropdown collections-dropdown menu-bit-cards" onclick="window.Appcues.track(&#39;AddPlaylist_HeronBook&#39;)"><div data-reactroot="" class="menu-dropdown-wrapper js-menu-dropdown-wrapper align-right"><img class="hidden" src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/ajax-transp.gif" alt="loading spinner"><div class="menu-control"><div class="control "><div class="js-playlists-menu"><button class="js-playlist-icon"><svg class="icon-add-to-playlist-sml" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill-rule="nonzero" fill="#000000"><g transform="translate(-1.000000, 0.000000)"><rect x="5" y="0" width="12" height="2"></rect><title>Playlists</title><path d="M4.5,14 C6.43299662,14 8,12.4329966 8,10.5 C8,8.56700338 6.43299662,7 4.5,7 C2.56700338,7 1,8.56700338 1,10.5 C1,12.4329966 2.56700338,14 4.5,14 Z M2.5,10 L4,10 L4,8.5 L5,8.5 L5,10 L6.5,10 L6.5,11 L5,11 L5,12.5 L4,12.5 L4,11 L2.5,11 L2.5,10 Z"></path><circle cx="2" cy="5" r="1"></circle><circle cx="1.94117647" cy="1" r="1"></circle><rect x="5" y="4" width="12" height="2"></rect><rect x="9" y="8" width="8" height="2"></rect><rect x="9" y="12" width="8" height="2"></rect></g></g></g></svg><div class="js-playlist-addto-label">Add&nbsp;To</div></button></div></div></div></div></div></div></li><li class="js-font-control-panel font-control-activator"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size" onclick="window.Appcues.track(&#39;ChangeFont_HeronBook&#39;)"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#" class="trigger" data-push-state="false" title="Share" aria-label="Share" onclick="window.Appcues.track(&#39;Share_HeronBook&#39;)"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a class="twitter share-button t-twitter" target="_blank" aria-label="Share this section on Twitter" title="Share this section on Twitter" href="https://twitter.com/share?url=https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html&amp;text=Communicating%20Design%3A%20Developing%20Web%20Site%20Documentation%20for%20Design%20and%20Planning%2C%20Second%20Edition&amp;via=OReillyMedia"><span>Twitter</span></a></li><li><a class="facebook share-button t-facebook" target="_blank" aria-label="Share this section on Facebook" title="Share this section on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html"><span>Facebook</span></a></li><li><a class="googleplus share-button t-googleplus" target="_blank" aria-label="Share this secton on Google Plus" title="Share this secton on Google Plus" href="https://plus.google.com/share?url=https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html"><span>Google Plus</span></a></li><li><a class="email share-button t-email" aria-label="Share this section via email" title="Share this section via email" href="mailto:?subject=Safari:%20Chapter%208.%20Deliverable%20Basics&amp;body=https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html%0D%0Afrom%20Communicating%20Design%3A%20Developing%20Web%20Site%20Documentation%20for%20Design%20and%20Planning%2C%20Second%20Edition%0D%0A"><span>Email</span></a></li></ul></li><!-- endif request.user.is_authenticated -->
+      </ul>
+    </div>
+
+      
+          
+      
+
+    <section role="document">
+        
+        
+
+
+
+
+  <script defer="" src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/djangoMessagesPage.14c7c03e1be9..Без названия"></script>
+
+
+        <script src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/48743.js.Без названия"></script>
+<script>
+  var userId = "9c5599ca-6951-4904-81d0-732bb961926b";
+
+  var userObject = {
+    firstName: "Michael",
+    segment: "Trial",
+    admin: "False",
+    profileCreatedOn: "2021-03-21",
+    academic: ""
+  };
+  window.Appcues.identify(userId, userObject);
+  window.Appcues.page();
+
+  setTimeout(function () {
+    window.Appcues.track('ViewingBook_HeronBook')
+  }, 20000);
+</script>
+
+
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/pt02.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">Part 2. Design Deliverables</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch09.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">Chapter 9. Design Briefs</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content" style="transform: none;"><div class="annotator-wrapper"><p><a id="ch08"></a></p>
+<h2>Chapter 8. Deliverable Basics</h2>
+<p><a id="page_204"></a></p>
+<p><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/ch08text01.jpg" alt="image" width="150" height="18" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/ch08text01.jpg"></p>
+<p><strong>A document submitted during the course of a web design project to facililtate communication, capture decisions, and stimulate conversation.</strong></p>
+<p><a id="page_205"></a>The first edition of this book treated the artifacts described in the preceding chapters as separate deliverables—distinct documents produced in the course of a design project. Something’s changed since I wrote the first edition in 2005. While I don’t think design process and methodology have evolved significantly, I have a greater sensitivity to how deliverables and the design process work together to move a project along.</p>
+<p>I should credit my partner at EightShapes, Nathan Curtis, with formalizing this awareness. Through his work on creating modular deliverables, he successfully distinguishes the story we’re telling (the deliverable) from the characters in the story (the artifacts).</p>
+<p>Site maps, flowcharts, wireframes, and the rest may be little stories in and of themselves, but they are part of a larger whole. A deliverable, as a stand-alone document that tells a complete story, must convey the “larger whole,” the entire project to which each diagram contributes.</p>
+<p>This distinction between artifact and deliverable yields a different approach to creating documents, too. On paper, most design methodologies call for producing a distinct document or two at the end of each phase. Research ends with a research report and personas. Discovery ends with a user experience strategy. Information architecture ends with a deck of wireframes.</p>
+<p><a id="ch08lev1sec1"></a></p>
+<h3>About the Specific Deliverables</h3>
+<p>The four remaining chapters in this section elaborate on deliverables to use in specific situations. Usability plans and reports are the setup and payoff of usability testing. Competitive analysis and design briefs come at the beginning of the project to set context.</p>
+<p>Noticeably absent from that list is functional specifications. The chapter you’re reading now, however, can serve as your guide for functional specifications. This is the document that captures all the details behind a web site design: how the screens behave, where the content comes from, and the behind-the-scenes rules that drive the user experience. I wrote this chapter with those challenges in mind.</p>
+<p>This chapter is inspired by functional specifications because I’ve been doing things a little differently. Instead of composing multiple separate deliverables, I produce one document over the course of a project—call it the Design Specification. This Design Specification grows and evolves with the project, its contents expanding as design work proceeds, or contracting as other activities in the project wane and become less important.</p>
+<p><a id="ch08fig01"></a></p>
+<p class="caption"><strong>Figure 8.1. Deliverables relative to the project timeline, can be one or multiple documents.</strong></p>
+<p class="mediaobject"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/08fig01.jpg" alt="image" width="500" height="174" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/08fig01.jpg"></p>
+<p>Why one document?</p>
+<p class="indenthanding">• <strong>Maintenance:</strong> It’s easy to maintain a single document. With one deliverable, managing dependencies is simpler because you’re not having to create a mechanism for referencing other documents. Instead of pointing to a personas document (and who knows what happened to that document anyway), the single deliverable already includes the personas.</p>
+<p class="indenthanding">• <a id="page_206"></a><strong>Context:</strong> Instead of having to set context with each new deliverable, the document preserves the “historical record” of the project.</p>
+<p class="indenthanding">• <strong>Focus:</strong> You can adjust the contents of the document to preserve focus on what’s important. This is true for the project as a whole, too. Many methodologies became mired in the outputs and not the results. Documents are a by-product of creativity, not the desired outcome.</p>
+<p class="indenthanding">• <strong>Continuity:</strong> It can be easy to lose the thread of a project when it’s structured around multiple documents. As the project evolves, the singular document does so in parallel, tracing the series of design decisions.</p>
+<div class="sidebar">
+<p><a id="ch08sb01"></a></p>
+<h3><em>Tools: EightShapes Unify</em></h3>
+<p>My firm, EightShapes, released a collection of templates for Adobe InDesign, called EightShapes Unify. These templates are primarily for composing deliverables and incorporating artifacts into those deliverables. Having EightShapes Unify at our disposal makes document production significantly easier, accommodating much of the administrivia and automating as much as possible.</p>
+<p>Using a set of templates, whether it be EightShapes Unify, some other collection, or making your own, helps the process of creating the deliverables substantially.</p>
+<p>You can learn more at <a href="http://unify.eightshapes.com/">http://unify.eightshapes.com</a>.</p>
+</div>
+<p>Of course, creating a single document presumes:</p>
+<p class="indenthanding">• <strong>Flexibility in format:</strong> You can let the document grow and change over time.</p>
+<p class="indenthanding">• <strong>One team:</strong> Yours is the only team responsible for the content of the document or the outputs of the design process.</p>
+<p class="indenthanding">• <strong>One file owner:</strong> You can name one person in charge of pulling everything together.</p>
+<p class="indenthanding">• <strong>One track:</strong> Your team is operating on a single stream of work, not dividing up the scope of work.</p>
+<p>In choosing the right approach (one document vs. several), consider the benefits and challenges, in <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#ch08table01">Table 8.1</a>.</p>
+<p><a id="ch08table01"></a></p>
+<p class="caption"><strong>Table 8.1. Comparing deliverable strategies, using one document throughout the life of a project versus creating several different deliverables.</strong></p>
+<p class="image"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0206_01.jpg" alt="image" width="550" height="140" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0206_01.jpg"></p>
+<p><a id="ch08lev2sec1"></a></p>
+<h4>Creating Multiple Separate Documents</h4>
+<p>In some cases, multiple documents will be unavoidable or preferable, because of the following:</p>
+<p class="indenthanding">• <strong>Corporate culture:</strong> Some organizations have particular ideas about how design documentation should look. In large or bureaucratic companies, format might be dictated on high and the project team has little say in how to communicate design. In most cases, however, the organization is indifferent to the exact format of the deliverable, so I can easily let it grow and change over time. Corporate culture dictates the need for distinct reports and design documents for each activity.</p>
+<p class="indenthanding">• <strong>Multiple contributors:</strong> My clients sometimes use multiple vendors on a project, and each vendor is assigned a different activity. If my firm is doing information architecture and interaction design, another vendor may be focused on graphic design, and others may be engaged to <a id="page_207"></a>do testing and research. The client may handle implementation internally. This array of people and teams can make it challenging to use a single document from beginning to end for the entire project. For my portion of the project, however, that is how we will operate. Project logistics, such as separate funding sources for different aspects of the project, can make it difficult to proceed gracefully from one activity to the next.</p>
+<p class="indenthanding">• <strong>Production logistics:</strong> For better or for worse, current technologies operate under the assumption that there is one person who is the final “owner” of the file. Many applications try to simplify the process of integrating content from contributors, but ultimately don’t make it easy for people to be working on different parts of the same document. If Nathan and I are each working on a different part of a deliverable, we’ll break it up but designate one of us to be the “final owner,” the person responsible for integrating all the content.</p>
+<p class="indenthanding">• <strong>Multiple tracks:</strong> Large projects will sometimes support multiple tracks of design, each track pursuing a different piece of the pie. Like one team and one owner previously, one track is not essential—there are ways to use a single document on a multitrack project—but it is easier.</p>
+<p>These and other circumstances have nuances that will demand different approaches to documentation. In this situation consider taking steps to preserve continuity, such as:</p>
+<p class="indenthanding">• Establishing documentation standards and universal conventions at the beginning of the project</p>
+<p class="indenthanding">• Insisting that everyone working on documentation create good and consistent summary pages. These pages will be the easiest way to incorporate key information from one document into another.</p>
+<p><a id="ch08lev1sec2"></a></p>
+<h3>What Makes a Good Deliverable</h3>
+<p>The things that make for a powerful diagram—legibility, relevance, actionability—are the same things that make for a good deliverable. Like diagrams, simplicity in deliverables is paramount.</p>
+<p><a id="ch08lev2sec2"></a></p>
+<h4>Good Deliverables Tell Stories</h4>
+<p>A good deliverable tells a story, and telling a good story is hard. (Seriously, turn on your television in prime time any night of the week and you’re more likely to hit bad storytelling than good.) So, let’s take a good look at what this means in the context of a design project.</p>
+<p><a id="ch08lev3sec1"></a></p>
+<h5>Theme</h5>
+<p>Good stories have a theme, an essence, a “what this story’s about.” It is, in short, a concept that ties ideas together and gives them meaning. Theme has been, well, a major theme in the earlier chapters in this book because it’s a useful mechanism for keeping a diagram, artifact, or conversation focused. Themes provide direction for design, a basis for making design decisions. Can design projects proceed successfully without a theme? Potentially, but experience shows that having a single unifying idea can keep design activities focused.</p>
+<p>The design project may have an overall theme, but it’s useful to devise such a focus for the deliverable itself. This is more than just the purpose of the deliverable (to communicate the latest design ideas or to solicit feedback or to facilitate decision-making). A theme for the deliverable constitutes the primary takeaway, the one thing that readers get from reading the document. Some examples:</p>
+<p class="indenthanding">• <strong>The swim against the tide:</strong> “This project is fraught with external challenges. Here’s what we’ve been able <a id="page_208"></a>to accomplish within the established constraints, but here’s why they’re not optimal.”</p>
+<p class="indenthanding">• <strong>The fresh eyes:</strong> “This design challenge is very complex, and would benefit from a new perspective. Here’s a new way of thinking about this problem and what insights it yielded.”</p>
+<p class="indenthanding">• <strong>The refactored challenge:</strong> “This approach to the design challenge doesn’t accommodate all the requirements, but it does address user needs as described in user research.”</p>
+<p>Stating them this explicitly as a planning exercise is good. Stating them this bluntly in the document may challenge team dynamics.</p>
+<p><a id="ch08lev3sec2"></a></p>
+<h5>Beginning, middle, and end</h5>
+<p>A deliverable that tells a story acknowledges what came before. This reference is more than just a mechanism to remind the project team what they just did. References to prior work lend credibility to the current work, normalize the underlying assumptions shared by the project team, and, ultimately, drive the design.</p>
+<p>One way to position the most recent work is in contrast to what immediately came before: Version 2 improves upon version 1 in this way. A version history, as such, not only helps people follow the trail of the design process but know what to focus on. With the increasing complexity of projects (in terms of requirements, technical capabilities, quantity of stakeholders, and depth of reach into the organization), a “previously on our show” message reminds people what’s important.</p>
+<p>Recent work may also lead into the next set of design activities: A site map sets up wireframing, personas provide context for up flowcharting. The “end” of a deliverable is not just the design punch line, but also how it sets up the next steps.</p>
+<p><a id="ch08lev3sec3"></a></p>
+<h5>Conflict, contrast, and comparison</h5>
+<p>When denied a viewing of the latest commercial flick due to the potential fear factor, my son often asks us, “Why are there scary parts in movies?” At an early age, he learned about drama—it’s what makes stories interesting. In the hopelessly nonfiction, unanimated, explosion-free world of design documentation, we can still use conflict to make an impression on project participants. (And I’m not talking about 3D PowerPoint animations.)</p>
+<p>In this case, conflict comes from contrast and comparison. The project plan provides one way to draw comparisons: time. We can compare between the state of the design today and the one previously; between the current design activities and the ones to come. But there are other kinds of contrast a deliverable can use as the basis for a story:</p>
+<p class="indenthanding">• <strong>Different approaches:</strong> In short, the deliverable presents two different ways to solve a design problem. It lines up the options side-by-side to highlight the tension between them and make it easy to pick one over the other.</p>
+<p class="indenthanding">• <strong>Conflicting priorities:</strong> Even the simplest design problems come with inherent conflicts. With all the different people working on the project, all the different objectives, all the insights from user research, the design team is bound to encounter requirements that conflict. Conflicting requirements call for two different design approaches, or one solution that successfully mediates between the two. There are multiple ways of addressing such conflicts, but regardless of which direction you choose, the document can tee up your approach by illuminating the distinction.</p>
+<p class="indenthanding">• <strong>Ambiguity in requirements:</strong> Another kind of conflict is between reality (what you have) and the ideal (what you’d like to have). Positioning the starting point against the ideal can help stakeholders understand the gaps in knowledge. Perhaps you’re trying to fill these gaps through research or brainstorming, or perhaps the gaps <a id="page_209"></a>in knowledge help explain the state of your design direction or the approach you took to get there.</p>
+<p>Tension draws people in. The more you can use these conflicts inherent in the design process as a framework for the document, the more you will engage the project team to participate.</p>
+<p><a id="ch08lev3sec4"></a></p>
+<h5>Characters</h5>
+<p>Stories have characters, the seemingly autonomous actors who, with the right amount of depth and empathy make readers care about them and interested in the story. The stories I’m most attracted to are those whose characters I care about long after the show or movie or book is over. It isn’t the plot lines that linger in my imagination: It’s the definition of the characters—who they are and the decisions they made.</p>
+<p>It can be easy to default to thinking of personas (or even project team members) as the characters in your story, but this approach does a disservice to the deliverable.</p>
+<p>Can you treat design artifacts as characters? At the simplest level, I’ve seen good art directors name their design concepts. Some of the best names are abstract, evoking the concept without necessarily being an accurate, objective description. (Think “Blizzard” for a design concept in cool colors rather than “Gray and Teal with Rounded Corners.”)</p>
+<p>As the artifacts emerge, think of them as distinct personalities, each relating to the theme (the overall design concept) in a different way. Independently, they can’t describe the theme fully: They need each other to explore the theme and overarching concept fully. As their author, you need to ensure that they are believably part of the same universe, making use of the same visual language, resting on the same assumptions, and working toward the same objectives.</p>
+<p><a id="ch08lev3sec5"></a></p>
+<h5>Storytelling in design documentation</h5>
+<p>Therefore, after reading a deliverable, someone who hasn’t been along for the ride should be able to describe:</p>
+<p class="indenthanding">• What the current state of the project is.</p>
+<p class="indenthanding">• How the current design decisions relate to previous activities and how they set up the next set of activities.</p>
+<p class="indenthanding">• What the overall theme of the design project is.</p>
+<p class="indenthanding">• What the most important design decisions are, and how they relate to the overall theme.</p>
+<p class="indenthanding">• What the major issues facing the design project are.</p>
+<p>Make sure you incorporate content in your deliverable that accomplishes these objectives.</p>
+<p><a id="ch08lev2sec3"></a></p>
+<h4>Good Deliverables Encourage Conversation</h4>
+<p>All designers hope to prepare deliverables that are compelling enough, thoughtful enough, and well-written enough to encourage enthusiastic conversation. Frequently, project parameters (timelines and budget), constraints (requirements), and challenges prevent design teams from achieving this on their documentation. This is as it should be, as the focus for the design team should be on developing the design.</p>
+<p>I’m sure there are great design deliverables that stand on their own, products of great minds (and greater budgets and timelines) that yield productive brainstorming sessions. Don’t expect every document on every project to achieve that level of engagement. You’ll drive yourself crazy. Frankly, my assumption these days is that the best conversation must be explicitly encouraged, not simply hoped for.</p>
+<p>Why care so much about conversation? The purpose of a deliverable is to advance the project. Like the scene in a movie that shows the ne’er-do-well kids finding a treasure map stuck inside an old library book, the purpose of a <a id="page_210"></a>deliverable is only to move the plot. If it’s not getting you closer to launching a product, why make it? The next sections offer some techniques to make sure you have something to talk about.</p>
+<p><a id="ch08fig02"></a></p>
+<p class="caption"><strong>Figure 8.2. A table of contents makes a nice meeting agenda. In this case, I’ve highlighted different sections of the deliverable and assigned them to different times in the meeting.</strong></p>
+<p class="mediaobject"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/08fig02.jpg" alt="image" width="500" height="387" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/08fig02.jpg"></p>
+<p><a id="ch08fig03"></a></p>
+<p class="caption"><strong>Figure 8.3. Questions embedded in the deliverable make it easy to kick off the conversation.</strong></p>
+<p class="mediaobject"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/08fig03.jpg" alt="image" width="500" height="145" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/08fig03.jpg"></p>
+<p><a id="ch08lev3sec6"></a></p>
+<h5>Table of contents</h5>
+<p>The value of a table of contents? It makes a great meeting agenda. Nathan introduced me to this technique. Within the first 5 minutes of a meeting, he lingers on the table of contents as a means for establishing the discussion for the next 25 to 55 minutes.</p>
+<p><a id="ch08lev3sec7"></a></p>
+<h5>Explicit questions</h5>
+<p>Lace your deliverable with questions. Also known as the “brute force” approach, by putting questions in your deliverable you:</p>
+<p class="indenthanding">• Remind yourself of remaining issues to be discussed</p>
+<p class="indenthanding">• Inspire conversation by feeding participants one half of the dialog</p>
+<p>You can put questions:</p>
+<p class="indenthanding">• <strong>Adjacent to the design artifacts</strong> about which you have specific questions</p>
+<p class="indenthanding">• At the <strong>beginning of the document</strong>, as a way to set the agenda for the meeting (“we need to answer these questions”)</p>
+<p class="indenthanding">• At the <strong>end of the document</strong>, as a way to kick off conversation after reviewing the latest iteration of the design</p>
+<p>For ideas on the different kinds of questions you might embed in a document, look through the “Presenting…” sections of each of the preceding chapters. The meeting agenda section deals with soliciting feedback and offers different questions related to each artifact. Generally speaking these questions fall into these categories:</p>
+<p class="indenthanding">• <a id="page_211"></a><strong>Clarifying the design problem:</strong> Any activity after framing the design problem inevitably sheds more light on the design problem. This is one of the frustrating (or perhaps intoxicating) truths about creative endeavors: the more you try to solve a problem, the more you understand it. By the same token, the more you try to define a problem, the harder it will be to solve. Philosophical conundrums aside, your efforts may yield additional questions about the design problem itself.</p>
+<p class="indenthanding">• <strong>Identifying gaps:</strong> By “gaps” I’m usually referring to scope: what’s missing in what you’ve designed so far. Does the design adequately address all the different scenarios? Does it accommodate all the requirements? Does it leave out any crucial information?</p>
+<p class="indenthanding">• <strong>Validating the approach:</strong> Your questions may try to get at whether your approach is right. This is a superset of the previous questions. Are you solving the right problem? Are you missing anything that renders the design concept “incorrect” in any way?</p>
+<p><a id="ch08lev3sec8"></a></p>
+<h5>Decisions</h5>
+<p>Depending on where you are in the design process, some deliverables may represent crossroads—an opportunity for stakeholders to push the project on one direction or another. Perhaps you’re presenting two design concepts and the project team is responsible for selecting one. Perhaps there are three different aspects of the project and you need the project owner to select one aspect as your focus moving forward.</p>
+<p>When positioning decisions, make sure the deliverable:</p>
+<p class="indenthanding">• <strong>Clearly identifies the options:</strong> You can go east or west. That’s how explicit the deliverable should be. No doubt your project has nuances that makes such a clear divide challenging, but if you can position it that way at the outset, it will be easier for your stakeholders to weigh in.</p>
+<p class="indenthanding">• <strong>Describes the implications for each option:</strong> Choosing one option over the other will have a ripple effect downstream. Preceding chapters have a discussion of implications in the “Presenting…” sections, and the book’s introduction has a framework for describing different kinds of impacts design decisions might have. Use these as a reference for identifying the different impacts of each decision.</p>
+<p class="indenthanding">• <strong>Provides a recommendation:</strong> Indicate which option you prefer, and provide a rationale. No doubt some readers will disagree here, but experience shows that my clients (internal and external alike) value my opinion. Recommendations especially make an impact if they have strong justifications behind them.</p>
+<p><a id="ch08lev2sec4"></a></p>
+<h4>Good Deliverables Are Actionable</h4>
+<p>Actionability, another concept I owe to Nathan, is the document’s ability to carry project participants into the next set of activities. Actionable documents are more specific than those with a set of “next steps” at the end. Instead, they position each insight, conclusion, or decision in terms of how it informs the next activity. Strictly speaking, nothing should be in the document that doesn’t explicitly inspire the next set of decisions.</p>
+<p class="indenthanding">• Deliverables describing research results should provide explicit direction about what the design should or should not do.</p>
+<p class="indenthanding">• Deliverables establishing a structure for the web site should clearly inventory the range of templates to be designed.</p>
+<p class="indenthanding">• Deliverables providing functional specifications should provide developers enough information to take the concept to coding.</p>
+<p>This is the main reason why artifacts can’t stand on their own. A diagram depicting a site structure, for example, isn’t usually explicit in what such a structure means to the project activities. Therefore, to integrate actionability:</p>
+<p class="indenthanding">• <a id="page_212"></a><strong>Use imperative tone:</strong> That is, conjugate your verbs as commands, much like the first phrase of each of these bullets does. It may come across as rude, but ultimately your design artifact isn’t trying to make friends by using a casual, breezy tone. The document’s purpose is to move the project along.</p>
+<p class="indenthanding">• <strong>Preface the document with key takeaways:</strong> Research documents are ripe opportunities for a one-page preface summarizing everything learned in the user study or usability test. In fact, most documents can benefit from a one-page summary explicitly stating what the team needs to keep in mind as they move forward with the project.</p>
+<p class="indenthanding">• <strong>Frame each page in the document with a purpose or conclusion:</strong> Each page in the document is another opportunity to provide direction to the next step in the design process. Research documents are ideal for this: present your findings, but conclude the page with a main takeaway. Set this conclusion apart visually, even providing an icon to highlight the severity, importance, or type of direction it is. But not every page in the document can have a clear call-to-action. Those pages should instead be framed with a purpose: explaining why this page is here, how it contributes to the overall theme and/or purpose of the document. These aren’t conclusions, but instead a summary or gist. If readers read no other annotations on this page, what do they need to know about it?</p>
+<p><a id="ch08lev3sec9"></a></p>
+<h5>Documents with purpose</h5>
+<p>To make deliverables actionable, you must start with a purpose, to know what you’re driving toward. In fact, everything that makes deliverables good (storytelling, conversation, actionability) drives toward this one quality: You must have a reason for making the document.</p>
+<p>Even if you create one document that evolves over the course of a project, each draft of that document may have a different purpose, but it has a purpose nonetheless. If you are working on a document and have no idea why, stop and ask yourself:</p>
+<p class="indenthanding">• How will this move the project forward?</p>
+<p class="indenthanding">• What do I need from the project team in order to do my next set of tasks?</p>
+<p class="indenthanding">• Is the document positioned to get me that information?</p>
+<p class="indenthanding">• What information in this document will people later in the process use?</p>
+<p>A purpose is different from a theme:</p>
+<p><a id="ch08table02"></a></p>
+<p class="caption"><strong>Table 8.2. Differences between purposes and themes.</strong></p>
+<p class="image"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0212_01.jpg" alt="image" width="446" height="181" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0212_01.jpg"></p>
+<p>Your document needs both of these.</p>
+<p><a id="ch08lev1sec3"></a></p>
+<h3>Anatomy of a Deliverable</h3>
+<p>Now that you have an idea of what makes for great documentation, let’s make a couple of assumptions about deliverables:</p>
+<ol>
+<li><strong>The Container Assumption:</strong>They are a container for artifacts, but they have additional information beyond the artifact itself.</li>
+<li><strong>The Format Assumption:</strong>Deliverables are multipage documents on standard-sized pages.</li>
+</ol>
+<p>Deliverables can, of course, break both assumptions. You could deliver a single-page poster containing just a site map. (The value of such a deliverable may be questionable, but you can do it.) You could deliver a series of clickable wireframes (format = electronic).</p>
+<p><a id="page_213"></a>Once you start breaking the assumptions, you’re talking about a different breed of deliverables—no less valuable or meaningful, but definitely beyond the scope of this book.</p>
+<p>While these assumptions may be restrictive, they do not enforce a particular level of formality, detail, or any other qualities about the content itself. The takeaway is this: These assumptions identify a framework for telling good stories in the context of web design. Let’s now look at applying that framework in the best possible way.</p>
+<p><a id="ch08lev2sec5"></a></p>
+<h4>Title Page and Other Identifying Elements</h4>
+<p>The first sheet in a deliverable is the title page. The title page should include:</p>
+<p class="indenthanding">• The name of the client</p>
+<p class="indenthanding">• The name of the project</p>
+<p class="indenthanding">• The name of the deliverable</p>
+<p class="indenthanding">• The names of the authors</p>
+<p class="indenthanding">• Contact information for the authors</p>
+<p class="indenthanding">• Date of delivery</p>
+<p class="indenthanding">• Versioning information</p>
+<p>For a good discussion of why putting authors on the document is important, see Tufte.</p>
+<p>The first six items are pretty self-explanatory, but versioning a document is fraught with controversy. (Though that may be overstating it.) Versioning can be frustratingly (and unnecessarily) complicated. If yours is a team that likes a complicated versioning system, be sure to collaborate with them at the beginning of the project to establish standards. The most common approach is distinguishing between major changes in the document and minor changes. A version 4.3 means this is the fourth major version of the document and the third iteration of that version. If your team can successfully differentiate between major and minor changes, this may be the approach for you.</p>
+<div class="note1">
+<p><a id="ch08sb02"></a></p>
+<p><strong>Sheet</strong></p>
+<p>A page in a deliverable. Distinguishes it from pages on the web.</p>
+</div>
+<div class="sidebar">
+<p><a id="ch08sb03"></a></p>
+<h3><em>Aside: To version or not to version</em></h3>
+<p>Version numbers are curious. Ostensibly, they help readers validate that they’re looking at the most up-to-date copy of the document. This, of course, is kind of silly if you don’t have the author in front of you because how are you supposed to know if version 13.2 is, in fact, the latest version?</p>
+<p>I think teams like them because they demonstrate progress. A version number like 13.2 sounds impressive: “We’ve been working on this a LOT. We have been thinking about your problem a LOT. Your problem is important to us.”</p>
+<p>Modern project management technologies make it relatively easy to store one and only one version of a document, while preserving a history of those versions. Cloud-based technologies are especially robust in this area.</p>
+<p>Can version numbers go away? I think version numbers are here to stay (see the later section “Version history”). They are a convenient shorthand, and until we have a quicker means for demonstrating progress, we need them.</p>
+</div>
+<p><a id="ch08fig04"></a></p>
+<p class="caption"><strong>Figure 8.4. A deliverable’s cover page with all the essential information.</strong></p>
+<p class="mediaobject"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/08fig04.jpg" alt="image" width="500" height="387" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/08fig04.jpg"></p>
+<p>My team generally uses a single integer for each version. Team members may append other numbers for internal reviews, but the document sheds those when delivered to the client. It’s just as meaningful to say “version 6” as it is to say “version 1.5.”</p>
+<p><a id="ch08fig05"></a></p>
+<p class="caption"><strong>Figure 8.5. Document metadata appears on every page in the document. The metadata elements should match those appearing on the home page. Of course, individual pages should also include page numbers.</strong></p>
+<p class="mediaobject"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/08fig05.jpg" alt="image" width="500" height="48" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/08fig05.jpg"></p>
+<p><a id="ch08fig06"></a></p>
+<p class="caption"><strong>Figure 8.6. Backgrounds or masters are special pages in a file that can be applied to other pages. Elements on a background appear on every page to which they are applied.</strong></p>
+<p class="mediaobject"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/08fig06.jpg" alt="image" width="220" height="479" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/08fig06.jpg"></p>
+<p><a id="page_214"></a>One approach to consider is “expiration date.” This idea emerged at a workshop I was teaching. In addition to a version number, the document includes a date when the author knows the information to be obsolete. For projects with even a high-level plan, this should be pretty straightforward: The schedule indicates when the next iteration is due or when the next set of activities starts. A document in its final iteration expires at the end of the project. (It can be tempting to put “Expires: Never” on the final version, but this could lead to problems if the document needs updating later. Instead, better to encourage contacting the document’s author to determine if there’s a newer version than to assume the document is actually up-to-date.)</p>
+<p><a id="ch08lev3sec10"></a></p>
+<h5>Document metadata</h5>
+<p>The elements listed above for the title page are the document metadata. They should be incorporated on every sheet in the document. The one other piece of information to include is the page number.</p>
+<p>A couple of tips for document metadata:</p>
+<p class="indenthanding">• <strong>Use backgrounds/masters:</strong> Most good diagramming and page layout applications let you establish a “background” that can be applied to certain pages. The background consists of elements that will appear on every page to which it is applied.</p>
+<p class="indenthanding">• <strong>Use document variables:</strong> The other useful feature for this endeavor is document variables, which may be inserted on both regular sheets and backgrounds. Typical variables are [page number] or [total pages] or [today’s date]. They are usually accessed from one of the menus in the application. Insert these babies into the document metadata area of your background, and it practically builds itself.</p>
+<p class="indenthanding">• <strong>Create a visual hierarchy:</strong> Document metadata is a little story in and of itself. There are meaningful distinctions between the pieces of information. Create a title box for the deliverable that implies these distinctions. A little typographic treatment goes a long way.</p>
+<p><a id="ch08lev2sec6"></a></p>
+<h4>Front Matter</h4>
+<p>To set context, the document should include two sections at the very beginning—a version history and a table of contents. Is this overhead really necessary? Let me make the case and you decide for yourself.</p>
+<p>These context-setting elements provide some structure as you tell a story. You can use the table of contents to set the agenda for in-person discussions (as described earlier) and help people looking at the document for the first (or hundredth) time get a lay of the land. The version history helps people focus on what’s changed since their last viewing and provides accountability, demonstrating that you’ve heard feedback.</p>
+<p><a id="ch08lev3sec11"></a></p>
+<h5>Version history</h5>
+<p>I put the version history before the table of contents. In reviewing the document in person, this is a natural progression. We go from “Here’s what’s changed” to “Here are the areas of the document we’ll focus on for this conversation.”</p>
+<p>Version histories generally include:</p>
+<p class="indenthanding">• The version number</p>
+<p class="indenthanding">• The date of the version</p>
+<p class="indenthanding">• The author of the new version</p>
+<p class="indenthanding">• An account of the changes</p>
+<p><a id="page_215"></a>The first three elements on this list are pretty straightforward. (Though I should mention that you should spell out names in full in the author portion. Initials can be ambiguous. There are two guys on my team with the initials JM. ‘Nuff said.)</p>
+<p>Where the variation occurs is in the account of changes to the document. These can range from the very cursory to the painstakingly detailed. As much as I would like this to be a function of the author’s personality, it really depends on who uses the document. Experience shows that developers require the detail to ensure they don’t build something they shouldn’t.</p>
+<p><a id="ch08table03"></a></p>
+<p class="caption"><strong>Table 8.3. Version history accounts of document changes can range from the very basic to the very detailed.</strong></p>
+<p class="image"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0215_01.jpg" alt="image" width="445" height="235" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0215_01.jpg"></p>
+<p>Note that both approaches do indicate the page number for the changes.</p>
+<p><a id="ch08lev3sec12"></a></p>
+<h5>Table of contents</h5>
+<p>If you’re lucky, the application you use to prepare deliverables will create a table of contents for you. (I’m especially lucky because EightShapes Unify has a built-in table of contents format already associated with styles from the document. You should download it!)</p>
+<p><a id="ch08fig07"></a></p>
+<p class="caption"><strong>Figure 8.7. Document variables in OmniGraffle include X, Y, and Z. These let you do everything from automatic page numbering to incorporating the name of each sheet into the document metadata.</strong></p>
+<p class="mediaobject"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/08fig07.jpg" alt="image" width="500" height="393" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/08fig07.jpg"></p>
+<div class="sidebar">
+<p><a id="ch08sb04"></a></p>
+<h3><em>Aside: Versioning at the Page Level</em></h3>
+<p>I’ve tried a few other approaches to incorporating version history, driven by my inherent laziness:</p>
+<p class="indenthanding">• <strong>Reflecting edits and conversations:</strong> Using the strikethrough style (<span class="strikeout">like this</span>) and different color text, I illustrate the edits made on each page relative to the previous version.</p>
+<p class="indenthanding">• <strong>Micro histories:</strong> Instead of (or in addition to) one big version history at the beginning of the document, I put a small version history on each page. The small version history is detailed, but it only includes changes from the previous version. Using this approach, the micro history has to be explicit about which was the previous version. For example, if page 6 gets edited in version 5 but not in version 6, it will still include the micro history from version 5. So just be clear about this.</p>
+<p class="indenthanding">• <strong>Version annotations:</strong> In short, a collection of icons and “stamps” that indicate where the sheet stands in its version history. If the purpose of a version history is to call attention to things that have changed, it can be boiled down into a simple mark that says, “Look here! This is new!” These require careful monitoring though, so they are updated appropriately between versions. Some possible stamps for your arsenal: Approved, Awaiting Approval, Updated Since Version [XX], Feedback Needed.</p>
+</div>
+<p>Table of contents features all use the same basic principle, but have been designed somewhat differently from application to application. They depend on your having defined “heading” styles for your deliverable. The template my team uses, in EightShapes Unify, includes Chapters, Pages, and Sub-Pages, along with several variations. The table of contents feature in Adobe InDesign will create a three-level table of contents based on these styles, so long as you used them throughout the document.</p>
+<p><a id="page_216"></a>Obviously, the table of contents should reflect the structure of the document, and we’ll talk more about that shortly. Suffice it to say that the table of contents is a good diagnostic tool: If it shows a long list of pages without much structure, you should find ways to break up the document. Structure helps preserve the storytelling aspect (three acts anyone?) and provides a useful mechanism for setting the agenda of discussions.</p>
+<p><a id="ch08lev2sec7"></a></p>
+<h4>Summary</h4>
+<p>See this scar on my lower abdomen? I’ll tell you what this scar is from. Picture your intrepid information architect on a two-week sprint to prepare a deliverable, a wireframes deck rife with detailed annotations. They were 10-hour days, trying to hit a deadline so the engineering team could ramp up their development efforts. Your gallant information architect had but one gate to hurdle, an in-depth review with a key business stakeholder. The day of the meeting arrives, two hours set aside to walk through the document and solicit feedback.</p>
+<p>For better or worse, the stakeholder hadn’t been present throughout the design process, and your handsome information architect was worried. Worried that they hadn’t accounted for every scenario with the business rules on the configuration page. Worried that he could have done a better job designing the acknowledgement screen. Worried that his hair was kind of sticking up in the back.</p>
+<p>The stakeholder arrives five minutes late. Your humble information architect demurely fires up the projector to walk through the deliverable, offering a freshly printed version. He directs the stakeholder to flip to the table of contents. After a brief glance, the stakeholder says, “I’m double booked. I’ve got to get to my other meeting. What do you need from me?”</p>
+<p>I tell you this now to save you from scars. If you can’t compact a two-hour conversation into five minutes, you’re in the wrong line of work.</p>
+<p>The first content page of your document should:</p>
+<p class="indenthanding">• Describe the <em>highlights</em> of the document, including any major design decisions or directions.</p>
+<p class="indenthanding">• Summarize any <em>findings, observations, or conclusions</em> that came out of any analysis work.</p>
+<p class="indenthanding">• List out the <em>main questions</em> you have for your stakeholders.</p>
+<p>You should prepare this page whether your document is 14, 44, or 144 pages.</p>
+<p>This will be the hardest page of the document to compose, because every opportunity to summarize, boil down, consolidate, or compact will seem like the murder of a perfectly good idea. Situations like this one happen, as unlikely as an information architect being handsome might seem. You might be in a conversation that veers way off course, or actually get to sit down for two hours with an important stakeholder who has never seen the project before. The “5-minute rule” for deliverables is more than just giving you a way to have important conversations in the space of 300 seconds. It’s a way for you to ensure the integrity of your story and to be sure you can tell important parts.</p>
+<p>The summary page needs to be <em>informative</em> (give me the essential information) and <em>actionable</em> (answering the question, now what?). If you’re reducing the type size or increasing the margins to squeeze more in, you’re missing the point.</p>
+<p><a id="ch08lev2sec8"></a></p>
+<h4>Introduction and Context</h4>
+<p>An introduction is kind of a summary, but different. Introductions are not so much “what do you need to know in 5 minutes” but more “here’s what I’m about to tell you.”</p>
+<p><a id="page_217"></a></p>
+<p><a id="ch08table04"></a></p>
+<p class="caption"><strong>Table 8.4. Differences between and introduction and a summary.</strong></p>
+<p class="image"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0217_01.jpg" alt="image" width="443" height="197" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0217_01.jpg"></p>
+<p>There are two ways to introduce a document: describing the contents of the chapters or describing the position of the document relative to the project plan.</p>
+<p><a id="ch08lev3sec13"></a></p>
+<h5>Chapter-based introduction</h5>
+<p>If your document is divided into chapters, the introduction can summarize what happens in each chapter. In this approach, the introduction provides a lay of the land of the document, a more detailed table of contents.</p>
+<p>This approach is useful if the document is presenting a lot of new material, outputs from activities that haven’t involved other people. The introduction doesn’t emphasize the activities as much as the conclusions from that work.</p>
+<p><a id="ch08lev3sec14"></a></p>
+<h5>Project-based introduction</h5>
+<p>Fast-moving projects with highly involved stakeholders might benefit more from a project-based introduction. In this case, the introduction sets context by describing where the team is relative to the project plan, so that the team doesn’t lose the thread of the project. The key messages are “here’s where we are and here’s where we’re going.”</p>
+<p><a id="ch08fig08"></a></p>
+<p class="caption"><strong>Figure 8.8. A document’s summary page must provide essential information and explicit direction.</strong></p>
+<p class="mediaobject"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/08fig08.jpg" alt="image" width="500" height="387" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/08fig08.jpg"></p>
+<p>The appropriate picture for this kind of introduction is an abbreviated project schedule. The schedule clearly indicates where you are, relative to activities before and after. The emphasis with this approach is less on the content of the output, per se, and more on how the outputs feed the next set of activities (see <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#ch08fig09">Figure 8.9</a>).</p>
+<p><a id="ch08fig09"></a></p>
+<p class="caption"><strong>Figure 8.9. Project-based introductions position the deliverable relative to the project plan.</strong></p>
+<p class="mediaobject"><a id="page_218"></a><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/08fig09.jpg" alt="image" width="500" height="387" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/08fig09.jpg"></p>
+<p>If the project team is familiar with the details of the project schedule, you can use a Gantt chart itself to set the context of the document. <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#ch08fig10">Figure 8.10</a> shows a page from the document with the project schedule, where the project team is, an agenda for the discussion, and the necessary next steps.</p>
+<p><a id="ch08fig10"></a></p>
+<p class="caption"><strong>Figure 8.10. Using a project schedule to introduce a document sets the context relative to the specific activities and deliverables. It gives you an opportunity to provide status on the progress of the project.</strong></p>
+<p class="mediaobject"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/08fig10.jpg" alt="image" width="500" height="387" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/08fig10.jpg"></p>
+<p><a id="ch08lev2sec9"></a></p>
+<h4>Chapters</h4>
+<p><a id="page_219"></a></p>
+<p>Everything we just talked about for the document as a whole you can do for a chapter. A chapter is a document within a document and should be positioned, summarized, and introduced in much the same way just described. The real questions are, what kinds of chapters do you need, and what goes into each chapter?</p>
+<p><a id="ch08lev3sec15"></a></p>
+<h5>Structuring your chapters</h5>
+<p>The bulk of document planning goes into the structure. How should you cut up the content? These decisions, no doubt, must be rooted in the content itself. An outline for a functional specification will not parallel the outline for a research report. In short, there is no one right way to structure the document.</p>
+<p>Some tips on preparing the structure:</p>
+<p class="indenthanding">• <strong>Spend more time on this than you think you need to:</strong> Give yourself a 15-minute block of time to think through how you want to structure the chapters. If you have a default approach, take a moment to consider the pros and cons of alternate approaches to see if you can find a more effective structure for telling the story.</p>
+<p class="indenthanding">• <strong>Support the theme and purpose:</strong> If the theme is, for example, “We face more difficult challenges than anticipated,” consider structuring a document around those challenges.</p>
+<p class="indenthanding">• <strong>Draw a picture, not just an outline:</strong> Our document planning sessions involve drawing thumbnails of sheets from the document on a whiteboard. By drawing thumbnails, we can take our structure discussion further, thinking through how we’re going to present information on each page. You could also use stickies to make it easier to move stuff around.</p>
+<p class="indenthanding">• <strong>Collaborate with content contributors to determine the structure:</strong> Ideally, you don’t have to do this in a vacuum. If other people on the team are contributing to the document, even a little, ask them to join you for 15 minutes of brainstorming the structure.</p>
+<p class="indenthanding">• <strong>Show the picture to the people who will use the document:</strong> As much as I abhor the phrase “content consumer,” it does pretty clearly define the people who care about the document the most: those who will have to use it as part of their work. “Here,” you say in a short conversation with them, “This is what I’m putting together. Can you think of anything else you need? Does the structure of the document make sense?”</p>
+<p class="indenthanding">• <strong>Carve out space for future content:</strong> Don’t conceal parts of the outline that don’t yet have flesh. Let them all hang out in their skeletal glory. If you know something’s coming, prepare a space for it in the document. (More on this shortly.)</p>
+<p><strong>Letting the structure emerge</strong></p>
+<p>A lingering challenge: How to reconcile a document structure with the unpredictable nature of projects? Is it possible to use a single document (as I’ve recommended earlier) with a predetermined structure when design projects are inherently uncertain?</p>
+<p class="indenthanding">• <strong>The vision:</strong> Establish a document structure with placeholders for content you know will come. The document is born during a project’s discovery phase, but you know you’ll eventually have site maps and wireframes and usability testing reports. Your ideal approach is to establish an empty chapter for each of these things and fill in the content as it emerges.</p>
+<p class="indenthanding">• <strong>The reality:</strong> Projects are completely unpredictable. You don’t know what’s going to happen. I’m not even talking about the project derailing; I’m talking about uncertainty on a smaller scale. Requirements get “de-scoped” or you miss a minor deadline or a new requirement emerges. All of these things make it difficult to follow a structure you put in place weeks or months ago.</p>
+<p class="indenthanding">• <a id="page_220"></a><strong>The practice:</strong> A table of contents that changes is OK. Establishing a structure at the beginning lets you set expectations with the project team to help them understand the kinds of information that will emerge over the course of the project. Changes to that structure are useful topics of conversation. Highlighting why you had to change the document is meaningful to the project team because it captures important shifts between expected outcomes and actual outcomes.</p>
+<p><a id="ch08lev3sec16"></a></p>
+<h5>Chapter cover sheets</h5>
+<p>Like the introduction for the document as a whole, chapter introductions should provide a lay of the land: What will readers see in the next few pages and what are the main themes addressed?</p>
+<p>Earlier, I distinguished between summaries and introductions—two different sheets that serve related but clearly separate purposes. The cover sheet for a chapter more closely aligns with an introduction than it does with a summary, but could still include some clear actions or unsettled questions.</p>
+<p>While chapter introductions may require only a bullet list, content in some chapters may lend itself to something more elaborate, as in <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#ch08fig11">Figure 8.11</a>, which uses two sheets. The chapter’s cover sheet hits the main messages, and the first sheet describes the content of the chapter.</p>
+<p><a id="ch08fig11"></a></p>
+<p class="caption"><strong>Figure 8.11. Introducing a chapter on the chapter’s title page by spelling out the major elements of the chapter in a bulleted list. The first sheet in the chapter provides an overview of the chapter’s content.</strong></p>
+<p class="mediaobject"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/08fig11.jpg" alt="image" width="500" height="193" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/08fig11.jpg"></p>
+<p><a id="ch08lev2sec10"></a></p>
+<h4>Next Steps</h4>
+<p>Design documents don’t have a conclusion, at least not in the way your high school English teacher expected. But these deliverables should still have clean demarcation at the end.</p>
+<p>Remember, in composing a document, your job is more like a journalist than a joke-teller. A good design document gets the conclusion out of the way at the beginning, then uses the rest of the document to support it.</p>
+<p>Instead your document should end with “next steps,” an account of where to go from here. Your document also started this way, positioning the content as a stepping-stone to lead the project to a subsequent set of activities. <a id="page_221"></a>Conclude the document in the same way, answering the question, “Now what?”</p>
+<p>Next steps are really between you and your project manager, but here are some ideas:</p>
+<p class="indenthanding">• <strong>Validation activities:</strong> People need to ensure that the approach, direction, and conclusions described in the document are correct.</p>
+<p class="indenthanding">• <strong>Elaboration activities:</strong> People need to take what was established in the document and flesh out details.</p>
+<p class="indenthanding">• <strong>Directional decisions:</strong> People need to choose from two or more options presented in the document.</p>
+<p>Remember, the best next steps are:</p>
+<p class="indenthanding">• <strong>Accountable:</strong> There is a specific person to whom the steps are assigned.</p>
+<p class="indenthanding">• <strong>Measurable and constrained:</strong> There is a clear definition of success and the responsible party understands the deadline.</p>
+<p class="indenthanding">• <strong>Specific:</strong> The task is clear about what needs to be produced. (Not “additional screens” but “five additional annotated wireframes”).</p>
+<p><a id="ch08lev3sec17"></a></p>
+<h5>Next steps and evolving documents</h5>
+<p>If you’re using a single document throughout the process (rather than creating a new document for each activity) the next steps described at the end of the document will change with each new iteration. Next steps change from one milestone to the next, and so they should in the document.</p>
+<p>The nice thing about this approach is that you can annotate the next steps from the previous milestone to account for their disposition. <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#ch08fig09">Figure 8.9</a> incorporates both upcoming next steps and those from previous activities.</p>
+<p><a id="ch08lev2sec11"></a></p>
+<h4>The Final Product</h4>
+<p>Incorporating all these pieces, <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#ch08fig12">Figure 8.12</a> shows what your structure might look like.</p>
+<p><a id="ch08fig12"></a></p>
+<p class="caption"><strong>Figure 8.12. The structure of a document. Each row represents a chapter, and the rectangle with the heavier lines shows chapter cover pages. The gray box shows a repeated structure for one or more chapters in your document.</strong></p>
+<p class="mediaobject"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/08fig12.jpg" alt="image" width="500" height="423" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/08fig12.jpg"></p>
+<p><a id="ch08lev1sec4"></a></p>
+<h3>Laying Out Pages</h3>
+<p><a id="page_222"></a></p>
+<p>Composing a document is more than just assembling the right structure of pages. It implies creating page layouts that communicate appropriate “plot points” in the story.</p>
+<p>My team uses the concept of a document “recipe” to describe both the <em>structure of the document</em> and the specific types of <em>layouts used for each sheet</em>. We refer to a layout as a “page pattern,” founded on the relatively simple idea that most design deliverables consist of the same page layouts over and over again.</p>
+<p>The templates included with EightShapes Unify reflect dozens of page patterns for almost any imaginable situation. We add to this library all the time as we devise new ways to communicate complicated ideas. Here are some of the general types:</p>
+<p><a id="ch08lev2sec12"></a></p>
+<h4>Pages That Explain</h4>
+<p><a id="ch08fig13"></a></p>
+<p class="caption"><strong>Figure 8.13. Use annotations to elaborate on a design artifact.</strong></p>
+<p class="mediaobject"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/08fig13.jpg" alt="image" width="500" height="387" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/08fig13.jpg"></p>
+<p>Explanation pages elaborate on the details of a design artifact, using annotations to point out important elements and narrate some detail about it. Annotations consist of a numbered marker on the artifact and a similarly numbered marker next to a description. Typically, these appear with wireframes or screens, but they could be used for more abstract artifacts, too.</p>
+<p>This layout is our go-to approach for functional specifications. While it would be nice for our design diagrams to stand on their own, annotations describe details that may not be depicted easily. The format can support a high-level description (aka “light annotation”) that provides an overview of the screen’s behaviors. It can also support a more detailed level of annotations for digging into the complexities of a page.</p>
+<p>To help tell the story, annotations may be grouped based on their function or the target area of the design they describe.</p>
+<p><a id="ch08lev2sec13"></a></p>
+<h4>Pages That Evaluate</h4>
+<p><a id="page_223"></a></p>
+<p><a id="ch08fig14"></a></p>
+<p class="caption"><strong>Figure 8.14. Capture critiques as annotations, but also conclude with a strong, actionable takeaway.</strong></p>
+<p class="mediaobject"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/08fig14.jpg" alt="image" width="500" height="387" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/08fig14.jpg"></p>
+<p>Similar to pages that explain, pages that evaluate provide a critique of a design artifact, usually a screen. You can format the annotations like those in explanation pages, but there may be additional pieces of information to include, like a measure of severity or priority.</p>
+<p>These are useful in competitive analyses (see also the upcoming section “Pages That Compare”) or expert reviews, in which you provide some feedback on an existing design based on industry standards and your experience as a designer.</p>
+<p>An evaluation should conclude with a key takeaway, providing an insight based on the evaluation.</p>
+<p><a id="ch08lev2sec14"></a></p>
+<h4>Pages That Introduce</h4>
+<p><a id="ch08fig15"></a></p>
+<p class="caption"><strong>Figure 8.15. Use distinct regions of the page to provide a short overview of each thing you’re introducing. Tie these things together with a unifying message at the top. Make sure the layout reflects the relationship between the things: distinct approaches, linear progression, and so on.</strong></p>
+<p class="mediaobject"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/08fig15.jpg" alt="image" width="500" height="387" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/08fig15.jpg"></p>
+<p>Unlike explanations or evaluations, which elaborate on details, introductions should provide a lay of the land, zooming out to show a wider range of content. An introduction points out highlights, major landmarks. Introductions connect the detailed content to larger themes or messages.</p>
+<p>I’ll use a page format like this one for just about any set of concepts that together form a whole but have enough detail to warrant at least one page on their own. Imagine using this page for a rogues’ gallery of personas or storyboarding the four most important pages in a flow.</p>
+<p><a id="ch08lev3sec18"></a></p>
+<h5>Pages That Compare</h5>
+<p><a id="page_224"></a></p>
+<p><a id="ch08fig16"></a></p>
+<p class="caption"><strong>Figure 8.16. Place artifacts side by side to highlight their differences.</strong></p>
+<p class="mediaobject"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/08fig16.jpg" alt="image" width="500" height="387" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/08fig16.jpg"></p>
+<p>The design process may yield multiple directions. Background research may identify competitors with new approaches. At the very least, it may be relevant to compare the as-is state of the web site with the to-be, to ensure you’ve addressed all the needs. Annotations remain important in these comparisons because they describe the comparison.</p>
+<p>These pages are ideal for competitive analyses, which may show more than one way of solving the same design problem. I have also used this layout for usability tests to compare observations made of two different users.</p>
+<p>Comparison pages require a strong conclusion: What’s the point of comparing if you don’t gain an insight from it? Whereas explanation pages may set the tone of the design concept by highlighting an overall theme or purpose, comparisons need to highlight a takeaway, answering the question, “So what?”</p>
+<p><a id="ch08lev3sec19"></a></p>
+<h5>Pages That Require a Decision</h5>
+<p><a id="ch08fig17"></a></p>
+<p class="caption"><strong>Figure 8.17. Describe the problem and then spell out the options for pages meant to drive a decision.</strong></p>
+<p class="mediaobject"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/08fig17.jpg" alt="image" width="500" height="387" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/08fig17.jpg"></p>
+<p>Whereas comparison pages hope to highlight differences in order to gain a particular insight, decision pages pose a question and provide sufficient information to drive toward an answer. A comparison will only focus on differences or similarities, but a decision page will also provide criteria for making a decision.</p>
+<p>You may be reluctant to use decision pages. It may feel like your design work should not be subject to a one-page mechanism for deciding upon direction, or that you can’t boil down decision-making criteria to a simple list. That said, the purpose of the deliverable is to move the conversation forward. It should be less a voting ballot and more a means for spelling out the options and the relevant topics of conversation in the context of the decision.</p>
+<p><a id="ch08lev1sec5"></a></p>
+<h3>Presenting Deliverables</h3>
+<p><a id="page_225"></a></p>
+<p>In each of the previous chapters, I’ve described an approach for presenting individual artifacts. This presumes that the focus of your conversation is a particular aspect of the document.</p>
+<div class="sidebar">
+<p><a id="ch08sb05"></a></p>
+<h3><em>A Word of Warning: Self-Indulgent Deliverables</em></h3>
+<p>To me, the situation was as clear as day. Each template could accommodate up to three different content types. A template consisted of regions. Each region was a pattern (tabs, list, filters, etc.), but the specifics of the region varied depending on the content type. A single template could address up to nine different scenarios! Oh the joy of abstract thinking!</p>
+<p>So, to everyone else, not so clear.</p>
+<p>Still, I persisted with the model, creating a diagram to explain these multiple levels of abstraction. I showed it to the primary stakeholder on the project, expecting an enthusiastic expression of awe. But the expression was more like, “Huh?” His exact words were, “I don’t know what to do with this.” Ouch.</p>
+<p>Ultimately, the deliverable was by me, about me, and for me—utterly self-indulgent. A simple peer review would have helped prevent this.</p>
+</div>
+<p>What if you need to walk through a whole document? The structure established in Diagram Basics (<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch02.html">Chapter 2</a>) is appropriate for walking through a whole deliverable. It follows a flow that would follow the structure of the document, if you used the one described earlier. <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#ch08table05">Table 8.5</a> applies the presentation framework to deliverables.</p>
+<p><a id="ch08table05"></a></p>
+<p class="caption"><strong>Table 8.5. Presenting a deliverable follows the same basic framework used throughout the book to structure discussions about design.</strong></p>
+<p class="image"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0225_01.jpg" alt="image" width="550" height="296" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0225_01.jpg"></p>
+<p><a id="ch08lev2sec15"></a></p>
+<h4>Presenting Deliverables vs. Presenting Artifacts</h4>
+<p>So, are you presenting a deliverable or presenting an artifact? The book covers both, but which is the “correct” approach? You may be faced with either situation, sometimes both on the same project. If the choice isn’t clear based on the circumstance, use the guidelines in <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#ch08table06">Table 8.6</a>.</p>
+<p><a id="ch08table06"></a></p>
+<p class="caption"><strong>Table 8.6. Presenting artifacts or deliverables and artifacts, some situations to consider.</strong></p>
+<p class="image"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0225_02.jpg" alt="image" width="550" height="169" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0225_02.jpg"></p>
+<p><a id="ch08lev1sec6"></a></p>
+<h3>The Deliverable Lifecycle</h3>
+<p><a id="page_226"></a></p>
+<p>Deliverables are conceived and born. They mature and eventually go where all good deliverables go, to that great archive hard drive in the sky. (Cloud storage solutions make that metaphor almost literal.) Maybe it’s easy for you to think of your documentation as inanimate, but I just can’t. A cradle-to-grave metaphor persists throughout this section. Bear with me.</p>
+<p>The lifecycle of a deliverable—where it is in its maturity—depends on three factors:</p>
+<p class="indenthanding">• <strong>Ratio of content to placeholders:</strong> Initial documents contain more placeholders for content than they do actual content. As you replace placeholders with content, the document matures until there are no placeholders left. This is one way to measure the document’s stage in the lifecycle.</p>
+<p class="indenthanding">• <strong>Relationship to project plan:</strong> Your ability to add content to a document is directly dependent on the project’s activities. You can’t incorporate findings from a usability study until you’ve conducted the study. Deviations from the project plan don’t need to stunt the growth of the deliverable if the plan is adapting to new circumstances while bringing the team ever closer to the project’s objectives.</p>
+<p class="indenthanding">• <strong>Serving the project objectives:</strong> And that brings us to the last criteria by which we can judge a document’s maturity. Is it doing what it set out to do? Does a design specification sufficiently capture the functional details of the product? A usability results report, for example, that doesn’t provide sufficient marching orders to the design team based on the test hasn’t likely reached full maturity.</p>
+<p>The stages of the lifecycle described in the following sections are a loose framework based on these criteria. They provide a sense of where you might be and things you can do to help mature the document.</p>
+<p>The description of the document lifecycle implies a particular situation or organizational culture. Depending on your situation, it might strike you as antiquated or obsolete, especially in the later stages of the lifecycle.</p>
+<p>One observation I made in writing these descriptions is that in modern software engineering methodologies, the deliverable lifecycle is abbreviated. I’d explain this by saying that deliverables in such methods have a very specific, targeted purpose. They play the same role (communication, alignment, etc.), but they have a significantly shorter half-life. Conflicts that might arise in the very late stages of a more “old-school” process do not arise in modern development practices. In these methodologies, questions about whether to keep a document up-to-date become irrelevant because the document is more disposable.</p>
+<p><a id="ch08lev2sec16"></a></p>
+<h4>Conception: Document Development</h4>
+<p>In the very beginning stages of a document, things are pretty messy, not unlike other forms of conception. This process works best in front of a whiteboard with the people who will be collaborating with you on the document. During the conception of the document, you’re identifying the overall structure (Table of Contents) and (if this is how you operate) the page layouts you’ll use in each section. The whiteboard you end up with might look like the one in <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#ch08fig18">Figure 8.18</a>.</p>
+<p><a id="ch08fig18"></a></p>
+<p class="caption"><strong>Figure 8.18. Conceiving a new document is less intimate but just as messy as other types of conception. In the results of this brainstorming session, the team worked together to establish the structure of the document. While this sketch may look like a mess, the participants have a good idea of what the structure of the document needs to be and what each page of the document should look like.</strong></p>
+<p class="mediaobject"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/08fig18.jpg" alt="image" width="450" height="348" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/08fig18.jpg"></p>
+<p>This is the shortest phase, perhaps lasting only a few hours as you work with your project team to sketch out the basics of the document and then translate that outline to your page layout application. At this stage, the document is pretty rudimentary, unlikely to have much, if any, content.</p>
+<p>I’ll tell you right now, I have no idea how to react when someone tells me the sex of their baby. Congratulations are due in either case, so “That’s awesome” seems somewhat disingenuous, but whatever. On the flip side, if a team <a id="page_227"></a>member shows me a nascent deliverable, I can provide all kinds of feedback. Here are the things I look for in evaluating a team member’s initial document:</p>
+<p class="indenthanding">• Is the document purpose clearly articulated?</p>
+<p class="indenthanding">• Does the structure support the purpose?</p>
+<p class="indenthanding">• Is there a clear place for next steps, and are they specified early in the document as well as at the end?</p>
+<p class="indenthanding">• Will the structure of the chapters make a natural progression?</p>
+<p class="indenthanding">• Are the layouts suitable for the purpose?</p>
+<p class="indenthanding">• Are there opportunities to consolidate pages?</p>
+<p class="indenthanding">• Is there a need to separate out pages?</p>
+<p class="indenthanding">• Does each new chapter or idea have a good introductory page or two?</p>
+<p><a id="ch08lev2sec17"></a></p>
+<h4>Birth: The First Presentation</h4>
+<p>When you show the document for the first time, it should have more content than the initial scaffold developed in the conception phase. There may not be enough content for the document to stand on its own, but the main messages and ideas have been incorporated.</p>
+<p>When you’re looking at the initial version of a new document, a few things should jump out:</p>
+<p class="indenthanding">• <strong>Potential:</strong> Even though the document can go in lots of different directions (and you’ll be proud regardless of which direction it goes in, unless it becomes an actor), it has placeholders for content to come. These placeholders will in part evoke an enormous amount of work required to fill them, but should also communicate opportunity. You’re building something new here, and you know what you need to do—what information to provide—to make it successful.</p>
+<p class="indenthanding">• <strong>Alignment with plan:</strong> Those placeholders represent opportunity, but they should also align to upcoming activities. Looking at a nascent document, still limited in its content, I should still be able to picture the project plan. A document alone should let me know where the project is going.</p>
+<p class="indenthanding">• <strong>Illuminated challenges, constraints, and parameters:</strong> As the story starts to shape up on paper, you’ll uncover potential obstacles that lie between you and your objectives. The mere act of telling the story, even in rudimentary form, shines a brighter light on the project. This light brings greater insight into the things that constrain the project and present challenges, but also helps you refine the ideas within the story.</p>
+<p>You might detour in your very first presentation of a document to address these three things. Putting something down on paper, even if it’s the physical manifestation of your anticipated design process, always yields insights you <a id="page_228"></a>hadn’t considered previously. Incorporate some of these thoughts into the first, second, or third parts of the basic meeting framework (see the previous section “Presenting Deliverables”).</p>
+<p><a id="ch08lev2sec18"></a></p>
+<h4>Puberty: Still Some Maturing to Do</h4>
+<p>A document is considered pubescent if chunks of content remain missing. Enough of the story is in place to allow for sufficient momentum on the project, to propel you from one set of activities to the next. The document captures insights and conclusions from your initial set of activities, such that the project team can react, validate, clarify, or decide as necessary to move you along to the next set.</p>
+<p>Documents can spend a long time in this stage: Placeholders you anticipated filling in eventually remain untouched. You might quietly eliminate them. (Documents, unlike humans, don’t ever regret the road not traveled.) If you don’t feel right making the executive decision to do so, you can highlight these portions of the document in the Solicit Feedback section of your meeting. In evaluating these sections, you (and potentially others) should ask the following questions:</p>
+<p class="indenthanding">• Are they connected to future activities?</p>
+<p class="indenthanding">• Do other parts of the document now address the same need?</p>
+<p class="indenthanding">• Can they be consolidated or refactored to reflect future activities better?</p>
+<p class="indenthanding">• Can key points from them be integrated into existing sections?</p>
+<p><a id="ch08lev2sec19"></a></p>
+<h4>Maturity: All Content Present</h4>
+<p>A fully mature document is one in which all the placeholders have been replaced by actual content. This isn’t to say that there isn’t room for updates or even additions. A document is mature when it matches the initial vision of what it’s meant to do.</p>
+<p>The preparation of each iteration of the document has been the by-product of the team’s activities. A mature document might still grow and change depending on those activities, but it’s unlikely there’s much left in the project plan that can contribute to the document.</p>
+<p><a id="ch08lev3sec20"></a></p>
+<h5>Retiring portions of the document</h5>
+<p>One of the risks with creating a single document in the course of a project is that the utility of content may recede over the course of a project.</p>
+<p>Imagine your document structure starts with a chapter summarizing the results of user research. You might have a dozen pages, describing the type of research and providing insights into the observations and subsequent analysis. As you move into detailed design activities, keeping this information in the document (a) weighs it down with unnecessary pages (and megabytes) and (b) distracts from the new content.</p>
+<p>In short, as the project progresses, outputs from prior activities may be less relevant. This is where introduction pages are especially useful. Your introduction page should include a reasonable summary of the key takeaways from all your project activities. By reducing the content from that section to just that introductory page, you can preserve the spirit and value of the activity without bogging down the document with obsolete details.</p>
+<p><a id="ch08lev2sec20"></a></p>
+<h4>End-of-Life: Shelving the Document</h4>
+<p>The death of design documents is quiet and unassuming. In short, people on the team just stop opening them. The project activities require your attention elsewhere. The demand for their content diminishes as deadlines related to the deliverable pass and the team moves onto other things.</p>
+<p><a id="page_229"></a>But, how does that old quote go? “Reports of my death have been greatly exaggerated.” This is especially true for deliverables.</p>
+<p>Documents you perceive to be casketed might be, in reality, still making the rounds. Just because the design process has concluded and there’s nothing more you can do on a design document doesn’t mean that its life is over. On the contrary, other parts of the team (engineering, quality control, and maybe even customer service or training) refer to them constantly. The mettle of a deliverable’s utility is put to the truest test as people use design documentation not just as a tool for implementation, but for all the activities that come with it and after it as well.</p>
+<p>Here’s what might happen long after you turn in the “final version” of the document:</p>
+<p class="indenthanding">• <strong>Clarification:</strong> The caller ID isn’t someone you recognize or maybe you get an email and the “from” field contains a vaguely familiar name. Like someone you might have met a long time ago at a company function. Your tech lead mentions this name sometimes. Oh, right, that’s the QA guy. He’s using your document. Actually using it. Like in his job. Of course, he’s asking you about some pretty obvious scenarios you left out.</p>
+<p class="indenthanding">• <strong>Update:</strong> Same guy. He’s now translating your designs into test scenarios. There’s a pretty egregious error on page 6, something with the wireframe annotations not reflecting the correct values in a drop-down. He’s asking that you update the document to correct the error. As you hem and haw, he reminds you that a QA team of five people is using this as the document of record to test the system in the development environment.</p>
+<p class="indenthanding">• <strong>Kicking off the next project:</strong> The quality assurance team found a handful of bugs, nothing to prevent the first version from launching, but things that need to get integrated into the next release. Also, feedback from the business unit’s customers has been rolling in, and they have a wish list a mile long. The product manager gives you a call, “I’ve been reviewing the design document and making notes about things we need to upgrade for the next release.”</p>
+<p>Maybe these scenarios read as a little “old school.” Most modern engineering methodologies short-circuit the old-fashioned, endless timelines of software development.</p>
+<p><a id="ch08lev2sec21"></a></p>
+<h4>Maintenance: Keeping It Healthy</h4>
+<p>The topic of document maintenance comes up a lot at workshops I teach on design deliverables. The question isn’t so much about keeping a document up-to-date during the design process: Every team has its own way of sharing files and scheduling updates. (Yours, too, right?) Most people are asking about after the death of the document.</p>
+<p>If a design document serves as the document of record for what the product is supposed to be, you might be on the hook for keeping it up-to-date in these circumstances:</p>
+<p class="indenthanding">• <strong>Changes in design during implementation:</strong> The very act of implementing something changes the design. Nothing created looks as it does on paper.</p>
+<p class="indenthanding">• <strong>Insufficient documentation during implementation:</strong> Later in the process (as in the QA activities described earlier), people working on the project may identify places where the documentation does not provide enough or the right kinds of information.</p>
+<p class="indenthanding">• <strong>Updates in production:</strong> Small bug fixes and minor upgrades can cause a discrepancy between what’s in production and what’s documented.</p>
+<p>Are you on the hook for keeping the document up-to-date? The best advice is this: Don’t ask this question in the same moment someone is demanding updates to the document. Instead, integrate this topic into your kick-off meetings. You might ask questions like:</p>
+<div class="sidebar1">
+<p><a id="ch08sb06"></a><a id="page_230"></a></p>
+<h3><em>Ask the Expert</em></h3>
+<p class="mediaobject"><img src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/nathancurtis.jpg" alt="image" width="150" height="120" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/nathancurtis.jpg"></p>
+<p class="source"><em>Nathan Curtis, Principal and Founder, EightShapes, LLC</em></p>
+<p><strong><em>DB: How much document planning and management is too much planning and management?</em></strong></p>
+<p><em>NC: Planning documents with many artifacts can be challenging when you can include so much: maps, flows, page designs, component variations, the works! Predictably and efficiently evolving documents is hard, too. Those early concepts feel light, breezy, vital, even fun as you create and iterate. But over time, the document can balloon into a morass of unorganized mush. That’s not fun. That’s fat, unwieldy, and hard to change.</em></p>
+<p><em>Therefore, don’t be hard and fast about evolving that “one deliverable.” Instead, here are some ideas to break rules about the (presumably single) deliverable to fit what a process and team need at a given time:</em></p>
+<p><strong><em>Welcome a One-and-Done</em></strong></p>
+<p><em>Don’t feel compelled to plan a long, detailed document with an extensive lifecycle if circumstances don’t call for it. For example, suppose your project scope and design ideas are very unstable. Don’t try to predict unknown page inventories and exact details not needed for six weeks. You aren’t writing a book. You are designing an experience, so forsake such temptations. Sometimes, the right answer is to throw in pictures, sprinkle a few informative callouts, publish, get feedback, and then… throw the document away. And that’s OK.</em></p>
+<p><strong><em>Anticipate Pivotal Moments</em></strong></p>
+<p><em>Communication objectives change over time, like shifting from high-level concepts to ironing out devilish details or from selling to stakeholders to delivering to engineers. The posture of a document—or even pages within it—can shift quickly from introducing, comparing, and deciding to a hefty amount of detailed explaining. These changing objectives call for changing communication techniques including page layouts and annotations. So take time to zoom out from your familiar page layouts, ask yourself “Is this page meeting it’s objective?” and don’t be afraid to replace a layout (like haphazard callouts bursting at the seams) with something more effective (like a scalable, formal list of specs—especially when you know you’ll be authoring so many more just like ’em).</em></p>
+<p><strong><em>Iterate Before You Integrate</em></strong></p>
+<p><em>Larger design projects call for dividing work into smaller chunks that are worked on independently, even across multiple designers. In such situations, smaller and independent documents can sometimes provide freedom and focus. For example, while my team worked together on a large-scale design progress, I focused on a stand-alone yet high-profile component: the video carousel. My first deliverable compared alternatives that didn’t work, but a second version proffered new ideas that hit the mark, and subsequent versions layered in annotations consistent with other deliverables and familiar to project participants. Once complete, this isolated deliverable was transformed into a chapter of the team’s much larger design document, which hadn’t been burdened with maintenance or disrupted out of its predictable publishing cycle.</em></p>
+</div>
+<p class="indenthanding">• My deadline is May 30, but the product won’t launch until August. Who will make use of the documents between now and then?</p>
+<p class="indenthanding">• Who is responsible for fielding questions from these people after May 30?</p>
+<p class="indenthanding">• What is the expectation for keeping this document up-to-date during implementation? If the project team identifies any problems with the document, can these be addressed through an addendum or do we need to create a new version of the document?</p>
+<p class="indenthanding">• After the product launches in August, who will be responsible for accounting for discrepancies between what’s in production and what’s documented?</p>
+<p class="indenthanding">• After the product launches in August, what will become of the document? Will it be used as the basis for subsequent releases for the product?</p>
+<p><a id="ch08lev1sec7"></a></p>
+<h3>The Future of Deliverables</h3>
+<p>The beginning of this chapter states explicit assumptions about the definition of a deliverable. In light of newer trends in design methodologies, these assumptions start to seem antiquated. But, as of this writing, I’m still working on documents delivered as PDFs and laid out on standard-sized pages. Sometimes we even print them out.</p>
+<p>The word “deliverable” implies only that you create something to be delivered to someone else. Format and style are not inherent properties in what we call our work product, and no doubt there’s room to evolve. Design teams that remain mired in old habits will struggle to keep up. Even simple adaptations of existing deliverable frameworks may not be enough because ultimately documentation is a function of four things:</p>
+<p class="indenthanding">• <strong>The product:</strong> The documentation should do a good job of describing the actual thing you’re designing.</p>
+<p class="indenthanding">• <strong>The people:</strong> The design team, the development team, and all the other people who have to collaborate to make a product real must buy into the approach for capturing <a id="page_231"></a>the plans for the web site. Blueprints remain useful to architects and contractors alike because the common language works for both groups.</p>
+<p class="indenthanding">• <strong>Organizational context:</strong> Deliverables are part of a larger ecosystem defined not just by the project team, but by the corporate environment. Degrees of formality, integrity, accountability, and history all come from the organization and establish a tone for the deliverables themselves.</p>
+<p class="indenthanding">• <strong>Methodological trends:</strong> The way we structure design activities will impact the by-products of those activities. Longer timelines, broader scopes, and multidisciplinary contributions yield one type of document, while quicker burns with narrow objectives yield another.</p>
+<p>“Deliverable,” however, does imply certain limitations. This label, as well as “documentation,” suggest both a one-way-ness and finality. Deliverables are something we send along. In practice, we discuss them, collaborate on them, and let them morph with the project’s progress, but you wouldn’t get this from the name.</p>
+<p>Maybe we should start calling them “shareables.”</p>
+<p>Our <strong>obligation</strong> as designers is not to the deliverable, but to the product. We are <strong>accountable</strong> only to the product’s user. But the path to get there is filled with dozens of other people who may have similar objectives with differing agendas. Deliverables are tools to help us navigate that landscape. Our <strong>responsibility</strong> is to communicate design ideas and capture the details of a design concept in the most frictionless way possible.</p>
+<p><a id="ch08lev2sec22"></a></p>
+<h3>Exercises</h3>
+<ol>
+<li><a id="ch08pro02"></a>Reflect on a recent project, picking a deliverable from the project and plotting on the graph from <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#ch08fig01">Figure 8.1</a>. How long did you spend conceiving the deliverable? How many iterations did it go through? What happened to the document? Is it still around?</li>
+<li>Imagine you were creating one document for a recent project (instead of, perhaps, many). Write a table of contents for the single deliverable, accounting for both initial and future project activities. Make the table of contents as detailed as possible, defining what goes into each chapter. As an exercise, avoid structuring the chapters based on the project plan. Imagine you were structuring the chapters around different aspects of the user experience. Try to use real people as the target audience for the document, but if you can’t, imagine the document’s readers. Consider their role and personality as you structure the document.</li>
+<li>For each entry in the table of contents from exercise 2, assign a page pattern from the “Laying Out Pages” section. There are six patterns to choose from. Consider what you are saying for each entry in the table of contents and identify the most appropriate page layout. Create thumbnails representing each page layout and put together a diagram showing the structure of the document. Walk colleagues or your study group through the diagram and solicit feedback on the structure of the document. Was there content they were expecting to see? Does the story make sense? Do they think the structure will be effective in communicating with the imagined target audience?</li>
+</ol>
+<div class="annotator-outer annotator-viewer viewer annotator-hide">
+  <ul class="annotator-widget annotator-listing"></ul>
+</div><div class="annotator-modal-wrapper annotator-editor-modal annotator-editor annotator-hide">
+	<div class="annotator-outer editor">
+		<h2 class="title">Highlight</h2>
+		<form class="annotator-widget">
+			<ul class="annotator-listing">
+			<li class="annotator-item"><textarea id="annotator-field-0" placeholder="Add a note using markdown (optional)" class="js-editor" maxlength="750"></textarea></li></ul>
+			<div class="annotator-controls">
+				<a class="link-to-markdown" href="https://daringfireball.net/projects/markdown/basics" target="_blank">?</a>
+				<ul>
+					<li class="delete annotator-hide"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#delete" class="annotator-delete-note button positive">Delete Note</a></li>
+					<li class="save"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#save" class="annotator-save annotator-focus button positive">Save Note</a></li>
+					<li class="cancel"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#cancel" class="annotator-cancel button">Cancel</a></li>
+				</ul>
+			</div>
+		</form>
+	</div>
+</div><div class="annotator-modal-wrapper annotator-delete-confirm-modal" style="display: none;">
+  <div class="annotator-outer">
+    <h2 class="title">Highlight</h2>
+      <a class="js-close-delete-confirm annotator-cancel close" href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#close">Close</a>
+      <div class="annotator-widget">
+         <div class="delete-confirm">
+            Are you sure you want to permanently delete this note?
+         </div>
+         <div class="annotator-controls">
+            <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#cancel" class="annotator-cancel button js-cancel-delete-confirm">No, I changed my mind</a>
+            <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#delete" class="annotator-delete button positive js-delete-confirm">Yes, delete it</a>
+         </div>
+       </div>
+   </div>
+</div><div class="annotator-adder" style="display: none;">
+	<ul class="adders">
+		
+		<li class="copy"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#">Copy</a></li>
+		
+		<li class="add-highlight"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#">Add Highlight</a></li>
+		<li class="add-note"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#">
+			Add Note
+		</a></li>
+		
+	</ul>
+</div></div></div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/pt02.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">Part 2. Design Deliverables</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch09.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">Chapter 9. Design Briefs</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag collapsed slideUp">
+        
+        
+          <p class="usage-data">Find answers on the fly, or master something new. Subscribe today. <a href="https://learning.oreilly.com/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+        
+
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+        
+
+<footer class="pagefoot t-pagefoot" style="padding-bottom: 75px;">
+  <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#" class="icon-up" onclick="window.Appcues.track(&#39;JumpTop_HeronBook&#39;)" style="display: none;"><div class="visuallyhidden">Back to top</div></a>
+  <ul class="js-footer-nav">
+  
+    
+    <li><a href="https://learning.oreilly.com/public/support/">Support</a></li>
+    
+    <li><a href="https://learning.oreilly.com/accounts/logout/">Sign Out</a></li>
+    
+  
+  
+  </ul>
+  <span class="copyright">© 2021 <a href="https://learning.oreilly.com/" target="_blank">O'Reilly Media, Inc</a>.</span>
+  
+    
+    <a href="https://www.oreilly.com/terms/">Terms of Service</a> 
+     / 
+    
+    <a href="https://learning.oreilly.com/privacy">Privacy Policy</a> 
+    
+    
+  
+</footer>
+
+      
+    
+    <script src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource" charset="utf-8"></script><script type="text/javascript" id="">(function(){window.medalliaUserIdentifier=document.documentElement.dataset.userUuid;window.medalliaUserName=document.documentElement.dataset.username})();</script>
+<script type="text/javascript" id="" src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/embed.js.Без названия"></script><script type="text/javascript" id="">ev=document.querySelectorAll("div[class*\x3d'event']");0<ev.length&&ev.forEach(function(a,b){b=a.querySelector("a");var c=a.querySelector("h3").textContent.toLowerCase();b.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"outbound links",eventAct:"non-oreilly",eventLbl:"add a reminder: "+c})})});</script>
+    <script src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource(1)" charset="utf-8"></script>
+  
+
+<div class="annotator-notice"></div><div class="font-flyout" style="top: 201.01px; left: 1834px;"><div class="font-controls-panel">
+	<div class="nightmodes">
+		<ul>
+			<li class="day"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#" id="day-mode" title="Day Mode">
+				<i class="fa fa-sun-o"></i>
+				<span>Day Mode</span></a></li>
+			<li class="cloudy"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#" id="cloudy-mode" title="Cloudy Mode">
+				<i class="fa fa-cloud"></i>
+				<span>Cloud Mode</span>
+			</a></li>
+			<li class="night"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#" id="night-mode" title="Night Mode">
+				<i class="fa fa-moon-o"></i>
+				<span>Night Mode</span>
+			</a></li>
+		</ul>
+	</div>
+
+	<div class="font-resizer resizer">
+		<div class="draggable-containment-wrapper">
+			<i class="fa fa-font left"></i>
+			<span class="filler" style="width: 50%;"></span>
+			<div id="js-font-size-draggable" class="draggable ui-widget-content ui-draggable ui-draggable-handle" style="position: relative; left: 80px;"></div>
+			<i class="fa fa-font right"></i>
+		</div>
+	</div>
+
+	<div class="column-resizer resizer">
+		<div class="draggable-containment-wrapper">
+			<i class="fa fa-compress left"></i>
+			<span class="filler" style="width: 50%;"></span>
+			<div id="js-column-size-draggable" class="draggable ui-widget-content ui-draggable ui-draggable-handle" style="position: relative; left: 80px;"></div>
+			<i class="fa fa-expand right"></i>
+		</div>
+	</div>
+
+	<a id="reset" class="button" href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html#">Reset</a>
+</div>
+</div><div></div><div></div><script type="text/javascript" async="" src="./Chapter 8. Deliverable Basics - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/generic1607612729884.js.Без названия" charset="UTF-8"></script><span></span><script type="text/javascript" id="">function forceInputUppercase(a){var b=a.target.selectionStart,c=a.target.selectionEnd;a.target.value=a.target.value.toUpperCase();a.target.setSelectionRange(b,c)}void 0!=document.getElementById("id_promotion")&&null!=document.getElementById("id_promotion")&&document.getElementById("id_promotion").addEventListener("keyup",forceInputUppercase,!1);
+void 0!=document.getElementsByName("promotionCode")[0]&&null!=document.getElementsByName("promotionCode")[0]&&document.getElementsByName("promotionCode")[0].addEventListener("keyup",forceInputUppercase,!1);</script><script type="text/javascript" id="">var nonwExpandable=document.querySelectorAll(".orm-ff-NavigationSubnav-headerListItem a, .orm-ff-NavigationView-headerListItem a");nonwExpandable.forEach(function(a,b){b+1!=nonwExpandable.length?a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.childNodes[1].textContent})}):b+1==nonwExpandable.length&&a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"user login",eventAct:"logout",eventLbl:"global nav | unified"})})});
+var nonwExpandableFo=document.querySelectorAll(".drop-content li:not(.flyout-parent) a");
+nonwExpandableFo.forEach(function(a,b){"drop-content"==a.parentNode.parentNode.parentNode.className&&b+1!=nonwExpandableFo.length?a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.childNodes[1].textContent})}):"drop-content"==a.parentNode.parentNode.parentNode.className&&b+1==nonwExpandableFo.length&&a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"user login",eventAct:"logout",eventLbl:"global nav | unified"})})});
+var expandable=document.querySelectorAll(".orm-ff-NavigationSubnav-toggleControls a, .orm-ff-NavigationView-toggleControls a");expandable.forEach(function(a){a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.parentNode.parentNode.parentNode.querySelectorAll(".orm-Button-btnContentWrap span")[0].childNodes[1].textContent+" | "+a.textContent})})});var flyoutLinks=document.querySelectorAll(".flyout a");
+flyoutLinks.forEach(function(a){a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.closest("li.flyout-parent").getElementsByTagName("a")[0].textContent+" | "+a.textContent})})});</script></body></html>

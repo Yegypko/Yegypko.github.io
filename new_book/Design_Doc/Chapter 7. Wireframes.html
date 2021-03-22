@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html -->
+<html class=" js flexbox flexboxlegacy no-touch websqldatabase indexeddb history csscolumns csstransforms localstorage sessionstorage no-applicationcache svg inlinesvg zoom" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#" itemscope="" itemtype="http://schema.org/Book http://schema.org/ItemPage" data-login-url="/accounts/login/" data-offline-url="/" data-url="/library/view/communicating-design-developing/9780131385399/ch07.html" data-csrf-cookie="csrfsafari" data-user-id="11004957" data-user-uuid="9c5599ca-6951-4904-81d0-732bb961926b" data-username="visualcommcomua" data-account-type="Trial" data-activated-trial-date="03/21/2021" data-archive="9780131385399" data-publishers="New Riders" data-htmlfile-name="ch07.html" data-epub-title="Communicating Design: Developing Web Site Documentation for Design and Planning, Second Edition" data-debug="0" data-testing="0" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="author" content="O&#39;Reilly Media"><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"><meta name="HandheldFriendly" content="True"><meta name="MobileOptimized" content="320"><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9780131385399"><link rel="shortcut icon" href="https://www.oreilly.com/favicon.ico"><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"><meta property="twitter:account_id" content="4503599627559754"><link rel="shortcut icon" href="https://learning.oreilly.com/favicon.ico" type="image/x-icon"><link href="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/css" rel="stylesheet" type="text/css"><title>Chapter 7. Wireframes - Communicating Design: Developing Web Site Documentation for Design and Planning, Second Edition</title><link rel="stylesheet" href="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/output.5bdb4fcb2aad.css" type="text/css"><link rel="stylesheet" type="text/css" href="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/annotator.e3b0c44298fc.css"><link rel="stylesheet" href="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/font-awesome.min.css"><style type="text/css" title="ibis-book">
+    #sbo-rt-content div{margin-top:5pt;margin-bottom:5pt;margin-right:15pt}#sbo-rt-content .cover{margin-top:2pt;margin-bottom:2pt;text-align:center}#sbo-rt-content h1{page-break-before:right;margin-top:5pt;text-align:center;margin-bottom:12pt;font-weight:bold}#sbo-rt-content .subtitle{font-size:large;margin-top:30pt;margin-bottom:55pt;font-weight:bold;text-align:center}#sbo-rt-content .publisher{text-align:center;margin-top:6pt;margin-bottom:4pt}#sbo-rt-content .copyrightpage{page-break-before:right;margin-top:5pt;margin-bottom:5pt;text-indent:.002pt}#sbo-rt-content .copyright{margin-top:5pt;margin-bottom:5pt;text-indent:.002pt}#sbo-rt-content .dedication{page-break-before:right;margin-top:48pt;margin-bottom:5pt;text-align:center}#sbo-rt-content h2{page-break-before:right;margin-top:7pt;margin-bottom:25pt;font-weight:bold}#sbo-rt-content h3{margin-top:9pt;margin-bottom:8pt;font-weight:bold}#sbo-rt-content h4{margin-top:9pt;margin-bottom:6pt;font-weight:bold}#sbo-rt-content h5{margin-top:9pt;margin-bottom:6pt;font-weight:bold}#sbo-rt-content h6{margin-top:8pt;margin-bottom:6pt;font-weight:bold}#sbo-rt-content p{margin-top:5pt;margin-bottom:4pt;text-indent:.002pt}#sbo-rt-content .continued{margin-top:5pt;margin-bottom:4pt;text-indent:.002pt}#sbo-rt-content .author{text-align:center;font-weight:bold;margin-top:66pt;margin-bottom:50pt}#sbo-rt-content .bolditalic{font-weight:bold;font-style:italic}#sbo-rt-content .toc-part{margin-top:4pt;margin-bottom:5pt;font-weight:bold}#sbo-rt-content .toc-chapter{margin-top:5pt;margin-bottom:5pt;font-weight:bold}#sbo-rt-content em{font-style:italic}#sbo-rt-content .figure{margin-top:12pt;margin-bottom:5pt;text-align:center;font-weight:bold}#sbo-rt-content .figure-contents{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .figure-float{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .informalexample{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .itemizedlist{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .legalnotice{margin-top:8pt;margin-bottom:4pt}#sbo-rt-content .literallayout{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .mediaobject{margin-top:12pt;margin-bottom:12pt;text-align:center}#sbo-rt-content .tabimage{margin-top:12pt;margin-bottom:12pt;text-align:center}#sbo-rt-content .smaller{font-size:small}#sbo-rt-content .center{margin-top:50pt;margin-bottom:5pt;text-align:center}#sbo-rt-content .right{margin-top:5pt;margin-bottom:5pt;text-align:right}#sbo-rt-content .image{margin-top:5pt;margin-bottom:5pt;text-align:center}#sbo-rt-content .note{margin-top:6pt;margin-bottom:12pt;margin-left:36pt;margin-right:24pt;border:solid 1pt;padding:1pt 12pt 1pt 12pt}#sbo-rt-content .toc-preface{margin-top:4pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt;font-weight:bold}#sbo-rt-content .procedure{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .programlisting{font-family:"Courier New";font-size:small;margin-top:8pt;margin-bottom:8pt}#sbo-rt-content .programlisting1{font-family:"Courier New";font-size:small;margin-top:5pt;margin-bottom:4pt;margin-left:36pt}#sbo-rt-content code{font-size:x-small}#sbo-rt-content .toc-section{margin-top:4pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt}#sbo-rt-content .toc-index{margin-top:4pt;margin-bottom:4pt;font-weight:bold}#sbo-rt-content .toc-appendix{margin-top:4pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt}#sbo-rt-content .toc-appendix1{margin-top:20pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt}#sbo-rt-content .toc-glossary{margin-top:4pt;margin-bottom:4pt;margin-left:12pt;text-indent:12pt}#sbo-rt-content .toc-section1{margin-top:4pt;margin-bottom:4pt;margin-left:24pt;text-indent:24pt}#sbo-rt-content .toc-section2{margin-top:4pt;margin-bottom:4pt;margin-left:36pt;text-indent:36pt}#sbo-rt-content .sidebar{font-size:small;margin-top:5pt;margin-bottom:12pt;margin-left:15pt;border:solid 1pt;padding:1pt 12pt 1pt 12pt}#sbo-rt-content .sidebar1{font-size:small;margin-top:5pt;margin-bottom:12pt;margin-left:15pt;border:solid 1pt;padding:1pt 12pt 1pt 12pt;background-color:#e6e6e6}#sbo-rt-content .strong{font-weight:bold}#sbo-rt-content .italic{font-style:italic}#sbo-rt-content .table{margin-top:12pt;margin-bottom:5pt;text-align:center;font-weight:bold}#sbo-rt-content .table-contents{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .table-float{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .title{margin-top:12pt;margin-bottom:6pt;font-size:medium;font-weight:bold;text-align:center}#sbo-rt-content .title1{margin-top:12pt;margin-bottom:6pt;font-size:medium;font-weight:bold}#sbo-rt-content .titlepage{margin-top:3pt;margin-bottom:3pt}#sbo-rt-content .toc{margin-top:4pt;margin-bottom:4pt}#sbo-rt-content .blockquote{margin-top:12pt;margin-bottom:12pt;margin-left:24pt}#sbo-rt-content .attribution{margin-top:12pt;margin-bottom:12pt;margin-right:15pt;text-align:right}#sbo-rt-content .indexmain{margin-top:2pt;margin-bottom:2pt}#sbo-rt-content .indexsub{margin-top:2pt;margin-bottom:2pt;margin-left:15pt;text-indent:15pt}#sbo-rt-content .indexsubsub{margin-top:2pt;margin-bottom:2pt;margin-left:25pt;text-indent:25pt}#sbo-rt-content .indenthanging{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-12pt}#sbo-rt-content .indenthangingb{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-12pt}#sbo-rt-content .paraindent{margin-top:4pt;margin-bottom:4pt;margin-left:25pt}#sbo-rt-content .list{margin-top:4pt;margin-bottom:4pt;margin-left:30pt;text-indent:-8pt}#sbo-rt-content .indenthanding{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-8pt}#sbo-rt-content .indenthanding1{margin-top:4pt;margin-bottom:4pt;margin-left:48pt;text-indent:-8pt}#sbo-rt-content .indent{margin-top:4pt;margin-bottom:4pt;margin-left:36pt}#sbo-rt-content .underline{text-decoration:underline}#sbo-rt-content .legalnotice-title{font-size:medium;margin-top:5pt;margin-bottom:5pt}#sbo-rt-content .footnote{font-size:small;margin-top:5pt;margin-bottom:4pt;margin-left:20pt;text-indent:-8pt}#sbo-rt-content .creditline{font-size:small;margin-top:4pt;margin-bottom:8pt;text-align:center}#sbo-rt-content .caption{margin-top:4pt;margin-bottom:8pt;text-align:center}#sbo-rt-content .pd_red{color:#BD6B4C}#sbo-rt-content .pd_brown{color:#9E7E4C}#sbo-rt-content .pd_orange{color:#E78152}#sbo-rt-content .image1{margin-top:5pt;margin-bottom:5pt}#sbo-rt-content .bibliomixed{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-12pt}#sbo-rt-content .progimg{margin-top:5pt;margin-bottom:5pt}#sbo-rt-content .progimage{margin-top:5pt;margin-bottom:5pt}#sbo-rt-content .progimage1{margin-top:5pt;margin-bottom:5pt;margin-left:25pt}#sbo-rt-content .question{margin-top:4pt;margin-bottom:4pt;margin-left:25pt;text-indent:-12pt}#sbo-rt-content .listimage{margin-top:12pt;margin-bottom:12pt;text-align:center}#sbo-rt-content .source{font-size:small;margin-top:12pt;margin-bottom:12pt;text-align:center}#sbo-rt-content .blockquote1{margin-top:15pt;margin-bottom:15pt;text-align:center;border:solid 1pt;padding:1pt 12pt 1pt 12pt;background-color:#E6E7E8}#sbo-rt-content .asa{margin-top:18pt;margin-bottom:4pt;text-indent:.002pt}#sbo-rt-content .note1{margin-top:6pt;margin-bottom:12pt;margin-left:36pt;margin-right:24pt}
+    </style><script type="text/javascript" async="" src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/cool-2.1.15.min.js.Без названия"></script><script type="text/javascript" async="" src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/ec.js.Без названия"></script><script type="text/javascript" async="" src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/analytics.js.Без названия"></script><script type="text/javascript" async="" src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/f.txt"></script><script type="text/javascript" async="" src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/js"></script><script crossorigin="anonymous" integrity="sha256-+LIVdo7S66HX09dkhZvbKz8NKAlkGOP3Z0kCUzr+MU8=" type="text/javascript" src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/appcues.main.11fd23733af68e25fa851da20bb.Без названия" async=""></script><script async="" src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/gtm.js.Без названия"></script><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9780131385399/chapter/ch07.html",
+          "book_id": "9780131385399",
+          "chapter_uri": "ch07.html",
+          "position": 0,
+          "user_uuid": "9c5599ca-6951-4904-81d0-732bb961926b",
+          "next_chapter_uri": "/library/view/communicating-design-developing/9780131385399/pt02.html"
+        
+      },
+      title: "Communicating Design: Developing Web Site Documentation for Design and Planning, Second Edition",
+      author_list: "Dan M. Brown",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false
+    };
+    // ]]></script><script src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/modernizr.8e35451ddb64.js.Без названия"></script><script>
+    
+      
+
+      
+        
+          window.PUBLIC_ANNOTATIONS = true;
+        
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+      window.PRIVACY_CONTROL_SWITCH = true;
+
+      window.PUBLISHER_PAGES = true;
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "https://learning.oreilly.com/api/v2/search/select/",
+          "ENABLE_ONLINE_TRAINING": true
+        }
+      };
+  </script><link rel="canonical" href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html"><meta name="description" content=" Chapter 7. Wireframes A simplified view of what content will appear on each screen of the final product, usually devoid of color, typographical styles, and images. Also known as schematics, ... "><meta property="og:title" content="Chapter 7. Wireframes"><meta itemprop="isPartOf" content="/library/view/communicating-design-developing/9780131385399/"><meta itemprop="name" content="Chapter 7. Wireframes"><meta property="og:url" itemprop="url" content="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html"><meta property="og:site_name" content="Safari"><meta property="og:image" itemprop="thumbnailUrl" content="https://learning.oreilly.com/library/cover/9780131385399/"><meta property="og:description" itemprop="description" content=" Chapter 7. Wireframes A simplified view of what content will appear on each screen of the final product, usually devoid of color, typographical styles, and images. Also known as schematics, ... "><meta itemprop="inLanguage" content="en"><meta itemprop="publisher" content="New Riders"><meta property="og:type" content="book"><meta property="og:book:isbn" itemprop="isbn" content="9780131385399"><meta property="og:book:author" itemprop="author" content="Dan M. Brown"><meta property="og:book:tag" itemprop="about" content="Design"><meta property="og:book:tag" itemprop="about" content="Digital Media"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@OReillyMedia"><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: &lt;%= font_size %&gt; !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: &lt;%= font_family %&gt; !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: &lt;%= column_width %&gt;% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; url=/library/no-js/" /></noscript><script>
+    var dataLayer = window.dataLayer || [];
+
+    
+      window.medalliaVsgUserIdentifier = '9c5599ca-6951-4904-81d0-732bb961926b';
+      dataLayer.push({userIdentifier: '9c5599ca-6951-4904-81d0-732bb961926b'});
+      dataLayer.push({loggedIn: 'yes'});
+
+      
+        window.medalliaVsgAccountIdentifier = '40a64ffb-0742-4e66-9d82-1192a9b6da49';
+        
+
+        window.medalliaVsgIsIndividual = true;
+        
+          
+          dataLayer.push({learningAccountType: 'free trial'});
+          
+        
+
+        
+      
+    
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+    (function () {
+      var VERSION = 'V1.1';
+      var AUTHOR = 'Awwad';
+      if (!window.GtmHelper)
+        window.GtmHelper = function () {
+          var instance = this;
+          var loc = document.location;
+          this.version = VERSION;
+          this.author = AUTHOR;
+          this.readCookie = function (name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+          };
+          this.createCookie = function (name, value, days, cookieDomain) {
+            var domain = "";
+            var expires = "";
+
+            if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + Math.ceil(days * 24 * 60 * 60 * 1000));
+              var expires = " expires=" + date.toGMTString() + ";";
+            }
+
+            if (typeof (cookieDomain) != 'undefined')
+              domain = " domain=" + cookieDomain + "; ";
+
+            document.cookie = name + "=" + value + ";" + expires + domain + "path=/";
+          };
+
+          this.isDuplicated = function (currentTransactionId) {
+            // the previous transaction id:
+            var previousTransIdValue = this.readCookie("previousTransId");
+
+            if (currentTransactionId === previousTransIdValue) {
+              return true; // Duplication
+            } else {
+              return false;
+            }
+          };
+        }
+    })()
+  </script><script defer="" src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/vendor.d0fe30932d64.js.Без названия"></script><script defer="" src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/reader.3833317c1bb0.js.Без названия"></script><script async="" src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/MathJax.js.Без названия"></script><style id="annotator-dynamic-style">.annotator-adder, .annotator-outer, .annotator-notice {
+  z-index: 100019;
+}
+.annotator-filter {
+  z-index: 100009;
+}</style><iframe src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource.html"></iframe><iframe src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource(2).html"></iframe><iframe src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource(3).html"></iframe><link rel="stylesheet" type="text/css" integrity="sha256-q9sKb2HpA5fJjN1cK9LjLaEXff5ix81Rv1Y3xJFptPE=" crossorigin="anonymous" href="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/container.11fd23733af68e25fa851da20bbd639c02ec4bd.css"><iframe src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource(4).html"></iframe><script src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/f(1).txt"></script><style type="text/css" id="kampyleStyle">.noOutline{outline: none !important;}.wcagOutline:focus{outline: 1px dashed #595959 !important;outline-offset: 2px !important;transition: none !important;}</style></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts subscribe-panel library">
+
+    
+  <noscript> 
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+  
+
+
+<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li><a href="https://learning.oreilly.com/home/" class="l0 nav-icn"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.738 14H9.254v-3.676a.617.617 0 0 0-.621-.613H7.39a.617.617 0 0 0-.62.613V14H4.284a.617.617 0 0 1-.622-.613V10.22c0-.327.132-.64.367-.87l3.547-3.493a.627.627 0 0 1 .875 0l3.54 3.499c.234.229.366.54.367.864v3.167a.617.617 0 0 1-.62.613zM7.57 2.181a.625.625 0 0 1 .882 0l5.77 5.692-.93.92-5.28-5.209-5.28 5.208-.932-.919 5.77-5.692z"></path></svg><span>Home</span></a></li><li class="search"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"></path></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"></path></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#" class="l1 nav-icn "><!--?xml version="1.0" encoding="UTF-8"?--><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M8,8 C6.34321755,8 5.00013,6.65691245 5.00013,5.00013 C5.00013,3.34334755 6.34321755,2.00026001 8,2.00026001 C9.65678245,2.00026001 10.99987,3.34334755 10.99987,5.00013 C10.99987,6.65691245 9.65678245,8 8,8 Z M2.33024571,11.3523547 L2.33774538,11.3523547 C3.7622187,9.70968996 5.82947484,8.76608166 8.00374984,8.76608166 C10.1780248,8.76608166 12.245281,9.70968996 13.6697543,11.3523547 C13.8892083,11.6177474 14.0062813,11.9530021 13.99974,12.2973138 L13.99974,13.99974 L2.00026001,13.99974 L2.00026001,12.2973138 C1.99371867,11.9530021 2.11079172,11.6177474 2.33024571,11.3523547 Z" id="path-1"></path></svg><span>Your O'Reilly</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/profile/" class="l2 nav-icn"><span>Profile</span></a></li><li><a href="https://learning.oreilly.com/history/" class="l2 nav-icn"><span>History</span></a></li><li><a href="https://learning.oreilly.com/playlists/" class="l2 nav-icn"><span>Playlists</span></a></li><li><a href="https://learning.oreilly.com/u/9c5599ca-6951-4904-81d0-732bb961926b/" class="l2 nav-icn"><span>Highlights</span></a></li></ul></li><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#" class="l1 nav-icn "><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.564 2.263l2.172 2.174c.17.168.264.397.264.636V11a.6.6 0 0 1-.6.6h-.6V6.2h-6V2.6a.6.6 0 0 1 .6-.6h3.527c.239 0 .468.095.637.263zM2.6 14a.6.6 0 0 1-.6-.6V6.8a.6.6 0 0 1 .6-.6h1.903a1.2 1.2 0 0 1 .849.352L6.2 7.4H11a.6.6 0 0 1 .6.6v5.4a.6.6 0 0 1-.6.6H2.6zM11 5h1.8L11 3.2V5z"></path></svg><span>Featured</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/featured/navigating-21st-century/" class="l2 nav-icn"><span>Navigating Change</span></a></li><li><a href="https://learning.oreilly.com/recommendations/" class="l2 nav-icn"><span>Recommended</span></a></li></ul></li><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#" class="l1 nav-icn "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>queue icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 29.2C25.4 29.2 25.8 29.1 26.1 28.9L48.7 16.8C49.5 16.4 50 15.5 50 14.6 50 13.7 49.5 12.8 48.7 12.4L26.1 0.3C25.4-0.1 24.6-0.1 23.9 0.3L1.3 12.4C0.5 12.8 0 13.7 0 14.6 0 15.5 0.5 16.4 1.3 16.8L23.9 28.9C24.2 29.1 24.6 29.2 25 29.2ZM7.3 14.6L25 5.2 42.7 14.6 25 24 7.3 14.6ZM48.7 22.4L47.7 21.9 25 34.2 2.3 21.9 1.3 22.4C0.5 22.9 0 23.7 0 24.7 0 25.6 0.5 26.5 1.3 26.9L23.9 39.3C24.2 39.5 24.6 39.6 25 39.6 25.4 39.6 25.8 39.5 26.1 39.3L48.7 26.9C49.5 26.5 50 25.6 50 24.7 50 23.7 49.5 22.9 48.7 22.4ZM48.7 32.8L47.7 32.3 25 44.6 2.3 32.3 1.3 32.8C0.5 33.3 0 34.1 0 35.1 0 36 0.5 36.9 1.3 37.3L23.9 49.7C24.2 49.9 24.6 50 25 50 25.4 50 25.8 49.9 26.1 49.7L48.7 37.3C49.5 36.9 50 36 50 35.1 50 34.1 49.5 33.3 48.7 32.8Z"></path></g></svg><span>Explore</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/topics/" class="l2 nav-icn"><span>All Topics</span></a></li><li><a href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;sort=publication_date&amp;facet_json=true&amp;page=0" class="l2 nav-icn"><span>Early Releases</span></a></li><li><a href="https://learning.oreilly.com/playlists/discover/" class="l2 nav-icn"><span>Shared Playlists</span></a></li><li><a href="https://learning.oreilly.com/search/?query=&amp;extended_publisher_data=true&amp;highlight=true&amp;include_assessments=false&amp;include_case_studies=true&amp;include_courses=true&amp;include_orioles=true&amp;include_playlists=true&amp;include_collections=true&amp;include_notebooks=true&amp;is_academic_institution_account=false&amp;source=user&amp;formats=book&amp;formats=case%20study&amp;formats=learning%20path&amp;formats=live%20online%20training&amp;formats=notebook&amp;formats=oriole&amp;formats=video&amp;sort=popularity&amp;facet_json=true&amp;page=0&amp;collection_type=expert" class="l2 nav-icn"><span>Most Popular Titles</span></a></li><li><a href="https://learning.oreilly.com/resource-centers/" class="l2 nav-icn"><span>Resource Centers</span></a></li></ul></li><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#" class="l1 nav-icn "><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12.8 3.2A1.2 1.2 0 0 1 14 4.4v8.4a1.2 1.2 0 0 1-1.2 1.2H3.2A1.2 1.2 0 0 1 2 12.8V4.4a1.2 1.2 0 0 1 1.2-1.2h1.2V2h1.2v1.2h4.8V2h1.2v1.2h1.2zm-9.6 9.6h9.6V6.2H3.2v6.6zM8 9.5a1.35 1.35 0 1 1 0-2.7 1.35 1.35 0 0 1 0 2.7zm2.7 2.148v.552H5.3v-.552c0-.321.124-.634.355-.858a3.358 3.358 0 0 1 4.69 0c.23.224.355.537.355.858z"></path></svg><span>Live Events</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/attend/" class="l2 nav-icn"><span>All Events</span></a></li><li><a href="https://learning.oreilly.com/featured/architectural-katas/" class="l2 nav-icn"><span>Architectural Katas</span></a></li><li><a href="https://learning.oreilly.com/featured/ai" class="l2 nav-icn"><span>AI &amp; ML</span></a></li><li><a href="https://learning.oreilly.com/featured/strata/" class="l2 nav-icn"><span>Data Sci &amp; Eng</span></a></li><li><a href="https://learning.oreilly.com/featured/oscon/" class="l2 nav-icn"><span>Programming</span></a></li><li><a href="https://learning.oreilly.com/featured/infrastructure-ops/" class="l2 nav-icn"><span>Infra &amp; Ops</span></a></li><li><a href="https://learning.oreilly.com/featured/software-architecture/" class="l2 nav-icn"><span>Software Arch</span></a></li></ul></li><li class="flyout-parent"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#" class="l1 nav-icn "><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.6467109,4.35328907 L14.7964612,7.51003884 C15.0678463,7.78304342 15.0678463,8.22395603 14.7964612,8.49696061 L11.6467109,11.6467109 L10.6597892,10.6597892 L13.3055794,8 L10.6597892,5.34021084 L11.6467109,4.35328907 Z M4.35328907,11.6467109 L1.20353875,8.48996116 C0.932153749,8.21695658 0.932153749,7.77604397 1.20353875,7.50303939 L4.35328907,4.35328907 L5.34021084,5.34021084 L2.69442057,8 L5.34021084,10.6597892 L4.35328907,11.6467109 Z M5.84417089,11.4997226 L8.67194674,4.50027742 L10.1838269,4.50027742 L7.35605105,11.4997226 L5.84417089,11.4997226 Z" id="Mask"></path></svg><span>Interact</span></a><ul class="flyout"><li><a href="https://learning.oreilly.com/scenarios/?classification=content-scenario" class="l2 nav-icn"><span>Scenarios</span></a></li><li><a href="https://learning.oreilly.com/scenarios/?classification=sandbox-scenario" class="l2 nav-icn"><span>Sandboxes</span></a></li><li><a href="https://learning.oreilly.com/interactive/?classification=jupyter-notebook" class="l2 nav-icn"><span>Jupyter Notebooks</span></a></li></ul></li><li><a href="https://learning.oreilly.com/answers/" class="l1 nav-icn "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M2.31032699,3.75609006 C4.65421571,1.41371359 8.45302454,1.41472092 10.7955702,3.75860838 C13.1381158,6.10249583 13.1369405,9.90130261 10.7930518,12.243847 C8.44916311,14.5863913 4.65018639,14.5852161 2.30780867,12.2413286 C-0.0346204845,9.89749489 -0.0334929936,6.09853298 2.31032699,3.75609006 Z M8.8198605,4.98016308 C7.34193969,3.86924672 5.23410194,3.98609692 3.88914868,5.33104946 C3.12814393,6.09032122 2.72818176,7.13880077 2.79015179,8.21201133 C2.79115912,8.23064692 2.79233434,8.24928252 2.79350956,8.26791811 L2.79350956,8.26791811 C2.83179539,8.8307976 2.9944077,9.37404287 3.26947292,9.86201677 L3.26947292,9.86201677 L2.77621706,11.7027432 C2.7699968,11.7259241 2.77662063,11.7506624 2.79359185,11.7676337 C2.8105631,11.7846049 2.83530144,11.7912287 2.85848233,11.7850085 L2.85848233,11.7850085 L4.69400524,11.2922565 C5.26306363,11.6167344 5.90703177,11.786885 6.56209849,11.7858479 C8.64827865,11.7858479 10.3395879,10.094542 10.3395879,8.00836292 C10.3405204,6.84135608 9.80105674,5.73967784 8.87862141,5.02482134 L8.87862141,5.02482134 L8.82825492,4.98654283 Z M13.7933062,2 C14.7073496,2.00009863 15.4482759,2.74110484 15.4482759,3.65514822 C15.4482759,4.32460943 15.0449926,4.92814782 14.4264842,5.18432286 C13.8079757,5.44049789 13.096053,5.29885769 12.6226979,4.82545158 C12.1493429,4.35204547 12.0077795,3.64010743 12.2640213,3.02162665 C12.5202631,2.40314587 13.123845,1.99992776 13.7933062,2 Z"></path></svg><span>Answers</span></a></li><li><a href="https://learning.oreilly.com/certifications/" class="l1 nav-icn "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M12.912 9.18L14 8.014l-1.088-1.18a.304.304 0 01-.075-.268L13.195 5l-1.535-.463a.313.313 0 01-.194-.194l-.462-1.537-1.565.358c-.09.03-.194 0-.269-.074L8.007 2 6.845 3.09a.303.303 0 01-.269.074l-1.565-.358-.462 1.537a.313.313 0 01-.194.194L2.82 5l.358 1.567a.26.26 0 01-.075.269L2 8.015l1.088 1.164c.075.075.09.18.075.269l-.358 1.567 1.535.463c.09.03.164.104.194.194l.462 1.537 1.565-.358c.015 0 .045-.015.075-.015.075 0 .15.03.209.074L8.007 14l1.163-1.09a.303.303 0 01.269-.074l1.565.358.462-1.537a.313.313 0 01.194-.194L13.195 11l-.358-1.567a.338.338 0 01.075-.254zm-6.046 1.37L4.41 8.26l1.16-1.244 1.767 1.649L10.4 5.6l1.202 1.202-4.242 4.243-.495-.495z"></path></svg><span>Certifications</span></a></li><li><a href="https://learning.oreilly.com/preferences/" class="l1 nav-icn "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"></path></g></svg><span>Settings</span></a></li><li><a href="https://learning.oreilly.com/public/support/" class="l1 nav-icn "><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M7.363 6.656a2.692 2.692 0 0 1-2.681-2.703c0-1.493 1.2-2.703 2.681-2.703a2.692 2.692 0 0 1 2.682 2.703c0 1.493-1.2 2.703-2.682 2.703zm4.023 2.027c-1.852 0-3.352 1.513-3.352 3.379H2v-1.534c-.006-.31.099-.612.295-.852a6.666 6.666 0 0 1 9.09-.993zm-.543.676h1.12v.304c.003.284.16.543.408.676a.766.766 0 0 0 .77 0l.303-.176.556.966-.302.176a.772.772 0 0 0-.362.676v.08a.772.772 0 0 0 .362.677l.302.21-.556.965-.302-.175a.766.766 0 0 0-.771 0 .778.778 0 0 0-.409.675v.352h-1.106v-.372a.778.778 0 0 0-.409-.676.766.766 0 0 0-.77 0l-.303.176-.556-.912.302-.176a.772.772 0 0 0 .362-.676v-.04-.04a.772.772 0 0 0-.362-.676l-.302-.176.556-.966.289.155a.766.766 0 0 0 .77 0 .778.778 0 0 0 .41-.676V9.36zm1.562 2.703c0-.271-.108-.531-.3-.722a1.001 1.001 0 0 0-.72-.292 1.01 1.01 0 0 0-.992 1.023 1.01 1.01 0 0 0 1.01 1.004 1.01 1.01 0 0 0 1.002-1.013z"></path></svg><span>Support</span></a></li><li><a href="https://get.oreilly.com/email-signup.html" class="l1 nav-icn " target="&quot;_blank&quot;"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M11.564 2.263l2.172 2.174c.17.168.264.397.264.636V11a.6.6 0 0 1-.6.6h-.6V6.2h-6V2.6a.6.6 0 0 1 .6-.6h3.527c.239 0 .468.095.637.263zM2.6 14a.6.6 0 0 1-.6-.6V6.8a.6.6 0 0 1 .6-.6h1.903a1.2 1.2 0 0 1 .849.352L6.2 7.4H11a.6.6 0 0 1 .6.6v5.4a.6.6 0 0 1-.6.6H2.6zM11 5h1.8L11 3.2V5z"></path></svg><span>Newsletters</span></a></li><li><a href="https://learning.oreilly.com/accounts/logout/" class="l1 nav-icn "><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M2.613 12.63A.607.607 0 0 1 2 12.03V3.602C2 3.269 2.274 3 2.613 3h5.515v1.204H3.226v7.223h4.902v1.203H2.613zM5.677 9.02V6.611h4.903V4.926a.301.301 0 0 1 .19-.274.31.31 0 0 1 .33.063l2.722 2.673a.594.594 0 0 1 0 .849L11.1 10.909a.31.31 0 0 1-.331.063.301.301 0 0 1-.19-.274V9.02H5.677z"></path></svg><span>Sign Out</span></a></li></ul></div></li></ul></nav></header>
+
+
+
+      </div>
+      <div id="container" class="application" style="height: auto;">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Communicating Design: Developing Web Site Documentation for Design and Planning, Second Edition
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#" title="Search in archive" class="js-search-controls search-controls" onclick="window.Appcues.track(&#39;SearchBook_HeronBook&#39;)"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9780131385399/chapter/ch07.html"><div class="js-collections-dropdown collections-dropdown menu-bit-cards" onclick="window.Appcues.track(&#39;AddPlaylist_HeronBook&#39;)"><div data-reactroot="" class="menu-dropdown-wrapper js-menu-dropdown-wrapper align-right"><img class="hidden" src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/ajax-transp.gif" alt="loading spinner"><div class="menu-control"><div class="control "><div class="js-playlists-menu"><button class="js-playlist-icon"><svg class="icon-add-to-playlist-sml" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill-rule="nonzero" fill="#000000"><g transform="translate(-1.000000, 0.000000)"><rect x="5" y="0" width="12" height="2"></rect><title>Playlists</title><path d="M4.5,14 C6.43299662,14 8,12.4329966 8,10.5 C8,8.56700338 6.43299662,7 4.5,7 C2.56700338,7 1,8.56700338 1,10.5 C1,12.4329966 2.56700338,14 4.5,14 Z M2.5,10 L4,10 L4,8.5 L5,8.5 L5,10 L6.5,10 L6.5,11 L5,11 L5,12.5 L4,12.5 L4,11 L2.5,11 L2.5,10 Z"></path><circle cx="2" cy="5" r="1"></circle><circle cx="1.94117647" cy="1" r="1"></circle><rect x="5" y="4" width="12" height="2"></rect><rect x="9" y="8" width="8" height="2"></rect><rect x="9" y="12" width="8" height="2"></rect></g></g></g></svg><div class="js-playlist-addto-label">Add&nbsp;To</div></button></div></div></div></div></div></div></li><li class="js-font-control-panel font-control-activator"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size" onclick="window.Appcues.track(&#39;ChangeFont_HeronBook&#39;)"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#" class="trigger" data-push-state="false" title="Share" aria-label="Share" onclick="window.Appcues.track(&#39;Share_HeronBook&#39;)"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a class="twitter share-button t-twitter" target="_blank" aria-label="Share this section on Twitter" title="Share this section on Twitter" href="https://twitter.com/share?url=https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html&amp;text=Communicating%20Design%3A%20Developing%20Web%20Site%20Documentation%20for%20Design%20and%20Planning%2C%20Second%20Edition&amp;via=OReillyMedia"><span>Twitter</span></a></li><li><a class="facebook share-button t-facebook" target="_blank" aria-label="Share this section on Facebook" title="Share this section on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html"><span>Facebook</span></a></li><li><a class="googleplus share-button t-googleplus" target="_blank" aria-label="Share this secton on Google Plus" title="Share this secton on Google Plus" href="https://plus.google.com/share?url=https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html"><span>Google Plus</span></a></li><li><a class="email share-button t-email" aria-label="Share this section via email" title="Share this section via email" href="mailto:?subject=Safari:%20Chapter%207.%20Wireframes&amp;body=https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html%0D%0Afrom%20Communicating%20Design%3A%20Developing%20Web%20Site%20Documentation%20for%20Design%20and%20Planning%2C%20Second%20Edition%0D%0A"><span>Email</span></a></li></ul></li><!-- endif request.user.is_authenticated -->
+      </ul>
+    </div>
+
+      
+          
+      
+
+    <section role="document">
+        
+        
+
+
+
+
+  <script defer="" src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/djangoMessagesPage.14c7c03e1be9.js.Без названия"></script>
+
+
+        <script src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/48743.js.Без названия"></script>
+<script>
+  var userId = "9c5599ca-6951-4904-81d0-732bb961926b";
+
+  var userObject = {
+    firstName: "Michael",
+    segment: "Trial",
+    admin: "False",
+    profileCreatedOn: "2021-03-21",
+    academic: ""
+  };
+  window.Appcues.identify(userId, userObject);
+  window.Appcues.page();
+
+  setTimeout(function () {
+    window.Appcues.track('ViewingBook_HeronBook')
+  }, 20000);
+</script>
+
+
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch06.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">Chapter 6. Flowcharts</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/pt02.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">Part 2. Design Deliverables</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content" style="transform: none;"><div class="annotator-wrapper"><p><a id="ch07"></a></p>
+<h2>Chapter 7. Wireframes</h2>
+<p><a id="page_166"></a></p>
+<p><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/ch07text01.jpg" alt="image" width="125" height="16" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/ch07text01.jpg"></p>
+<p>A simplified view of what content will appear on each screen of the final product, usually devoid of color, typographical styles, and images. Also known as schematics, blueprints.</p>
+<div class="sidebar1">
+<p><a id="ch07lev1sec1"></a></p>
+<h3>Wireframes At-A-Glance</h3>
+<p><a id="page_167"></a></p>
+<p>Wireframes describe the contents of a web page and their relative priorities. They help the project team envision the functionality and behavior of different screens, or more commonly, different screen templates. Most renditions of wireframes are laid out to look like web pages.</p>
+<p><a id="ch07lev2sec1"></a></p>
+<h4>Purpose—What are wireframes for?</h4>
+<p>Wireframes can do lots of things. Ultimately, they help the project team establish the functionality, behaviors, and relative priorities of content on web pages. But in this way, they can kick-start the design process, help elaborate the functional details, and assess the feasibility of the design concept.</p>
+<p><a id="ch07lev2sec2"></a></p>
+<h4>Audience—Who uses them?</h4>
+<p>In most web design cultures, if wireframes are used, they are touched by everyone on the project team. Developers use them to understand the site’s functionality. Designers use them to drive the UI design process. Business stakeholders use them to validate requirements and ensure the design will meet objectives.</p>
+<p><a id="ch07lev2sec3"></a></p>
+<h4>Scale—How much work are they?</h4>
+<p>Depending on how you use and implement them, wireframes can be a lot of work or very little. A small investment in wireframing standards, stencils, and tools can make even detailed wireframing very efficient. Ultimately, however, the time it takes to make a set of wireframes depends on how you use them in the design process. Using them only to instantiate a design concept can make them a relatively quick diagram to put together. Using them instead to drive detailed conversations about requirements and design can yield much longer timelines.</p>
+<p><a id="ch07lev2sec4"></a></p>
+<h4>Context—Where do they fall in the process?</h4>
+<p>Ideally, wireframe creation begins somewhere between high-level structural work—like flowcharts or site maps—and screen designs.</p>
+<p><a id="ch07lev2sec5"></a></p>
+<h4>Format—What do they look like?</h4>
+<p>Wireframes look like web pages devoid of most visual and graphic styling. Sometimes, you might prepare wireframes of portions of pages, rather than entire pages, in which case the wireframe will look like a slice of a user interface. Wireframes vary in their format from high-fidelity (looking a lot like a web page) to low-fidelity (looking like a bunch of rectangles).</p>
+</div>
+<p><a id="page_168"></a>Wireframes are diagrams based on the simple idea that you can best describe the interactions of screen-based products by removing any aspects of the design incidental to its behavior. A wireframe is, ostensibly, a simplified view of a screen, devoid of any aesthetic beyond the barest minimum and the most neutral. The aim is to focus the team’s attention and encourage conversation about what a screen does, not what it looks like.</p>
+<p>That’s the theory, anyway.</p>
+<p>In reality, wireframes remain one of the most controversial tools on your utility belt. Even within their narrow definition, there is a lot of wiggle room. Designers disagree on the role of wireframes in the design process, their ability to communicate behaviors, and what “barest minimum” aesthetic means. They disagree on how closely the wireframes need to align with actual screen layouts and how much real content a wireframe should show.</p>
+<p>Now, a bit of advice from Dan the Dad, instead of Dan the Designer. Don’t get baited into religious wars about wireframes or any design document. Know what you have available to you. Know the strengths and weaknesses of every tool. Apply the right tool for the job. Do you think Batman stopped carrying around grapple cables once he had a hang glider built into his cape? (Apparently, all my fatherly advice relies on comic book mythology.)</p>
+<p>Anyone who tells you the design process is absolute doesn’t make a living doing it.</p>
+<p><a id="ch07lev1sec2"></a></p>
+<h3>Introducing Wireframes</h3>
+<p>Wireframes represent screens, or portions of them. They are meant to evoke what users will actually see when they use the web site. <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07fig01">Figure 7.1</a> is a wireframe for the Zoo iPhone app.</p>
+<p><a id="ch07fig01"></a></p>
+<p class="caption"><strong>Figure 7.1. A example of a wireframe for an iPhone screen.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig01.jpg" alt="image" width="300" height="448" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig01.jpg"></p>
+<p>How is this different from the final design? <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07tab01">Table 7.1</a> compares and contrasts the actual product with its wireframe.</p>
+<p><a id="ch07tab01"></a></p>
+<p class="caption"><strong>Table 7.1. Comparison of wireframes and final product. Devoid of style, wireframes may seem like a waste of time. If you’re not designing the page itself, what are you designing?</strong></p>
+<p class="image"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0168_01.jpg" alt="image" width="450" height="225" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0168_01.jpg"></p>
+<p>You might see these things as deficiencies, and some web designers think they render wireframes a useless tool.</p>
+<p>If, to you, these deficiencies hamstring the design process you use, you can do things to overcome them. You can incorporate wireframes into a functional prototype, so that when users click on the buttons, something happens. You could use real content wherever possible, or create several versions of a wireframe to show how the design would support different content in different scenarios. You could use components for wireframes that more closely resemble the design standards for your web site, as in <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07fig02">Figure 7.2</a>.</p>
+<p><a id="ch07fig02"></a></p>
+<p class="caption"><strong>Figure 7.2. Two buttons, both alike in dignity. A button in a wireframe can be plain, or it can start to inject elements to make it seem closer to the final design.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig02.jpg" alt="image" width="120" height="273" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig02.jpg"></p>
+<p>But now let’s talk about what wireframes can do:</p>
+<p class="indenthanding">• Provide a fast, easy way to present concepts for interfaces</p>
+<p class="indenthanding">• Focus on underlying logic, behavior, and functionality</p>
+<p class="indenthanding">• Enable rapid iteration on design concepts</p>
+<p>Wireframes are a fast and relatively inexpensive tool for showing interface ideas. I can put together a deck of wireframes pretty quickly. At the very least, I can go from design idea to picture fast enough to keep pace with the creative process.</p>
+<p>Since wireframes remove much of the aesthetic qualities of a design, they encourage the project team to talk about <a id="page_169"></a>how a web site behaves, and everything that comes with that. Wireframes focus the team’s attention on:</p>
+<p class="indenthanding">• The kinds of information displayed</p>
+<p class="indenthanding">• The range of functions available</p>
+<p class="indenthanding">• The relative priorities of the information and functions</p>
+<p class="indenthanding">• The rules for displaying certain kinds of information</p>
+<p class="indenthanding">• The effect of different scenarios on the display</p>
+<div class="sidebar">
+<p><a id="ch07sb01"></a></p>
+<h3><em>About the Examples: The Mobile Zoo</em></h3>
+<p>My family has become intimately familiar with The National Zoo in Washington, DC. Just a few stops away on the Metro and free to enter, it is an easy, inexpensive trip for us that doesn’t have to soak up a whole day. It quickly became a favorite of my son’s, and there are some months where we visit more than once.</p>
+<p>The Zoo’s newest exhibit is Asia Trail, which includes these adorable bears called sloth bears. In one visit to the Zoo last year, I recall standing in front of the sloth bear enclosure, pulling out my iPhone with the urge to learn more about them. Reaching for my phone has become a habit, and while I could have looked up sloth bear on Wikipedia, I knew I wanted more:</p>
+<p class="indenthanding">• The phone should know where I am in the zoo, and bring up the relevant exhibit right away.</p>
+<p class="indenthanding">• The information about the exhibit should tell me about these exact bears.</p>
+<p class="indenthanding">• The phone should tell me where I can go next or where (as is always the need) the nearest bathroom is.</p>
+<p>The National Zoo iPhone app was born: in my head, anyway. The examples in this chapter have screens from this imaginary iPhone application. (Wireframing challenges remain consistent regardless of the size of the screen.) To demonstrate web page wireframes, however, I’ve also mocked up some concepts for a companion application on nationalzoo.si.edu.</p>
+</div>
+<p>Wireframes, despite their power, thrive only when supported by additional information. They tell a piece of a larger story, and must be incorporated into some vehicle for elaborating that tale. Like any thing representing something else, wireframes on their own leave room for interpretation. Combining them, the pictures, with words, closes this gap. This chapter focuses on the diagram itself, but toward the end of the chapter you’ll see how to combine words with pictures.</p>
+<p><a id="ch07lev2sec6"></a></p>
+<h4>Challenges</h4>
+<p>To say that wireframes are the most controversial diagram in this book would be implying that the other diagrams are even remotely controversial. Wireframes are in a universe of controversy all their own.</p>
+<p>The debate around the utility, value, and function of wireframes is healthy: It forces the design community to think deeply about the diagram and its role in the design process. Over the last couple of years, the case against wireframes has yielded two main criticisms. Unfortunately, these things are polar opposites, creating a tension that makes it difficult to determine the best wireframing approach.</p>
+<p><a id="ch07lev3sec1"></a></p>
+<h5>Realism</h5>
+<p>Because much is sucked out of wireframes to keep them focused on what’s important for their core purpose, the wireframes lack realism. Typically rendered in a vector-based drawing program (such as Visio, Illustrator, InDesign, or OmniGraffle), they don’t reflect web-based layouts. A vector drawing can’t emulate layout in a browser.</p>
+<div class="note1">
+<p><a id="ch01sb02"></a></p>
+<p><strong>Front-End Technology</strong></p>
+<p>The HTML, CSS, and scripting that renders the user interface in a browser.</p>
+</div>
+<p>Wireframes, often flat drawings, don’t effectively demonstrate interactivity. The web’s modern front-end technologies allow a greater depth of interactivity in the browser itself, and a flat drawing can’t show this. Carousels, in-page tabs, accordions, expanding panels, hovers, and other <a id="page_170"></a>devices are the mainstay of modern web UI design. (Wow, I feel old. “Kids, back when I was a web designer, we didn’t have any of your fancy JavaScript tricks. AJAX? Luxury!”)</p>
+<p>Because wireframes usually describe templates, they need to demonstrate what real content will look like on the page. Logistical challenges aside (maybe the content hasn’t been written) wireframes are mediocre at showing actual content.</p>
+<p><a id="ch07lev3sec2"></a></p>
+<h5>Burden</h5>
+<p>To overcome wireframes’ deficits, some designers try to push them closer to more realistic web pages. Wireframes at their heart answer two questions:</p>
+<p class="indenthanding">• What types of information go on the page?</p>
+<p class="indenthanding">• What are their relative priorities?</p>
+<p>Presented with complementary words, wireframes can answer other questions about behaviors and business rules and states, but (in my mind) that’s really a part of “what goes on the page.”</p>
+<p>But because wireframes look like real pages, we sometimes want them to answer other questions, like:</p>
+<p class="indenthanding">• What does real content look like on this screen?</p>
+<p class="indenthanding">• Where does the “fold” cut off this screen?</p>
+<p class="indenthanding">• What are the character counts for each field?</p>
+<p class="indenthanding">• How many pixels do we have for this image?</p>
+<p class="indenthanding">• Can we get these two things to line up?</p>
+<p class="indenthanding">• Can you round those corners?</p>
+<p>Attempts to answer questions like these inside the wireframe will distract from the core purpose and misapprehend what a wireframe can do.</p>
+<p>The real challenge of wireframes is knowing where their capabilities begin and end, and how much they can be burdened with addressing these concerns. This is not limited to the questions you just saw. As web design becomes more sophisticated, we will be confronted with new questions. Wireframes will not become obsolete (after all, a hand-drawn sketch is a wireframe), but we designers will need to assess whether they are capable of answering new questions.</p>
+<p><a id="ch07lev1sec3"></a></p>
+<h3>Anatomy of a Wireframe</h3>
+<p>By understanding a wireframe outside the context of a laid-out web page, the central function of the diagram emerges: Wireframes describe the content of a web page and its relative priorities. In this case, “content” refers to anything users might see or interact with on the page.</p>
+<p>These days, most wireframes represent templates, a framework for displaying similar kinds of information. When you design the product page of a web site, you’re not designing a page for each and every product in the catalog. You’re designing one template that might be used by all the products, or a reasonable percentage of the catalog.</p>
+<p>The Zoo iPhone app has one template dedicated to exhibits, one for events, and another for animals. The Zoo has dozens of exhibits and events, and hundreds of animals, so these templates are reused to display this information.</p>
+<p>Throughout this chapter, I’m assuming you’re designing templates. I’m assuming that your pages are containers meant to hold content of a particular type. And this is where the anatomy of a wireframe begins: simple descriptions of what goes on the page.</p>
+<p><a id="ch07tab02"></a></p>
+<p class="caption"><strong>Table 7.2. Three layers, increasing in complexity and challenges.</strong></p>
+<p class="image"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0170_01.jpg" alt="image" width="450" height="155" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0170_01.jpg"></p>
+<p><a id="ch07lev2sec7"></a></p>
+<h4>Layer 1: Rectangles, Just Rectangles</h4>
+<p><a id="page_171"></a></p>
+<p>Wireframes start with rectangles, carving out areas of the page or screen to dedicate them to different kinds of content. The most basic wireframe is a rectangle (the page) chopped up into smaller rectangles.</p>
+<p><a id="ch07lev3sec3"></a></p>
+<h5>Content areas</h5>
+<p>A content area is a region of a page with a single, discrete purpose. You should be able to state the function of a content area in a sentence, maybe two, but no more.</p>
+<p class="indenthanding">• This area of the page lists recent headlines.</p>
+<p class="indenthanding">• This area of the page is where users provide their contact information.</p>
+<p class="indenthanding">• This area of the page identifies the purpose of the page, letting users know where they are on the site.</p>
+<p class="indenthanding">• This area of the page allows users to see what else is on the web site.</p>
+<p>It’s rare for a web page to contain only one content area. So the basic wireframe diagram will consist of several connected rectangles. Not all rectangles are created equal. There are several types of content areas you’ll work with:</p>
+<p class="indenthanding">• <strong>Structural areas:</strong> Even though your site may use multiple templates, there will be some common elements across templates. On many sites, the header and footer remain consistent, regardless of what template you’re looking at. Areas common across all templates generally establish an overall structure for the site.</p>
+<p class="indenthanding">• <strong>Reusable or shared areas:</strong> Even if a content area isn’t repeated on every template, you may have some content areas that you want to use on more than one template. The exact content may vary from page to page, but the content area structures the information in the same way. A list of headlines is a good example, or a carousel at the top of some pages.</p>
+<p class="indenthanding">• <strong>Unique areas:</strong> Not every template will simply mix and match shared content areas—that would make for a boring site. Individual templates have a distinct purpose, and must display unique content to serve that purpose. In our Zoo iPhone app, the animal template shows a large photograph and “animal stats,” content areas not used elsewhere in the app.</p>
+<p>Rectangles should be labeled, to indicate their purpose. Structural areas will have unique names, like “global navigation” or “header.” You can’t have multiple “header” areas on a single page. Likewise, when you see “header” on different templates, you imply that the area appears the same on both, with perhaps only minor variations.</p>
+<p>Reusable areas also have names to describe their purpose, but these might be repeated (a list of headlines may be used multiple times on a single template, for example) and further qualified to clarify the exact content appearing in that area.</p>
+<p>The Zoo’s web site has (in my imagination) a companion application to the iPhone app. On the web, you can download different itineraries to your phone. The site provides lists of itineraries that you can dig into and choose from. The starting page for this part of the web site actually has two lists of itineraries: one that displays the newest ones and one that displays the most popular. If I call that shared area “itinerary list,” I can create a wireframe like the one in <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07fig03">Figure 7.3</a>.</p>
+<p><a id="ch07fig03"></a></p>
+<p class="caption"><strong>Figure 7.3. A simple wireframe shows page regions, identifying them with labels. In this case, the “itinerary list” is an area that’s used twice, but to show two different sets of itineraries.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig03.jpg" alt="image" width="300" height="324" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig03.jpg"></p>
+<p><a id="ch07lev3sec4"></a></p>
+<h5>Priorities and distinctions</h5>
+<p>Besides showing the content areas on a page, a wireframe has another job—to show the relative priorities of those content areas. One way to understand this is to think further down the design process, as the team is responsible for transforming wireframes into real screen layouts. The most important direction a designer needs in thinking about <a id="page_172"></a>the layout is “What’s the most important information on the page?”</p>
+<p>When designers create wireframes that evoke a particular layout for the page, they are really trying to communicate priority.</p>
+<p>The simplest way to show this is to list the content areas in order, with the most important one first. You might not actually deliver wireframes to your client that are just lists of content areas, but such lists are useful exercises for planning wireframes.</p>
+<p>You might be asking yourself, “Should I put the header first?” The header is at the top of the page, but is it the most important thing on the page? I’ve done it both ways, listing the header lower in the page priorities to encourage the designers to truly think of the first item in the list as the main focal point for the page. I’ve also listed the header first to remind them that they have structural areas that are immutable.</p>
+<p>On some projects, I use a format called Page Description Diagrams. This approach shows a visual ranking of content areas, but isn’t quite as absolute as a single list.</p>
+<p>Another way to address this is to define page regions—common areas of the page. <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07fig04">Figure 7.4</a> shows page regions for the Zoo’s itinerary app. With those regions defined, I accomplish two things:</p>
+<p><a id="ch07fig04"></a></p>
+<p class="caption"><strong>Figure 7.4. A page description diagram groups content areas into high, medium, and low importance. With such an approach, you can avoid having to put together an absolute list of most important to least important.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig04.jpg" alt="image" width="500" height="291" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig04.jpg"></p>
+<p class="indenthanding">• I communicate to the design team that the basic structure of the page has four basic areas: a header to identify the page, a main body to hold the essential content, a sidebar to provide supporting content, and a footer to anchor the page. Though described in a graphic way, they’re really conceptual.</p>
+<p class="indenthanding">• I can prioritize content in each of these areas. Thus, the itinerary picker is the most important content area in the body region.</p>
+<p>There are other pieces of information you might want to communicate about the content areas:</p>
+<p class="indenthanding">• <strong>Their function:</strong> Navigation, list, content, promotion, and so on</p>
+<p class="indenthanding">• <strong>How they relate to web site operations:</strong> Manual versus automatic content management, where the content is sourced from</p>
+<p class="indenthanding">• <strong>Any issues related to project logistics:</strong> For example, distinguishing content areas based on the phase in the project in which they’ll be designed</p>
+<p>At this level, showing only content areas without much detail, there’s really only one way to distinguish them visually: through color. Assign each type of content area <a id="page_173"></a>a different color. You can use these designations throughout the document to elaborate on the structure and function of the content areas. If purple always means navigation, it means readers of the documentation know that whenever they see purple, the document is describing navigation.</p>
+<p><a id="ch07lev3sec5"></a></p>
+<h5>Screen identifier</h5>
+<p>Before leaving the barest essentials of wireframes, I’d like to talk about how to label the screen itself. Every template should have a name (because it represents a unique configuration of content areas). I like naming them based on the primary purpose of the page or the primary type of content on the page.</p>
+<p>A sophisticated site may require that screens have further identification:</p>
+<p class="indenthanding">• <strong>Variations:</strong> A single function (like displaying product or animal information) may actually require multiple templates. The iPhone app, for example, may use two different templates for displaying exhibits—indoor exhibits and outdoor ones. The exhibit template has two variations, which may amount to some relatively subtle differences, but enough to warrant the distinction.</p>
+<p class="indenthanding">• <strong>Codes:</strong> For sites with more than a dozen screens, the design team will benefit from attaching codes to screens. These codes provide a convenient shorthand for referring to the screens, and provide a built-in approach for identifying variations.</p>
+<p><a id="ch07lev2sec8"></a></p>
+<h4>Layer 2: Rectangles with Form</h4>
+<p>If you think you can’t get away with a straight list of labeled rectangles for your wireframes, the second layer of elements forms up the page into something more recognizable. Tread into this layer with caution: making the structure of a page look like an actual page comes with risks.</p>
+<p><a id="ch07lev3sec6"></a></p>
+<h5>Layout</h5>
+<p>When you give the rectangles of a wireframe a layout to resemble a web page, the wireframe communicates more than just relative priority. The wireframe evokes what a web page could look like. The project team, looking at a wireframe with layout, still needs to make the leap from vector drawing to browser rendering.</p>
+<p>Laying out a page means considering the height and width of the rectangles, because priority is communicated not just by placement on the page, but how much of the page the content area occupies.</p>
+<p><a id="ch07fig05"></a></p>
+<p class="caption"><strong>Figure 7.5. Using the dimensions of a rectangle to communicate priority. The bigger the content area, the more important it is, even if it is not very high up on the page.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig05.jpg" alt="image" width="400" height="259" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig05.jpg"></p>
+<p><a id="page_174"></a>A layout gives the project team better insight into your vision for the relative priorities of information on the page. It establishes a starting point for the design team to explore.</p>
+<p>Don’t put too much stock in a wireframe layout, though. Designing for the web means accounting for numerous other pressures (browser rendering issues, HTML standards, content of various lengths and formats, accessibility compliance, graceful degradation on the front end, and the list goes on). What might look good in the wireframe may not translate well to the web.</p>
+<p><a id="ch07lev3sec7"></a></p>
+<h5>Content for labeling, structure, and instruction</h5>
+<p>Some of the words and pictures on a screen are not for consumption. They are, instead, wayfinding devices, helping users understand where they are on the site. Beyond navigation, they set expectations about the experience and provide instruction on how to use particular features.</p>
+<p>In some instances a wayfinding label may vary depending on the kind of content displayed in the content area. For example, itinerary list is a content area used throughout the web site, but it comes with some business rules to define which itineraries are listed. The header for this content area can’t simply say “Itinerary List” everywhere it appears. Instead, the structural content is variable depending on the context.</p>
+<div class="sidebar">
+<p><a id="ch07sb03"></a></p>
+<h3><em>Exception: Working with Design Systems</em></h3>
+<p>Part of our work at EightShapes is giving design teams a set of wireframing tools that emulates their design system. By “design system” I mean the existing set of standard components they use to compose web pages. Such a system is typical of large, well-established web sites. Because these components have withstood the test of time and are flexible enough to be used in a variety of situations, the design teams can translate them into relatively accurate wireframe renderings. These wireframing components may be more accurate from a layout perspective because they’re derived from existing, already-rendered HTML components. Wireframes created from scratch (new additions to the design system, for example) will not have that luxury.</p>
+</div>
+<p>You can use color to illustrate the purpose of specific kinds of text, specifically error messaging. Typically, this information is highlighted with red, an effective color for calling the user’s attention to something important. (Red, certainly in Western culture, has come to evoke “danger.”) Note that this color isn’t meant to be ported directly into the final designs—you’re not making an aesthetic decision. The color is merely meant to convey the function of the text.</p>
+<p><a id="ch07lev3sec8"></a></p>
+<h5>Sample content</h5>
+<p>Incorporating real content into a wireframe is feasible, just so long as you do it in a way to support the purpose of the wireframe. Dropping a 1,000-word essay into a wireframe to show what the page will look like with a long article does the wireframe a disservice because (a) it assumes the <a id="page_175"></a>wireframe does a good job of approximating the layout of the page, and (b) it undermines the purpose of the wireframe. (Dropping a 1,000-word essay in an HTML template, on the other hand, makes much more sense.)</p>
+<p>This isn’t to say that wireframes should be devoid of real content. In fact, the more real, the better. For most people on the project team, assessing the efficacy of a screen depends on their seeing real content. For example, people may be able to make the cognitive leap from seeing a page filled with “Title Goes Here” to the kinds of content that will appear there. On the other hand, seeing real content eliminates the need for them to imagine the experience.</p>
+<p>If you’re short of real content, you have several other options, described in <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07tab03">Table 7.3</a>.</p>
+<p><a id="ch07tab03"></a></p>
+<p class="caption"><strong>Table 7.3. Representing data in wireframes can be challenging, especially with so many options available. Also, this is the only content in this chapter I took from the first edition whole-hog.</strong></p>
+<p class="image"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0175_01.jpg" alt="image" width="550" height="400" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0175_01.jpg"></p>
+<p><a id="page_176"></a>Once you start incorporating sample content into the wireframes, you can lose the borders around the content areas. With content, real or otherwise, the areas of the page become defined, even without a distinct rectangle shape.</p>
+<div class="note1">
+<p><a id="ch07sb04"></a></p>
+<p><strong>States</strong></p>
+<p>The display variations of a particular interface element based on different conditions.</p>
+</div>
+<p>There’s one other way to represent content in wireframes—I give you the squiggly line (<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07fig06">Figure 7.6</a>).</p>
+<p><a id="ch07fig06"></a></p>
+<p class="caption"><strong>Figure 7.6. Representing blocks of content using squiggly lines inside wireframes. Depending on the scale of the wireframe, they can be used for most content so long as they’re sufficiently distinguished from other lines in the drawing.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig06.jpg" alt="image" width="500" height="252" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig06.jpg"></p>
+<p>Squiggly lines are good for rough sketches. The weight of the line can give a good sense of the weight of the content. Squiggly lines, however, provide the least amount of context or direction. Unless accompanied by detailed annotations, the lines will be completely meaningless.</p>
+<p><a id="ch07fig07"></a></p>
+<p class="caption"><strong>Figure 7.7. Simple, standard form elements used to communicate interactions give the design team the idea behind the interaction and permission to explore other interface options.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig07.jpg" alt="image" width="350" height="103" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig07.jpg"></p>
+<p><a id="ch07lev3sec9"></a></p>
+<h5>Functional elements</h5>
+<p>Wireframes can incorporate another kind of “content,” interactive elements like form widgets. Showing these interface devices (<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07fig08">Figure 7.8</a>) evokes the range of behaviors exhibited by the screen, and establishes the range of inputs needed from users.</p>
+<p><a id="ch07fig08"></a></p>
+<p class="caption"><strong>Figure 7.8. Simple, wireframe-ready form elements establish the interaction and remain devoid of any specific aesthetic direction.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig08.jpg" alt="image" width="150" height="328" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig08.jpg"></p>
+<p>Like content, functional elements have varying levels of fidelity, and a reasonable starting point is the simplest rendition that evokes the widget.</p>
+<p>While remaining aesthetically neutral, simple form elements also communicate the nature of the interaction, leaving open the possibility of other ways to accomplish the same function. For example, <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07fig07">Figure 7.7</a> shows a version of the itinerary screen with a drop-down menu instead of a slider for the group size selector. Using a drop-down menu in the wireframe would have been legitimate, especially if I didn’t have any particular idea on how to accomplish this interaction. Acknowledging the essence of the function (user must select one from a handful) allows the rest of the design team to weigh in on interface widgets that offer other advantages. Interactions go beyond form elements. Modern web design incorporates elaborate interface elements, some of which have not yet standardized on a particular format. Carousels are a good example of an emerging interface element that has yet to land on a particular approach. <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07tab04">Table 7.4</a> has some guidelines for wireframing new elements like these.</p>
+<p><a id="ch07tab04"></a></p>
+<p class="caption"><strong>Table 7.4. Representing functional elements, for example a carousel.</strong></p>
+<p class="image"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0176_01.jpg" alt="image" width="446" height="219" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0176_01.jpg"></p>
+<p><a id="page_177"></a>Functional elements usually have more than one state. A link, for example, can be visited or unvisited. It can also have a hover state, what it looks like when the user holds the cursor over it. Tabs can be active, inactive, or unavailable. When communicating state:</p>
+<p class="indenthanding">• Make sure the state accurately reflects the scenario of the wireframe. Showing an active tab with incorrect content, or an unavailable tab that should always be available, will just confuse the project team.</p>
+<p class="indenthanding">• Don’t use the wireframe of a screen to show all the various states of an interface element. Prepare separate, smaller wireframes for each possible state of an interface element like a tab set.</p>
+<p>Like using red with error messages, there is a functional element that benefits from a little color in wireframes. Color links and other clickable items blue. Blue, for better or worse, is long-established as the color of hyperlinks—clickable things. Using blue for clickability helps you to focus on those elements when walking through a wireframe. You can overdo it, if there are a lot of elements users can interact with. In these instances, I use blue for things that trigger primary functions, or things that would not otherwise look clickable.</p>
+<p><a id="ch07lev2sec9"></a></p>
+<h4>Layer 3: Beyond Rectangles</h4>
+<p>The elements in this layer polish your wireframe, but they are by no means necessary to the essential purpose of the wireframe. They may help align your screen concepts with other aspects of the design project, but they can also interfere with other activities, so apply them with caution. While they lend a certain polish to the wireframe, they also may distract from what you’re trying to communicate with the diagram.</p>
+<p><a id="ch07lev3sec10"></a></p>
+<h5>Grid</h5>
+<p>Grids establish a visual framework for aligning the various elements on the page. It is a concept long-entrenched in graphic design that has, due to CSS, become more feasible and more accepted among web designers.</p>
+<p>The grid’s role in wireframing is still emergent: Should wireframes use the exact grid used for laying out web pages? If the wireframe doesn’t replicate the HTML/CSS grid exactly, should it evoke a similar layout? Should the grid be functional in nature (such as a “body” column and a “navigation” column), or should it be based on dividing up the page into equal regions (for example, eight columns)?</p>
+<p>In graphic design, grids establish a proportionality between the elements that the human eye finds pleasing. It aligns elements on the page, and creates opportunities for visual tension by breaking that alignment.</p>
+<p>Careful alignment of content areas in a wireframe cuts both ways: The wireframe itself is more polished and may do a better job in communicating priorities, but it also evokes an accurate web page rendition, which may be risky depending on the project team.</p>
+<p>There is one other consideration: Grids make it easier to design. If your focus is less on graphic design and more on structure and content, a grid provides a useful framework for building wireframes. Like any concept from graphic design (contrast, white space, typography, and so on), grids in the hands of an untrained designer (present company included) can be applied irresponsibly.</p>
+<p>For the web page examples in this chapter, I followed a 12-column grid, using a template downloaded from the web. Whether the final web pages follow this exact layout or not, the grid made it easy to create a polished, consistent wireframe.</p>
+<p><a id="ch07fig09"></a></p>
+<p class="caption"><strong>Figure 7.9. A 12-column grid based on the 960 framework provided a convenient starting point for laying out the examples in this chapter. Even if the final design system doesn’t use the 960 grid, the 12-column layout is easily translatable to other pixel-widths.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig09.jpg" alt="image" width="500" height="624" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig09.jpg"></p>
+<div class="note">
+<p><a id="ch07note01"></a></p>
+<h3>Tip: The 960 grid</h3>
+<p class="notepara">Far be it for the web to standardize on anything, but one emerging best practice is the 960 grid. This pattern, which is—you guessed it—960 pixels wide, establishes a common starting point for a grid. Conveniently divisible, it also offers flexibility for web designers looking for a variety of column configurations. Visit <a href="http://960.gs/">http://960.gs</a> for more information about the 960 grid and to download templates you can use in a variety of drawing applications.</p>
+</div>
+<p><a id="ch07lev3sec11"></a></p>
+<h5>Prioritization styles</h5>
+<p><a id="page_178"></a>Using placement on the page as the only way to communicate hierarchy, wireframes can become extremely dense. While the simplified aesthetic steers clear of making any decisions about style, it can backfire, making the page seem weightier than it really is. Typographic styles, grayscale, and moderated line weight can work in concert to explain the hierarchy of information on the page without committing you to a particular style.</p>
+<p><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07tab05">Table 7.5</a> explains some of the prioritization styles I used in the sample wireframe from <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07fig13">Figure 7.13</a>.</p>
+<p><a id="ch07tab05"></a></p>
+<p class="caption"><strong>Table 7.5. Function and priority conveyed through style help prevent the wireframe from becoming a tangle of lines and visual noise.</strong></p>
+<p class="image"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0178_01.jpg" alt="image" width="446" height="579" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0178_01.jpg"></p>
+<p><a id="page_179"></a>Some style in wireframes can emphasize the priorities and function, but be sure to ask yourself about the rationale for moving beyond simple rectangles. For example, I’m not sure why I rounded the corners of the background for the Custom Itinerary section.</p>
+<p><a id="ch07lev3sec12"></a></p>
+<h5>Aesthetic elements</h5>
+<p>Aesthetic is like weather: It’s always there, you just notice it more sometimes. The paucity of color, typography, imagery, and style in a wireframe does not mean it is devoid of aesthetic. Creating a wireframe means (in most cases) using the simplest, most universal aesthetic to avoid making any concrete statement about style. Minimizing aesthetics is a common practice in wireframing because it allows the project team to focus conversations on behavior, structure, and priority.</p>
+<p>Some second-layer wireframe elements (structural content, functional elements) discussed the use of color. It’s important to distinguish these uses of color. A wireframe may rely on color to help communicate the function or purpose of some element.</p>
+<p>The kind of color we’re talking about in the third layer is the color that’s specifically attached to the brand. The National Zoo uses a forest green as the central color in its palette, and surrounds that green with some other earthy tones. The question we’re asking here is whether to inject the wireframe with colors from that palette.</p>
+<p>Incorporating a bit of style into a wireframe comes with risks (will the choice of type or graphic distract from the purpose of the wireframe?), but it can lend some authenticity.</p>
+<p><a id="ch07lev1sec4"></a></p>
+<h3>Creating Wireframes</h3>
+<p>Even with the basics, there is still a wide range of what wireframes might look like. How do you pull all these elements together? Start with some basic decisions to help focus your efforts.</p>
+<p><a id="ch07lev2sec10"></a></p>
+<h4>Basic Decisions</h4>
+<p>Usually, this section starts with the purpose, thinking about what you want to accomplish. In this case, however, I want to first explain the range of <strong>content</strong> decisions you can make before considering purpose and audience.</p>
+<p><a id="ch07lev3sec13"></a></p>
+<h5>Scale: Pages or content areas</h5>
+<p>In describing the anatomy of a wireframe, I assumed that every wireframe reflected a complete page. This isn’t always true. Some wireframes represent portions of pages. That is, you can create a representation of a single content area (see <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07fig10">Figure 7.10</a>).</p>
+<p><a id="ch07fig10"></a></p>
+<p class="caption"><strong>Figure 7.10. The scale of the wireframe refers to whether you’re showing the whole screen or a portion of the screen. A smaller scale affords a greater level of detail about each function and an opportunity to explore all the variations of a component in the context of the component itself. On the other hand, the component may lose context being described outside its native environs: the web page.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig10.jpg" alt="image" width="500" height="386" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig10.jpg"></p>
+<p><a id="page_180"></a>Designing the individual page components is useful if you intend to use the components again and again throughout the site (and why wouldn’t you). It ensures consistency, and its efficiency trickles down to other parts of the design and implementation processes.</p>
+<div class="note">
+<p><a id="ch07note02"></a></p>
+<h3>Tip: Modular Web Design</h3>
+<p class="notepara">Nathan Curtis’s book <em>Modular Web Design</em> (New Riders, 2009) is the best source on taking a Lego-brick approach to designing web sites. Curtis explains not only how to treat web design in a modular way, but also the operational aspects of developing a component library for sophisticated design systems.</p>
+</div>
+<p>Of course, this approach requires that people looking at the component drawings can understand them outside the context of a screen. It can be challenging for the project team to evaluate the quality of a design if they’re reviewing it piecemeal. Your design process may ultimately entail moving back and forth between designing screens and components.</p>
+<p>From a documentation perspective, wireframes at either level (screen or component) face the same challenges and draw from the same techniques. Where the deliverable will differ is in the telling of the story: with wireframes of individual areas, the deliverable needs to state clearly how the components fit together, and how they might be incorporated into different screens.</p>
+<p>When documenting a partial page, you should use a visual cue (<a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07fig11">Figure 7.11</a>) to help people understand that they’re looking at an excerpt.</p>
+<p><a id="ch07fig11"></a></p>
+<p class="caption"><strong>Figure 7.11. Borders around partial pages should include a jagged edge to indicate that there’s more to the screen than shown.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig11.jpg" alt="image" width="500" height="252" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig11.jpg"></p>
+<p><a id="ch07lev3sec14"></a></p>
+<h5>Fidelity: How close to reality</h5>
+<p>As careful as the Anatomy section was in treating wireframes as virtually devoid of any style, some designers prefer wireframes that come close to a final design. This is known as fidelity: how faithful the representation is to the final product. A high-fidelity (hi-fi) wireframe looks more like the final version of the design, incorporating realistic graphic design elements. Low-fidelity (lo-fi) wireframes stick to the rectangles and labels.</p>
+<p>A higher-fidelity version of the first wireframe in this chapter may introduce some rounded corners, some little icons, and some gradients, to evoke a genuine iPhone interface. <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07fig12">Figure 7.12</a> shows what this might look like.</p>
+<p><a id="ch07fig12"></a></p>
+<p class="caption"><strong>Figure 7.12. High-fidelity wireframes introduce some aesthetic elements. In this case, making the basic screen from the National Zoo app look more like a native iPhone user interface can help facilitate buy-in. With a gradient and rounded corner here and a clipart icon there, you have something higher fidelity.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig12.jpg" alt="image" width="500" height="356" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig12.jpg"></p>
+<p>Styling wireframe components can be time-consuming and depends heavily on the diagramming program you use. Some applications (such as Adobe Illustrator) give you <a id="page_181"></a>lots of control over the style of the drawing objects. Others (OmniGraffle, MS Visio) give you fewer stylistic options.</p>
+<p>But the decision to emulate the final design rests on other factors beyond the technical:</p>
+<p class="indenthanding">• <strong>Purpose:</strong> How does creating a realistic-looking web page contribute to the purpose? Some purposes (kicking around a new UI concept, for example) don’t require such a close adherence to a final web design. Others (using wireframes for usability testing) would benefit from a more realistic rendering. The most typical usage of wireframes (documenting behaviors) likely won’t need much in the way of style.</p>
+<p class="indenthanding">• <strong>Consumers:</strong> Who is the ultimate audience for wireframes, and how will they benefit from high- or low-fidelity wireframes? Lo-fi wireframes may seem inaccessible to inexperienced project participants. The flip side is that wireframes with too much style thrown in set expectations about the final design, a position the team might not be ready to take.</p>
+<p class="indenthanding">• <strong>Project context:</strong> Fidelity depends a lot on the nature of the project. Designing a brand new product within a large project team may benefit from the deliberate approach of a lo-fi wireframes: emphasizing a focus on functionality before getting to visual design. When repurposing existing components within a well-baked design system, there may be no reason not to use hi-fi wireframes.</p>
+<p><a id="ch07lev3sec15"></a></p>
+<h5>Abstraction: How specific is the content</h5>
+<p>The content in the wireframe in <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07fig11">Figure 7.11</a> has low abstraction: It uses realistic content, if not entirely accurate content. The content is specific and concrete. Readers of the diagram may ultimately struggle to understand how the template is generalized to other content, but the purpose of the page is made clear through the content samples.</p>
+<p><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07fig13">Figure 7.13</a> shows the same wireframe but more abstracted: The structural content remains intact, but much of the content is replaced with text that is less specific and more representational.</p>
+<p><a id="ch07fig13"></a></p>
+<p class="caption"><strong>Figure 7.13. Abstracted content in a wireframe means swapping out concrete information with text that’s more representational. Note the use of three different forms of sample content: labels (with brackets), symbolic (representing the time, number of reviews, and the dates), and Latin text (for the itinerary descriptions).</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig13.jpg" alt="image" width="500" height="417" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig13.jpg"></p>
+<p>A more abstract wireframe can be difficult to visualize, but it does a better job in describing the functionality, behaviors, and states. It gives you a clear picture of which content on the screen is dynamic and which text is fixed. Abstracted content in wireframes is appropriate for functional specifications, when you need to explain a range of behaviors. More concrete content is better earlier in the design process, when you’re trying to help the project team visualize the interactions.</p>
+<p><a id="ch07fig14"></a></p>
+<p class="caption"><strong>Figure 7.14. Abstracting wireframes can go in two directions. Abstracting the concept means taking out any sense of internal structure, but being relatively specific about the topic or focus of the content found there (left side of scale). Stripping out any real content but preserving the structure gives you a sense of the kinds of information (title, image, etc.) but no clear focus.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig14.jpg" alt="image" width="500" height="218" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig14.jpg"></p>
+<p><a id="ch07lev3sec16"></a></p>
+<h5>Depth: How many variations</h5>
+<p><a id="page_182"></a>If the surface of wireframing represents the barest minimum you can do to communicate the user experience, digging below it means elaborating to describe every last detail. The surface describes what happens in a typical scenario, and digging deeper reveals details about additional scenarios. The surface gives me the primary screens, and the deeper I go the more information I get about:</p>
+<p class="indenthanding">• <strong>Secondary screens:</strong> Screens that are not essential for understanding the user experience (a login, for example) but which need to be defined or the product will fail.</p>
+<p class="indenthanding">• <strong>Variations at the page level:</strong> How the pages might change in different circumstances. For a search results page, variations might reflect the quantity of results returned. Does the page look different with 1,000, 100, 10, or 1 result?</p>
+<p class="indenthanding">• <strong>Variations at the component level:</strong> How a portion of the screen might change in different scenarios. A global navigation element might look different when users are or are not logged in. A form element might change when users commit an error.</p>
+<p><a id="ch07lev3sec17"></a></p>
+<h5>Purpose</h5>
+<p>The four dimensions (scale, fidelity, abstraction, depth) give you a sense of the range of decisions you can make about the wireframes themselves. Unlike other diagrams, wireframes have a pretty concrete range. These four dimensions give us a lot to play with, and it’s important to understand them before talking about the inputs into those decisions.</p>
+<p>The main input into how to fine-tune your wireframes along these dimensions is purpose: What are you using the wireframes for? I usually come up with one of two answers:</p>
+<p class="indenthanding">• <strong>Blueprints:</strong> Document detailed functional specifications. The wireframes are meant to give developers every last detail they need to build the web site. The diagrams work hand-in-hand with annotations to elaborate on business logic, editorial guidelines, state descriptions, and behaviors.</p>
+<p class="indenthanding">• <strong>Concept:</strong> Capture an overall design idea. You will use the wireframes to solicit feedback on an overall approach—either on technical feasibility or whether requirements are adequately addressed—or merely to see if it’s a good idea.</p>
+<p>There is another purpose for which I might use wireframes: testing. My experience, for better or worse, is that I create a set of wireframes for blueprints or concept, and then the project team later decides to do some testing. We gravitate toward using the wireframes, a decision we ultimately regret because they weren’t created for testing purposes, so they need to be edited heavily for that reason, adding realistic content, creating separate screens to address each scenario in the test, and linking all the screens together.</p>
+<p><a id="ch07lev3sec18"></a></p>
+<h5>Audience</h5>
+<p><a id="page_183"></a></p>
+<p>To be clear, when we talk about the audience for wireframes, we’re talking about the people who need to use the diagrams, not (usually) the users of the web site you’re designing.</p>
+<p>Assessing the target audience for the wireframes means more than just understanding their roles on the project: Different people may be more or less comfortable with the inherently abstract nature of wireframes.</p>
+<p><a id="ch07lev2sec11"></a></p>
+<h4>Tips for Wicked Wireframes</h4>
+<p>Effective wireframing depends on a little careful planning and preparation. You could write down a few lists or spend a few hours sketching ideas, but either way, don’t start inside your diagramming application. Find a quiet spot with a pen and notebook and consider these tips.</p>
+<p><a id="ch07lev3sec19"></a></p>
+<h5>Sketch first</h5>
+<p>It may seem obvious to start with a pen and paper, but a lot of web designers I know like to go right into a drawing application. Sketching out some initial ideas can help set direction and give you a starting point before firing up the application.</p>
+<p>How much should you sketch? Different people do this differently, and as the technique goes through a bit of a renaissance in the web design business we get to see lots of different techniques. Here’s what works for me:</p>
+<p><strong>For each iteration, I sketch as little as possible, but I do as many iterations as it takes.</strong></p>
+<p>For me, the point of sketching is to make sure I establish the basic framework for the page, solving the essential design problem. I’ll do multiple iterations to explore different approaches, but I don’t need to do a lot in each sketch to establish an approach. For me, sketching is about quantity, not about quality. It’s a means to generate and evaluate ideas. I may do a few iterations on a single approach to hash out a few of the details, but I tend to save the heavy lifting on the details for the wireframes.</p>
+<p><a id="ch07fig15"></a></p>
+<p class="caption"><strong>Figure 7.15. Sketching with pen and paper is an important step in the wireframing process.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig15.jpg" alt="image" width="500" height="375" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig15.jpg"></p>
+<p><a id="ch07lev3sec20"></a></p>
+<h5>Establish a purpose for the page</h5>
+<p>Before even sketching a page, I ask myself, “What is the one thing this screen has to do?” Establishing a central focus can help drive the design decisions you make about the page, especially with respect to prioritization.</p>
+<p>While the entire project constitutes a large design problem, each page is a small design problem in and of itself. There’s no reason why a good practice (defining a vision) can’t scale downward. You could do this at the component level, too. (Of course, the smaller you get, the easier it is to define a purpose.)</p>
+<div class="sidebar">
+<p><a id="ch07sb05"></a></p>
+<h3><em>Aside: Sketches for Documentation</em></h3>
+<p>More recently, I’ve been scanning my sketches and dumping them into documents. This approach is especially effective at the beginning of the design process, when the concept is still rough around the edges. Sketches are inherently informal, and stakeholders may be more willing to critique or offer suggestions of their own.</p>
+<p>Another approach some of my colleagues have tried is to render formal wireframes in a “sketchy” style, a technique that’s simplified with some diagramming and illustration programs. (Adobe Illustrator has pencil-line brushes built-in, and you can apply these to any line in any PDF. Pretty handy.)</p>
+<p><a id="ch07fig16"></a></p>
+<p class="caption"><strong>Figure 7.16. Scanned sketches in design documentation allow you to put concepts in front of the design team faster without losing any context or additional descriptions.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig16.jpg" alt="image" width="500" height="385" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig16.jpg"></p>
+<p><a id="ch07fig17"></a></p>
+<p class="caption"><strong>Figure 7.17. Sketchy wireframes afford some of the same advantages of actual hand-drawn sketches, but translate easily into something more formal as the need arises.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig17.jpg" alt="image" width="350" height="516" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig17.jpg"></p>
+</div>
+<p><a id="ch07lev3sec21"></a></p>
+<h5>Recall design principles</h5>
+<p><a id="page_184"></a>If your project entailed some discovery work at the beginning, you likely have a design brief with a fundamental direction and design principles. I like to recapitulate these in the margin of my sketchbook before I dig too deeply into a screen design. The mere act of writing them down again keeps them fresh in my mind and triggers good ideas in the part of my brain that designs web pages.</p>
+<p><a id="ch07lev3sec22"></a></p>
+<h5>List page contents</h5>
+<p>If it wasn’t clear from the Anatomy section, wireframes can be boiled down to a list of things on the page. Even if you can’t turn in a list as your final deliverable, you can use it as a starting point. In addition to putting design principles in the margin of my sketchbook, I also make a list of everything I want to put on the page. Some things get circled as the most important things to include. For especially complex components, I’ll create sublists to describe the priorities within a particular content area.</p>
+<p><a id="ch07lev3sec23"></a></p>
+<h5>Use realistic scenarios</h5>
+<p>In the Zoo example, the companion web site includes a page that lists different itineraries, the List Template. This template is used in several different scenarios: when users conduct a search for a specific itinerary, when users provide a set of criteria for designing an itinerary, when users look at a list of their saved itineraries, or when users click a link that says “see more” or “see all.” This List Template needs to do a lot.</p>
+<p>It may be tempting to show the “every case” scenario. That is, all the possible configurations for the template in one wireframe. While this may seem useful, it can undermine the project team’s understanding of the screen. The “every case” scenario may show all the possible elements, but it doesn’t successfully convey appropriate behaviors.</p>
+<p><a id="page_185"></a>Your wireframe should depict a single, realistic scenario (and the annotations should be clear about that scenario). If the template has several dramatic variations because it supports multiple scenarios, you should create a separate wireframe for each.</p>
+<p>For example, the Zoo’s List Template would use different components at the top of the page depending on how users got there. It might list search criteria, or it might display a toolbar for managing my saved itineraries. Instead of displaying both components (the “every case” scenario) in one wireframe, the document should include two versions of the wireframe.</p>
+<p><a id="ch07lev2sec12"></a></p>
+<h4>Level-Up Your Wireframing Skills</h4>
+<p>The power and flexibility of wireframes affords countless opportunities to improve upon them, as well as our techniques for creating them. Here are a few we’ve been playing with.</p>
+<p><a id="ch07lev3sec24"></a></p>
+<h5>Take a modular approach</h5>
+<p>With a modular approach, you treat wireframes as Lego kits, assembling screens from individual, shareable pieces. Creating wireframes means designing the individual pieces and then designing the page frameworks for those components. The components snap together in the context of a page template.</p>
+<p>Headers and footers are common components. Navigation elements are common components. You can create a common component for interfaces that display particular kinds of content (videos, for example).</p>
+<p>Thinking in these terms may be challenging if you’re used to a more holistic approach to design. As you embark on your own journey to take a more modular approach, keep these tips in mind for your documentation:</p>
+<p class="indenthanding">• Components won’t make sense if people don’t understand the larger context. Lego manuals always start with a picture of the whole model, and your documentation needs to establish context by showing the components in action. Once the project team understands the context, they can have more meaningful conversations about how the component works elsewhere, or how a variation on the component might work in the same context.</p>
+<p class="indenthanding">• Components require a rigorous identification system. A web site consisting of half a dozen templates may rely on ten times as many components. Careful encoding of the components helps people using the library keep them straight, and ensure they’re using the right one.</p>
+<p class="indenthanding">• Components have particular functions and are likely meant for particular page regions. In <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch08.html">chapters 8</a> and <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch09.html" class="totri-footnote">9</a> of <em>Modular Web Design</em>, Nathan Curtis describes how teams can break down page templates and classify components corresponding to typical page areas and features on a web site.</p>
+<p>For example, the itinerary description shown in <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07fig18">Figure 7.18</a> is used throughout the web site to summarize an itinerary.</p>
+<p><a id="ch07fig18"></a></p>
+<p class="caption"><strong>Figure 7.18. This is a component, reusable throughout the web site. The content is just placeholder content, which I’d have to swap if I put the same component on a single page multiple times. Alternatively, I could replace the sample content with variables, like “[Itinerary Name]”.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig18.jpg" alt="image" width="220" height="132" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig18.jpg"></p>
+<div class="note1">
+<p><a id="ch07sb06"></a></p>
+<p><strong>Component</strong></p>
+<p>A portion of a web page that serves a specific purpose or function.</p>
+</div>
+<p><a id="ch07lev3sec25"></a></p>
+<h5>Establish styles</h5>
+<p><a id="page_186"></a></p>
+<p>To ensure consistent use of typography, create a set of simple styles (like you might in a word processor) so that all your headers, all your body text, all your links, and all the other text elements are formatted in the same way.</p>
+<p>If your wireframe makes use of other elements to communicate priority (like shaded rectangles), you can create styles for these shapes as well. Create a rectangle, select the “background field” style, and you can be sure that every background field in your document is formatted in the same way. (Even I forget to do this sometimes and find myself wondering, “Did I use a 4px rounded corner or a 6px rounded corner?” That gets me distracted because then I start thinking, “It’s a wireframe! Who cares?” And THEN I start thinking, “They might not know, but I’ll know, and then I won’t be able to sleep.” In short, styles prevent neuroses.)</p>
+<div class="note">
+<p><a id="ch07note03"></a></p>
+<h3>Tip: Yahoo! Design Pattern Library</h3>
+<p class="notepara">The Yahoo! Developer Network includes a library of design patterns that correspond to typical user interface elements like tags or navigation or information displays. It’s a great starting point for establishing your own library.</p>
+<p class="notepara"><a href="http://developer.yahoo.com/ypatterns/">http://developer.yahoo.com/ypatterns/</a></p>
+<p class="notepara">Another library, the Yahoo! Developer Network YUI Library, contains code snippets for typical interface controls like tabs and carousels. This repository is more about the code than it is about the specific design of these elements.</p>
+<p class="notepara"><a href="http://developer.yahoo.com/yui/">http://developer.yahoo.com/yui/</a></p>
+</div>
+<p>Different drawing applications offer varying levels of support for styles. Most offer some way to store a set of style options and are generally sufficient for our wireframing needs. Learn your preferred tool backward and forward so you can take full advantage of its capabilities, ensuring that you become an efficient and consistent wireframing machine.</p>
+<p><a id="ch07lev3sec26"></a></p>
+<h5>Create a library of elements</h5>
+<p>Most diagramming programs allow you to store shapes in a stencil or library. (Every application calls this feature by a different name. Of course.) Rapid and consistent wireframing depends on using the same set of elements. These can range from individual form elements to more elaborate configurations like a navigation bar or a set of common search fields or resizable image placeholders.</p>
+<p>Lest you see these libraries as constraining, a few reminders:</p>
+<p class="indenthanding">• Elements in a library are starting points. Lists of headlines don’t vary that much from one to the next, so having a standard format provides a quick and easy way to drop it into the wireframe.</p>
+<p class="indenthanding">• Elements are tried-and-true design conventions. Your value is not in reinventing a drop-down menu, but in how you use those elements to solve specific design problems.</p>
+<p class="indenthanding">• The purpose of a wireframe is to convey functionality as quickly as possible. By incorporating a library into your design process, you can create new screen designs efficiently.</p>
+<p><a id="ch07lev3sec27"></a></p>
+<h5>Hold a design studio</h5>
+<p>If you’re keen to take your sketching up a notch, consider a more collaborative approach. Design studios bring together the project team and engage them in a series of sketching exercises. This technique was introduced to me and my firm by Todd Zaki Warfel of messagefirst. It’s a variation on well-established collaborative design techniques.</p>
+<p class="indenthanding">• <strong>Outcomes:</strong> Sketching studios generally last a full day, and at the end you’ll have a stack of ideas to draw from. Studios definitely emphasize quantity over quality, but by bringing together a range of disciplines (not just designers) with varying perspectives on the project, you’re bound to see a new idea or approach.</p>
+<p class="indenthanding">• <strong>Structure:</strong> In a design studio, participants break up into multidisciplinary teams. Throughout the day, the team creates sketches for two to four different scenarios. The studio facilitators describe the scenario and provide sufficient inputs (like descriptions of the target audience). Members of each team sketch different ideas, spend time discussing the ideas, pick a direction, and then do another round of sketching where they work together to create a single concept from their brainstorming.</p>
+<p class="indenthanding">• <a id="page_187"></a><strong>Preparation:</strong> As studio facilitator, you are responsible for a few things. You need to prepare the scenarios. This depends on having an intimate understanding of the design problem. Scenarios are most successful when they are specific, stating the user’s situation and desired outcome.</p>
+<p>How do sketching studios factor into design documentation?</p>
+<p class="indenthanding">• <strong>Sketching = setting expectations.</strong> By getting people to create sketches, they have a better understanding of the kinds of artifacts you will produce.</p>
+<p class="indenthanding">• <strong>Scenarios = understanding context.</strong> After people have thought through the scenarios to create their own designs, they will have a more intimate understanding of the context for the design concepts you present.</p>
+<p class="indenthanding">• <strong>Collaboration = buy-in.</strong> Participation in the design process creates a sense of ownership. Even if you don’t use someone’s idea, they will have been part of the process to explore design concepts and evaluate different approaches.</p>
+<p>One nice side-effect of holding design studios at the beginning of the design process is the acculturation of the design team to reviewing screen concepts. When it comes time to review wireframes, they’ll at least have some exposure to the process. Regardless of their experience, the next section provides some suggestions on how to present wireframes to the project team.</p>
+<p><a id="ch07lev1sec5"></a></p>
+<h3>Presenting Wireframes</h3>
+<p>“Presenting” may not be the right word. Because wireframes are perhaps the most tangible design artifact, they generate more conversation than any other diagram, and become a tool for collaboration on the design. Still, you’re on the hook to facilitate those conversations, and that’s the position the remainder of this section takes.</p>
+<p><a id="ch07lev2sec13"></a></p>
+<h4>Establish a Purpose</h4>
+<p>The purpose of any wireframe review meeting is to discuss the user experience. If you’re doing these diagrams more or less in the order described in this book, wireframes will be the first venture into a concrete view of the system. Depending on your process, wireframes will merit multiple discussions, and the tenor of those discussions will change as the design progresses from initial concept to detailed functional specifications.</p>
+<p><a id="ch07lev3sec28"></a></p>
+<h5>Pitching a concept</h5>
+<p>Wireframes are fast, they are reasonably approximate, and they are meaningful pictures of user interfaces. They make, therefore, excellent tools for pitching a design direction.</p>
+<p>In meetings where you’re laying out the overall concept, you may have a small number of wireframes, just enough to provide a sense of how people will interact with the system. Your messages are straightforward:</p>
+<p class="indenthanding">• <strong>Alignment:</strong> Your wireframes should clearly trace back to the stated design problem. They should resonate with any design principles established earlier in the project, conform to requirements, and respect identified constraints and boundaries.</p>
+<p class="indenthanding">• <strong>Complexity:</strong> In telling the story behind the experience, a small number of wireframes, perhaps focused on the main parts of the user interface, may belie tremendous complexity under the surface. Your presentation needs to be honest about the challenges implied by your vision.</p>
+<p class="indenthanding">• <strong>Remaining:</strong> Eager project teams may latch onto the direction and think they can start building. (Heck, I make this mistake with greater frequency than I care to admit. My passion gets the better of my good judgment.) Your pitch meeting should come with at least a high-level plan describing what remains to be done; these initial concept screens are a good starting point, but more must be said before coding begins.</p>
+<p><a id="page_188"></a>Wireframes make great sales tools. Even those lacking polish evoke the user experience in ways flowcharts and other diagrams can’t.</p>
+<p><a id="ch07lev3sec29"></a></p>
+<h5>Discussing the experience at a high level</h5>
+<p>The same set of wireframes you use for pitching a concept may be used to hash out the experience. In this meeting, you’re evaluating the design against the established objectives, requirements, and constraints. You need to answer at least these questions:</p>
+<p class="indenthanding">• Does this approach address all the objectives? Use this meeting to solicit other pairs of eyes to compare the design approach to the documented objectives. For example, the objective of the web-based itinerary picker may be to encourage people to use the iPhone app, where the Zoo generates revenue through the cost in the iTunes app store. One criticism of the itinerary web site is that it doesn’t do a good job in promoting the iPhone app, encouraging people to use and download it.</p>
+<p class="indenthanding">• Does the approach conform to design principles and good design practices? Looking at my itinerary wireframes after leaving them for a couple days, they seem really dense to me. This may be OK, but raising it in a review meeting, I would ask whether the approach aligns with the project’s design principles or current trends in web design.</p>
+<p class="indenthanding">• Do we need to reevaluate the requirements? Seeing designs in the flesh may shed light on the design problem or the requirements in ways you could not conceive before having screens in front of you. The designer may have come up with an idea not reflected in the requirements (in the iPhone app, stating the user’s distance from another exhibit in terms of minutes, for example).</p>
+<p class="indenthanding">• What’s implied by this screen? Careful examinations of screen designs reveal new requirements through dependencies. In order to support the itinerary picker, for example, the team needs to create business rules for generating an itinerary based on the inputs. While these concepts may have been identified in the requirements, the design makes them real, and the exact implications become clear.</p>
+<p>These questions help the design team generate another version of the wireframes, refining the functionality based on these findings. At some point, however, in some processes, these conversations are not enough. The design team needs to dig in deeper to make sure they’ve dotted all the i’s and crossed all the t’s before turning the functional specification over to the development team.</p>
+<p>Some teams stop wireframing here. Their processes allow for half-baked wireframes to serve as the catalyst for further design and development. For some projects, their scale, the configuration of the project team, the design culture, and other factors make multiple iterations of wireframes pointless.</p>
+<p><a id="ch07lev3sec30"></a></p>
+<h5>Discussing the experience at a deep level</h5>
+<p>A deeper discussion ultimately boils down to stress-testing the design concept to see if it can handle the rigors of production. Such reviews get mind-numbingly detailed, and you get to learn who on the project team has the severest case of mild obsessive-compulsive disorder. Here are just a handful of deep-level questions the team might explore during such a conversation:</p>
+<p class="indenthanding">• <strong>Have we addressed all possible scenarios?</strong> A scenario establishes a set of conditions that affect the display of particular screens, and a good design anticipates all the possible scenarios. This is a multidisciplinary task. User experience designers can imagine all the weird scenarios created by usage, but only people responsible for technology and operations can anticipate a full range of unusual scenarios. (“What if database X is down but database Y is still running? What if there’s no one available to answer a customer service call?”)</p>
+<p class="indenthanding">• <a id="page_189"></a><strong>Does the team have enough information to render a visual design?</strong> Playing through all the scenarios may mean generating additional wireframes to show the full range of displays. Visual designers work in pixels, which affords much less flexibility in laying out a screen. They need a clear understanding of the range of possible displays so they can design a user interface that supports the functionality without breaking.</p>
+<p class="indenthanding">• <strong>What content is needed in the interface?</strong> Combing through the interface will reveal the full range of messaging and content it requires. Someone will need to generate final labels for navigation, instructional text, field labels, hints for completing forms, error messaging, confirmation messaging, and page titles, not to mention all the actual content on the site.</p>
+<p>The truth is, you could do these kinds of reviews forever, spelling out the user experience in ever-increasing detail. How much is enough? In some cases, these deadlines are spelled out for you: A good project plan should establish constraints on when to transition between phases in the design process. If you’re struggling to conform to a particular schedule, here are some warning signs that you’re spending too much time reviewing detailed wireframes:</p>
+<p class="indenthanding">• <strong>A wireframe has gone through more than three revisions.</strong> This number may be five on especially complex systems, but look at the revisions on a single wireframe. Long revision histories generally point to unstable objectives or requirements, which means there’s a deeper problem on the project.</p>
+<p class="indenthanding">• <strong>You’ve reversed a decision more than once.</strong> Let’s use a drop-down. No, let’s use a slider. Hmm, let’s go back to a drop-down. Time to move on.</p>
+<p class="indenthanding">• <strong>Key stakeholders no longer come to review meetings.</strong></p>
+<p class="indenthanding">• <strong>You can’t get through a full review in less than an hour.</strong> After the first or second detailed review (which may take more than an hour), subsequent reviews should be relatively fast, nailing down specific questions or issues.</p>
+<p>Some of these are, frankly, somewhat arbitrary measures of doneness. Spinning on a wireframe generally points to instability or lack of clarity elsewhere in the project, but don’t let the wireframes become an excuse for not moving forward.</p>
+<p><a id="ch07lev2sec14"></a></p>
+<h4>Adapt the Presentation</h4>
+<p>Running a wireframes meeting should be the same as discussing any other design diagram. The overall framework for these conversations—starting with the big idea and rationale, followed by details and implications—works well for all wireframe reviews. Regardless of whether you’re talking about the user experience at a high level or in painstaking detail, starting with a lay of the land and major themes helps keep the conversation focused.</p>
+<p><a id="ch07lev3sec31"></a></p>
+<h5>1. Establish context</h5>
+<p>Establishing context at the beginning of any design review means reminding the project team of where you are in the project and providing objectives for the conversation. For wireframe review meetings, you will also need to remind people about which screens you are reviewing today and what scenarios they belong to.</p>
+<p><a id="ch07lev3sec32"></a></p>
+<h5>2. Describe visual conventions</h5>
+<p>For project teams who aren’t used to looking at wireframes, provide a short introduction to the format. You can also use the whiteboard to make two lists: what you will and will not discuss as part of the wireframes.</p>
+<p>During this portion of the meeting, you can also explain your decisions regarding scale, fidelity, abstraction, and depth. Helping meeting participants understand where the wireframes fall in each scale can also set their expectations about what they will and will not see. Note that you should <a id="page_190"></a>use plain language to describe the wireframes; words like “scale” and “fidelity” won’t mean much if people in the meeting haven’t had much experience with wireframes.</p>
+<p><a id="ch07fig19"></a></p>
+<p class="caption"><strong>Figure 7.19. Setting expectations about wireframes at the start of the meeting can help head off difficult conversations.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig19.jpg" alt="image" width="400" height="300" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig19.jpg"></p>
+<p><a id="ch07lev3sec33"></a></p>
+<h5>3. Highlight major design decisions</h5>
+<p>Before digging into the details of the wireframes, you can walk through them quickly. During the quick walkthrough, you can touch on:</p>
+<p class="indenthanding">• <strong>Overall themes:</strong> How would you characterize the major design decisions? What were the driving concepts behind most of the design ideas?</p>
+<p class="indenthanding">• <strong>Key objectives, principles, or requirements:</strong> What were the objectives and principles that were top-of-mind during the design process? What are the main requirements this design addresses?</p>
+<p class="indenthanding">• <strong>Page purposes:</strong> In designing the page, what was the central purpose you established for it?</p>
+<p class="indenthanding">• <strong>Important design innovations:</strong> What are the coolest parts of the design? What design decisions are you most proud of?</p>
+<p>There’s a lot of information listed here. Err on the side of brevity: The intent is to provide an overview, not an in-depth discussion. This section can be even more brief on subsequent reviews, and should instead summarize the main changes since the last conversation.</p>
+<p><a id="ch07lev3sec34"></a></p>
+<h5>4. Offer rationale and identify constraints</h5>
+<p>You can use this portion of the meeting to highlight the significant challenges you encountered during the design of these screens.</p>
+<p>If any design principles played a major role in driving design decisions for this particular set of screens, you can reiterate (and even capture on the whiteboard) these concepts.</p>
+<p><a id="ch07lev3sec35"></a></p>
+<h5>5. Point out details</h5>
+<p>When it’s time to dig into the details of the wireframe, use the approach in <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07tab06">Table 7.6</a> as a starting point for structuring your discussion.</p>
+<p><a id="ch07tab06"></a></p>
+<p class="caption"><strong>Table 7.6. Digging into details, how to structure your approach.</strong></p>
+<p class="image"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0191_01.jpg" alt="image" width="550" height="296" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0191_01.jpg"></p>
+<p>If you need a simpler framework to walk through the screen, consider this mnemonic: APU, area-principle-users. Focus on the <em>area</em> and describe its function. “Zoom out” and describe the <em>principle</em>, objective, or requirements that this area relates to, then zoom back in and walk meeting participants through the area as <em>users</em> might experience it.</p>
+<p><a id="ch07lev3sec36"></a></p>
+<h5>6. Communicate implications</h5>
+<p>Any design decision captured in a wireframe will come with cascading implications. As described in the general approach, these implications can be technical (how will we build this?) or operational (how will we support it?). Functionality can be deceptively simple, requiring substantially more development or support than appearances would suggest.</p>
+<p><a id="page_191"></a>Prior to the meeting, make a note on the wireframe where you suspect the most severe implications. Make a note of the most important functionality. During this portion of the conversation, ask participants to pay close attention to both of these. For suspected complex functions, you’re confirming your suspicions and asking the experts to ensure that they account for the potential challenges. For the most important areas of the design, your intent is to validate the approach so you don’t have to compromise the design later.</p>
+<p><a id="ch07lev3sec37"></a></p>
+<h5>7. Solicit feedback</h5>
+<p>Contributions to wireframe reviews really run the gamut; sometimes participants can’t stop talking (see “Avoid Newbie Mistakes,” later) and sometimes they just don’t say anything.</p>
+<p>Don’t take silence for complacency, agreement, or buy-in. There are a few different reasons why stakeholders don’t jump in with comments, listed and mitigated in <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07tab07">Table 7.7</a>. Avoid “testing” meeting participants. Nothing discourages productive discussion like being made to feel like an idiot. Deflect any potential hurt feelings by bringing the user into the conversation.</p>
+<p><a id="ch07fig20"></a></p>
+<p class="caption"><strong>Figure 7.20. Refer to this figure for descriptions in <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07tab06">Table 7.6</a>.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig20.jpg" alt="image" width="366" height="545" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig20.jpg"></p>
+<p><a id="page_192"></a></p>
+<p><a id="ch07tab07"></a></p>
+<p class="caption"><strong>Table 7.7. Dealing with quiet meetings requires sensitivity to diagnose why people might be afraid to speak up.</strong></p>
+<p class="image"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/t0192_01.jpg" alt="image" width="550" height="313" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/t0192_01.jpg"></p>
+<p><a id="ch07lev3sec38"></a></p>
+<h5>8. Provide a framework for review</h5>
+<p>Inevitably, the depth and complexity of the design documentation in wireframes makes it difficult for all the details to be hashed out in a meeting. Giving stakeholders homework (and this is true for asking people to review the wireframes before a review meeting, too) requires specificity on what needs reviewing and what kind of feedback you want.</p>
+<p>Typically, there are five things that you want from the project team:</p>
+<p class="indenthanding">• <strong>Alignment with objectives:</strong> What’s missing from this wireframe that prevents it from meeting the project objectives?</p>
+<p class="indenthanding">• <strong>Usability issues:</strong> What parts of the interface design would users find most challenging?</p>
+<p class="indenthanding">• <strong>Content and priority issues:</strong> Is there anything wrong with the content as rendered or the relative priorities?</p>
+<p class="indenthanding">• <strong>Functional issues:</strong> What happens to fields A, B, and C in scenario X?</p>
+<p class="indenthanding">• <strong>Feasibility:</strong> What part of this design will be the hardest to implement, and why?</p>
+<p>(Notice how I avoid yes/no questions, to prevent tacit assent?) To the extent you can ask these questions specifically and pointedly, you should embed them directly in the annotations for the wireframe. That is, open questions should be captured and highlighted in the documentation itself.</p>
+<p><a id="ch07lev2sec15"></a></p>
+<h4>Avoid Newbie Mistakes</h4>
+<p>In this section, “newbie” might be the wrong word for the title. The mistakes outlined in the next few sections are made on every project by the most experienced designers. Ultimately, this part of the design discussion—somewhere between abstract and concrete, between problem and solution—is the hardest.</p>
+<p>This section presumes that wireframing and graphic design are separate endeavors. In many web design practices, finalized wireframes are turned over to visual designers, who then interpret the structure and create a final user interface, incorporating other inputs (like a brand strategy). Likewise, the team may include people dedicated to writing content. It assumes that those content strategists will have deliverables over and above the wireframes.</p>
+<p>None of the following tips matter if the right people aren’t a part of the conversation from the outset. Getting them engaged is important, too. A developer sitting at the table even from the very beginning of the design process does you no good if he or she doesn’t take the role seriously and provide substantial input into the design.</p>
+<p><a id="ch07lev3sec39"></a></p>
+<h5>Set expectations about the purpose</h5>
+<p><a id="page_193"></a></p>
+<p>In the context portion of the meeting (step 1), clearly state what you want to get out of the meeting. The rabbit holes described next don’t make themselves: They come from a lack of focus, and a lack of facilitation.</p>
+<p>As part of setting up the purpose of the meeting, you can call out the questions you need answered. Using the questions to frame the meeting helps establish the tone and focus at the outset.</p>
+<p>With any rabbit hole, there are a few positions you can take:</p>
+<p class="indenthanding">• <strong>Not discussing:</strong> “This is out of scope for this meeting, and I need to get answers to these questions or we can’t move forward with the design effort.”</p>
+<p class="indenthanding">• <strong>Table for later:</strong> “These are really good points, but out of scope for this meeting. Let’s capture them so we can discuss them later.”</p>
+<p class="indenthanding">• <strong>Let’s hash it out (with consequences):</strong> “I don’t mind spending time talking about this stuff, but we’re going to lose ground on the wireframes. We may need to schedule another meeting, or I need to get feedback via email.”</p>
+<p>Getting back on track for any meeting is challenging, and often means you have to play the bad guy. While being a stickler for meeting agendas isn’t the worst crime in the world, it can be frustrating for team members who see something more pressing.</p>
+<p>Wireframes contain content and graphic design elements out of necessity, even if they’re not trying to put a stake in the ground for either. Reacting to and discussing priorities and structure is difficult in the abstract. But the concession we make with wireframes to help people understand them (or even to solicit this kind of feedback on purpose) means risking conversations that diverge from the matter at hand.</p>
+<p><a id="ch07lev3sec40"></a></p>
+<h5>The content rabbit hole</h5>
+<p>Even with a well-defined purpose, wireframe discussions can quickly lose focus. The primary culprit is meeting participants reacting to elements of the wireframe that are not really in question. Words (meaning structural, instructional, and sample content) is (a) something easy to react to and (b) something everyone has an opinion about.</p>
+<p>Establish at the beginning of the meeting which content in the wireframes is in scope for discussion. You may have incorporated some real sample content to give people a realistic view of the page, but don’t feel the need to dig into it.</p>
+<p>Structural content (headers and navigation) and instructional content (field labels, error messages) may be in-scope. This may be a more challenging conversation to moderate: You may be more interested in addressing the tone and message of the content without digging into the exact words.</p>
+<p>Should content ever be out of scope? Can you legitimately talk about a wireframe without talking about its content? A more nuanced view of what content is (there are different types and every wireframe reflects all of them to a greater or lesser extent) yields, perhaps, a less absolute position. Some content is always in-scope for a wireframes discussion.</p>
+<p><a id="ch07lev3sec41"></a></p>
+<h5>The visual design rabbit hole</h5>
+<p>Wireframes are inherently visual, just like they have words. Both are generally unavoidable. In some ways, visual design is a more challenging distraction because it’s difficult to reassure people that the things they’re concerned about won’t have an impact on the final design. People who raise issues about spacing or type size or whitespace have legitimate concerns—wireframes are just not the right place to work them out.</p>
+<p><a id="ch07lev3sec42"></a></p>
+<h5>Structure, aesthetic, voice: Managing the overlap</h5>
+<p><a id="page_194"></a></p>
+<p>If you take off your web design hat for a second and look at wireframes again, it seems weird to separate three things that make up experience. These elements—structure, visual style, and voice—are experienced as one.</p>
+<p>One mistake you can make is to keep looking at them in separate and distinct silos. Your job as a designer is to shape the whole experience, and the nature of our medium means that sometimes you have to do that a little bit at a time.</p>
+<p>Whether you bring this up explicitly in your conversations or not, do not forget to take a moment to think about the wireframes as a skeleton needing flesh and more to make it a true living product.</p>
+<p><a id="ch07lev3sec43"></a></p>
+<h5>Dismissing feedback and getting defensive</h5>
+<p>Do not, under any circumstances, undermine the feedback provided by meeting participants. Establishing yourself as someone unwilling to discuss design ideas positions you as an obstacle. The organization will learn to route around you, cutting you out from subsequent design activities. I’ve seen this happen.</p>
+<p>People don’t mind being wrong, but they want their voice heard. Your role as a designer is to help them find that voice, discuss the ideas, and zero-in on something good. Your role is to help other people provide good feedback on design, to become better critics and to be productive members of the design team.</p>
+<p>That said, making every design decision through committee debate or democratic voting misses the point of discussion. Design decisions need rationale, clarity, and alignment with a vision. Therefore design decisions should be driven by:</p>
+<p class="indenthanding">• A singular vision, hopefully held by a manager or director on the project, who is empowered to enforce that vision.</p>
+<p class="indenthanding">• A set of standards, established through testing and validation.</p>
+<p class="indenthanding">• Meaningful, relevant, and appropriate testing procedures.</p>
+<p>Productive design conversations happen in cultures where at least one of these things holds true. The discussion becomes unproductive when designers rely on their “expertise” as the sole rationale for the design decision. Such environments are ripe for breeding defensiveness and arrogance. If you find yourself bumping up against other people who “just don’t get design,” take the responsibility to educate them, helping them contribute to the discussion. This is the only way to create design-friendly corporate cultures.</p>
+<p><a id="ch07lev1sec6"></a></p>
+<h3>Applying and Using Wireframes</h3>
+<p>Wireframes’ use does not end with creating and discussing them. Their value extends beyond realizing design ideas and facilitating conversations about user experience. You can employ them throughout the design process to elaborate on concepts, provide direction to downstream activities, and even as a vehicle for testing. Before you get to any of that stuff, though, get good at annotating wireframes: adding adjacent text to explain its behavior.</p>
+<p><a id="ch07lev2sec16"></a></p>
+<h4>Annotating Wireframes</h4>
+<p>Like any other diagram in this book, wireframes cannot stand on their own. Though less abstract than a concept model, more tangible than a flowchart, and more specific to design than personas, wireframes are still representations. Wireframes, especially those rendered on paper, cannot capture the detailed behaviors and functions of an interface. Annotations help bridge that gap.</p>
+<p><a id="page_195"></a>While there are many ways to annotate a wireframe, the tried and true method is using markers to point out important parts of the wireframe, and elaborating on details in notes on the side.</p>
+<p><a id="ch07fig21"></a></p>
+<p class="caption"><strong>Figure 7.21. Tried and true wireframe annotations entail a number, a pointer, and a note.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig21.jpg" alt="image" width="500" height="195" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig21.jpg"></p>
+<p>In some cases, it’s worthwhile to use a larger field to highlight an area of the wireframe. Even though you might have conceived of the wireframe as having specific content areas, these distinctions may be lost once the wireframe becomes more detailed. Your annotations may also only refer to a small piece of a content area, or they may refer to multiple content areas.</p>
+<p><a id="ch07fig22"></a></p>
+<p class="caption"><strong>Figure 7.22. Delineate particular regions of the wireframe for your annotation using a larger semitransparent field,</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig22.jpg" alt="image" width="500" height="196" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig22.jpg"></p>
+<p>Of course, the complexity of your wireframes could warrant some combination of these two approaches. One way to do this is to first annotate the large regions, then create separate pages in the document to annotate each component. <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07fig23">Figure 7.23</a> shows what this might look like.</p>
+<p><a id="ch07fig23"></a></p>
+<p class="caption"><strong>Figure 7.23. When simple annotations aren’t enough, you may have to break up the wireframe to provide the right level of detail.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig23.jpg" alt="image" width="500" height="186" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig23.jpg"></p>
+<p>A modular approach works well here, giving you room to annotate the details of each component.</p>
+<p>Wireframes themselves can vary along four dimensions (scale, abstraction, depth, and fidelity). Likewise, annotations may be measured by “weight,” which refers to the level of detail. Light annotations are those that provide a description of the screen’s functionality and behavior without digging into the details. Light annotations gloss over the various scenarios and don’t provide a comprehensive view of all the different states a wireframe may display. Heavier annotations provide increasing levels of detail, to the point that they constitute functional specifications sufficient for driving development.</p>
+<p>While you can drive the weight of your annotations, final assessment is up to the people responsible for building the site. The development team may require additional levels of detail, even if you feel you’ve provided heavy annotations.</p>
+<p>There are four topics that should drive your annotations: overview, behaviors, content rules, and states.</p>
+<p><a id="ch07lev3sec44"></a></p>
+<h5>Overview</h5>
+<p><a id="page_196"></a></p>
+<p>A blurb describing the purpose and objective of the wireframe helps set context. Use the overview to boil the wireframe down into a single sentence.</p>
+<p>But the overview can be more than just a single sentence, providing further context with some additional fields:</p>
+<p class="indenthanding">• <strong>“Use when” and “don’t use when” instructions:</strong> As our design processes become more modular, our outputs become more about providing a set of Lego bricks that can be used in many different instances. Providing usage guidelines can help in subsequent efforts to determine whether a page template or a component can and should be used in different circumstances. For example, the itinerary long description component might specify that it should be used when displaying unfamiliar itineraries. It might specify that they should not be used in a sidebar itinerary list.</p>
+<p class="indenthanding">• <strong>Scenario:</strong> Describe the user’s situation when looking at this particular screen. If the screen addresses multiple situations, spelling them out will help the development team. Focus on the portion of the scenario that sets context for the screen or could affect the display: log-in, user role, and where the user came from.</p>
+<p class="indenthanding">• <strong>See also:</strong> While maintaining references in a deliverable can be challenging, especially complex experiences may be difficult to document all on one page.</p>
+<p><a id="ch07lev3sec45"></a></p>
+<h5>Behaviors</h5>
+<p>Annotations that describe how the interface changes in response to user inputs describe that screen’s “behaviors.” Consider these behaviors:</p>
+<p class="indenthanding">• <strong>Links:</strong> The simplest behavior annotation answers the question, “Where do people go when they click on this link?” The answer is generally a reference to another wireframe, or to some other page on the site.</p>
+<p class="indenthanding">• <strong>Form elements:</strong> Fields in a form require annotations to help people understand what is and is not allowed in the field. Text boxes may be annotated to indicate character length or validation criteria. Drop-down menus may be annotated to capture the full range of choices.</p>
+<p class="indenthanding">• <strong>Form submissions:</strong> Like links, these annotations answer the question, “What happens when people submit this form?”</p>
+<p class="indenthanding">• <strong>Transitions:</strong> With front-end technologies allowing more complex interactions, annotations sometimes have to explain transitions. For example, hovering over an itinerary produces a balloon with additional information. How quickly does the balloon appear? Does it just appear, or does it animate in? How long does it stay on the screen? If in scope for the wireframe, its associated annotations can answer these questions.</p>
+<p class="indenthanding">• <strong>Other rules:</strong> Some rules are specific to the particular interface. For example, in the itinerary picker, describing the behavior and states of the slider for choosing the size of the group may require rules not easily categorized elsewhere. (Does the slider move smoothly or “click into place?” How many different settings are there? Does each setting have a unique icon and label?)</p>
+<p><a id="ch07lev3sec46"></a></p>
+<h5>Content rules</h5>
+<p>Back to basics: Wireframes define content areas in templates. Those content areas will contain similar kinds of information, but not necessarily the same information every time the site renders the page. Rules about content should describe the criteria used to select content for a particular area of the site, and provide some suggestions on the kinds of information displayed for the content. Some criteria you might use to specify rules about content:</p>
+<p class="indenthanding">• <strong>Recentness:</strong> From what time period should the system draw content?</p>
+<p class="indenthanding">• <strong>Quantity:</strong> How many pieces of content can be displayed?</p>
+<p class="indenthanding">• <strong>Type:</strong> Should content be specified from a particular type?</p>
+<p class="indenthanding">• <a id="page_197"></a><strong>Topic:</strong> Should content be marked with a particular set of keywords?</p>
+<p class="indenthanding">• <strong>Other metadata:</strong> Is this content from a particular author? Or, if a product, of a particular price range?</p>
+<p class="indenthanding">• <strong>Usage and popularity:</strong> Should the content be drawn from among the most trafficked?</p>
+<p class="indenthanding">• <strong>Default:</strong> If nothing matches the criteria you specify, what should be displayed?</p>
+<p>Some of these criteria are more loaded than others. Usage and popularity depends on the site’s tracking of that information. If the infrastructure has no means for capturing and interpreting usage information, it can’t be a criteria for choosing content.</p>
+<p>If your wireframe doesn’t already specify the format for displaying the content, you may need to be specific about what information gets displayed. For small lists of recommended products on an e-commerce site, this might be nothing more than a thumbnail image, the name of the product, and the price. On the itinerary site, we might specify the associated image, the name of the itinerary, the short description, average user rating, and total number of reviews.</p>
+<p>Your wireframe may contain more specific content areas, variables that specify different individual pieces of information. For example the account link at the top of the page that says “Hi, Dan!” might be specified in your wireframe as “Hi, [Firstname]!” While the content rule may seem self-evident, use an annotation to specify additional information like:</p>
+<p class="indenthanding">• <strong>Source:</strong> Where is this information drawn from? Is there a particular database or particular field in the user database?</p>
+<p class="indenthanding">• <strong>Format:</strong> Any special rules about formatting the information? (For example, always render this with a capital letter first, regardless of what’s in the database.)</p>
+<p class="indenthanding">• <strong>Default:</strong> What does this look like if there is no information? (For example, maybe this whole statement changes to “Need to update your account info?”)</p>
+<p><a id="ch07fig24"></a></p>
+<p class="caption"><strong>Figure 7.24. Content rules for a specific variable help developers know exactly where to draw the information from.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig24.jpg" alt="image" width="500" height="143" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig24.jpg"></p>
+<p><a id="ch07lev3sec47"></a></p>
+<h5>States</h5>
+<p>If an area of the page appears differently in different circumstances, this is called a “state.” A state is a scenario affecting the display of the page or the component. Like content rules, states are based on a set of criteria, but these vary based on the specifics of the application. Unlike content rules, a page or component has a discrete set of states, and they’re usually named based on the circumstance or summarizing the effect on the design. A form, for example, may have three states—blank, prefilled, or error.</p>
+<p>From a documentation perspective, you may need to create a wireframe for each state, especially if the differences between them are dramatic. At the component level, putting all its different states on one page in the document helps people compare the variations and understand the circumstances that drive them.</p>
+<p>When documenting states for pages, it can be challenging to spell out the differences between them all on one page. In this case, include an overview page dedicated to highlighting the circumstances of each state, and then dig into the details of each screen on subsequent pages.</p>
+<p><a id="ch07lev2sec17"></a></p>
+<h4>Connecting Wireframes to Other Deliverables</h4>
+<p><a id="page_198"></a></p>
+<p>Wireframes are powerful because they can describe the user experience in great detail. But reviewing wireframes (especially when you aren’t their author) can be challenging because they often appear out of order or out of context. Readers don’t get a great sense of the flow, of the more subtle interactions, or how the wireframe might deal with different situations.</p>
+<p>The Flowcharts chapter discussed wireflows, one technique for integrating wireframes with that diagram. Here are some other ideas on building a bridge between wireframes and other diagrams.</p>
+<p><a id="ch07lev3sec48"></a></p>
+<h5>Providing context for pages</h5>
+<p>To understand a wireframe means understanding where it fits into the overall user experience. Site maps and flowcharts can help provide context for the wireframe, showing how it relates to other pages or templates in the site.</p>
+<p>Some tips:</p>
+<p class="indenthanding">• <strong>Zoom in on the appropriate portion,</strong> especially if the flow or site map is too big to be recognizable when shrunk. When talking about a flow, I may even remove everything except what comes immediately before and what comes after.</p>
+<p class="indenthanding">• <strong>Strip most or all formatting</strong> from the structure. You may have used various colors and line weights to differentiate nodes on the site map, but those will just be distracting at a small scale. Use only the barest minimum to ensure the structure is still recognizable.</p>
+<p class="indenthanding">• <strong>Highlight the relevant page</strong> in the structure. Use a dark color to mark which page you’re talking about, even if you’ve focused on just a handful of pages in the structure.</p>
+<p><a id="ch07fig25"></a></p>
+<p class="caption"><strong>Figure 7.25. Flowcharts appearing alongside wireframes can help people understand how the screen fits into the overall experience.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig25.jpg" alt="image" width="500" height="136" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig25.jpg"></p>
+<p><a id="ch07lev3sec49"></a></p>
+<h5>Providing context for components</h5>
+<p>The context for a component is a page; components fit into pages like pages fit into structures. Show where components fit into the site by incorporating a small thumbnail of the relevant page and highlighting the component. In most cases, you can use a small version of the actual wireframe, as in <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#ch07fig26">Figure 7.26</a>.</p>
+<p>If components may be used across different templates, you can use a small version of a generic page layout. The generic page layout shows the structure of the page in terms of regions, highlighting the appropriate region where the component might fit.</p>
+<p><a id="ch07lev2sec18"></a></p>
+<h4>Prototyping and Usability Testing with Wireframes</h4>
+<p>Though the thrust of this chapter is using wireframes as diagrams to describe priority and functionality, wireframes can serve as the basis for something more interactive. Rather than describing the behaviors and flows, you can demonstrate them by stitching together wireframes. Describing how is beyond the scope of this book, but Todd Zaki Warfel’s <em>Prototyping: A Practitioner’s Guide</em> (Rosenfeld Media, 2009) provides a great overview of different approaches to creating interactive prototypes. Meanwhile, I’ll leave you with some thoughts:</p>
+<p class="indenthanding">• <a id="page_199"></a><strong>Establish scenarios:</strong> Wireframes for documentation require a different treatment of scenarios than testing does. With documentation, you can simply acknowledge changes of state, but with a prototype you need to show them. Outline the scenarios you want to demonstrate at the outset, so you can anticipate the range of assets you’ll need to create.</p>
+<p class="indenthanding">• <strong>Select prototyping approach:</strong> Just because you create wireframes in a diagramming application like Visio or OmniGraffle doesn’t mean they can’t be turned into interactive prototypes. There are a number of ways to generate semifunctional demonstrations using PDFs, Flash, or slide-based applications like PowerPoint or Keynote. Each format comes with pros and cons, but understanding the capabilities of the selected tool will also help drive asset creation.</p>
+<p class="indenthanding">• <strong>Incorporate out-of-scope pages:</strong> Some pages may not be in-scope for the design effort, but may be necessary for demonstrating the new concept. The site’s home page or the log-in page, for example, may be dependencies in the user experience, but may not be part of the design effort. Establish a means for incorporating these pages in a way that doesn’t add unanticipated burden to the design team.</p>
+<p><a id="ch07lev2sec19"></a></p>
+<h4>On-the-Fly Wireframes</h4>
+<p>Proficiency with your wireframing tool-of-choice can lead to some new and interesting techniques in designing screens. Combine that proficiency with an increased focus on collaborative design, and you might find yourself wireframing during the course of a meeting. Reacting to and incorporating design ideas on-the-fly can be a powerful technique for making design decisions efficiently and involving the entire project team. Rather than take notes on a design and then translate those notes into a new iteration, you’re creating the next version right then and there.</p>
+<p><a id="ch07fig26"></a></p>
+<p class="caption"><strong>Figure 7.26. Providing context for a unique component, a thumbnail-size page wireframe shows where the component fits into the screen layout.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig26.jpg" alt="image" width="500" height="201" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig26.jpg"></p>
+<p><a id="ch07fig27"></a></p>
+<p class="caption"><strong>Figure 7.27. Providing context for a reusable component, a simplified thumbnail of the screen highlights which regions of the page are valid placements for the component.</strong></p>
+<p class="mediaobject"><img src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/07fig27.jpg" alt="image" width="500" height="239" data-mfp-src="/library/view/communicating-design-developing/9780131385399/graphics/07fig27.jpg"></p>
+<p><a id="page_200"></a>The main challenge with this approach is sacrificing your role as a designer for the production efforts. Don’t lose the thread of the design conversation, and don’t neglect your own contribution to the design conversation in favor of incorporating feedback from the assembled team.</p>
+<p>Personally, I’ve seen this done successfully by only one person, my business partner Nathan Curtis.</p>
+<p><a id="ch07lev1sec7"></a></p>
+<h3>Design in Black and White</h3>
+<p>The power of wireframes, in a nutshell, is the universal acceptance that we can sketch what goes on the screen with rectangles and lines. The ability to zero-in on the content and priorities of an information display is essential on every design project. When design teams ask the question, “What do users see on this screen,” they really want to know, “What do I see here?” Is a wireframe a tool for the ego? Maybe, maybe not. But a wireframe certainly is a dose of reassurance, a stake in the ground regarding What Goes Here.</p>
+<p>Wireframes persist as a documentation tool because they are flexible. As diagrams describing content, behavior, and priority, they give us a lot of room to play with the exact presentation. Styles of wireframes emerge to suit the designer and design team. As the team becomes more cohesive, or the design system (the visual standards for the web site) becomes more mature, the wireframes can be more informal, simplifying the communication process. On the other hand, complex products, elaborate production processes, and other influences can keep wireframes highly formal. Neither extreme is better: that a diagram can occupy such a broad space <em>is</em> the value.</p>
+<p>Modern production tools can make wireframes easy to produce, and there are many different approaches: vector artwork (Adobe Illustrator or Adobe InDesign), vector diagrams (Microsoft Visio or OmniGroup’s OmniGraffle), or embedded with a prototyping program (like Axure). Simple, portable formats offer a range of reuse. We’ve used wireframes as the starting point for Flash-based prototypes or clickable PDFs. The simplicity of the format allows designers to explore using other media, like HTML, to create wireframes. Combining wireframes, a historically flat diagram, with greater interactivity gives designers more opportunities to communicate complex behaviors. It provides tools to allow designers to test their concepts.</p>
+<p>Wireframes are born out of the simplest way to represent a screen displaying interactive content: a bunch of rectangles. Stand up at a whiteboard or sit down with your sketchbook to diagram a screen and you will draw rectangles. The screen can take up a wall or fit into the palm of your hand, but they’re all rectangles, and their content may be similarly represented. Whether or not the display of information continues to exist in such devices, there’s a good chance that rectangles persist as the dominant form because of their simplicity.</p>
+<p>Trends, however, suggest that screens will persist:</p>
+<p class="indenthanding">• Technological innovation is working to fit more information (higher resolution) on screens we can take with us. High-definition video, a novelty only 10 years ago, has become more pervasive.</p>
+<p class="indenthanding">• The screens themselves are becoming input devices as well as display devices. Any sophisticated phone you buy these days will be likely to have a touch screen.</p>
+<p class="indenthanding">• Innovation is going the other way, too, allowing us to put projectors in our pockets, so we can take over a wall with an information display anywhere we go.</p>
+<p>When asked to design for any one of these devices, you’ll draw a rectangle.</p>
+<p>What changes is the layer of information on top of these rectangles: their behaviors, state changes, and responses to our interactions. As new interactive gestures become available—whether people tap, click, wave, or talk to the display—the content itself remains trapped in rectangles.</p>
+<p><a id="page_201"></a>But let’s say you can transcend the screen. Let’s say technological improvements allow for cheaper ubiquitous computing—computers are embedded everywhere. How do you describe a user interface when the information is conveyed with sound alone? When consumer products have complex interactions that don’t involve screens (like the refrigerator that can place your grocery order), how do you explain the interaction model? When the conveyance of information transcends screen-based devices or visual stimuli, it will be interesting to see whether or not designers develop a different method for representing information.</p>
+<p>Wireframes are representations of screens, but ultimately they are about the kind of information presented and their relative priorities, as well as the range of behaviors available to users. Wireframes took on the form of our primary means for interacting with information (screens) and will evolve to accommodate other media. What we know of as a wireframe today may not look the same tomorrow, but its essence will persist. Ultimately, this tool (like any other design tool) is for illuminating the dark recesses of complexity, no matter what form it takes.</p>
+<p><a id="ch07lev1sec8"></a></p>
+<h3>Exercises</h3>
+<ol>
+<li><a id="ch07pro01"></a>Reverse-engineer a wireframe by using a page from a favorite site and boxing out the content areas. This exercise works best with a large content site, but creating wireframes for other kinds of sites often yields interesting insights about the structure. Keep the practice wireframe very low fidelity, focusing on just carving out the important areas of the page and giving them meaningful labels. Add a layer of information by distinguishing different types of content areas: navigation, content, forms, and so on. Also distinguish between static and dynamic content areas, and reusable components. Eliminate any key identifying information from the site (its name, for example) and show your wireframe to a partner. Have them ask you all sorts of questions about the functionality, and see if they can guess the site it came from.</li>
+<li>Take your low-fidelity wireframe and create two higher-fidelity versions: one with lots of abstraction and one with no abstraction. That is, the first should have very little real content, using mostly variable names and other kinds of placeholders to demonstrate its flexibility and range. The second should be as concrete as possible, using real content from the original page. The fidelity should remain well short of a fully rendered page, but it should be something beyond simple rectangles.</li>
+<li>Practice annotating by taking a screenshot of a favorite site and pretending it is a wireframe. Embed it in a document, add some markers and notes. Create multiple versions of your annotations: one to describe behaviors and another to describe content rules. Share the annotated screen with a colleague or your study group and see if they understand all the behaviors, interactions, and business rules.</li>
+</ol>
+<div class="annotator-outer annotator-viewer viewer annotator-hide">
+  <ul class="annotator-widget annotator-listing"></ul>
+</div><div class="annotator-modal-wrapper annotator-editor-modal annotator-editor annotator-hide">
+	<div class="annotator-outer editor">
+		<h2 class="title">Highlight</h2>
+		<form class="annotator-widget">
+			<ul class="annotator-listing">
+			<li class="annotator-item"><textarea id="annotator-field-0" placeholder="Add a note using markdown (optional)" class="js-editor" maxlength="750"></textarea></li></ul>
+			<div class="annotator-controls">
+				<a class="link-to-markdown" href="https://daringfireball.net/projects/markdown/basics" target="_blank">?</a>
+				<ul>
+					<li class="delete annotator-hide"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#delete" class="annotator-delete-note button positive">Delete Note</a></li>
+					<li class="save"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#save" class="annotator-save annotator-focus button positive">Save Note</a></li>
+					<li class="cancel"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#cancel" class="annotator-cancel button">Cancel</a></li>
+				</ul>
+			</div>
+		</form>
+	</div>
+</div><div class="annotator-modal-wrapper annotator-delete-confirm-modal" style="display: none;">
+  <div class="annotator-outer">
+    <h2 class="title">Highlight</h2>
+      <a class="js-close-delete-confirm annotator-cancel close" href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#close">Close</a>
+      <div class="annotator-widget">
+         <div class="delete-confirm">
+            Are you sure you want to permanently delete this note?
+         </div>
+         <div class="annotator-controls">
+            <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#cancel" class="annotator-cancel button js-cancel-delete-confirm">No, I changed my mind</a>
+            <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#delete" class="annotator-delete button positive js-delete-confirm">Yes, delete it</a>
+         </div>
+       </div>
+   </div>
+</div><div class="annotator-adder" style="display: none;">
+	<ul class="adders">
+		
+		<li class="copy"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#">Copy</a></li>
+		
+		<li class="add-highlight"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#">Add Highlight</a></li>
+		<li class="add-note"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#">
+			Add Note
+		</a></li>
+		
+	</ul>
+</div></div></div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch06.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">Chapter 6. Flowcharts</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/pt02.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">Part 2. Design Deliverables</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag collapsed slideUp">
+        
+        
+          <p class="usage-data">Find answers on the fly, or master something new. Subscribe today. <a href="https://learning.oreilly.com/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+        
+
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+        
+
+<footer class="pagefoot t-pagefoot" style="padding-bottom: 75px;">
+  <a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#" class="icon-up" onclick="window.Appcues.track(&#39;JumpTop_HeronBook&#39;)" style="display: none;"><div class="visuallyhidden">Back to top</div></a>
+  <ul class="js-footer-nav">
+  
+    
+    <li><a href="https://learning.oreilly.com/public/support/">Support</a></li>
+    
+    <li><a href="https://learning.oreilly.com/accounts/logout/">Sign Out</a></li>
+    
+  
+  
+  </ul>
+  <span class="copyright">© 2021 <a href="https://learning.oreilly.com/" target="_blank">O'Reilly Media, Inc</a>.</span>
+  
+    
+    <a href="https://www.oreilly.com/terms/">Terms of Service</a> 
+     / 
+    
+    <a href="https://learning.oreilly.com/privacy">Privacy Policy</a> 
+    
+    
+  
+</footer>
+
+      
+    
+    <script src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource" charset="utf-8"></script>
+    <script src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/saved_resource(1)" charset="utf-8"></script>
+  
+
+<div class="annotator-notice"></div><div class="font-flyout" style="top: 201.007px; left: 1834px;"><div class="font-controls-panel">
+	<div class="nightmodes">
+		<ul>
+			<li class="day"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#" id="day-mode" title="Day Mode">
+				<i class="fa fa-sun-o"></i>
+				<span>Day Mode</span></a></li>
+			<li class="cloudy"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#" id="cloudy-mode" title="Cloudy Mode">
+				<i class="fa fa-cloud"></i>
+				<span>Cloud Mode</span>
+			</a></li>
+			<li class="night"><a href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#" id="night-mode" title="Night Mode">
+				<i class="fa fa-moon-o"></i>
+				<span>Night Mode</span>
+			</a></li>
+		</ul>
+	</div>
+
+	<div class="font-resizer resizer">
+		<div class="draggable-containment-wrapper">
+			<i class="fa fa-font left"></i>
+			<span class="filler" style="width: 50%;"></span>
+			<div id="js-font-size-draggable" class="draggable ui-widget-content ui-draggable ui-draggable-handle" style="position: relative; left: 80px;"></div>
+			<i class="fa fa-font right"></i>
+		</div>
+	</div>
+
+	<div class="column-resizer resizer">
+		<div class="draggable-containment-wrapper">
+			<i class="fa fa-compress left"></i>
+			<span class="filler" style="width: 50%;"></span>
+			<div id="js-column-size-draggable" class="draggable ui-widget-content ui-draggable ui-draggable-handle" style="position: relative; left: 80px;"></div>
+			<i class="fa fa-expand right"></i>
+		</div>
+	</div>
+
+	<a id="reset" class="button" href="https://learning.oreilly.com/library/view/communicating-design-developing/9780131385399/ch07.html#">Reset</a>
+</div>
+</div><script type="text/javascript" id="">(function(){window.medalliaUserIdentifier=document.documentElement.dataset.userUuid;window.medalliaUserName=document.documentElement.dataset.username})();</script>
+<script type="text/javascript" id="" src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/embed.js.Без названия"></script><script type="text/javascript" id="">ev=document.querySelectorAll("div[class*\x3d'event']");0<ev.length&&ev.forEach(function(a,b){b=a.querySelector("a");var c=a.querySelector("h3").textContent.toLowerCase();b.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"outbound links",eventAct:"non-oreilly",eventLbl:"add a reminder: "+c})})});</script><div></div><div></div><script type="text/javascript" async="" src="./Chapter 7. Wireframes - Communicating Design_ Developing Web Site Documentation for Design and Planning, Second Edition_files/generic1607612729884.js.Без названия" charset="UTF-8"></script><span></span><script type="text/javascript" id="">function forceInputUppercase(a){var b=a.target.selectionStart,c=a.target.selectionEnd;a.target.value=a.target.value.toUpperCase();a.target.setSelectionRange(b,c)}void 0!=document.getElementById("id_promotion")&&null!=document.getElementById("id_promotion")&&document.getElementById("id_promotion").addEventListener("keyup",forceInputUppercase,!1);
+void 0!=document.getElementsByName("promotionCode")[0]&&null!=document.getElementsByName("promotionCode")[0]&&document.getElementsByName("promotionCode")[0].addEventListener("keyup",forceInputUppercase,!1);</script><script type="text/javascript" id="">var nonwExpandable=document.querySelectorAll(".orm-ff-NavigationSubnav-headerListItem a, .orm-ff-NavigationView-headerListItem a");nonwExpandable.forEach(function(a,b){b+1!=nonwExpandable.length?a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.childNodes[1].textContent})}):b+1==nonwExpandable.length&&a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"user login",eventAct:"logout",eventLbl:"global nav | unified"})})});
+var nonwExpandableFo=document.querySelectorAll(".drop-content li:not(.flyout-parent) a");
+nonwExpandableFo.forEach(function(a,b){"drop-content"==a.parentNode.parentNode.parentNode.className&&b+1!=nonwExpandableFo.length?a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.childNodes[1].textContent})}):"drop-content"==a.parentNode.parentNode.parentNode.className&&b+1==nonwExpandableFo.length&&a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"user login",eventAct:"logout",eventLbl:"global nav | unified"})})});
+var expandable=document.querySelectorAll(".orm-ff-NavigationSubnav-toggleControls a, .orm-ff-NavigationView-toggleControls a");expandable.forEach(function(a){a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.parentNode.parentNode.parentNode.querySelectorAll(".orm-Button-btnContentWrap span")[0].childNodes[1].textContent+" | "+a.textContent})})});var flyoutLinks=document.querySelectorAll(".flyout a");
+flyoutLinks.forEach(function(a){a.addEventListener("click",function(){dataLayer.push({event:"eventTracker",eventCat:"global nav",eventAct:"navigation",eventLbl:a.closest("li.flyout-parent").getElementsByTagName("a")[0].textContent+" | "+a.textContent})})});</script></body></html>
