@@ -511,5 +511,9 @@ iframe{width:100%;frameborder:0;display:inline-block;}
 	.bgWhite{background:#ffffff;}
 	.bgBeige{background:#f6f0e4;}
 
-	
 
+
+.exp-list li{
+	list-style-position: inside !important;
+	list-style: disc;
+}
